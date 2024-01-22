@@ -24,19 +24,19 @@ export default function Home() {
       title: "Discord",
       description: "Join our fast growing community on discord.",
       icon: <SiDiscord />,
-      url: "/discord",
+      url: "https://discord.gg/PQscGtfFD2",
     },
     {
       title: "Slack",
       description: "Join our slack community for support and instant updates.",
       icon: <SiSlack />,
-      url: "/slack",
+      url: "https://join.slack.com/t/pipeopscommunity/shared_invite/zt-23gmjrl0k-Pzm2cBgIMTsUu5Az73PYKg",
     },
     {
       title: "Github",
       description: "Contribute to our open source documentation on Github",
       icon: <SiGithub />,
-      url: "/github",
+      url: "https://github.com/facebook/docusaurus",
     },
   ];
   const frameworks = [

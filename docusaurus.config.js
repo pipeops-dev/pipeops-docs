@@ -119,7 +119,7 @@ const config = {
             items: [
               {
                 label: "Blog",
-                to: "blog.pipeops.io",
+                href: "https://blog.pipeops.io",
               },
               {
                 label: "GitHub",
