@@ -1,0 +1,313 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+@import '../../static/fonts/stylesheet.css';
+
+:root {
+  --ifm-color-primary: #825DFF;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 992px) {
+html, body {
+  font-size: 95%;
+}
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    height: 80%;
+    border-radius: 40px;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html:hover::-webkit-scrollbar-thumb {
+    background: rgb(196, 196, 196);
+    border-radius: 40px;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #825DFF;
+  --docusaurus-highlighted-code-line-bg: hsla(0, 0%, 0%, 0.3);
+}
+
+* {
+  font-family: "Niveau Grotesk" !important;
+  color: #A0A0A0;
+}
+
+a.navbar__brand {
+display: none !important;
+}
+
+[data-theme='dark'] .logo-dark {
+  display: none;
+}
+
+[data-theme='dark'] a.navbar__brand {
+  display: initial !important;
+}
+
+.navbar__items--right {
+  gap: 1em;
+  color: #d8d8d8;
+}
+
+.navbar__items--right a {
+  display: flex;
+  align-items: center;
+}
+
+a.card {
+  background: #1F1F21;
+  border-radius: 28px;
+  box-shadow: none;
+  border: none;
+}
+
+a.card:hover {
+  box-shadow: none;
+  background: #111111;
+}
+
+.pagination-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-nav__link {
+  background: #111;
+  border: none;
+  width: 26rem;
+  height: 6rem;
+  padding: 0 2em 0 4em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 9999px;
+}
+
+.pagination-nav__link--next {
+  padding:0 4em 0 2em ;
+}
+
+.pagination-nav__link:hover {
+  background: #1f1f21;
+}
+
+.pagination-nav__sublabel {
+  color: #5B5B5B;
+}
+
+.pagination-nav__label {
+  color: #A0A0A0;
+  font-weight: 500;
+}
+
+.pagination-nav__link--next .pagination-nav__label::after {
+  content: "\2192" !important;
+  color: #825DFF;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(-50%, -50%);
+}
+
+.pagination-nav__link--prev .pagination-nav__label::before {
+  content: "\2190" !important;
+  color: #825DFF;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  transform: translate(-50%, -50%);
+}
+
+.card h2.text--truncate {
+  color: #d8d8d8;
+}
+
+a.tag_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module {
+  background: #111;
+  border: 1px solid #363538;
+  border-radius: 8px;
+  text-transform: capitalize;
+  padding: 0.5em 0.7em;
+}
+
+[data-theme='dark'] .navbar__items--right a {
+  color: #d8d8d8;
+}
+
+[data-theme='dark'] div.main-wrapper {
+  background: #18181a;
+}
+
+.breadcrumbs__item .breadcrumbs__link, .menu__list-item button:hover, .breadcrumbs__item .breadcrumbs__link:hover, .theme-doc-sidebar-item-category-level-2 a.menu__link:hover, .theme-doc-sidebar-item-category-level-2 .menu__list-item-collapsible:hover {
+  background: none;
+}
+
+.breadcrumbs__item a {
+  padding: 0;
+}
+a.menu__link, .menu__list-item-collapsible {
+  color: #A0A0A0;
+  border-radius: 24px;
+  height: 3rem;
+  background: none;
+  /* padding-left: 0.5em; */
+}
+
+a.menu__link:hover {
+  color: #fff;
+  background: #1F1F21;
+}
+
+a.menu__link--active {
+  color: #fff;
+  background: #1F1F21;
+}
+
+.theme-doc-sidebar-item-link-level-2 a.menu__link, .theme-doc-sidebar-item-category-level-2 a.menu__link {
+  background: none;
+  padding-left: 1em;
+  position: relative;
+}
+
+.theme-doc-sidebar-item-link-level-2 a.menu__link::after, .theme-doc-sidebar-item-category-level-2 a.menu__link::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 4px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.theme-doc-sidebar-item-link-level-2 a.menu__link:hover::after, .theme-doc-sidebar-item-category-level-2 a.menu__link:hover::after {
+  background: #825DFF;
+}
+
+[data-theme='dark'] main div.container {
+  padding-left: 2em;
+}
+
+h1, h2, h2 strong, h3, h3 strong, h4, h5, h6 {
+  letter-spacing: -0.015em;
+  font-weight: 400;
+}
+
+code span {
+  font-family: monospace !important;
+}
+
+[data-theme='dark'] p, [data-theme='dark'] li {
+  color: #A0A0A0;
+}
+
+[data-theme='dark'] nav.navbar {
+    background: #111;
+}
+
+ul.table-of-contents a {
+  font-size: 0.875rem;
+}
+
+footer.footer {
+    background: #18181a !important;
+    border-top: 2px solid #111;
+    padding: 3em 2em;
+}
+
+footer.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5em;
+  max-width: 1215px;
+  justify-content: space-between;
+}
+
+footer.footer img.footer__logo {
+  width: 8.5rem;
+  margin-top: 0;
+  height: 2rem;
+}
+
+footer.footer .footer-subtext {
+  color: #A0A0A0;
+  font-size: 0.875rem;
+}
+
+div.footer__copyright {
+  text-align: left;
+  color: #5B5B5B;
+  font-size: 0.875rem;
+  max-width: 1215px;
+  padding: 0 1em;
+  width: 95%;
+  margin: -3em auto 0;
+}
+
+@media (max-width: 1167px) {
+div.footer__copyright {
+  margin-top: -1.5em;
+}
+
+div.row.footer__links {
+  flex-basis: 100%;
+}
+}
+
+@media (max-width: 996px) {
+div.col {
+  flex-basis: unset;
+}
+
+footer.footer .container {
+  gap: 2em;
+}
+}
+
+div.footer__title {
+  color: #d8d8d8;
+  font-weight: 400;
+}
+
+a.footer__link-item {
+  color: #A0A0A0;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+div.footer__bottom {
+  max-width: 26rem;
+  width: 100%;
+}
+
+div.footer__links div.col {
+  min-width: 9.375rem;
+  width: 12.5rem;
+}

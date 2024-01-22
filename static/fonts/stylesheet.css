@@ -1,0 +1,138 @@
+body {
+  font-family: 'Niveau Grotesk', sans-serif;
+}
+
+@font-face {
+  font-family: 'Niveau Grotesk';
+  src: url('NiveauGroteskBlack-Italic.eot');
+  src: local('Niveau Grotesk Black Italic'), local('NiveauGroteskBlack-Italic'),
+    url('NiveauGroteskBlack-Italic.eot?#iefix') format('embedded-opentype'),
+    url('NiveauGroteskBlack-Italic.woff') format('woff'),
+    url('NiveauGroteskBlack-Italic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Niveau Grotesk';
+  src: url('NiveauGroteskBold-Italic.eot');
+  src: local('Niveau Grotesk Bold Italic'), local('NiveauGroteskBold-Italic'),
+    url('NiveauGroteskBold-Italic.eot?#iefix') format('embedded-opentype'),
+    url('NiveauGroteskBold-Italic.woff') format('woff'),
+    url('NiveauGroteskBold-Italic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Niveau Grotesk';
+  src: url('NiveauGroteskBold.eot');
+  src: local('Niveau Grotesk Bold'), local('NiveauGroteskBold'),
+    url('NiveauGroteskBold.eot?#iefix') format('embedded-opentype'),
+    url('NiveauGroteskBold.woff') format('woff'),
+    url('NiveauGroteskBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Niveau Grotesk';
+  src: url('NiveauGroteskLight-Italic.eot');
+  src: local('Niveau Grotesk Light Italic'), local('NiveauGroteskLight-Italic'),
+    url('NiveauGroteskLight-Italic.eot?#iefix') format('embedded-opentype'),
+    url('NiveauGroteskLight-Italic.woff') format('woff'),
+    url('NiveauGroteskLight-Italic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Niveau Grotesk';
+  src: url('NiveauGroteskMedium.eot');
+  src: local('Niveau Grotesk Medium'), local('NiveauGroteskMedium'),
+    url('NiveauGroteskMedium.eot?#iefix') format('embedded-opentype'),
+    url('NiveauGroteskMedium.woff') format('woff'),
+    url('NiveauGroteskMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Niveau Grotesk';
+  src: url('NiveauGroteskMedium-Italic.eot');
+  src: local('Niveau Grotesk Medium Italic'),
+    local('NiveauGroteskMedium-Italic'),
+    url('NiveauGroteskMedium-Italic.eot?#iefix') format('embedded-opentype'),
+    url('NiveauGroteskMedium-Italic.woff') format('woff'),
+    url('NiveauGroteskMedium-Italic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Niveau Grotesk';
+  src: url('NiveauGroteskExtraLight-Italic.eot');
+  src: local('Niveau Grotesk ExtraLight Italic'),
+    local('NiveauGroteskExtraLight-Italic'),
+    url('NiveauGroteskExtraLight-Italic.eot?#iefix') format('embedded-opentype'),
+    url('NiveauGroteskExtraLight-Italic.woff') format('woff'),
+    url('NiveauGroteskExtraLight-Italic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Niveau Grotesk';
+  src: url('NiveauGroteskRegular-Italic.eot');
+  src: local('Niveau Grotesk Regular Italic'),
+    local('NiveauGroteskRegular-Italic'),
+    url('NiveauGroteskRegular-Italic.eot?#iefix') format('embedded-opentype'),
+    url('NiveauGroteskRegular-Italic.woff') format('woff'),
+    url('NiveauGroteskRegular-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Niveau Grotesk';
+  src: url('NiveauGroteskLight.eot');
+  src: local('Niveau Grotesk Light'), local('NiveauGroteskLight'),
+    url('NiveauGroteskLight.eot?#iefix') format('embedded-opentype'),
+    url('NiveauGroteskLight.woff') format('woff'),
+    url('NiveauGroteskLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Niveau Grotesk';
+  src: url('NiveauGroteskRegular.eot');
+  src: local('Niveau Grotesk Regular'), local('NiveauGroteskRegular'),
+    url('NiveauGroteskRegular.eot?#iefix') format('embedded-opentype'),
+    url('NiveauGroteskRegular.woff') format('woff'),
+    url('NiveauGroteskRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Niveau Grotesk';
+  src: url('NiveauGroteskExtraLight.eot');
+  src: local('Niveau Grotesk ExtraLight'), local('NiveauGroteskExtraLight'),
+    url('NiveauGroteskExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('NiveauGroteskExtraLight.woff') format('woff'),
+    url('NiveauGroteskExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Niveau Grotesk';
+  src: url('NiveauGroteskBlack.eot');
+  src: local('Niveau Grotesk Black'), local('NiveauGroteskBlack'),
+    url('NiveauGroteskBlack.eot?#iefix') format('embedded-opentype'),
+    url('NiveauGroteskBlack.woff') format('woff'),
+    url('NiveauGroteskBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}

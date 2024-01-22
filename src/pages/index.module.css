@@ -1,0 +1,155 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+ h1, h2, h3, h4, h5, h6 {
+  color: #d8d8d8;
+ } 
+
+
+ header {
+  background: #111;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  padding: 3em 2em;
+  min-height: 22.5rem;
+  margin: 3em auto 5em;
+ }
+
+ @keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+ header h1 {
+  font-size: clamp(2.6rem, 6vw, 5rem);
+  background: linear-gradient(55deg, rgba(240,131,255,1) 0%, rgba(190,200,255,1) 25%, rgba(159,255,214,1) 100%);
+background-clip: text;
+ background-size: 200% 200%;
+-webkit-background-clip: text;
+color: transparent;
+-webkit-text-fill-color: transparent;
+animation: gradient-animation 5s linear infinite;
+text-align: center;
+ }
+
+ header p {
+  max-width: 45.75rem;
+  font-size: 1.125rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+ }
+
+ main {
+  max-width: 1215px;
+width: 95%;
+margin: 0 auto;
+ }
+
+ main h2 {
+  font-size: 2.8rem;
+  margin-bottom: 0.6em;
+  color: #18181A;
+ }
+
+ [data-theme='dark'] main h2 {
+  color: #d8d8d8;
+ }
+
+ main h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.2em;
+ }
+
+ .cardsWrapper {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 5em;
+ }
+
+ .card, .cardVariantTwo, .cardVariantThree {
+  background: #1F1F21;
+  border-radius: 28px;
+  padding: 0.1em;
+}
+
+.card:hover,.cardVariantTwo:hover, .cardVariantThree:hover {
+  background: linear-gradient(134deg, rgba(240,131,255,1) 0%, rgba(190,200,255,1) 25%, rgba(159,255,214,1) 100%);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card div, .cardVariantTwo div, .cardVariantThree div {
+  background: #1F1F21;
+  width: 100%;
+  max-width: 23.937rem;
+  min-height: 17.5rem;
+  padding: 2em;
+  overflow: hidden;
+  border-radius: 28px;
+ }
+
+ .card span, .cardVariantTwo span, .cardVariantThree span {
+  width: 6rem;
+  margin-bottom: 1em;
+  height: 6rem;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+  background: #18181A;
+  border-radius: 50%;
+ }
+
+ .card svg {
+  font-size: 2.2rem;
+ }
+
+ .cardVariantThree svg {
+  font-size: 1.5rem;
+ }
+
+ .card p {
+  margin: 0;
+  font-size: 1rem;
+ }
+
+ .cardVariantTwo span {
+  width: 100%;
+  height: 8rem;
+  border-radius: 99999px;
+ }
+
+.cardVariantThree div {
+   width: 17.625rem;
+   min-height: 6rem;
+   padding: 0.5em 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .cardVariantThree h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+ }
+
+.cardVariantThree span {
+  width: 4rem;
+  margin-bottom: 0;
+  height: 4rem;
+ }
