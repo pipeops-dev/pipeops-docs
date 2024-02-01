@@ -34,7 +34,7 @@
 }
 
  header h1 {
-  font-size: clamp(2.6rem, 6vw, 5rem);
+  font-size: clamp(3rem, 6vw, 5rem);
   background: linear-gradient(55deg, rgba(240,131,255,1) 0%, rgba(190,200,255,1) 25%, rgba(159,255,214,1) 100%);
 background-clip: text;
  background-size: 200% 200%;
@@ -60,7 +60,7 @@ margin: 0 auto;
  }
 
  main h2 {
-  font-size: 2.8rem;
+  font-size: clamp(2rem, 6vw, 2.8rem);
   margin-bottom: 0.6em;
   color: #18181A;
  }
@@ -104,6 +104,13 @@ margin: 0 auto;
   border-radius: 28px;
  }
 
+ @media (max-width: 767px) {
+  .cardVariantThree div {
+    min-width: 20.625rem;
+    width: 100% !important;
+  }
+ }
+
  .card span, .cardVariantTwo span, .cardVariantThree span {
   width: 6rem;
   margin-bottom: 1em;
@@ -130,8 +137,20 @@ margin: 0 auto;
 
  .cardVariantTwo span {
   width: 100%;
+  justify-content: flex-start;
   height: 8rem;
   border-radius: 99999px;
+  background: url('/static/img/ripplePatterns.svg') #111 no-repeat;
+  background-position: right;
+ padding-left: 2em;
+ }
+
+ .cardVariantTwo span svg:last-child, .cardVariantTwo:hover span svg:first-child {
+  display: none;
+ }
+
+ .cardVariantTwo:hover span svg:last-child {
+  display: inline-block;
  }
 
 .cardVariantThree div {
