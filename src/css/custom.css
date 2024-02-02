@@ -13,6 +13,14 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+.markdown {
+    --ifm-h2-vertical-rhythm-top: 3;
+}
+
+p {
+  position: relative;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -149,12 +157,31 @@ a.card:hover {
   color: #d8d8d8;
 }
 
+.menu__caret:before {
+    transform: rotateZ(360deg);
+    width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #A0A0A0;
+  border-radius: 5px;
+}
+
+.menu__list-item--collapsed .menu__caret:before {
+    transform: rotateZ(180deg);
+    /* content: '\25B6'; */
+}
+
 a.tag_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module {
   background: #111;
   border: 1px solid #363538;
   border-radius: 8px;
   text-transform: capitalize;
   padding: 0.5em 0.7em;
+}
+
+a.tag_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module:hover {
+  border-color: #825DFF;
 }
 
 [data-theme='dark'] .navbar__items--right a {
@@ -177,7 +204,6 @@ a.menu__link, .menu__list-item-collapsible {
   border-radius: 24px;
   height: 3rem;
   background: none;
-  /* padding-left: 0.5em; */
 }
 
 a.menu__link:hover {
@@ -191,12 +217,12 @@ a.menu__link--active {
 }
 
 .theme-doc-sidebar-item-link-level-2 a.menu__link, .theme-doc-sidebar-item-category-level-2 a.menu__link {
-  background: none;
+  background: transparent;
   padding-left: 1em;
   position: relative;
 }
 
-.theme-doc-sidebar-item-link-level-2 a.menu__link::after, .theme-doc-sidebar-item-category-level-2 a.menu__link::after {
+ul ul a.menu__link::after {
   content: '';
   width: 6px;
   height: 6px;
@@ -206,8 +232,12 @@ a.menu__link--active {
   border-radius: 50%;
 }
 
-.theme-doc-sidebar-item-link-level-2 a.menu__link:hover::after, .theme-doc-sidebar-item-category-level-2 a.menu__link:hover::after {
+ul ul a.menu__link:hover::after, ul ul a.menu__link--active::after {
   background: #825DFF;
+}
+
+.menu__list-item ul {
+  border-left: 1px solid #2b2b2d;
 }
 
 [data-theme='dark'] main div.container {
@@ -217,6 +247,23 @@ a.menu__link--active {
 h1, h2, h2 strong, h3, h3 strong, h4, h5, h6 {
   letter-spacing: -0.015em;
   font-weight: 400;
+  color: #d8d8d8;
+}
+
+h1 {
+  font-size: clamp(3rem, 6vw, 4rem) !important;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 2.8rem) !important;
+}
+
+h3.anchor {
+  font-size: clamp(1.5rem, 4vw, 1.9rem);
+}
+
+a.card h2 {
+  font-size: 1.2rem !important;
 }
 
 code span {

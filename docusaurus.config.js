@@ -75,7 +75,7 @@ const config = {
         },
         items: [
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/pipeops-dev",
             label: "GitHub",
             position: "right",
           },
@@ -123,15 +123,15 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/pipeops-dev",
               },
             ],
           },
         ],
         logo: {
-          alt: 'grey pipeops logo',
-          href: '/',
-          src: 'img/pipeops-light.svg',
+          alt: "grey pipeops logo",
+          href: "/",
+          src: "img/pipeops-light.svg",
         },
         copyright: `Copyright © ${new Date().getFullYear()} PipeOps, Built with Docusaurus.`,
       },
