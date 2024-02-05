@@ -172,6 +172,14 @@ a.card:hover {
     /* content: '\25B6'; */
 }
 
+.menu__link {
+  font-weight: 300;
+}
+
+.menu__link--active {
+  font-weight: 500;
+}
+
 a.tag_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module {
   background: #111;
   border: 1px solid #363538;
@@ -209,6 +217,7 @@ a.menu__link, .menu__list-item-collapsible {
 a.menu__link:hover {
   color: #fff;
   background: #1F1F21;
+  font-weight: 500;
 }
 
 a.menu__link--active {
@@ -234,6 +243,10 @@ ul ul a.menu__link::after {
 
 ul ul a.menu__link:hover::after, ul ul a.menu__link--active::after {
   background: #825DFF;
+}
+
+ul ul .menu__list-item:not(:first-child) {
+    margin-top: 0.6rem;
 }
 
 .menu__list-item ul {

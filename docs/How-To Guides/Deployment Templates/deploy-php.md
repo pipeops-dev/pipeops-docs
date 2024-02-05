@@ -1,7 +1,7 @@
 ---
 slug: deploy-a-php-template
 title: How to deploy a PHP application with PipeOps!
-sidebar_position: 2
+sidebar_position: 5
 tags: [deployment, guide, php]
 ---
 
