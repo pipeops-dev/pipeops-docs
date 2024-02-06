@@ -13,12 +13,14 @@ Now that your AWS account is connected, let's create your server for development
 3. Select your preferred AWS region for deployment.
 4. Click **Proceed** to move to the next step.
 
+   ![Configure Server](https://docImages/clusterProvision/createServer.png)
+
 ### Step 2: Confirm Server Configuration
 
 1. A modal will appear, summarizing your server configuration settings.
 2. Review the details carefully to ensure accuracy.
 
-   ![Server Configuration Summary](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/15/stup_create_server_summ_fa0308d91f.png)
+   ![Server Configuration Summary](https://docImages/clusterProvision/confirmCreatServer.png)
 
 3. Click **Yes Create Server** to proceed with creating your server.
 
@@ -27,13 +29,13 @@ Now that your AWS account is connected, let's create your server for development
 1. On the confirmation, agree to create the server.
 2. The platform will display the progress of your server creation on the screen.
 
-   ![Server Creation Progress](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/15/stup_server_creation_progress_7e0fbbc33f.png)
+   ![Server Creation Progress](https://docImages/clusterProvision/creationInProgress.png)
 
 ### Step 4: Completion and Proceed
 
 1. After the server creation is complete, a confirmation message will appear.
 2. Click **Proceed** to move forward in the setup process.
 
-    ![Server Creation Successful](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/15/stup_server_created_3e863a22cd.png)
+    ![Server Creation Successful](https://docImages/clusterProvision/serverCreated.png)
 
-    ![Created Server](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/15/stup_cluster_created_828db88fcc.png)
+    ![Created Server](https://docImages/clusterProvision/serverOverview.png)

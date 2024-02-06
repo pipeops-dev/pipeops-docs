@@ -169,7 +169,6 @@ a.card:hover {
 
 .menu__list-item--collapsed .menu__caret:before {
     transform: rotateZ(180deg);
-    /* content: '\25B6'; */
 }
 
 a.tag_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module {
@@ -204,15 +203,18 @@ a.menu__link, .menu__list-item-collapsible {
   border-radius: 24px;
   height: 3rem;
   background: none;
+  font-weight: 300;
 }
 
 a.menu__link:hover {
   color: #fff;
+  font-weight: 500;
   background: #1F1F21;
 }
 
 a.menu__link--active {
   color: #fff;
+  font-weight: 500;
   background: #1F1F21;
 }
 

@@ -9,47 +9,51 @@ Although the developer and startup dashboards are different, they contain some s
 
 To access any of the following features, click on the button on the top right end of the screen.
 
-![User dashboard](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/14/dash_opts_d2e6349ec4.png)
+![User dashboard](https:///docImages/onboarding/profilePage.png)
 
 ## Profile
 
 ### Account
+
 - **Account Details:**
   Access and manage your account details easily. Update information such as your profile avatar, workspace name, company, email address and password, to keep your account information current.
 
-  ![Profile account details](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/14/dash_profile_account_35c4fdef64.png)
+  ![Profile account details](https:///docImages/onboarding/account.png)
 
 - **Connected Git Provider:**
   Seamlessly integrate your preferred Git provider (GitHub, GitLab or BitBucket) with your dashboard. This feature enables a smooth and efficient workflow, allowing you to connect your repositories and streamline your development process.
-  
-  ![Profile connect provider](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/14/dash_profile_github_aeed695ad9.png)
+
+  ![Profile connect provider](https:///docImages/onboarding/gitProvider.png)
 
 ### Subscription Plans
+
 - **User subscriotion plan:**
   Choose your prefered plan from our list of cheap subcrioption plans for developers and startups. This can be billed monthly or annually (with a discount)
 
-  ![Subscription plan](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/14/dash_profile_subscription_1a8fc8a956.png)
+  ![Subscription plan](https:///docImages/onboarding/subscription.png)
 
 ### Billing
+
 - **Billing Settings:**
   Customize your billing preferences on Stripe effortlessly. Adjust settings related to payment methods, invoicing, and other billing details according to your choice.
 
-  ![Billing settings](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/14/dash_profile_billing_70843ea997.png)
+  ![Billing settings](https:///docImages/onboarding/billing.png)
 
 ## Teams
 
 ### Create a Team
+
 - **Create a Team:**
   Collaborate effectively by creating teams within your dashboard. This feature allows you to invite team members, assign roles, and manage collaborative projects efficiently.
 
-  ![Create team](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/14/dash_teams_create_ae6dcab6d5.png)
+  ![Create team](https:///docImages/onboarding/teams.png)
 
 ## Settings
 
 - **Notification Settings:**
   Tailor your notification preferences to stay informed about important updates, activities, and changes within your dashboard via email, slack or both. Customize the notifications that matter most to you.
 
-  ![Notification settings](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/14/dash_settings_6d2c4db11c.png)
+  ![Notification settings](https:///docImages/onboarding/settings.png)
 
 ## Logout
 

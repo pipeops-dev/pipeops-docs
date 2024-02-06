@@ -22,7 +22,7 @@ WORKDIR /opt/app
 ENV NODE_ENV=$ENV
 
 # Copy package.json and any lockfiles to the working directory.
-COPY package.json package-lock.json ./
+COPY package.json yarn.lock package-lock.json ./
 
 # Run CI for production
 RUN npm ci --only=production
