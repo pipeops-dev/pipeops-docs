@@ -90,9 +90,10 @@ export default function Home() {
       <header>
         <h1>PipeOps Documentation</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Eu ut nunc est orci mauris vel
-          orci vitae. Mattis cum vel feugiat orci fringilla viverra. Netus
-          mattis lorem at id nisl adipiscing sed.
+          Welcome to PipeOps Documentation! Empower your projects with our
+          innovative no-code platform. Start by creating an account using the
+          'getting started & user guides' to learn how to deploy your apps in
+          minutes.
         </p>
       </header>
       <main>

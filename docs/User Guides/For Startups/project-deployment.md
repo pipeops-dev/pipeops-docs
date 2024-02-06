@@ -24,27 +24,27 @@ If you haven't already connected your repository, follow the steps in [Step 3 - 
 1. Navigate to the **Repository Settings** section in your dashboard.
 2. Choose your repository account and organisation from the available options.
 
-   ![Repository Account Selection](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/16/k8_2_repo_acct_57b284aa73.png)
+   ![Repository Account Selection](https://docImages/deploymentOnKubCluster/repoAccountOrg.png)
 
 ## Choose Repository and Branch
 
 1. Select the repository that contains your project.
 2. Choose the desired branch for deployment.
 
-   ![Repository and Branch Selection](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/16/k8_3_repo_branch_918cc26f28.png)
+   ![Repository and Branch Selection](https://docImages/deploymentOnKubCluster/branch.png)
 
 ## Configure Docker Framework and Dockerfile Location
 
 1. In the **Deployment Environment**, select the Docker framework (recommended by default).
 2. Choose the location within your repository (root as default).
 
-   ![Docker Configuration](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/16/k8_4_5_docker_frame_port_33b53bef97.png)
+   ![Docker Configuration](https://docImages/deploymentOnKubCluster/buildSettings.png)
 
 ## View Project Summary
 
 1. View the project summary of your application to confirm repo details, project name and other project details.
 
-    ![Project Summary](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/16/k8_mid_project_summary_67f120c8be.png)
+    ![Project Summary](https://docImages/deploymentOnKubCluster/projectSummary.png)
 
 ## Set Container Port
 
@@ -58,19 +58,19 @@ Click the **Deploy** button to initiate the deployment process.
 
 You can monitor the progress of your deployment through three stages: commit, build, and deploy. Navigate to the **Deployment Logs** section to view detailed information.
 
-   ![Deployment Logs Commit](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/16/k8_7_commit_logs_8de89c16f3.png)
+   ![Deployment Logs Commit](https://docImages/deploymentOnKubCluster/commit.png)
 
-   ![Deployment Logs Build](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/16/k8_7_build_logs_65c2b027a2.png)
+   ![Deployment Logs Build](https://docImages/deploymentOnKubCluster/build.png)
 
 ## Receive Notification
 
 After successful deployment, you will receive a notification.
-    ![Project Success](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/16/k8_8_notification_success_46e9d3d34c.png)
+    ![Project Success](https://docImages/deploymentOnKubCluster/deployed.png)
 
 ## View Live Deployment
 
 1. Click on the **View Project** button to access your live deployment.
 
-   ![View Project](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/16/k8_9_live_notification_7029671d09.png)
+   ![View Project](https://docImages/deploymentOnKubCluster/viewProject.png)
 
 Congratulations! Your application is now deployed on your Kubernetes cluster. Feel free to explore additional features and configurations within your dashboard.

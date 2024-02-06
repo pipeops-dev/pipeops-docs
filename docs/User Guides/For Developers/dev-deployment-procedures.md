@@ -18,19 +18,19 @@ In this section, we will walk through deploying a project as a developer, using 
 
 1. On your dashboard, under the "My projects" tab, click on the "Deploy a new Project" button and select "Web project."
 
-![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/3_0b77d73ca8.png)
+![2.png](https://docImages/projectDeployment/newProject.png)
 
 1. Select "Linked repository", then select the "Select repo source" drop-down. Choose the repo you will use for the project. If you would like to use a different repository, click on "Link new repo" and select from any of the repo providers.
 2. Select your repo organization from the "Select organization" drop down.
 3. Select your source repository, and the branch you would like to deploy. In my example, [Ohansck/react-portfolio](https://github.com/ohansck/react-portfolio) and the main branch. Click on proceed.
 
-![4.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/4_86f43bc154.png)
+![4.png](https://docImages/projectDeployment/linkedRepo.png)
 
 ### Step 2: Configure Your Project
 
 1. Your project has been created, and your summary dashboard is shown to you. It contains your project name and environment, server, project repository, project source and cost. Leave as default and click proceed.
 
-![5.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/5_f1a1c0a30b.png)
+![5.png](https://docImages/nextFlow/proceed.png)
 
 1. Your project build settings dashboard is now shown to you. In the build settings > framework dropdown, select ReactJs
 2. Your build method dropdown is automatically set to 'NodeJs (Static frontend) Recommended'. If it is not, please select it as your build framework.
@@ -44,21 +44,21 @@ npm run build
 2. If applicable, enter your application's life cycle release command.
 3. Review your configuration settings.
 
-![6.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/6_6d68ca61ff.png)
+![6.png](https://docImages/nextFlow/buildSettings.png)
 
 ### Step 3: Deploy Your React Application
 
 1. Click deploy.
 2. Monitor the logs on the build logs section. After a successful build, click on the "View project" button to view your successfully deployed application.
 
-![7.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/7_3ff463dd77.png)
+![7.png](https://docImages/nextFlow/buildLogs.png)
 
 ### Step 4: Celebrate Your Swift Deployment!
 
 Congratulations! You have successfully deployed your React application using PipeOps. Your app is now live and accessible to users worldwide.
 
-![8.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/8_101262a786.png)
+![8.png](https://docImages/nextFlow/deployedModal.png)
 
-![9.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/9_0af9e3dd4c.png)
+![9.png](https://docImages/nextFlow/viewProject.png)
 
 ![10.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/10_e678a4ad6b.png)
