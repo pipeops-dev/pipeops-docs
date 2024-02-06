@@ -18,7 +18,7 @@ Open your preferred web browser and navigate to the pipeops home page page. You 
 
 To begin the registration process, click on the 'Deploy app' or 'Deploy a free app' button on the top right corner, or the middle of your screen. This would redirect you to the pipeops signin console. Click on the 'Create a new account here' link, and begin your registration. Or use the direct URL: [https://console.pipeops.io/auth/signup](https://console.pipeops.io/auth/signup).
 
-![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/13/user_reg_signup_168af3ea35.png)
+![PipeOps homepage](https:///docImages/onboarding/signin.png)
 
 ## Step 3: Sign In Options
 
