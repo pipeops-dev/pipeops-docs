@@ -9,8 +9,8 @@ WORKDIR /opt/app
 COPY . .
 
 # Run a npm install and build
-RUN npm install && \
-    npm run build
+RUN yarn install && \
+    yarn run build
 
 # Stage 2: Create the production image
 FROM $NODE_IMAGE AS prod
@@ -22,10 +22,10 @@ WORKDIR /opt/app
 ENV NODE_ENV=$ENV
 
 # Copy package.json and any lockfiles to the working directory.
-COPY package.json yarn.lock package-lock.json ./
+COPY package.json yarn.lock ./
 
 # Run CI for production
-RUN npm ci --only=production
+RUN yarn install --production
 
 EXPOSE 3000
 
