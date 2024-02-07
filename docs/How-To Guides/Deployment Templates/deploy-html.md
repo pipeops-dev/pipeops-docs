@@ -1,6 +1,6 @@
 ---
-slug: deploy-a-html-template
-title: How to deploy HTML application with PipeOps!
+slug: deploy-an-html-template
+title: Deploy HTML Template on PipeOps!
 sidebar_position: 9
 tags: [deployment, guide, html]
 ---

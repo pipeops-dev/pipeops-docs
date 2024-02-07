@@ -1,6 +1,6 @@
 ---
 slug: deploy-a-django-template
-title: How to deploy a Django application with PipeOps!
+title: Deploy Django Template on PipeOps!
 sidebar_position: 2
 tags: [deployment, guide, django]
 ---

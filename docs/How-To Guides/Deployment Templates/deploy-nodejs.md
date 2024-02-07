@@ -1,6 +1,6 @@
 ---
 slug: deploy-a-nodejs-template
-title: How to Deploy NodeJS on PipeOps!
+title: Deploy NodeJS Template on PipeOps!
 sidebar_position: 3
 tags: [deployment, guide, nodejs]
 ---

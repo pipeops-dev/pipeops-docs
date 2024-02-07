@@ -1,6 +1,6 @@
 ---
 slug: deploy-nextjs-template
-title: How to Deploy NexJS  on PipeOps
+title: Deploy NexJS Template on PipeOps
 sidebar_position: 8
 tags: [deployment, guide, nextjs]
 ---
@@ -24,38 +24,56 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
 ## Deploying your App
 
 1. Click on the “Proceed” button to access the repository you have configured access to
-![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
 
 1. For this example, we shall test with the template project provided, which is on the right pane of the screen. Select **Pipeops NextJS Demo.**.
-![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
-This will lead to the next stage of configuring the deployment.
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+   This will lead to the next stage of configuring the deployment.
 
 1. PipeOps automatically generates a name for the project to be deployed (which can be edited later, see: [How to Edit a Project Name](/docs/intro.md)).Configures a default server and environment for the project deployment.
-![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
-Click **Proceed** to continue to the next stage
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+   Click **Proceed** to continue to the next stage
+
 1. In the next stage, we shall select the Framework we are building with, and the Build method, in this case we shall choose **NextJS** and **Nixpack** respectively.
-![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
-Click the **Deploy Project** button to start the build and deploy the project.
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+   Click the **Deploy Project** button to start the build and deploy the project.
 
 1. PipeOps will start the build and deployment process, and show the logs of the build and deployment process, to enable tracking of the process.
-![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
-Build process
-![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
-Deployment process
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+   Build process
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+   Deployment process
 
 1. When the deployment is done, you get a notification stating that the deployment is complete and successful
-![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
-Click the **Got it** button to return to the project
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+   Click the **Got it** button to return to the project
 
 1. In returning to the project, we can see all the details of the project that has been configured, and some added information that tells us the status of the project.
-![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
-There are various; [History], [Observability](/docs/User%20Guides/For%20Startups/cluster-observability), [Logs], [Events], [Terminal] and [Settings] are used to monitor, observe, debug and re-configure the project.
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+   There are various; [History], [Observability](/docs/User%20Guides/For%20Startups/cluster-observability), [Logs], [Events], [Terminal] and [Settings] are used to monitor, observe, debug and re-configure the project.
 
 1. To view the application that was deployed, click the **View Project** link.
-![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
 
 1. This will automatically launch the application on a new tab
-![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
 
 1. This setup has some basic configurations applied by default
    1. Application Network Port

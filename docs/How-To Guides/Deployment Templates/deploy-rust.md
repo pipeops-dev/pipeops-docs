@@ -1,6 +1,6 @@
 ---
 slug: deploy-a-rust-template
-title: How to deploy a Rust application with PipeOps!
+title: Deploy a Rust Template on PipeOps!
 sidebar_position: 6
 tags: [deployment, guide, rust]
 ---

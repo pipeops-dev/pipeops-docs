@@ -1,6 +1,6 @@
 ---
 slug: deploy-asp.net-template
-title: How to Deploy ASP.NET Core on PipeOps
+title: Deploy ASP.NET Core Template on PipeOps
 sidebar_position: 7
 tags: [deployment, guide, asp.net]
 ---
