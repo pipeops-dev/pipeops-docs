@@ -15,11 +15,8 @@ import {
 } from "react-icons/si";
 import {
   SearchFile,
-  GradientSearchFile,
   Changelog,
-  GradientChangelog,
   Bookmark,
-  GradientBookmark,
 } from "../../static/img";
 
 import styles from './index.module.css';
@@ -62,7 +59,7 @@ export default function Home() {
       title: "Overview",
       description: "Find out what this docs is about in a summarized manner.",
       icon: <SearchFile />,
-      iconVariant: <GradientSearchFile />,
+      iconVariant: '',
       url: "/docs/intro",
     },
     {
@@ -70,7 +67,7 @@ export default function Home() {
       description:
         "You can get help via our well detailed guides and tutorials",
       icon: <Bookmark />,
-      iconVariant: <GradientBookmark />,
+      iconVariant: '',
       url: "/docs/category/how-to-guides",
     },
     {
@@ -78,7 +75,7 @@ export default function Home() {
       description:
         "See a list of our previous and current versions of changelogs",
       icon: <Changelog />,
-      iconVariant: <GradientChangelog />,
+      iconVariant: '',
       url: "/docs/category/changelogs",
     },
   ];
