@@ -1,7 +1,7 @@
 ---
 slug: deploy-a-flask-template
-title: How to deploy a Flask application with PipeOps!
-sidebar_position: 3
+title: Deploy a Flask Template on PipeOps!
+sidebar_position: 4
 tags: [deployment, guide, flask]
 ---
 

@@ -115,7 +115,7 @@ margin: 0 auto;
   width: 6rem;
   margin-bottom: 1em;
   height: 6rem;
-      display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
   background: #18181A;

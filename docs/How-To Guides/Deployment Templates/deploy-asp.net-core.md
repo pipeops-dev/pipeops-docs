@@ -1,13 +1,13 @@
 ---
-slug: deploy-php-template
-title: Deploy PHP Template on PipeOps!
-sidebar_position: 5
-tags: [deployment, guide, php]
+slug: deploy-asp.net-template
+title: Deploy ASP.NET Core Template on PipeOps
+sidebar_position: 7
+tags: [deployment, guide, asp.net]
 ---
 
-# Deploying PHP  on PipeOps
+# Deploying ASP.NET Core on PipeOps
 
-To deploy PHP  application, you must ensure that you are already Signed up on PipeOps and Signed into your PipeOps account.
+To deploy ASP.NET Core application, you must ensure that you are already Signed up on PipeOps and Signed into your PipeOps account.
 Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and [Sign In](https://console.pipeops.io/auth/signin) to PipeOps
 
 ## Pre-requisites
@@ -16,8 +16,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
 1. Ensure the Git (Github, Gitlab, Bitbucket) integration is done, so that PipeOps can retrieve the repositories.
 1. The source code is available on the Git repository.
 1. The following versions are supported
-   1. 8.1
-   1. 8.2
+   1. 8.0
 
 ## Deploying your App
 
@@ -25,7 +24,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
 
    ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
 
-1. For this example, we shall test with the template project provided, which is on the right pane of the screen. Select **Pipeops NextJS Demo.**.
+1. For this example, we shall test with the template project provided, which is on the right pane of the screen. Select **Pipeops Asp Dotnet Core Demo.**.
 
    ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
 
@@ -36,7 +35,8 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
    ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
 
    Click **Proceed** to continue to the next stage
-1. In the next stage, we shall select the Framework we are building with, and the Build method, in this case we shall choose **NextJS** and **Nixpack** respectively.
+
+1. In the next stage, we shall select the Framework we are building with, and the Build method, in this case we shall choose **C# ASP.NET Core** and **Paketo-Buildpack** respectively.
 
    ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
 
@@ -62,7 +62,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
 
    ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
 
-   There are various; [History], [Observability](/docs/User%20Guides/For%20Startups/cluster-observability), [Logs], [Events], [Terminal] and [Settings] are used to monitor, observe, debug and re-configure the project.
+There are various; [History], [Observability](/docs/User%20Guides/For%20Startups/cluster-observability), [Logs], [Events], [Terminal] and [Settings] are used to monitor, observe, debug and re-configure the project.
 
 1. To view the application that was deployed, click the **View Project** link.
 

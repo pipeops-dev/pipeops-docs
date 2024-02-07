@@ -1,45 +1,80 @@
 ---
 slug: deploy-a-nodejs-template
-title: How to deploy a Django application with PipeOps!
+title: Deploy NodeJS Template on PipeOps!
 sidebar_position: 3
 tags: [deployment, guide, nodejs]
 ---
 
 # Deploying Node.js on PipeOps
 
-Deploying your Node.js applications on PipeOps is a breeze, thanks to its robust support. In this guide, you'll discover just how easy it is to deploy your Node.js project.
+To deploy a Node.js application, you must ensure that you are already Signed up on PipeOps and Signed into your PipeOps account.
+Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and [Sign In](https://console.pipeops.io/auth/signin) to PipeOps
 
-## Getting Started
+## Pre-requisites
 
-For a quick and hassle-free start, you can clone our pre-built Node.js template from [here](https://github.com/pipeops-dev/pipeops-nodejs). This template comes with a Dockerfile that will be utilized during deployment. If you already have a project to deploy, create a Dockerfile and copy the relevant information from our Node.js template Dockerfile into your project's Dockerfile.
+1. Create a Workspace where the application will be deployed. You can follow the guide on how to create a Workspace [here](/docs/Collaboration/workspaces#creating-a-new-workspace). If you already have an existing workspace you can use it
+1. Ensure the Git (Github, Gitlab, Bitbucket) integration is done, so that PipeOps can retrieve the repositories.
+1. The source code is available on the Git repository.
+1. The following versions are supported
+   1. 14
+   1. 16
+   1. 18
+   1. 20
 
-Here's an example Dockerfile based on our Node.js template:
+## Deploying your App
 
-```dockerfile
-FROM node:18
-# Create app directory
-WORKDIR /usr/src/app
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
-RUN npm install
-# If you are building your code for production
-# RUN npm ci --omit=dev
-# Bundle app source
-COPY . .
-EXPOSE 8080
-CMD [ "node", "server.js" ]
-```
+1. Click on the “Proceed” button to access the repository you have configured access to
 
-## Deploy Your Project
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
 
-Assuming you have completed our [get started guide](/docs/User%20Guides/For%20Developers/dev-account-setup), but if not, proceed to connect your PipeOps account to your preferred git provider and select your project. In the image below, you'll find the necessary configurations for your Django project. After completing these configurations, click on the "Deploy Project" button to initiate the deployment.
+1. For this example, we shall test with the template project provided, which is on the right pane of the screen. Select **PipeOps NodeJs Demo**.
 
-![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678874959/Pipeops/django_u8mv1l.png)
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
 
-![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bhabno.png)
+This will lead to the next stage of configuring the deployment.
 
-**👍 Awesome!**
+1. PipeOps automatically generates a name for the project to be deployed (which can be edited later, see: [How to Edit a Project Name](/docs/intro.md)).Configures a default server and environment for the project deployment.
 
-Congratulations! Your NodeJs project is now successfully deployed.
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+Click **Proceed** to continue to the next stage
+
+1. In the next stage, we shall select the Framework we are building with, and the Build method, in this case we shall choose **NodeJs** and **Paketo-Buildpack** respectively. On the **Environment Variables** side, add the port the NodeJS app is starting on (by clicking on the **Add Env** button). For our example the port is 3000. So on the environment variable we shall create a new entry for **PORT** and value **3000**, as shown in the screenshot below
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+Click the **Deploy Project** button to start the build and deploy the project.
+
+1. PipeOps will start the build and deployment process, and show the logs of the build and deployment process, to enable tracking of the process.
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+   Build process
+
+1. When the deployment is done, you get a notification stating that the deployment is complete and successful
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+   Click the **Got it** button to return to the project
+
+1. In returning to the project, we can see all the details of the project that has been configured, and some added information that tells us the status of the project.
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+There are various; [History], [Observability](/docs/User%20Guides/For%20Startups/cluster-observability), [Logs], [Events], [Terminal] and [Settings] are used to monitor, observe, debug and re-configure the project.
+
+1. To view the application that was deployed, click the **View Project** link.
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+1. This will automatically launch the application on a new tab
+
+   ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678875019/Pipeops/image_5_bbno.png)
+
+1. This setup has some basic configurations applied by default
+   1. Application Network Port
+   1. Network Access Port ([Environment Variable])
+   1. Single Replica with 0.5 CPU and 512MB RAM ([Scaling and Replication])
+   1. Auto Deploy a branch when a code change is checked-in.
+
+To delete a project, use the Delete Project guide [here].
