@@ -34,4 +34,4 @@ COPY --from=build /opt/app/build ./build
 COPY --from=build /opt/app/docusaurus.config.js .
 
 # Command to run docusaurus
-CMD ["npm", "run", "serve"]
+CMD ["yarn", "run", "serve"]
