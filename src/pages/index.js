@@ -15,11 +15,8 @@ import {
 } from "react-icons/si";
 import {
   SearchFile,
-  GradientSearchFile,
   Changelog,
-  GradientChangelog,
   Bookmark,
-  GradientBookmark,
 } from "../../static/img";
 
 import styles from './index.module.css';
