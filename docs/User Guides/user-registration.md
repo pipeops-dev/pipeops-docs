@@ -18,7 +18,7 @@ Open your preferred web browser and navigate to the pipeops home page page. You 
 
 To begin the registration process, click on the 'Deploy app' or 'Deploy a free app' button on the top right corner, or the middle of your screen. This would redirect you to the pipeops signin console. Click on the 'Create a new account here' link, and begin your registration. Or use the direct URL: [https://console.pipeops.io/auth/signup](https://console.pipeops.io/auth/signup).
 
-![PipeOps homepage](https:///docImages/onboarding/signin.png)
+![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/homepage_d3d284d5fd.png)
 
 ## Step 3: Sign In Options
 
@@ -31,7 +31,7 @@ In the 'Create an account' sign up box, you have 4 options to sign up.
 
 In the first 3 options, you will need to enter your credentials to allow pipeops connect with your account. You also will not need to connect to that repository provider later if you already chose it as your sign up method.
 
-![PipeOps homepage](https:///docImages/onboarding/oauth.png)
+![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/signin_b8cfb0bcd8.png)
 
 ## Step 4: Provide Your Email Address
 
@@ -45,13 +45,13 @@ Create a secure password for your account. A strong password typically includes 
 
 After submitting the registration form, you will be redirected to a page requesting for your registration OTP. Check your email inbox for a verification message containing the token, paste into the box and proceed.
 
-![PipeOps homepage](https:///docImages/onboarding/otp.png)
+![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/otp_a12ad0250c.png)
 
 ## Step 7: Customize Your Workspace
 
 Before completing the registration, we want to tailor your experience with PipeOps to suit your needs. You would answer the following questions to configure your workspace:
 
-![PipeOps homepage](https:///docImages/onboarding/questions.png)
+![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/questions_bcfece1f62.png)
 
 1. **Workspace Name:**
 

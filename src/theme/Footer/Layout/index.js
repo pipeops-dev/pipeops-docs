@@ -14,7 +14,7 @@ export default function FooterLayout({style, links, logo, copyright}) {
               <div className="margin-bottom--sm">
                 {logo}
                 <p className="footer-subtext">
-                  Automating DevOps with Zest and Zenb
+                  Automating DevOps with Zest and Zen.
                 </p>
               </div>
             )}

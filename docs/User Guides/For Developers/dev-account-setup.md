@@ -15,11 +15,11 @@ Connecting a repository to your account is essential for seamless deployment. If
 
 1. If you need to connect a repository manually, click on your preferred repository provider (GitHub, GitLab, Bitbucket).
 
-   ![Repository Provider Selection](https:///docImages/devSetup/connectRepo.png)
+   ![Repository Provider Selection](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/28/connect_Repo_76c699069e.png)
 
 2. Authenticate your account to establish a connection between your repository provider and your dashboard.
 
-   ![Repository Authentication](https:///docImages/devSetup/connectedRepo.png)
+   ![Repository Authentication](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/28/connected_Repo_e36e1c9a60.png)
 
 3. Once authenticated, your repository is successfully connected.
 
