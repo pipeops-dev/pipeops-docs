@@ -68,6 +68,10 @@ a.navbar__brand {
 display: none !important;
 }
 
+.logo-dark {
+  margin-right: 1rem;
+}
+
 [data-theme='dark'] .logo-dark {
   display: none;
 }
