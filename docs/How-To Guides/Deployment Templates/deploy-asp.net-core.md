@@ -29,7 +29,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/36/select_Template_153461130d.png)
    This will lead to the next stage of configuring the deployment.
 
-1. PipeOps automatically generates a name for the project to be deployed (which can be edited later, see: [How to Edit a Project Name](/docs/intro.md)).Configures a default server and environment for the project deployment.
+1. PipeOps automatically generates a name for the project to be deployed (which can be edited later, see: [How to Edit a Project Name](/docs/intro.md)). Configures a default server and environment for the project deployment.
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/36/project_Summary_90d7f55e2c.png)
    Click **Proceed** to continue to the next stage

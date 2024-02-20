@@ -25,14 +25,14 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
 
 1. Click on the “Proceed” button to access the repository you have configured access to
 
-   ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/33/proceed_4e8dfc66f2.png)
+   ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/37/proceed_e68f16f939.png)
 
 1. For this example, we shall test with the template project provided, which is on the right pane of the screen. Select **PipeOps NodeJs Demo**.
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/33/template_8a1c265404.png)
    This will lead to the next stage of configuring the deployment.
 
-1. PipeOps automatically generates a name for the project to be deployed (which can be edited later, see: [How to Edit a Project Name](/docs/intro.md)).Configures a default server and environment for the project deployment.
+1. PipeOps automatically generates a name for the project to be deployed (which can be edited later, see: [How to Edit a Project Name](/docs/intro.md)). Configures a default server and environment for the project deployment.
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/33/summary_fd223d655a.png)
    Click **Proceed** to continue to the next stage
