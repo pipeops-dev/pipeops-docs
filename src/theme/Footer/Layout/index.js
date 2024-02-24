@@ -13,10 +13,8 @@ export default function FooterLayout({style, links, logo, copyright}) {
             {logo && (
               <div className="margin-bottom--sm">
                 {logo}
-                <p className='footer-subtext'>
-                  Lorem ipsum dolor sit amet consectetur. Faucibus pretium at
-                  morbi id. Cras sem aliquam tellus aenean venenatis id justo
-                  amet consectetur.
+                <p className="footer-subtext">
+                  Automating DevOps with Zest and Zen.
                 </p>
               </div>
             )}
@@ -24,7 +22,7 @@ export default function FooterLayout({style, links, logo, copyright}) {
         )}
         {links}
       </div>
-            {copyright}
+      {copyright}
     </footer>
   );
 }

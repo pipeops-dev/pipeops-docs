@@ -115,7 +115,7 @@ margin: 0 auto;
   width: 6rem;
   margin-bottom: 1em;
   height: 6rem;
-      display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
   background: #18181A;
@@ -145,12 +145,12 @@ margin: 0 auto;
  padding-left: 2em;
  }
 
- .cardVariantTwo span svg:last-child, .cardVariantTwo:hover span svg:first-child {
+ .cardVariantTwo span img:nth-child(2), .cardVariantTwo:hover span svg:first-child {
   display: none;
  }
 
- .cardVariantTwo:hover span svg:last-child {
-  display: inline-block;
+ .cardVariantTwo:hover span img:nth-child(2) {
+  display: flex;
  }
 
 .cardVariantThree div {
