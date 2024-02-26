@@ -9,7 +9,7 @@ Now that your AWS account is connected, let's create your server for development
 ### Step 1: Configure Your Server
 
 1. Choose the deployment environment: **Dev**, **Stage**, or **Prod**.
-2. Choose your preffered server type
+2. Choose your preferred server type
 3. Select your preferred AWS region for deployment.
 4. Click **Proceed** to move to the next step.
 

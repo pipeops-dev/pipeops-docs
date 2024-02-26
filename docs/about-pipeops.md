@@ -19,9 +19,11 @@ We provide a comprehensive suite of services to simplify and streamline your app
 
 - **Automatic Build Triggers:** Say goodbye to manual builds! PipeOps automatically initiates a new build when you push to your GitHub or GitLab repository.
 
+
 2. **CONFIGURE**
 
 - **Setup Your Server to Suit Your Needs:** We set up servers for you with reasonable defaults, but you can also provide custom configurations to meet your specific requirements.
+
 
 3. **SCALE**
 - **Flexible Scalability:** Start with one server and easily scale to thousands worldwide as your needs evolve.
@@ -29,6 +31,7 @@ We provide a comprehensive suite of services to simplify and streamline your app
 - **Deploy Anywhere & Everywhere:** Bring your servers as close to your consumers as possible by selecting from hundreds of edge locations around the globe.
 
 - **Upscale or Downscale as You Wish:** Choose the resources you need for your services, and only pay for what you utilize.
+
 
 4. **MONITOR**
 
