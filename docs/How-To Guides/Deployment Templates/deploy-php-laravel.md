@@ -5,7 +5,7 @@ sidebar_position: 10
 tags: [deployment, guide, php laravel]
 ---
 
-# Deploying PHP Laravel  on PipeOps
+# Deploying PHP Laravel on PipeOps
 
 To deploy PHP Laravel application, you must ensure that you are already Signed up on PipeOps and Signed into your PipeOps account.
 Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and [Sign In](https://console.pipeops.io/auth/signin) to PipeOps
@@ -44,8 +44,9 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
     APP_KEY=base64:HEwBIIcem2OCoHaJevoQXqPD3qnM0Nv6bBSWjHa8HI4=
     APP_DEBUG=true
     APP_URL=http://localhost
-	PORT=8000
+   PORT=8000
    ```
+
    Follow this link on [adding environment environments](/docs/User%20Guides/For%20Developers/manage-env-var) to a project
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/38/build_9f4b4c9ce4.png)
@@ -67,7 +68,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
 1. In returning to the project, we can see all the details of the project that has been configured, and some added information that tells us the status of the project.
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/38/overview_86ba4f276b.png)
-   There are various; [History], [Observability](/docs/User%20Guides/For%20Startups/cluster-observability), [Logs], [Events], [Terminal] and [Settings] are used to monitor, observe, debug and re-configure the project.
+   There are various; [History](/docs/User%20Guides/Project/project-history), [Observability](/docs/User%20Guides/For%20Startups/cluster-observability), [Logs](/docs/User%20Guides/Project/logs-and-events#accessing-logs), [Events](/docs/User%20Guides/Project/logs-and-events#accessing-events), [Terminal] and [Settings](/docs/User%20Guides/Project/project-setting) are used to monitor, observe, debug and re-configure the project.
 
 1. To view the application that was deployed, click the **View Project** link.
 
@@ -83,4 +84,4 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
    1. Single Replica with 0.5 CPU and 512MB RAM ([Scaling and Replication])
    1. Auto Deploy a branch when a code change is checked-in.
 
-To delete a project, use the Delete Project guide [here].
+To delete a project, use the Delete Project guide [here](/docs/User%20Guides/Project/project-actions#delete-project).

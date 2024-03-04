@@ -1,5 +1,6 @@
 ---
 slug: rollback
+sidebar_position: 8
 title: Rollback
 ---
 
@@ -35,6 +36,8 @@ Key aspects of the rollback feature in PipeOps include:
 
 - **Manual Version Selection**: Users have the flexibility to manually select a previous version for rollback, providing full control over deployment management.
 
+![Rollback Page](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/46/Rollback_7e9c90eb84.png)
+
 
 A pop-up appears after clicking on the rollback button, there are 2 ways you can rollback your project.
 
@@ -42,15 +45,19 @@ A pop-up appears after clicking on the rollback button, there are 2 ways you can
 
 If you select the **By Git** tab, you will be able to rollback your project using your git commit history. You can simply select the specific commit that you want to rollback to and click **Rollback** on the bottom-right side of the pop-up page.
 
+![Rollback By Git](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/46/Rollback_By_Git_757041d1ff.png)
+
 
 2. **By Action**
 
 If you select the **By Action** tab, you will be able to rollback your project using your build history. You can simply select the specific build that you want to rollback to and click **Rollback** on the bottom-right side of the pop-up page.
 
+![Rollback By Action](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/46/Rollback_By_Action_70b7d9199d.png)
+
 
 This immediately triggers a redeployment and you get a “**Rollback triggered successfully**” notification. A new deployment is initiated and the notification appears on the bottom left corner of the screen.
 
-
+![Rollback In Progress](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/46/Rollback_In_Progress_f1ccc130cb.png)
 
 After the deployment has been successfully completed, you can view it under deployment history. You can also go to confirm that the version of your project that you rolled back to is now live.
 

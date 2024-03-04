@@ -1,5 +1,6 @@
 ---
 slug: project-actions
+sidebar_position: 7
 title: Project Actions
 ---
 
@@ -21,6 +22,7 @@ To access project actions:
 - Navigate to the main page of your project within PipeOps.
 - Locate the "**Actions**" button and click on it to access project actions.
 
+![Project Actions](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/43/Actions_d80b8a4011.png)
 
 ## Exploring Available Options
 
@@ -54,7 +56,7 @@ It is useful for maintenance tasks or during periods of low activity to save on 
 - A pop-up will appear, prompting you to input the project name to confirm the deletion process.
 - Provide the project name as instructed and click the delete button to finalize the deletion process.
 
-
+![Delete Project](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/43/1_Delete_Project_4865fe9c62.png)
 Ensure careful consideration before deletion, as this action is irreversible.
 
 By following these steps, you can efficiently manage project deployments, maintenance, and resource allocation within PipeOps, ensuring smooth project operations and optimization.

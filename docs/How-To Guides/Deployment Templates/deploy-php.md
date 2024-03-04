@@ -5,9 +5,9 @@ sidebar_position: 5
 tags: [deployment, guide, php]
 ---
 
-# Deploying PHP  on PipeOps
+# Deploying PHP on PipeOps
 
-To deploy PHP  application, you must ensure that you are already Signed up on PipeOps and Signed into your PipeOps account.
+To deploy PHP application, you must ensure that you are already Signed up on PipeOps and Signed into your PipeOps account.
 Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and [Sign In](https://console.pipeops.io/auth/signin) to PipeOps
 
 ## Pre-requisites
@@ -56,7 +56,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
 1. In returning to the project, we can see all the details of the project that has been configured, and some added information that tells us the status of the project.
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/37/project_Overview_26ae3d9fc9.png)
-   There are various; [History], [Observability](/docs/User%20Guides/For%20Startups/cluster-observability), [Logs], [Events], [Terminal] and [Settings] are used to monitor, observe, debug and re-configure the project.
+   There are various; [History](/docs/User%20Guides/Project/project-history), [Observability](/docs/User%20Guides/For%20Startups/cluster-observability), [Logs](/docs/User%20Guides/Project/logs-and-events#accessing-logs), [Events](/docs/User%20Guides/Project/logs-and-events#accessing-events), [Terminal] and [Settings](/docs/User%20Guides/Project/project-setting) are used to monitor, observe, debug and re-configure the project.
 
 1. To view the application that was deployed, click the **View Project** link.
 
@@ -72,4 +72,4 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
    1. Single Replica with 0.5 CPU and 512MB RAM ([Scaling and Replication])
    1. Auto Deploy a branch when a code change is checked-in.
 
-To delete a project, use the Delete Project guide [here].
+To delete a project, use the Delete Project guide [here](/docs/User%20Guides/Project/project-actions#delete-project).

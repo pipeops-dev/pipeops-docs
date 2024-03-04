@@ -1,5 +1,6 @@
 ---
 slug: logs-and-events
+sidebar_position: 4
 title: Logs And Events
 ---
 
@@ -17,6 +18,7 @@ Before delving into Logs and Events, ensure you have the following prerequisites
 ## Accessing Logs
 
 To access project logs:
+
 - Navigate to your project's main page in PipeOps.
 - Click on the "**Logs**" tab to access the project settings dashboard.
 
@@ -30,8 +32,7 @@ Logs are classified based on timeline and severity levels, and users can search 
 
 3. **Customization Options**: Users can customize log settings in PipeOps to tailor the display according to their preferences. This includes filtering logs based on specific criteria, adjusting the level of detail shown, and setting alerts for critical events.
 
-
-
+![Project Logs](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/42/Logs_6d73a5f99a.png)
 
 ## Accessing Events
 
@@ -50,6 +51,7 @@ They are categorized by severity levels, allowing users to prioritize their resp
 
 3. **Actionable Insights**: Events in PipeOps provide actionable insights into system performance and security incidents. Analyzing events data helps users identify areas for improvement, implement proactive measures, and optimize workflows.
 
+![Project Events](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/42/Events_2f1ab4058e.png)
 
 
 In summary, PipeOps offers powerful logging and event management tools for efficient troubleshooting and system optimization. With detailed logs and categorized events, users can monitor, analyze, and respond effectively to project activities. Through customizable log views and real-time event notifications, PipeOps ensures smooth project oversight and system stability.

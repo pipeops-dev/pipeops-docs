@@ -1,5 +1,6 @@
 ---
 slug: project-history
+sidebar_position: 2
 title: Project History
 ---
 
@@ -30,7 +31,7 @@ Your deployment history consists of the following information per each deploymen
 - **Created at:** This shows when the deployment happened. It gives you a timeline of deployments, so you can see when things were done and spot any patterns.
 - **Status:** This tells you if the deployment was successful or if there were any issues. It's an important way to check if everything went smoothly with each deployment.
 
-
+![Project History](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/44/Project_History_4edba7def5.png)
 
 By leveraging the project history feature, users gain effortless access to essential deployment information, empowering them to:
 
