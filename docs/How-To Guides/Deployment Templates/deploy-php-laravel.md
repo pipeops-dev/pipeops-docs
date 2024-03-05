@@ -47,7 +47,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
    PORT=8000
    ```
 
-   Follow this link on [adding environment environments](/docs/User%20Guides/For%20Developers/manage-env-var) to a project
+   Follow this link on [adding environment environments](/docs/User%20Guides/Project/project-setting#environment-variable) to a project
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/38/build_9f4b4c9ce4.png)
    Click the **Deploy Project** button to start the build and deploy the project.
