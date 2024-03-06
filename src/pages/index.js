@@ -54,7 +54,6 @@ export default function Home() {
       title: "Overview",
       description: "Find out what this docs is about in a summarized manner.",
       icon: <SearchFile />,
-      // iconVariant: ViewGradient,
       url: "/docs/intro",
     },
     {
@@ -62,15 +61,13 @@ export default function Home() {
       description:
         "You can get help via our well detailed guides and tutorials",
       icon: <Bookmark />,
-      // iconVariant: GuidesGradient,
-      url: "/docs/category/how-to-guides",
+      url: "/docs/category/user-guides",
     },
     {
       title: "Changelogs",
       description:
         "See a list of our previous and current versions of changelogs",
       icon: <Changelog />,
-      // iconVariant: LogGradient,
       url: "/docs/category/changelogs",
     },
   ];

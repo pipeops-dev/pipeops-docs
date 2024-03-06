@@ -16,6 +16,9 @@ Below is an example of the teams view page in PipeOps:
 
 ![Teams View](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/39/access_teams_f126d3e595.png)
 
+![Teams View2](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/General_Settings_3_d1e719d399.png)
+
+
 ## Viewing Team Members
 
 To view the members of a specific team, simply click on the desired team. The image below provides a visual representation of the members within a specific team:
