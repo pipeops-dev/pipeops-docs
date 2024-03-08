@@ -1,13 +1,13 @@
 ---
 slug: developer-project-deployment
-title: Developer Project Deployment
+title: Project Deployment
 tags: [deployment, guide, reactjs]
 sidebar_position: 2
 ---
 
-# Deploying A Project As A Developer
+# Deploying A Project
 
-In this section, we will walk through deploying a project as a developer, using a developer account. We will be using a sample react application for this deployment, showing swift and effortless deployments are on PipeOps.
+In this section, we will walk through deploying a project. We will be using a sample react application for this deployment, showing swift and effortless deployments are on PipeOps.
 
 ## Prerequisites:
 

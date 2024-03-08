@@ -30,7 +30,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/37/template_80f3b090ba.png)
    This will lead to the next stage of configuring the deployment.
 
-1. PipeOps automatically generates a name for the project to be deployed (which can be edited later, see: [How to Edit a Project Name](/docs/intro.md)). Configures a default server and environment for the project deployment.
+1. PipeOps automatically generates a name for the project to be deployed (which can be edited later, see: [How to Edit a Project Name](/docs/User%20Guides/Project/project-setting#general-settings)). Configures a default server and environment for the project deployment.
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/37/project_Summary_ae33302432.png)
    Click **Proceed** to continue to the next stage
@@ -56,7 +56,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
 1. In returning to the project, we can see all the details of the project that has been configured, and some added information that tells us the status of the project.
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/37/project_Overview_26ae3d9fc9.png)
-   There are various; [History](/docs/User%20Guides/Project/project-history), [Observability](/docs/User%20Guides/For%20Startups/cluster-observability), [Logs](/docs/User%20Guides/Project/logs-and-events#accessing-logs), [Events](/docs/User%20Guides/Project/logs-and-events#accessing-events), [Terminal] and [Settings](/docs/User%20Guides/Project/project-setting) are used to monitor, observe, debug and re-configure the project.
+   There are various; [History](/docs/User%20Guides/Project/project-history), [Observability](/docs/User%20Guides/Host%20On/Host%20on%20Cloud%20Provider/cluster_observability.md), [Logs](/docs/User%20Guides/Project/logs-and-events#accessing-logs), [Events](/docs/User%20Guides/Project/logs-and-events#accessing-events), [Terminal](/docs/User%20Guides/Project/terminal.md) and [Settings](/docs/User%20Guides/Project/project-setting) are used to monitor, observe, debug and re-configure the project.
 
 1. To view the application that was deployed, click the **View Project** link.
 
