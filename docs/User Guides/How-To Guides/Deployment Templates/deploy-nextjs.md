@@ -59,7 +59,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/35/overview_ebc3bc62d7.png)
 
-There are various; [History], [Observability](/docs/User%20Guides/For%20Startups/cluster-observability), [Logs], [Events], [Terminal] and [Settings] are used to monitor, observe, debug and re-configure the project.
+There are various; [History](/docs/User%20Guides/Project/project-history), [Observability](/docs/User%20Guides/For%20Startups/cluster-observability), [Logs](/docs/User%20Guides/Project/logs-and-events#accessing-logs), [Events](/docs/User%20Guides/Project/logs-and-events#accessing-events), [Terminal] and [Settings](/docs/User%20Guides/Project/project-setting) are used to monitor, observe, debug and re-configure the project.
 
 1. To view the application that was deployed, click the **View Project** link.
 
@@ -75,4 +75,4 @@ There are various; [History], [Observability](/docs/User%20Guides/For%20Startups
    1. Single Replica with 0.5 CPU and 512MB RAM ([Scaling and Replication])
    1. Auto Deploy a branch when a code change is checked-in.
 
-To delete a project, use the Delete Project guide [here].
+To delete a project, use the Delete Project guide [here](/docs/User%20Guides/Project/project-actions#delete-project).

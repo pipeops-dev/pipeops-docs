@@ -16,7 +16,7 @@ Our sample project for deployment contains a **Dockerfile**
 
 ## Connect to Your Repo
 
-If you haven't already connected your repository, follow the steps in [Step 3 - Connect a Repository](connect-repo.md) to ensure your repo is linked to your account.
+If you haven't already connected your repository, follow the steps in [Step 2 - Connect a Repository](connect-repo.md) to ensure your repo is linked to your account.
 
 ## Select Repository Account and Organisation
 

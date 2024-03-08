@@ -15,7 +15,7 @@ To view the list of available workspaces and switch between them, follow these s
 1. Click on the "Workspace" tab in the navbar.
 2. A dropdown menu will appear, displaying the list of workspaces available to you.
 
-![Workspace Dropdown](https://docs.pipeops.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffirst_view.4c5a8fd4.png&w=1920&q=75)
+![Workspace Dropdown](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/40/workspace_7606f4a4a4.png)
 
 The image above provides an example of the workspace dropdown, allowing you to choose from the available workspaces associated with your account.
 
@@ -26,7 +26,7 @@ In addition to switching between existing workspaces, PipeOps also empowers you 
 1. Click on the "Create New Workspace" button located in the workspace list dropdown.
 2. A form will be displayed, prompting you to provide the necessary information for the new workspace.
 
-![Create New Workspace Form](https://docs.pipeops.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcreate_workspace.f7cc0e91.png&w=1920&q=75)
+![Create New Workspace Form](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/40/create_workspace_1aa307b151.png)
 
 The image above illustrates the form that will appear when creating a new workspace. Ensure to fill in the required details, such as a descriptive name for the workspace.
 
