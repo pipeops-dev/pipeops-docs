@@ -13,8 +13,7 @@ This documentation provides an overview of working with environments in PipeOps.
 Before delving into viewing and manipulating Environments, ensure you have the following prerequisites:
 
 1. **A PipeOps account**. Use the following link to sign up to PipeOps if you do not currently have an account.
-2. **Startup Plan Subscription**. To use environment tools, you need a PipeOps account on the startup plan. This level gives extra features, like making and adjusting environments for your project.
-3. **A deployed project**. This can be a PipeOps template or a project from your Git (Github, Gitlab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
+2. **A deployed project**. This can be a PipeOps template or a project from your Git (Github, Gitlab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
 
 ## Accessing Environments
 

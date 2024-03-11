@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Developer Account Setup
+# Account Setup
 
 Connecting a repository to your account is essential for seamless deployment. If you created your account using any of the repository providers (GitHub, GitLab, Bitbucket), you can skip this step, as your account is already linked.
 
