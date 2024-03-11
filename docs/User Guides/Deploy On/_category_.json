@@ -1,5 +1,5 @@
 {
-  "label": "Host On",
+  "label": "Deployment Path",
   "position": 2,
   "link": {
     "type": "generated-index",

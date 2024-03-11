@@ -25,20 +25,6 @@ To access any of the following features, click on the button on the top right en
 
   ![Profile connect provider](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/27/git_Provider_673490ebd3.png)
 
-### Subscription Plans
-
-- **User subscriotion plan:**
-  Choose your prefered plan from our list of cheap subcrioption plans for developers and startups. This can be billed monthly or annually (with a discount)
-
-  ![Subscription plan](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/27/subscription_f0c64a4518.png)
-
-### Billing
-
-- **Billing Settings:**
-  Customize your billing preferences on Stripe effortlessly. Adjust settings related to payment methods, invoicing, and other billing details according to your choice.
-
-  ![Billing settings](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/27/billing_c07b7292ee.png)
-
 ## Teams
 
 ### Create a Team
