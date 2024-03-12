@@ -36,7 +36,7 @@ CMD ["python", "manage.py", "0.0.0.0:5000"]
 
 ## Deploy Your Project
 
-Assuming you have completed our [get started guide](/docs/User%20Guides/Host%20On/Host%20on%20PipeOps/dev-account-setup.md), but if not, proceed to connect your PipeOps account to your preferred git provider and select your project. In the image below, you'll find the necessary configurations for your Django project. After completing these configurations, click on the "Deploy Project" button to initiate the deployment.
+Assuming you have completed our [get started guide](/docs/User%20Guides/Deploy%20On/PipeOps/dev-account-setup.md), but if not, proceed to connect your PipeOps account to your preferred git provider and select your project. In the image below, you'll find the necessary configurations for your Django project. After completing these configurations, click on the "Deploy Project" button to initiate the deployment.
 
 ![2.png](https://res.cloudinary.com/djhh4kkml/image/upload/v1678874959/Pipeops/django_u8mv1l.png)
 

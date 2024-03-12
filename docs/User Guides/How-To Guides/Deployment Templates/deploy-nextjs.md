@@ -59,7 +59,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/35/overview_ebc3bc62d7.png)
 
-There are various; [History](/docs/User%20Guides/Project/project-history), [Observability](/docs/User%20Guides/Host%20On/Host%20on%20Cloud%20Provider/cluster_observability.md), [Logs](/docs/User%20Guides/Project/logs-and-events#accessing-logs), [Events](/docs/User%20Guides/Project/logs-and-events#accessing-events), [Terminal](/docs/User%20Guides/Project/terminal.md) and [Settings](/docs/User%20Guides/Project/project-setting) are used to monitor, observe, debug and re-configure the project.
+There are various; [History](/docs/User%20Guides/Project/project-history), [Observability](/docs/User%20Guides/Deploy%20On/Cloud%20Provider/cluster_observability.md), [Logs](/docs/User%20Guides/Project/logs-and-events#accessing-logs), [Events](/docs/User%20Guides/Project/logs-and-events#accessing-events), [Terminal](/docs/User%20Guides/Project/terminal.md) and [Settings](/docs/User%20Guides/Project/project-setting) are used to monitor, observe, debug and re-configure the project.
 
 1. To view the application that was deployed, click the **View Project** link.
 

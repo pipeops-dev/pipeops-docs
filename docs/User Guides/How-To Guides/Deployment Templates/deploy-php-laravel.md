@@ -68,7 +68,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
 1. In returning to the project, we can see all the details of the project that has been configured, and some added information that tells us the status of the project.
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/38/overview_86ba4f276b.png)
-   There are various; [History](/docs/User%20Guides/Project/project-history), [Observability](/docs/User%20Guides/Host%20On/Host%20on%20Cloud%20Provider/cluster_observability.md), [Logs](/docs/User%20Guides/Project/logs-and-events#accessing-logs), [Events](/docs/User%20Guides/Project/logs-and-events#accessing-events), [Terminal](/docs/User%20Guides/Project/terminal.md) and [Settings](/docs/User%20Guides/Project/project-setting) are used to monitor, observe, debug and re-configure the project.
+   There are various; [History](/docs/User%20Guides/Project/project-history), [Observability](/docs/User%20Guides/Deploy%20On/Cloud%20Provider/cluster_observability.md), [Logs](/docs/User%20Guides/Project/logs-and-events#accessing-logs), [Events](/docs/User%20Guides/Project/logs-and-events#accessing-events), [Terminal](/docs/User%20Guides/Project/terminal.md) and [Settings](/docs/User%20Guides/Project/project-setting) are used to monitor, observe, debug and re-configure the project.
 
 1. To view the application that was deployed, click the **View Project** link.
 

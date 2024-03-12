@@ -51,33 +51,33 @@ After submitting the registration form, you will be redirected to a page request
 
 Before completing the registration, we want to tailor your experience with PipeOps to suit your needs. You would answer the following questions to configure your workspace:
 
-![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/questions_bcfece1f62.png)
-
 1. **Workspace Name:**
 
-   - What would you like to call your Workspace?
-     ```
-     Workspace name: [__________]
-     ```
+   - This section prompts you to choose a name for your workspace. The workspace name helps you organize and distinguish your projects within PipeOps.
 
-2. **PipeOps Usage:**
+----attach onboarding-1 image
 
-   - What will you like to use PipeOps as?
-     ```
-     Developer or Startup?
-     ```
+2. **Your role/Job Title:**
 
-3. **Your Deployments (As a developer):**
-   - What do you plan to deploy on PipeOps?
-4. **Your Role (As a startup):**
+   - Here, you can specify your role or job title, which provides context for your usage of PipeOps. Whether you're a software developer, founder, or DevOps engineer, identifying your role will help us serve you better.
 
-   - What is your role?
+------attach onboarding-2 image
 
-5. **Goals with PipeOps (As a startup):**
-   - What do you want to achieve with PipeOps?
+3. **Goal with PipeOps:**
+   - This section helps clarify your objectives for using PipeOps. You can select from options such as exploring PipeOps features for companies or deploying a simple project to the cloud. Understanding your goals allows us to provide relevant guidance and support.
+
+-----attach onboarding-3 image
+
+4. **Discovering PipeOps:**
+   - This section inquires about how you found out about PipeOps. Whether through Linkedin, a goole search, or another avenue, knowing how users discover PipeOps helps us improve and reach more people.
+
+-----attach onboarding-4 image
 
 Once you've answered these questions, your workspace will be configured accordingly, providing a personalized experience tailored to your specific requirements.
 
 ## Step 8: Complete Registration
 
 After customizing your workspace, you're now ready to complete the registration process. Review the information you've provided, make any necessary adjustments, and click the "Finish" button.
+
+
+You are now set to proceed to creating your server with PipeOps. Head to the **Deployment Path** section for guidance.

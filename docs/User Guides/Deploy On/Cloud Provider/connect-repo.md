@@ -26,4 +26,4 @@ Connecting a repository to your account is essential for seamless deployment. If
 ### Note
 - Connecting your repository allows for automatic deployment and other repository-related functionalities.
 
-Congratulations! Your repository is now linked to your account. You can proceed with [deploying your first project](project-deployment) and leveraging the full power of our platform.
+Congratulations! Your repository is now linked to your account. You can proceed with deploying your first project and leveraging the full power of our platform.
