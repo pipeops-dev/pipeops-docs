@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: intro
+slug: overview
 title: Overview
 ---
 
@@ -14,7 +14,7 @@ Welcome to PipeOps, your go-to platform for seamless application and cluster dep
 
 If you're new to PipeOps, the following resources will help you get started quickly:
 
-- [User Registration Guide](/docs/User%20Guides/user-registration.md): Easily set up your PipeOps environment.
+- [User Registration Guide](/docs/user-guides/user-registration.md): Easily set up your PipeOps environment.
 - [How-To Guides](/docs/category/tutorials): Dive into a simple tutorial to deploy your first application.
 
 ## Features

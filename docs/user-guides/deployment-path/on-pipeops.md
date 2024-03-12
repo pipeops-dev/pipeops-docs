@@ -1,7 +1,7 @@
 ---
-slug: creating-your-server
+slug: on-pipeops
 sidebar_position: 1
-title: Creating Your Server
+title: On PipeOps
 ---
 
 In this section, we'll guide you through setting up your PipeOps account using one of PipeOps' own servers. Follow these steps to configure your server and seamlessly deploy your applications.

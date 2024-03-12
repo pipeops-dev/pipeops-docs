@@ -1,8 +1,8 @@
 ---
-slug: developer-project-deployment
+slug: project-deployment
 title: Project Deployment
 tags: [deployment, guide, reactjs]
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Deploying A Project
@@ -19,6 +19,30 @@ In this section, we will walk through deploying a project. We will be using a sa
 1. On your dashboard, under the "My projects" tab, click on the "Deploy a new Project" button and select "Web project."
 
 ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/24/new_Project_29ea7d1e9a.png)
+
+Connecting a repository to your account is essential for seamless deployment. If you created your account using any of the repository providers (GitHub, GitLab, Bitbucket), you can skip this step, as your account is already linked.
+
+### Step 1: Check Repository Connection
+
+- If you created your account with GitHub, GitLab, or Bitbucket, your repository is already linked.
+- You can proceed to the next step if your account is pre-linked.
+
+### Step 2: Connect Repository
+
+1. If you need to connect a repository manually, click on your preferred repository provider (GitHub, GitLab, Bitbucket).
+
+   ![Repository Provider Selection](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/30/connect_Repo_db9ef645c0.png)
+
+2. Authenticate your account to establish a connection between your repository provider and your dashboard.
+
+   ![Repository Authentication](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/30/connected_Repo_19af41e4b2.png)
+
+3. Once authenticated, your repository is successfully connected.
+
+### Note
+- Connecting your repository allows for automatic deployment and other repository-related functionalities.
+
+Congratulations! Your repository is now linked to your account. You can proceed with deploying your first project and leveraging the full power of our platform.
 
 1. Select "Linked repository", then select the "Select repo source" drop-down. Choose the repo you will use for the project. If you would like to use a different repository, click on "Link new repo" and select from any of the repo providers.
 2. Select your repo organization from the "Select organization" drop down.

@@ -79,5 +79,4 @@ Once you've answered these questions, your workspace will be configured accordin
 
 After customizing your workspace, you're now ready to complete the registration process. Review the information you've provided, make any necessary adjustments, and click the "Finish" button.
 
-
-You are now set to proceed to creating your server with PipeOps. Head to the **Deployment Path** section for guidance.
+You are now set to proceed with deploying your server either on PipeOps or a cloud provider. Head to the **Deployment Path** section for guidance.

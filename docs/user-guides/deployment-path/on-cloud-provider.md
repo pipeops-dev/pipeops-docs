@@ -1,7 +1,7 @@
 ---
-slug: configure-cloud-provider
+slug: on-cloud-provider
 sidebar_position: 1
-title: Configure Your Cloud Provider
+title: On Cloud Provider
 ---
 
 In this section, we will show how you can set up your PipeOps account using your cloud Provider. Follow these steps to set up your account and seamlessly deploy your applications on AWS.
