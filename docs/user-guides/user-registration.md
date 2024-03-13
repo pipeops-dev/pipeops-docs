@@ -12,13 +12,17 @@ Welcome to PipeOps! In this guide, we'll walk you through the simple and seamles
 
 Open your preferred web browser and navigate to the pipeops home page page. You can use the direct URL: [https://pipeops.io](https://pipeops.io).
 
-![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/homepage_d3d284d5fd.png)
+<!-- ![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/homepage_d3d284d5fd.png) -->
+
+<div className="bg1"><img src="https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/homepage_d3d284d5fd.png" alt="PipeOps Homepage" /></div>
 
 ## Step 2: Visit the Registration Page
 
 To begin the registration process, click on the 'Deploy app' or 'Deploy a free app' button on the top right corner, or the middle of your screen. This would redirect you to the pipeops signin console. Click on the 'Create a new account here' link, and begin your registration. Or use the direct URL: [https://console.pipeops.io/auth/signup](https://console.pipeops.io/auth/signup).
 
-![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/homepage1_331e37d64b.png)
+<!-- ![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/homepage1_331e37d64b.png) -->
+
+<div className="bg1"><img src="https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/homepage1_331e37d64b.png" alt="PipeOps Homepage" /></div>
 
 ## Step 3: Sign In Options
 
@@ -47,7 +51,9 @@ Create a secure password for your account. A strong password typically includes 
 
 After submitting the registration form, you will be redirected to a page requesting for your registration OTP. Check your email inbox for a verification message containing the token, paste into the box and proceed.
 
-![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/otp_a12ad0250c.png)
+<!-- ![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/otp_a12ad0250c.png) -->
+
+<div className="bg1"><img src="https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/otp_a12ad0250c.png" alt="PipeOps Homepage" /></div>
 
 ## Step 7: Customize Your Workspace
 
