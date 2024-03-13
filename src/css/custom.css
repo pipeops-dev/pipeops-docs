@@ -321,6 +321,16 @@ footer.footer img.footer__logo {
   height: 2rem;
 }
 
+.bg1 {
+  height: fit-content;
+  padding: 2em;
+  background: url('https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/47/three_gradient_bg_314a84e461.png') no-repeat center;
+}
+
+img {
+  border-radius: 10px;
+}
+
 footer.footer .footer-subtext {
   color: #A0A0A0;
   font-size: 0.875rem;

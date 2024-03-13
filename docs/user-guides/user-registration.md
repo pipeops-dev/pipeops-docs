@@ -31,7 +31,9 @@ In the 'Create an account' sign up box, you have 4 options to sign up.
 
 In the first 3 options, you will need to enter your credentials to allow pipeops connect with your account. You also will not need to connect to that repository provider later if you already chose it as your sign up method.
 
-![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/signin_b8cfb0bcd8.png)
+<!-- ![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/signin_b8cfb0bcd8.png) -->
+
+<div className="bg1"><img src="https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/signuppage_b05d421a26.png" alt="PipeOps Sign Up page" /></div>
 
 ## Step 4: Provide Your Email Address
 
