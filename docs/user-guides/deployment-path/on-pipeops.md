@@ -38,5 +38,12 @@ After selecting the location for your server, it's time to tailor it to your spe
 
 ----Attach Image(Hosting-3)
 
-By customizing these aspects of your server, you can optimize its performance and resource allocation to meet the specific demands of your applications and workload. Adjust these settings as needed to achieve the ideal balance between performance, cost-effectiveness, and scalability for your projects.
+By customizing these aspects of your server, you can optimize its performance and resource allocation to meet the specific demands of your applications and workload.
 
+Once you've decided on your desired server specification, PipeOps will automatically check if your credit balance covers the cost. If your credits are sufficient and you opt to use them, the transaction will be deducted from your credit balance without any additional charges. 
+
+However, if you don't have enough credits for your desired server specification, you'll be directed to a payment portal where you can make the necessary payment to access seamless deployments with PipeOps.
+
+### Step 4: Proceed
+
+After successfully making payment for your server, you'll receive a confirmation stating "Congratulations! Your subscription is active." Click on the **Done** button to proceed to the next steps in the setup process.

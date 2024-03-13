@@ -21,6 +21,11 @@ Here you can configure your PipeOps account plan. this will determine the number
 ---Attach Image
 
 
-### Step 7: Proceed
+Once you've selected your desired plan, PipeOps will automatically check if your credit balance covers the cost. If your credits are sufficient and you opt to use them, the transaction will be deducted from your credit balance without any additional charges. 
 
-1. With the "Account Connected" confirmation, click on the **Proceed** button to move to the next steps in the setup process.
+However, if you don't have enough credits for your desired plan, you'll be directed to a payment portal where you can make the necessary payment to access seamless deployments with PipeOps.
+
+
+### Step 3: Proceed
+
+After successfully subscribing to a plan, you'll receive a confirmation stating "Congratulations! Your subscription is active." Click on the **Done** button to proceed to the next steps in the setup process.
