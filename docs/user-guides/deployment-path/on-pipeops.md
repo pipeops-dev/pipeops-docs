@@ -12,7 +12,7 @@ In this section, we'll guide you through setting up your PipeOps account using o
 2. You'll be prompted to choose where you want to create your server.
 3. Select "**On PipeOps**" as your server creation method.
 
-   ----Attach Image(Hosting-1)
+   ![Choose path](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Deploy_On_Pipeops_be984335cd.png)
 
 ### Step 2: Decide On The Physical Location Of Your Server
 
@@ -20,7 +20,7 @@ You'll then be directed to:
 1. Choose a server name.
 2. Select your server location. We've implemented a geo-location pricing model to ensure you're billed in your local currency, shielding you from exchange rate fluctuations.
 
-----Attach Image(Hosting-2)
+   ![Choose region](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Choose_Region_eb8ef21a43.png)
 
 ### Step 3: Customize Your Server
 
@@ -35,14 +35,17 @@ After selecting the location for your server, it's time to tailor it to your spe
 3. **Storage**:
    - Determine the storage capacity for your server, which includes both the operating system and data storage. Consider the size of your applications and the amount of data they generate to ensure you have adequate storage space. You can also choose between different storage types, such as solid-state drives (SSD) or hard disk drives (HDD), depending on performance and cost considerations.
 
-
-----Attach Image(Hosting-3)
+   ![Customize Your Server](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Choose_Specs_c908e16387.png)
 
 By customizing these aspects of your server, you can optimize its performance and resource allocation to meet the specific demands of your applications and workload.
 
-Once you've decided on your desired server specification, PipeOps will automatically check if your credit balance covers the cost. If your credits are sufficient and you opt to use them, the transaction will be deducted from your credit balance without any additional charges. 
+Once you've decided on your desired server specification, PipeOps will automatically check if your credit balance covers the cost. 
 
-However, if you don't have enough credits for your desired server specification, you'll be directed to a payment portal where you can make the necessary payment to access seamless deployments with PipeOps.
+if you don't have enough credits for your desired server specification, you'll be directed to a payment portal where you can make the necessary payment to access seamless deployments with PipeOps.
+
+![Payment modal](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Payment_Confirmation_7fff228669.png)
+
+However, if your credits are sufficient, the transaction will be deducted from your credit balance without any additional charges. 
 
 ### Step 4: Proceed
 

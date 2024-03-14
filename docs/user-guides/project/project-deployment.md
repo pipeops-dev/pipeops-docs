@@ -14,7 +14,7 @@ In this section, we will walk through deploying a project. We will be using a sa
 - Basic understanding of React and web development concepts.
 - [Navigate to your PipeOps dashboard](https://console.pipeops.io/dashboard/projects).
 
-### Step 1: Connect To Your Next.js Project
+### Step 1: Deploying Your Project
 
 1. On your dashboard, under the "My projects" tab, click on the "Deploy a new Project" button and select "Web project."
 

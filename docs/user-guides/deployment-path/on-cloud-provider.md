@@ -1,6 +1,6 @@
 ---
 slug: on-cloud-provider
-sidebar_position: 1
+sidebar_position: 2
 title: On Cloud Provider
 ---
 
@@ -12,18 +12,20 @@ In this section, we will show how you can set up your PipeOps account using your
 2. You'll be prompted to choose where you want to create your server.
 3. Select "**On Cloud Provider**" as your server creation method.
 
-   ----Attach Image
+   ![Choose path](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Deploy_On_Cloud_d5e1edc1a2.png)
 
 ### Step 2: Choose Your Cloud Server Management Level
 
 Here you can configure your PipeOps account plan. this will determine the number of environments, servers, team seats and deployment that would be available to you. You can select either the StartUp, Growth or Enterprise plan.
 
----Attach Image
+![Server Management Level](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Choose_Tier_37f13610a8.png)
 
 
-Once you've selected your desired plan, PipeOps will automatically check if your credit balance covers the cost. If your credits are sufficient and you opt to use them, the transaction will be deducted from your credit balance without any additional charges. 
+Once you've selected your desired plan, PipeOps will automatically check if your credit balance covers the cost. If you don't have enough credits for your desired plan, you'll be directed to a payment portal where you can make the necessary payment to access seamless deployments with PipeOps.
 
-However, if you don't have enough credits for your desired plan, you'll be directed to a payment portal where you can make the necessary payment to access seamless deployments with PipeOps.
+![Payment modal](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Payment_Confirmation_7fff228669.png)
+
+ However, if your credits are sufficient, the transaction will be deducted from your credit balance without any additional charges. 
 
 
 ### Step 3: Proceed
