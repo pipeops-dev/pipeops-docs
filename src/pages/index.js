@@ -54,7 +54,7 @@ export default function Home() {
       title: "Overview",
       description: "Find out what this docs is about in a summarized manner.",
       icon: <SearchFile />,
-      url: "/docs/intro",
+      url: "/docs/overview",
     },
     {
       title: "Guides & Tutorials",
