@@ -31,3 +31,21 @@ Once you've selected your desired plan, PipeOps will automatically check if your
 ### Step 3: Proceed
 
 After successfully subscribing to a plan, you'll receive a confirmation stating "Congratulations! Your subscription is active." Click on the **Done** button to proceed to the next steps in the setup process.
+
+### Step 5: Configure 
+
+1. On the confirmation, agree to create the server.
+2. The platform will display the progress of your server creation on the screen.
+
+   ![Server Creation Progress](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/creation_In_Progress_3fab10c0e8.png)
+
+### Step 6: Completion and Proceed
+
+1. After the server creation is complete, a confirmation message will appear.
+2. Click **Proceed** to move forward in the setup process.
+
+    ![Server Creation Successful](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/server_Created_dd33edd741.png)
+
+### Step 7: Proceed to project deployment
+
+See the [project deployment guide](/docs/user-guides/project/project-deployment.md) for a comprehensive guide to getting your applications up and running with PipeOps
