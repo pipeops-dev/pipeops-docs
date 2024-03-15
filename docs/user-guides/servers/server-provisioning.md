@@ -1,7 +1,7 @@
 ---
-slug: cluster-provisioning
+slug: server-provisioning
 sidebar_position: 2
-title: Cluster Provisioning
+title: Server Provisioning
 ---
 
 In this section, we will show how you can set up your PipeOps account and use your cloud Provider to create a server. Follow these steps to set up your account and seamlessly provision your server on AWS.
@@ -33,9 +33,9 @@ You will be redirected to select your server hosting platform. See the [On Cloud
 
 After confirming your subscription, proceed to choose your cloud Provider
 
-If you have connected your AWS account to PipeOps already, skip to [step 6](/docs/user-guides/servers/cluster-provisioning#step-6-configure-your-server) of this guide
+If you have connected your AWS account to PipeOps already, skip to [step 6](/docs/user-guides/servers/server-provisioning#step-6-configure-your-server) of this guide
 
-   ----Attach Image
+----Attach Image
 
 Select **AWS** as your cloud provider (integration to more cloud providers coming soon).
 
@@ -93,6 +93,6 @@ Now that your AWS account is connected, let's create your server for development
 1. After the server creation is complete, a confirmation message will appear.
 2. Click **Proceed** to move forward in the setup process.
 
-    ![Server Creation Successful](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/server_Created_dd33edd741.png)
+   ![Server Creation Successful](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/server_Created_dd33edd741.png)
 
-    ![Created Server](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/server_Overview_e7518cfacb.png)
+   ![Created Server](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/server_Overview_e7518cfacb.png)

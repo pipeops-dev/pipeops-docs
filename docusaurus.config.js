@@ -89,7 +89,7 @@ const config = {
             items: [
               {
                 label: "Overview",
-                to: "/docs/intro",
+                to: "/docs/overview",
               },
             ],
           },
@@ -141,7 +141,5 @@ const config = {
       },
     }),
 };
-
-
 
 export default config;

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
-title: Cluster Observability
-slug: cluster-observability
+title: Server Observability
+slug: server-observability
 ---
 
 # Cluster Observability

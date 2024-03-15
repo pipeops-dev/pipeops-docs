@@ -32,7 +32,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/33/template_8a1c265404.png)
    This will lead to the next stage of configuring the deployment.
 
-1. PipeOps automatically generates a name for the project to be deployed (which can be edited later, see: [How to Edit a Project Name](/docs/User%20Guides/Project/project-setting#general-settings)). Configures a default server and environment for the project deployment.
+1. PipeOps automatically generates a name for the project to be deployed (which can be edited later, see: [How to Edit a Project Name](/docs/user-guides/Project/project-setting#general-settings)). Configures a default server and environment for the project deployment.
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/33/summary_fd223d655a.png)
    Click **Proceed** to continue to the next stage
@@ -56,7 +56,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/33/overview_6db59d7a90.png)
 
-There are various; [History](/docs/User%20Guides/Project/project-history), [Observability](/docs/User%20Guides/Deploy%20On/Cloud%20Provider/cluster_observability.md), [Logs](/docs/User%20Guides/Project/logs-and-events#accessing-logs), [Events](/docs/User%20Guides/Project/logs-and-events#accessing-events), [Terminal](/docs/User%20Guides/Project/terminal.md) and [Settings](/docs/User%20Guides/Project/project-setting) are used to monitor, observe, debug and re-configure the project.
+There are various; [History](/docs/user-guides/project/project-history), [Observability](/docs/user-guides/servers/server-observability), [Logs](/docs/user-guides/Project/logs-and-events#accessing-logs), [Events](/docs/user-guides/Project/logs-and-events#accessing-events), [Terminal](/docs/user-guides/project/terminal) and [Settings](/docs/user-guides/Project/project-setting) are used to monitor, observe, debug and re-configure the project.
 
 1. To view the application that was deployed, click the **View Project** link.
 
@@ -72,4 +72,4 @@ There are various; [History](/docs/User%20Guides/Project/project-history), [Obse
    1. Single Replica with 0.5 CPU and 512MB RAM ([Scaling and Replication])
    1. Auto Deploy a branch when a code change is checked-in.
 
-To delete a project, use the Delete Project guide [here](/docs/User%20Guides/Project/project-actions#delete-project).
+To delete a project, use the Delete Project guide [here](/docs/user-guides/Project/project-actions#delete-project).
