@@ -7,7 +7,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "PipeOps",
+  title: "PipeOps Docs",
   tagline: "Seamless deployment",
   favicon: "img/favicon.ico",
 

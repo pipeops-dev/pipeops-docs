@@ -61,7 +61,7 @@ export default function Home() {
       description:
         "You can get help via our well detailed guides and tutorials",
       icon: <Bookmark />,
-      url: "/docs/category/user-guides",
+      url: "/docs/category/getting-started",
     },
     {
       title: "Changelogs",
@@ -73,7 +73,7 @@ export default function Home() {
   ];
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title} `}
       description="Description will go into a meta tag in <head />"
     >
       <header>
@@ -89,7 +89,7 @@ export default function Home() {
         <section>
           <h2>Get Started</h2>
           <div className={styles.cardsWrapper}>
-            {getStarted.map(({ title, description, url, icon}, index) => (
+            {getStarted.map(({ title, description, url, icon }, index) => (
               <a href={url} key={title} className={styles.cardVariantTwo}>
                 <div>
                   <span>

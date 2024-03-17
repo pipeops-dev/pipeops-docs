@@ -8,13 +8,13 @@ title: Overview
 
 ## Introduction
 
-Welcome to PipeOps, your go-to platform for seamless application and cluster deployment in your cloud provider account. Whether you're a seasoned developer or a newcomer to cloud infrastructure, PipeOps empowers you to efficiently manage and deploy your applications with ease.
+Welcome to PipeOps, your go-to platform for seamless application and server deployment in your cloud provider account. Whether you're a seasoned developer or a newcomer to cloud infrastructure, PipeOps empowers you to efficiently manage and deploy your applications with ease.
 
 ## Getting Started
 
 If you're new to PipeOps, the following resources will help you get started quickly:
 
-- [User Registration Guide](/docs/user-guides/user-registration.md): Easily set up your PipeOps environment.
+- [User Registration Guide](/docs/getting-started/user-registration.md): Easily set up your PipeOps environment.
 - [How-To Guides](/docs/category/tutorials): Dive into a simple tutorial to deploy your first application.
 
 ## Features
@@ -22,7 +22,7 @@ If you're new to PipeOps, the following resources will help you get started quic
 Explore the powerful features that PipeOps offers:
 
 - **Application Deployment**: Easily deploy and manage your applications in your preferred cloud provider.
-- **Cluster Deployment**: Seamlessly provision and manage clusters to support your applications.
+- **Server Deployment**: Seamlessly provision and manage servers to support your applications.
 - **Scalability**: Scale your infrastructure effortlessly to meet the demands of your growing applications.
 - **Automation**: Leverage automation capabilities to streamline repetitive tasks.
 
@@ -42,4 +42,3 @@ Encountering issues? Check our [Troubleshooting Guide](/docs/category/troublesho
 Join our community to connect with other PipeOps users, ask questions, and share your experiences. If you need direct assistance, our support team is here to help. Visit our [Community](https://join.slack.com/t/pipeopscommunity/shared_invite/zt-23gmjrl0k-Pzm2cBgIMTsUu5Az73PYKg) and [Support](https://pipeops.io) pages for more information.
 
 Thank you for choosing PipeOps. Let's streamline your deployment process together!
-
