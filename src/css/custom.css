@@ -272,6 +272,26 @@ h1, h2, h2 strong, h3, h3 strong, h4, h5, h6 {
 h1 {
   font-size: clamp(3rem, 6vw, 3rem) !important;
   font-weight: 600;
+  background: rgba(190,200,255,1);
+  background: linear-gradient(55deg, rgba(240,131,255,1) 0%, rgba(190,200,255,1) 25%, rgba(159,255,214,1) 100%);
+background-clip: text;
+ background-size: 200% 200%;
+-webkit-background-clip: text;
+color: transparent;
+-webkit-text-fill-color: transparent;
+animation: gradient-animation 5s linear infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h2 {
