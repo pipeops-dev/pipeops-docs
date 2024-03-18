@@ -73,4 +73,4 @@ In this next step, the platform will display the progress of your server creatio
 
 ### Step 7: Proceed to project deployment
 
-After successfully creating a server, you can now proceed to deploy your applications into that serer. See the [project deployment guide](/docs/projects/project-deployment.md) for a comprehensive guide to getting your applications up and running with PipeOps.
+After successfully creating a server, you can now proceed to deploy your applications into that server. See the [project deployment guide](/docs/projects/project-deployment.md) for a comprehensive guide to getting your applications up and running with PipeOps.
