@@ -1,8 +1,0 @@
-{
-  "label": "User Guides",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "Discover PipeOps' comprehensive user guide covering registration, onboarding, account settings, and more for effortless cloud infrastructure management."
-  }
-}
