@@ -40,14 +40,18 @@ After selecting the location for your server, it's time to tailor it to your spe
 
    - Determine the storage capacity for your server, which includes both the operating system and data storage. Consider the size of your applications and the amount of data they generate to ensure you have adequate storage space. You can also choose between different storage types, such as solid-state drives (SSD) or hard disk drives (HDD), depending on performance and cost considerations.
 
+You can choose between the **Nova Sapa**, **Nova Pro**, **Nova Duo** and **Nova Chrono** server instances. Each instance comes with varying amounts of VCPU, Memory and storage.
+
+**Replace image**
 ![Customize Your Server](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Choose_Specs_c908e16387.png)
 
 By customizing these aspects of your server, you can optimize its performance and resource allocation to meet the specific demands of your applications and workload.
 
-Once you've decided on your desired server specification, PipeOps will automatically check if your credit balance covers the cost.
+Once you've decided on your desired server instance, PipeOps will automatically check if your credit balance covers the cost.
 
-if you don't have enough credits for your desired server specification, you'll be directed to a payment portal where you can make the necessary payment to access seamless deployments with PipeOps.
+if you don't have enough credits for your desired server instance, you'll be directed to a payment portal where you can make the necessary payment to access seamless deployments with PipeOps.
 
+**Replace image**
 ![Payment modal](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Payment_Confirmation_7fff228669.png)
 
 However, if your credits are sufficient, the transaction will be deducted from your credit balance without any additional charges.
