@@ -33,11 +33,36 @@ After successfully subscribing to a plan, you'll receive a confirmation stating 
 
 ### Step 4: Server Creation in Progress
 
-In this next step, the platform will display the progress of your server creation on the screen.
+If you have your **AWS account** linked already, proceed directly to creating your server.
 
-![Server Creation Progress](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/In_Progress_65b9125d74.png)
+If your **AWS account** is not linked yet, see the [Server Provisioning](/docs/servers/server-provisioning#step-2-connecting-your-aws-account) page to make the necessary connections and come back here to continue on your server creation journey.
 
-### Step 5: Server Creation Complete
+You can create your server for development, staging, or production environments. Each environment has different EC2 instance types and associated prices for the provisioned EKS server.
+
+1. Choose the deployment environment: **Dev**, **Stage**, or **Prod**.
+2. Choose your preferred server type
+3. Select your preferred AWS region for deployment.
+4. Click **Proceed** to move to the next step.
+
+![Configure Server](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/create_Server_4395dd99a4.png)
+
+### Step 5: Confirm Server Configuration
+
+1. A modal will appear, summarizing your server configuration settings.
+2. Review the details carefully to ensure accuracy.
+
+![Server Configuration Summary](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/confirm_Create_Server_0b25266fac.png)
+
+3. Click **Yes Create Server** to proceed with creating your server.
+
+### Step 6: Server creation in progress
+
+After reviewing your server details on the confirmation modal and choose to proceed, another modal will appear showing your server creation progress in realtime.
+
+![Server Creation Progress](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/creation_In_Progress_3fab10c0e8.png)
+
+
+### Step 7: Server Creation Complete
 
 1. After the server creation is complete, a confirmation message will appear.
 2. Click **Proceed** to get to the server overview page of the server you just created.
@@ -46,6 +71,6 @@ In this next step, the platform will display the progress of your server creatio
 
 ![Server Overview](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/Overview_027a244c0c.png)
 
-### Step 7: Proceed to project deployment
+### Step 8: Proceed to project deployment
 
 After successfully creating a server, you can now proceed to deploy your applications into that server. See the [project deployment guide](/docs/projects/project-deployment.md) for a comprehensive guide to getting your applications up and running with PipeOps.
