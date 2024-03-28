@@ -31,7 +31,7 @@ However, if your credits are sufficient, the transaction will be deducted from y
 
 After successfully subscribing to a plan, you'll receive a confirmation stating "Congratulations! Your subscription is active." Click on the **Done** button to proceed to the next steps in the setup process.
 
-### Step 4: Server Creation in Progress
+### Step 4: AWS Account
 
 If you have your **AWS account** linked already, proceed directly to creating your server.
 
