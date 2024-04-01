@@ -1,6 +1,6 @@
-import React from 'react';
-import Logo from '@theme-original/Navbar/Logo';
-import LogoDark from '/static/img/pipeops-dark.svg'
+import React from "react";
+import Logo from "@theme-original/Navbar/Logo";
+import LogoDark from "/static/img/pipeops-dark.svg";
 
 export default function LogoWrapper(props) {
   return (
@@ -8,9 +8,11 @@ export default function LogoWrapper(props) {
       <Logo {...props} />
       <a className="logo-dark" href="/">
         <img
+          width={129}
+          height={30}
           alt="pipeops logo"
           src={
-            "https://pipeops.io/_next/image?url=https%3A%2F%2Fpub-a1fbf367a4cd458487cfa3f29154ac93.r2.dev%2Ffastkoin.png&w=128&q=75"
+            "https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/logo_Dark_673ab8cece.svg"
           }
         />
       </a>

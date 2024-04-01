@@ -2,15 +2,15 @@
 sidebar_position: 1
 ---
 
-# Changelog: Documentation Platform Migration from Strappi to Docusaurus
+# Changelog: Documentation Platform Migration from Strapi to Docusaurus
 
-We are excited to announce a major upgrade to our documentation platform! We have migrated from Strappi to Docusaurus, a modern and user-friendly documentation framework. This change brings a host of new features, improved usability, and enhanced performance. Below is a summary of the key changes and enhancements made during this migration.
+We are excited to announce a major upgrade to our documentation platform! We have migrated from Strapi to Docusaurus, a modern and user-friendly documentation framework. This change brings a host of new features, improved usability, and enhanced performance. Below is a summary of the key changes and enhancements made during this migration.
 
 ## Version: 3.0.0
 ### Release Date: October 23, 2023
 
 ### Added
-- **New Documentation Framework**: Migrated from Strappi to Docusaurus, providing a more intuitive and responsive user interface.
+- **New Documentation Framework**: Migrated from Strapi to Docusaurus, providing a more intuitive and responsive user interface.
 - **Enhanced Navigation**: Improved navigation structure for effortless browsing and finding relevant content.
 - **Mobile Responsiveness**: Docusaurus ensures seamless access to documentation across various devices and screen sizes.
 - **Search Functionality**: Integrated powerful search functionality to quickly locate specific topics or keywords within the documentation.

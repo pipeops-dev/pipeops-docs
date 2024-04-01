@@ -10,7 +10,7 @@
 :root {
   --ifm-color-primary: #825DFF;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.10);
 }
 
 .markdown {
@@ -66,6 +66,10 @@ html:hover::-webkit-scrollbar-thumb {
 
 a.navbar__brand {
 display: none !important;
+}
+
+.logo-dark {
+  margin-right: 1rem;
 }
 
 [data-theme='dark'] .logo-dark {
@@ -169,7 +173,14 @@ a.card:hover {
 
 .menu__list-item--collapsed .menu__caret:before {
     transform: rotateZ(180deg);
-    /* content: '\25B6'; */
+}
+
+.menu__link {
+  font-weight: 300;
+}
+
+.menu__link--active {
+  font-weight: 500;
 }
 
 a.tag_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module {
@@ -204,15 +215,19 @@ a.menu__link, .menu__list-item-collapsible {
   border-radius: 24px;
   height: 3rem;
   background: none;
+  font-weight: 300;
 }
 
 a.menu__link:hover {
   color: #fff;
+  font-weight: 500;
   background: #1F1F21;
+  font-weight: 500;
 }
 
 a.menu__link--active {
   color: #fff;
+  font-weight: 500;
   background: #1F1F21;
 }
 
@@ -236,6 +251,10 @@ ul ul a.menu__link:hover::after, ul ul a.menu__link--active::after {
   background: #825DFF;
 }
 
+ul ul .menu__list-item:not(:first-child) {
+    margin-top: 0.6rem;
+}
+
 .menu__list-item ul {
   border-left: 1px solid #2b2b2d;
 }
@@ -251,11 +270,32 @@ h1, h2, h2 strong, h3, h3 strong, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(3rem, 6vw, 4rem) !important;
+  font-size: clamp(3rem, 6vw, 3rem) !important;
+  font-weight: 600;
+  background: rgba(190,200,255,1);
+  background: linear-gradient(55deg, rgba(240,131,255,1) 0%, rgba(190,200,255,1) 25%, rgba(159,255,214,1) 100%);
+background-clip: text;
+ background-size: 200% 200%;
+-webkit-background-clip: text;
+color: transparent;
+-webkit-text-fill-color: transparent;
+animation: gradient-animation 5s linear infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h2 {
-  font-size: clamp(2rem, 5vw, 2.8rem) !important;
+  font-size: clamp(2rem, 5vw, 2.4rem) !important;
 }
 
 h3.anchor {
