@@ -17,7 +17,7 @@ Once logged in, there are 2 major ways you can create your server. To create a n
 
 ![Dashboard](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/Dashboard_1_393ee1240f.png)
 
-Either of the above will redirect you to a page where you will select your server hosting platform. See the [Deployment Path](/docs/category/deployment-path) to make the necessary connections and come back here to continue on your server creation journey.
+Either of the above will redirect you to a page where you will select your server hosting platform. See [Deployment Path](/docs/category/deployment-path) to make the necessary connections and come back here to continue on your server creation journey.
 
 ![Select Path](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/Select_Path_1_1d8bfb7a63.png)
 
