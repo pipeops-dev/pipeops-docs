@@ -23,11 +23,11 @@ To access Project Migration:
 2. Select the “**Actions**” button to access the project actions dropdown menu
 3. Click on the "**Migrate Project**" button to trigger the migration process.
 
-**attach image**
+<!-- ![Project migration]() -->
 
 A pop-up will appear after clicking on the **Migrate Project** button. Select the server that your project is currently hosted on as well as the server that you would be moving your project to. Click the **Start Migration** button at the bottom of the page to continue.
 
-**attach image**
+<!-- ![Project migration]() -->
 
 Wait for the process to be completed and you will get a notification informing you that the migration process has been successfully completed.
 
