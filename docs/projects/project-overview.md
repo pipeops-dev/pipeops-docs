@@ -19,7 +19,7 @@ Before delving into exploring the Project Overview page, ensure you have the fol
 
 The Project Overview page serves as the default landing page when accessing your project. It offers a convenient dashboard providing basic details about your application at a glance. Here's what you can find on this page:
 
---------Attach image(Project Overview)
+![Project overview page](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/34/overview_75827f76e8.png)
 
 1. **App Status**:
    In the App Status section, you can quickly assess the state of your application. Whether it's live or not, you'll know at a glance. Additionally, you'll have access to the server name and the region where your application is deployed, ensuring you have visibility into its infrastructure.
