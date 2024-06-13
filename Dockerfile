@@ -1,5 +1,6 @@
 ARG NODE_IMAGE=node:lts-alpine
 ARG ENV=production
+ARG PORT
 
 FROM $NODE_IMAGE AS build
 
@@ -20,6 +21,7 @@ WORKDIR /opt/app
 
 # Set environment variable
 ENV NODE_ENV=$ENV
+ENV PORT=$PORT
 
 # Copy package.json and any lockfiles to the working directory.
 COPY package.json yarn.lock ./
@@ -27,11 +29,11 @@ COPY package.json yarn.lock ./
 # Run CI for production
 RUN yarn install --production
 
-EXPOSE 3000
+EXPOSE $PORT
 
 # Copy necessary files from the "builder" stage
 COPY --from=build /opt/app/build ./build
 COPY --from=build /opt/app/docusaurus.config.js .
 
 # Command to run docusaurus
-CMD ["yarn", "run", "serve"]
+CMD ["sh", "-c", "yarn run serve --port $PORT"]
