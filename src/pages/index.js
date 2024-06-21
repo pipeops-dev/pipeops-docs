@@ -5,13 +5,13 @@ import {
   SiSlack,
   SiDiscord,
   SiNextdotjs,
-  SiJavascript,
   SiGoland,
+  SiDjango,
   SiPhp,
   SiVuedotjs,
   SiReact,
   SiLaravel,
-  SiSvelte,
+  SiRust,
 } from "react-icons/si";
 import { SearchFile, Changelog, Bookmark } from "../../static/img";
 
@@ -40,15 +40,48 @@ export default function Home() {
     },
   ];
   const frameworks = [
-    { title: "Javascript", icon: <SiJavascript /> },
-    { title: "React.js", icon: <SiReact /> },
-    { title: "Vue.js", icon: <SiVuedotjs /> },
-    { title: "Next.js", icon: <SiNextdotjs /> },
-    { title: "PHP", icon: <SiPhp /> },
-    { title: "Laravel", icon: <SiLaravel /> },
-    { title: "Golang", icon: <SiGoland /> },
-    { title: "Svelte", icon: <SiSvelte /> },
+    {
+      title: "React.js",
+      icon: <SiReact />,
+      link: "/docs/how-to-guides/deployment-templates/deploy-react-template",
+    },
+    {
+      title: "Vue.js",
+      icon: <SiVuedotjs />,
+      link: "/docs/how-to-guides/deployment-templates/deploy-vuejs-template",
+    },
+    {
+      title: "Next.js",
+      icon: <SiNextdotjs />,
+      link: "/docs/how-to-guides/deployment-templates/deploy-nextjs-template",
+    },
+    {
+      title: "PHP",
+      icon: <SiPhp />,
+      link: "/docs/how-to-guides/deployment-templates/deploy-php-template",
+    },
+    {
+      title: "Laravel",
+      icon: <SiLaravel />,
+      link: "/docs/how-to-guides/deployment-templates/deploy-php-laravel-template",
+    },
+    {
+      title: "Django",
+      icon: <SiDjango />,
+      link: "/docs/how-to-guides/deployment-templates/deploy-a-django-template",
+    },
+    {
+      title: "Golang",
+      icon: <SiGoland />,
+      link: "/docs/how-to-guides/deployment-templates/deploy-golang-template",
+    },
+    {
+      title: "Rust",
+      icon: <SiRust />,
+      link: "/docs/how-to-guides/deployment-templates/deploy-a-rust-template",
+    },
   ];
+
   const getStarted = [
     {
       title: "Overview",
@@ -113,13 +146,13 @@ export default function Home() {
           </div>
           <h2>Some Supported Frameworks</h2>
           <div className={styles.cardsWrapper}>
-            {frameworks.map(({ title, icon }) => (
-              <div key={title} className={styles.cardVariantThree}>
+            {frameworks.map(({ title, icon, link }) => (
+              <a href={link} key={title} className={styles.cardVariantThree}>
                 <div>
                   <h3>{title}</h3>
                   <span>{icon}</span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
           <h2>Community</h2>
