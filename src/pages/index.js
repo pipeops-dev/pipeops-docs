@@ -78,7 +78,7 @@ export default function Home() {
     {
       title: "Rust",
       icon: <SiRust />,
-      link: "",
+      link: "/docs/how-to-guides/deployment-templates/deploy-a-rust-template",
     },
   ];
 
