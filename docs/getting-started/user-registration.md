@@ -31,7 +31,7 @@ In the 'Create an account' sign up box, you have 4 options to sign up.
 
 In the first 3 options, you will need to enter your credentials to allow pipeops connect with your account. You also will not need to connect to that repository provider later if you already chose it as your sign up method.
 
-![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/signin_b8cfb0bcd8.png)
+![PipeOps homepage](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28014413/Screenshot-2024-06-27-223350.png)
 
 
 ## Step 4: Provide Your Email Address
@@ -68,7 +68,7 @@ Before completing the registration, we want to tailor your experience with PipeO
 3. **Goal with PipeOps:**
    - This section helps clarify your objectives for using PipeOps. You can select from options such as exploring PipeOps features for companies or deploying a simple project to the cloud. Understanding your goals allows us to provide relevant guidance and support.
 
-![Goal](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/needs_c09f9b7a53.png)
+![Goal](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28015249/2-2.png)
 
 4. **Discovering PipeOps:**
    - This section inquires about how you found out about PipeOps. Whether through Linkedin, a goole search, or another avenue, knowing how users discover PipeOps helps us improve and reach more people.
