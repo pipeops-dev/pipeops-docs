@@ -19,8 +19,7 @@ Whether you are just continuing your account creation process or just trying to 
 
 You'll then be directed to:
 
-1. Choose a server name.
-2. Select your server location. We've implemented a geo-location pricing model to ensure you're billed in your local currency, shielding you from exchange rate fluctuations.
+1. Select your server location. We've implemented a geo-location pricing model to ensure you're billed in your local currency, shielding you from exchange rate fluctuations.
 
 ![Choose region](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Choose_Region_eb8ef21a43.png)
 
@@ -42,8 +41,7 @@ After selecting the location for your server, it's time to tailor it to your spe
 
 You can choose between the **Nova Sapa**, **Nova Pro**, **Nova Duo** and **Nova Chrono** server instances. Each instance comes with varying amounts of VCPU, Memory and storage.
 
-**Replace image**
-![Customize Your Server](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Choose_Specs_c908e16387.png)
+![Customize Your Server](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/07/02055350/91.png)
 
 By customizing these aspects of your server, you can optimize its performance and resource allocation to meet the specific demands of your applications and workload.
 
@@ -51,8 +49,7 @@ Once you've decided on your desired server instance, PipeOps will automatically 
 
 if you don't have enough credits for your desired server instance, you'll be directed to a payment portal where you can make the necessary payment to access seamless deployments with PipeOps.
 
-**Replace image**
-![Payment modal](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Payment_Confirmation_7fff228669.png)
+![Payment modal](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/07/02055408/92.png)
 
 However, if your credits are sufficient, the transaction will be deducted from your credit balance without any additional charges.
 
