@@ -14,17 +14,11 @@ In this section, we will walk through deploying a project. We will be using a sa
 - Basic understanding of React and web development concepts.
 - [Navigate to your PipeOps dashboard](https://console.pipeops.io/dashboard/projects).
 
-### Step 1: Deploying Your Project
-
-1. On your dashboard, under the "My projects" tab, click on the "Deploy a new Project" button and select "Web project."
-
-![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/24/new_Project_29ea7d1e9a.png)
-
-Connecting a repository to your account is essential for seamless deployment. If you created your account using any of the repository providers (GitHub, GitLab, Bitbucket), you can skip this step, as your account is already linked.
-
 ### Step 1: Check Repository Connection
 
-- If you created your account with GitHub, GitLab, or Bitbucket, your repository is already linked.
+Connecting a repository to your account is essential for seamless deployment.
+
+- If you created your account using any of the repository providers (GitHub, GitLab, Bitbucket), you can skip this step, as your account is already linked.
 - You can proceed to the next step if your account is pre-linked.
 
 ### Step 2: Connect Repository
@@ -44,45 +38,46 @@ Connecting a repository to your account is essential for seamless deployment. If
 
 Congratulations! Your repository is now linked to your account. You can proceed with deploying your first project and leveraging the full power of our platform.
 
-1. Select "Linked repository", then select the "Select repo source" drop-down. Choose the repo you will use for the project. If you would like to use a different repository, click on "Link new repo" and select from any of the repo providers.
-2. Select your repo organization from the "Select organization" drop down.
-3. Select your source repository, and the branch you would like to deploy. In my example, [Ohansck/react-portfolio](https://github.com/ohansck/react-portfolio) and the main branch. Click on proceed.
+1. For this example, we shall test with the template project provided, which is on the right pane of the screen. Select **Pipeops ReactJS**.
 
-![4.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/24/linked_Repo_2ec2af8fb9.png)
+   ![2.png](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/13101848/21.png)
+   This will lead to the next stage of configuring the deployment.
 
-### Step 2: Configure Your Project
+1. PipeOps automatically generates a name for the project to be deployed (which can be edited later, see: [How to Edit a Project Name](/docs/projects/project-setting#general-settings)). Configures a default server and environment for the project deployment.
 
-1. Your project has been created, and your summary dashboard is shown to you. It contains your project name and environment, server, project repository, project source and cost. Leave as default and click proceed.
+   ![2.png](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/13101938/22.png)
+   Click **Proceed** to continue to the next stage
 
-![5.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/35/summary_8b19b61bb6.png)
+1. In the next stage, we shall select the Framework we are building with, and the Build method, in this case we shall choose **ReactJS** and **Node (Static Frontend)** respectively.
 
-1. Your project build settings dashboard is now shown to you. In the build settings > framework dropdown, select ReactJs
-2. Your build method dropdown is automatically set to 'NodeJs (Static frontend) Recommended'. If it is not, please select it as your build framework.
-3. Enter your custom application build command. Use the default if your application builds with
+   ![2.png](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/13102034/23.png)
+   Click the **Deploy Project** button to start the build and deploy the project.
 
-```bash
-npm run build
-```
+1. PipeOps will start the build and deployment process, and show the logs of the build and deployment process, to enable tracking of the process.
 
-1. Enter your custom build path. Leave as default if your application uses a “/build” build path.
-2. If applicable, enter your application's life cycle release command.
-3. Review your configuration settings.
+   ![2.png](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/11205137/14.png)
 
-![6.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/35/build_Settings_66afc8e813.png)
+1. When the deployment is done, you get a notification stating that the deployment is complete and successful
 
-### Step 3: Deploy Your React Application
+   ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/35/deployed_Modal_8ad6a070dd.png)
+   Click the **Got it** button to return to the project
 
-1. Click deploy.
-2. Monitor the logs on the build logs section. After a successful build, click on the "View project" button to view your successfully deployed application.
+1. In returning to the project, we can see all the details of the project that has been configured, and some added information that tells us the status of the project.
 
-![7.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/35/build_Logs_d7cdb4958e.png)
+   ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/35/overview_ebc3bc62d7.png)
 
-### Step 4: Celebrate Your Swift Deployment!
+There are various; [History](/docs/projects/project-history), [Observability](/docs/projects/project-observability), [Logs](/docs/projects/logs-and-events#accessing-logs), [Events](/docs/projects/logs-and-events#accessing-events), [Terminal](/docs/projects/terminal) and [Settings](/docs/projects/project-setting) are used to monitor, observe, debug and re-configure the project.
 
-Congratulations! You have successfully deployed your React application using PipeOps. Your app is now live and accessible to users worldwide.
+1. To view the application that was deployed, click the **View Project** link.
 
-![8.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/35/deployed_Modal_8ad6a070dd.png)
+   ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/35/view_Project_513c97b6f1.png)
 
-![9.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/35/view_Project_513c97b6f1.png)
+1. This will automatically launch the application on a new tab
 
-![10.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//12/10_e678a4ad6b.png)
+1. This setup has some basic configurations applied by default
+   1. Application Network Port
+   1. Network Access Port ([Environment Variable])
+   1. Single Replica with 0.1 CPU and 212MB RAM ([Scaling and Replication])
+   1. Auto Deploy a branch when a code change is checked-in.
+
+To delete a project, use the Delete Project guide [here](/docs/projects/project-actions#delete-project).

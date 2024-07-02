@@ -23,7 +23,7 @@ Here you can configure your PipeOps account plan. this will determine the number
 
 Once you've selected your desired plan, PipeOps will automatically check if your credit balance covers the cost. If you don't have enough credits for your desired plan, you'll be directed to a payment portal where you can make the necessary payment to access seamless deployments with PipeOps.
 
-![Payment modal](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Payment_Confirmation_7fff228669.png)
+![Payment modal](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/07/02055408/92.png)
 
 However, if your credits are sufficient, the transaction will be deducted from your credit balance without any additional charges.
 
