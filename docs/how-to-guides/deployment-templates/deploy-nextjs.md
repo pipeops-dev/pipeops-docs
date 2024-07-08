@@ -15,11 +15,11 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
 1. Create a Workspace where the application will be deployed. You can follow the guide on how to create a Workspace [here](/docs/Collaboration/workspaces#creating-a-new-workspace). If you already have an existing workspace you can use it
 1. Ensure the Git (Github, Gitlab, Bitbucket) integration is done, so that PipeOps can retrieve the repositories.
 1. The source code is available on the Git repository.
-1. The following versions are supported
+<!-- 1. The following versions are supported
    1. 14
    1. 16
    1. 18
-   1. 20
+   1. 20 -->
 
 ## Deploying your App
 
