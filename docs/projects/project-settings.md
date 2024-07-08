@@ -30,10 +30,10 @@ The project settings dashboard is organized into several subsections, each cater
 
 In this section, you can manage basic project details such as:
 
-- **Project Name:** Rename your project.
+- **Project Name:** Rename your project. This also customises your PipeOps domain name for you. For more information on this [click here](/docs/projects/customizing-default-domain)
 - **Custom Domain:** Input a custom domain name for your project.
 
-![Project General Settings](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/45/Project_Settings_General_128e3f7e72.png)
+![Project General Settings](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28040027/5-2.png)
 
 ### Build Settings
 
@@ -43,7 +43,7 @@ Customize the build process with options including:
 - **Build Method:** Select the build method.
 - **Lifecycle Command:** Define the command your project runs on.
 
-![Project Build Settings](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/45/Project_Settings_Build_Settings_64b5d45f39.png)
+![Project Build Settings](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28041021/6-2.png)
 
 ### Source Control
 
@@ -53,18 +53,7 @@ The settings here are subdivided into 2 sections:
 
 2. **Branch Rules:** You can specify if deployments are automatically triggered when you make new changes to a branch in your git (github, gitlab and bitbucket) repository. You can also select a production branch that PipeOps will deploy from.
 
-![Project Source Control](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/45/Project_Settings_Source_Control_e61d25d7cb.png)
-
-### Networking
-
-In this section, you can customize and tailor your project's networking for optimal performance, security, and accessibility
-
-- **Port Configuration:** Set the port your application runs on.
-- **Protocol Selection:** Choose between TCP or UDP protocols.
-- **AUTO HTTPS:** Enable or disable automatic HTTPS.
-- **Privacy:** Set project privacy to public or private.
-
-![Project Networking](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/45/Project_Settings_Networking_7a104469f3.png)
+![Project Source Control](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28041243/7-1.png)
 
 ### Environment Variable
 
@@ -73,7 +62,7 @@ Here you can perform either of the following options:
 - **Edit Existing Variables:** Modify existing environment variables.
 - **Create New Variables:** Add new environment variables individually or in bulk. We will discuss the two ways to create environmental variables in more detail.
 
-![Project Env](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/45/Project_Settings_Env_Variables_5ed501565f.png)
+![Project Env](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28041518/8-1.png)
 
 1. **Using the Bulk Edit Button:** After clicking on the bulk edit button, a pop-up appears where you can add all your environment variables at once. This is especially useful if your project has a lot of environment variables that it depends on.
 
@@ -81,7 +70,7 @@ Here you can perform either of the following options:
 
 2. **Using the Add Button:** After clicking on the Add button, a new row where you can add a new environment variable appears as shown below. Fill in the details for your new environment variable and click the save button on the bottom right corner of the pop-up.
 
-![Project Env Add Button](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/45/Project_Settings_Add_Env_bcd2a5ccfa.png)
+![Project Env Add Button](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28042155/10-1.png)
 
 ### Resources and Replication
 
@@ -93,12 +82,24 @@ There are 2 subsections under this:
 
 2. **Replication:** Here you can select the number of replicas of your project that will be created. Replication is especially useful for enhanced redundancy and performance.
 
-![Project Replication](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/45/Project_Settings_Resources_and_Replicas_ec332f9509.png)
+![Project Replication](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28042204/11-2.png)
+
+### Storage
+
+In this section you can easily add extra storage to meet your needs. Here’s how:
+
+![Project storage](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28034712/3-2.png)
+
+1. **Specify the Path**: Determine where you want the extra storage to be added. This could be any directory within your application that requires more space.
+   
+2. **Set the Size**: Decide how much additional storage you need. Simply enter the number of Gigabytes required.
+
+![Project storage added](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28035533/4-1.png)
 
 ### Collaboration
 
 Here you can input the email address of a friend or colleague that also has a PipeOps account to collaborate on a project with them. Invite collaborators by entering their PipeOps account email addresses to work on the project together.
 
-![Project Collaboration](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/45/Project_Settings_Collaboration_35acabe08a.png)
+![Project Collaboration](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28042523/12-2.png)
 
 By navigating through these subsections, you can effectively tailor your project settings to meet specific requirements, ensuring seamless deployment and optimal performance. Make the most of PipeOps project settings to streamline your development process and collaborate efficiently.
