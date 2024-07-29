@@ -56,6 +56,11 @@ const config = {
           customCss: "./src/css/custom.css",
         },
       }),
+      {
+        googleTagManager: {
+          containerId: "GTM-P44WNWW",
+        },
+      },
     ],
   ],
 
