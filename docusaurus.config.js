@@ -57,7 +57,10 @@ const config = {
         },
         googleTagManager: {
           containerId: "GTM-P44WNWW",
-        }
+        },
+        gtag: {
+          trackingID: "G-B5Q466KHSB",
+        },
       }),
     ],
   ],
