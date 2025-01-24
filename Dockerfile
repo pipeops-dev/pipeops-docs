@@ -21,6 +21,7 @@ WORKDIR /opt/app
 
 # Set environment variable
 ENV NODE_ENV=$ENV
+ENV ENV=production
 ENV PORT=80
 
 # Copy package.json and any lockfiles to the working directory.
