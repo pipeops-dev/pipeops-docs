@@ -26,7 +26,7 @@ The Project Overview page serves as the default landing page when accessing your
 
 2. **Resource Usage**:
    Understanding resource usage is crucial for maintaining optimal performance. PipeOps offers intuitive charts detailing memory, CPU, and disk usage. You'll receive automatic alerts if any of these resources reach critical levels, helping you proactively manage your application's performance and stability.
-   For more information about resource usage, refer to the Project Observability documentation, which delves deeper into the different project metrics that are being monitored by PipeOps
+   For more information about resource usage, refer to the Project Metrics documentation, which delves deeper into the different project metrics that are being monitored by PipeOps
 
 3. **HTTP Path**:
    You can quickly locate and reference the path your application is hosted on, facilitating seamless access for both users and administrators.
@@ -35,4 +35,4 @@ The Project Overview page serves as the default landing page when accessing your
    Stay informed about recent deployments and changes to your application with the Recent Activity section. Short notes provide key details such as the commit ID, repository name, and timestamps, giving you insights into the evolution of your project.
    For a more comprehensive view, refer to the [Project History documentation](/docs/projects/project-history.md), which delves into the detailed history of your project's changes.
 
-For more detailed information on any specific aspect mentioned in the overview, you can explore the corresponding tabs on the project page. These tabs are dedicated to different areas such as observability, terminal access, and project history, allowing you to delve deeper into the aspects that require your attention. Thus, the Project Overview provides a convenient starting point for monitoring your project's status and facilitates further exploration as needed.
+For more detailed information on any specific aspect mentioned in the overview, you can explore the corresponding tabs on the project page. These tabs are dedicated to different areas such as Metrics, terminal access, and project history, allowing you to delve deeper into the aspects that require your attention. Thus, the Project Overview provides a convenient starting point for monitoring your project's status and facilitates further exploration as needed.

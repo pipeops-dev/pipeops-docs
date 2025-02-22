@@ -1,10 +1,10 @@
 ---
-slug: project-observability
+slug: project-metrics
 sidebar_position: 4
-title: Project Observability
+title: Project Metrics
 ---
 
-# Project Observability
+# Project Metrics
 
 ## Overview
 
@@ -15,7 +15,7 @@ This documentation guides you through the process of accessing and exploring met
 To view the metrics for your project, follow these steps:
 
 1. Navigate to your Project in PipeOps.
-2. Click on the "Observability" tab to access an overview of your project metrics, providing a high-level summary of its performance.
+2. Click on the "Metrics" tab to access an overview of your project metrics, providing a high-level summary of its performance.
 
 ![Project Metrics Overview](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/52/Overview_2x_98e26adb25.png)
 
@@ -51,4 +51,4 @@ The network I/O metric provides insights into the input and output activity of y
 
 By exploring these individual metrics, you can gain a comprehensive understanding of how your project performs in different areas.
 
-With PipeOps project observability, you have the power to monitor and analyze your project's metrics effectively. Leverage these insights to optimize performance, identify bottlenecks, and make data-driven decisions.
+With PipeOps project metrics, you have the power to monitor and analyze your project's metrics effectively. Leverage these insights to optimize performance, identify bottlenecks, and make data-driven decisions.

@@ -4,13 +4,13 @@ sidebar_position: 1
 title: On PipeOps
 ---
 
-In this section, we'll guide you through setting up your PipeOps account using one of PipeOps' own servers. Follow these steps to configure your server and seamlessly deploy your applications.
+In this section, we’ll walk you through creating a server on PipeOps, enabling seamless application deployment.
 
-### Step 1: Select Your Server Hosting Platform
+### Step 1: Choose Your Server Hosting Platform
 
-Whether you are just continuing your account creation process or just trying to deploy an extra server, The below guide still applies to both cases. After choosing to proceed from the previous step, you will be brought to this page.
+Whether you're continuing your account setup or adding an extra server, the following steps apply to both scenarios. After proceeding from the previous step, you’ll be directed to this page.
 
-1. You'll be prompted to choose where you want to create your server.
+1. Select where you want to create your server..
 2. Select "**On PipeOps**" as your server creation method.
 
 ![Choose path](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Deploy_On_Pipeops_be984335cd.png)

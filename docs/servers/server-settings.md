@@ -1,10 +1,10 @@
 ---
-slug: project-setting
-sidebar_position: 7
-title: Project Settings
+slug: server-settings
+sidebar_position: 10
+title: Server Settings
 ---
 
-# Project Settings
+# Server Settings
 
 This documentation provides a comprehensive guide to managing and configuring project settings in PipeOps. With PipeOps, you can easily customize various aspects of your project to meet specific requirements and optimize its performance.
 

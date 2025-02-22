@@ -1,23 +1,23 @@
 ---
 slug: server-provisioning
-sidebar_position: 2
+sidebar_position: 1
 title: Server Provisioning
 ---
 
-In this section, we will show you how you can set up your PipeOps account and use your cloud Provider to create a server. Follow these steps to set up your account and seamlessly provision your server on AWS.
+In this section, we will show you how you can connect to your preferred cloud provider account and create a server on it from your PipeOps dashboard.
 
 ### Step 1: Navigating to the server creation page
 
-Log in to your dashboard.
+Log in to your [PipeOps dashboard](https://console.pipeops.io/auth/signin).
 
 Once logged in, there are 2 major ways you can create your server. To create a new server, you can choose one of the following methods:
 
-1. **From the Top Navbar:** Click on the **New** button at the upper right corner of your screen and select **Deploy server** from the dropdown menu. Or,
+1. **From the Top Navbar:** Click on the **New** button at the upper right corner of your screen and select **Provision a Server** from the dropdown menu. Or,
 2. **From the Side Navbar:** By selecting **Servers** from the sidebar menu.
 
 ![Dashboard](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/Dashboard_1_393ee1240f.png)
 
-Either of the above will redirect you to a page where you will select your server hosting platform. See [Deployment Path](/docs/category/deployment-path) to make the necessary connections and come back here to continue on your server creation journey.
+Either of the above steps will redirect you to a page where you will select your server hosting platform. See [Deployment Path](/docs/category/deployment-path) to make the necessary connections and come back here to continue on your server creation journey.
 
 ![Select Path](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/Select_Path_1_1d8bfb7a63.png)
 

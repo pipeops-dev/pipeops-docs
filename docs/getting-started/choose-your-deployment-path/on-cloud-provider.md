@@ -4,28 +4,29 @@ sidebar_position: 2
 title: On Cloud Provider
 ---
 
-In this section, we will show how you can set up your PipeOps account using your cloud Provider. Follow these steps to set up your account and seamlessly deploy your applications on AWS.
+This section guides you through provisioning a server on your preferred cloud provider via your PipeOps dashboard.
 
 ### Step 1: Select Your Server Hosting Platform
 
-Whether you are just continuing your account creation process or just trying to deploy an extra server, The below guide still applies to both cases. After choosing to proceed from the previous step, you will be brought to this page.
+Whether you are just continuing your account creation process or just trying to deploy an extra server, The below guide still applies to both cases. After choosing to proceed from the previous step, you will be navigated to this page.
 
-1. You'll be prompted to choose where you want to create your server.
+1. You will be prompted to choose where you want to create your server on.
 2. Select "**On Cloud Provider**" as your server creation method.
 
 ![Choose path](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Deploy_On_Cloud_d5e1edc1a2.png)
 
-### Step 2: Choose Your Cloud Server Management Level
+### Step 2: Choose Your Preferred Cloud Provider
 
-Here you can configure your PipeOps account plan. this will determine the number of environments, servers, team seats and deployment that would be available to you. You can select either the StartUp, Growth or Enterprise plan.
+After you choose to provision a server on a cloud provider, you will be navigated to this page, where you would see the list of supported cloud providers. You can proceed to do the either of the following:
+
+1. Pick a cloud provider, click on the **Connect** account button, then follow the on-screen instructions to connect to the cloud provider you have chosen.
+2. Pick a cloud provider, and select one of the accounts you have previously connected.
+
+After successfully completing any of the above steps you will be navigated to a screen where you can configure and customize the specifications of the server you want to create.
 
 ![Server Management Level](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Choose_Tier_37f13610a8.png)
 
-Once you've selected your desired plan, PipeOps will automatically check if your credit balance covers the cost. If you don't have enough credits for your desired plan, you'll be directed to a payment portal where you can make the necessary payment to access seamless deployments with PipeOps.
-
 ![Payment modal](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/07/02055408/92.png)
-
-However, if your credits are sufficient, the transaction will be deducted from your credit balance without any additional charges.
 
 ### Step 3: Payment Completion
 
@@ -60,7 +61,6 @@ You can create your server for development, staging, or production environments.
 After reviewing your server details on the confirmation modal and choose to proceed, another modal will appear showing your server creation progress in realtime.
 
 ![Server Creation Progress](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/creation_In_Progress_3fab10c0e8.png)
-
 
 ### Step 7: Server Creation Complete
 

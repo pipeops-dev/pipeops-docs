@@ -49,3 +49,7 @@ Take a look at the image below, which displays the form for adding a new team me
 ![Add Team Member](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/39/add_team_member_150fa719f9.png)
 
 Now you're all set to efficiently manage your teams and team members using PipeOps Teams! Enjoy the seamless collaboration and enhanced development experience.
+
+## Adding Team Members
+
+## Team Audit Trail

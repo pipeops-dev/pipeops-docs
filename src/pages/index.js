@@ -85,7 +85,8 @@ export default function Home() {
   const getStarted = [
     {
       title: "Overview",
-      description: "Find out what this docs is about in a summarized manner.",
+      description:
+        "Find out what this documentation is about in a summarized manner.",
       icon: <SearchFile />,
       url: "/docs/overview",
     },
@@ -124,23 +125,21 @@ export default function Home() {
           <div className={styles.cardsWrapper}>
             {getStarted.map(({ title, description, url, icon }, index) => (
               <a href={url} key={title} className={styles.cardVariantTwo}>
-                <div>
-                  <span>
-                    {icon}
-                    <img
-                      src={
-                        index === 0
-                          ? "/img/overviewGradient.svg"
-                          : index === 1
-                          ? "/img/guidesGradient.svg"
-                          : "/img/changelogGradient.svg"
-                      }
-                      alt={title}
-                    />
-                  </span>
-                  <h3>{title}</h3>
-                  <p>{description}</p>
-                </div>
+                <span>
+                  {icon}
+                  <img
+                    src={
+                      index === 0
+                        ? "/img/overviewGradient.svg"
+                        : index === 1
+                        ? "/img/guidesGradient.svg"
+                        : "/img/changelogGradient.svg"
+                    }
+                    alt={title}
+                  />
+                </span>
+                <h3>{title}</h3>
+                <p>{description}</p>
               </a>
             ))}
           </div>
@@ -148,10 +147,8 @@ export default function Home() {
           <div className={styles.cardsWrapper}>
             {frameworks.map(({ title, icon, link }) => (
               <a href={link} key={title} className={styles.cardVariantThree}>
-                <div>
-                  <h3>{title}</h3>
-                  <span>{icon}</span>
-                </div>
+                <h3>{title}</h3>
+                <span>{icon}</span>
               </a>
             ))}
           </div>
@@ -165,11 +162,9 @@ export default function Home() {
                   key={title}
                   className={styles.card}
                 >
-                  <div>
-                    <span>{icon}</span>
-                    <h3>{title}</h3>
-                    <p>{description}</p>
-                  </div>
+                  <span>{icon}</span>
+                  <h3>{title}</h3>
+                  <p>{description}</p>
                 </a>
               );
             })}

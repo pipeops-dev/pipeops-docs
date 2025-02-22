@@ -1,10 +1,10 @@
 ---
-sidebar_position: 5
-title: Server Observability
-slug: server-observability
+sidebar_position: 3
+title: Server Metrics
+slug: server-metrics
 ---
 
-# Server Observability
+# Server Metrics
 
 ## Overview
 
@@ -15,7 +15,7 @@ This documentation guides you through the process of accessing and exploring met
 To view the metrics for your server, follow these steps:
 
 1. Navigate to your server in PipeOps.
-2. Click on the "Observability" tab to access an overview of the server metrics, providing a high-level summary of its performance.
+2. Click on the "Metrics" tab to access an overview of the server metrics, providing a high-level summary of its performance.
 
 ![server Metrics Overview](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/22/overview_8f109aff39.png)
 
@@ -59,4 +59,4 @@ Monitoring the control plane metric enables you to identify potential issues and
 
 By exploring these individual metrics, you can gain a comprehensive understanding of how your server performs in different areas.
 
-With PipeOps server observability, you have the power to monitor and analyze your server's metrics effectively. Leverage these insights to optimize performance, identify bottlenecks, and make data-driven decisions.
+With PipeOps server metrics, you have the power to monitor and analyze your server's metrics effectively. Leverage these insights to optimize performance, identify bottlenecks, and make data-driven decisions.

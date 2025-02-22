@@ -1,10 +1,11 @@
 ---
-slug: project-setting
+slug: server-dashboard-prometheus
+
 sidebar_position: 7
-title: Project Settings
+title: Server Dashboard/Prometheus
 ---
 
-# Project Settings
+# Server Dashboard/Prometheus
 
 This documentation provides a comprehensive guide to managing and configuring project settings in PipeOps. With PipeOps, you can easily customize various aspects of your project to meet specific requirements and optimize its performance.
 
