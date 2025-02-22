@@ -91,7 +91,6 @@ In this section you can easily add extra storage to meet your needs. Here’s ho
 ![Project storage](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28034712/3-2.png)
 
 1. **Specify the Path**: Determine where you want the extra storage to be added. This could be any directory within your application that requires more space.
-   
 2. **Set the Size**: Decide how much additional storage you need. Simply enter the number of Gigabytes required.
 
 ![Project storage added](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28035533/4-1.png)

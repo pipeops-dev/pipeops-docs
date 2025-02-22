@@ -14,12 +14,12 @@ Welcome to PipeOps, your go-to platform for seamless application and server depl
 
 If you're new to PipeOps, the following resources will help you get started quickly:
 
-- [User Registration Guide](/docs/getting-started/user-registration.md): Easily set up your PipeOps environment.
+- [User Registration Guide](/docs/getting-started/user-registration.md): Easily set up your PipeOps account.
 - [How-To Guides](/docs/category/tutorials): Dive into a simple tutorial to deploy your first application.
 
 ## Features
 
-Explore the powerful features that PipeOps offers:
+Explore the following list of features that PipeOps offers:
 
 - **Application Deployment**: Easily deploy and manage your applications in your preferred cloud provider.
 - **Server Deployment**: Seamlessly provision and manage servers to support your applications.

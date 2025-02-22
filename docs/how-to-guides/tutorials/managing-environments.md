@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 10
 slug: managing-environments
 title: Managing Environments
 ---

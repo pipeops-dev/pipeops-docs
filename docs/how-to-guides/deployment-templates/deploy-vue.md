@@ -10,7 +10,6 @@ tags: [deployment, guide, vuejs]
 To deploy VueJS application, you must ensure that you are already Signed up on PipeOps and Signed into your PipeOps account.
 Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and [Sign In](https://console.pipeops.io/auth/signin) to PipeOps
 
-
 ## Prerequisites:
 
 1. Create a Workspace where the application will be deployed. You can follow the guide on how to create a Workspace [here](/docs/Collaboration/workspaces#creating-a-new-workspace). If you already have an existing workspace you can use it
@@ -49,7 +48,7 @@ Use the following link to [Sign Up](https://console.pipeops.io/auth/signup) and 
 
    ![2.png](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/35/overview_ebc3bc62d7.png)
 
-There are various; [History](/docs/projects/project-history), [Observability](/docs/projects/project-observability), [Logs](/docs/projects/logs-and-events#accessing-logs), [Events](/docs/projects/logs-and-events#accessing-events), [Terminal](/docs/projects/terminal) and [Settings](/docs/projects/project-setting) are used to monitor, observe, debug and re-configure the project.
+There are various; [History](/docs/projects/project-history), [Metrics](/docs/projects/project-metrics), [Logs](/docs/projects/logs-and-events#accessing-logs), [Events](/docs/projects/logs-and-events#accessing-events), [Terminal](/docs/projects/terminal) and [Settings](/docs/projects/project-setting) are used to monitor, observe, debug and re-configure the project.
 
 1. To view the application that was deployed, click the **View Project** link.
 
