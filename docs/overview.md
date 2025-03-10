@@ -8,11 +8,11 @@ title: Overview
 
 ## Introduction
 
-Welcome to PipeOps, your go-to platform for seamless application and server deployment in your cloud provider account. Whether you're a seasoned developer or a newcomer to cloud infrastructure, PipeOps empowers you to efficiently manage and deploy your applications with ease.
+PipeOps is the go-to platform for seamless application and server deployment in your cloud provider account. This documentation will guide you through setting up your account, deploying your applications, and optimizing your infrastructure.
 
-## Getting Started
+## Quick Start
 
-If you're new to PipeOps, the following resources will help you get started quickly:
+If you're new to PipeOps, the following resources will help you get started in seconds:
 
 - [User Registration Guide](/docs/getting-started/user-registration.md): Easily set up your PipeOps account.
 - [How-To Guides](/docs/category/tutorials): Dive into a simple tutorial to deploy your first application.
@@ -26,12 +26,13 @@ Explore the following list of features that PipeOps offers:
 - **Scalability**: Scale your infrastructure effortlessly to meet the demands of your growing applications.
 - **Automation**: Leverage automation capabilities to streamline repetitive tasks.
 
+
 ## Guides
 
 Dive deeper into specific topics with our in-depth guides:
 
 - [Hands-on Tutorials](/docs/category/tutorials): Advanced tutorials to fit your specific requirements.
-- [Deployment Templates](/docs/category/deployment-templates): Quickly setup deployment templates to get farmiliar with the platform
+- [Deployment Templates](/docs/category/deployment-templates): Quickly setup deployment templates to get familiar with the platform.
 
 ## Troubleshooting
 
