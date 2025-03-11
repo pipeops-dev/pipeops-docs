@@ -1,11 +1,11 @@
 ---
-sidebar_position: 13
+sidebar_position: 2
 slug: about-pipeops
 ---
 
 # About PipeOps
 
-Welcome to PipeOps, your trusted partner in effortless application deployment. We're here to revolutionize the way you create and launch custom applications, without the headache of complex coding.
+Welcome to PipeOps, your trusted partner in effortless application deployment. We're here to revolutionize how you create and launch applications, without the headache of complex DevOps practices.
 
 ## What We Do
 
@@ -13,15 +13,15 @@ We provide a comprehensive suite of services to simplify and streamline your app
 
 1. **BUILD & DEPLOY**
 
-- **Build & Deploy from your Git provider (i.e github, gitlab, bitbucket):** PipeOps seamlessly connects to your Git provider to build any software and deploy it into your cloud infrastructure.
+- **Build & Deploy from your Git provider (i.e GitHub, GitLab, Bitbucket):** PipeOps seamlessly connects to your Git provider to build any software and deploy it into your cloud infrastructure.
 
 - **Multi-framework Support:** We analyze your code to determine the best framework for your application, ensuring optimal performance.
 
-- **Automatic Build Triggers:** Say goodbye to manual builds! PipeOps automatically initiates a new build when you push to your GitHub or GitLab repository.
+- **Automatic Build Triggers:** Say goodbye to manual builds. PipeOps automatically initiates a new build when you push to your GitHub or GitLab repository.
 
 2. **CONFIGURE**
 
-- **Setup Your Server to Suit Your Needs:** We set up servers for you with reasonable defaults, but you can also provide custom configurations to meet your specific requirements.
+- **Set Up Your Server to Suit Your Needs:** We set up servers for you with reasonable defaults, but you can also provide custom configurations to meet your specific requirements.
 
 3. **SCALE**
 
@@ -53,8 +53,9 @@ Why choose PipeOps? Here are a few reasons:
 
 ## Our Commitment to Excellence
 
-At PipeOps, we're committed to excellence in everything we do. From our cutting-edge features to our top-notch support, we strive to exceed your expectations at every turn. Your success is our success, and we're here to help you every step of the way.
+At PipeOps, we're committed to excellence in everything we do. From our cutting-edge features to top-notch support, we strive to exceed your expectations at every turn. Your success is our success, and we're here to help you every step of the way.  
 
 ## Join the PipeOps Family Today
+Ready to take your app development to the next level? Join the PipeOps family and experience the power of our no-code development platform.  
+Whether you're a seasoned developer or just starting out, we're here to help you succeed. Let's build something great together!
 
-Ready to take your app development to the next level? Join the PipeOps family today and experience the simplicity and power of our no-code development platform. Whether you're a seasoned developer or just starting out, we're here to help you succeed. Let's build something great together!
