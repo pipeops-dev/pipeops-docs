@@ -6,72 +6,49 @@ title: On PipeOps
 
 In this section, we’ll walk you through creating a server on PipeOps, enabling seamless application deployment.
 
-### Step 1: Choose Your Server Hosting Platform
+### Step 1: Choose PipeOps Hosting Option
 
 Whether you're continuing your account setup or adding an extra server, the following steps apply to both scenarios. After proceeding from the previous step, you’ll be directed to this page.
 
-1. Select where you want to create your server..
-2. Select "**On PipeOps**" as your server creation method.
+- You will be prompted to choose where you want to create your server.
+- Select "**On PipeOps**" as your server creation method.
 
 ![Choose path](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Deploy_On_Pipeops_be984335cd.png)
 
-### Step 2: Decide On The Physical Location Of Your Server
+### Step 2: Customize Your Server
 
 You'll then be directed to:
 
-1. Select your server location. We've implemented a geo-location pricing model to ensure you're billed in your local currency, shielding you from exchange rate fluctuations.
+- **Choose a preferred provider:** Digital Ocean, Google Cloud, Amazon Web Services, Azure, or Huawei Cloud.
+- **Select region:** Pick the geographic location for deploying your server. We've implemented a geo-location pricing model to ensure you're billed in your local currency, protecting you from exchange rate fluctuations.
+- **Review the monthly cost:** You can adjust resources such as CPU, memory, and storage to estimate your monthly cost. 
 
-![Choose region](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Choose_Region_eb8ef21a43.png)
+Use the sliders to adjust the following:
+  - **CPU:** The number of virtual CPUs for your server. This determines the processing power available for running your applications.
+  - **Memory:** This specifies the amount of RAM to allocate to your server. Sufficient memory is crucial for smooth operation, especially when running multiple applications or handling large datasets.
+  - **Storage:** The storage capacity for your server, including the operating system and data.
 
-### Step 3: Customize Your Server
+ Note: This is an estimate to help you gauge costs. Your final charge will depend on your actual resource usage.
 
-After selecting the location for your server, it's time to tailor it to your specific needs. Customize your server based on these three key metrics:
+### Step 3: Select a Plan
 
-1. **VCPU (Virtual Central Processing Unit)**:
+After customizing your server, the next step is to choose a subscription that best fits your needs. PipeOps offers three pricing plans: **Growth, Scale,** and **Custom**, with monthly or yearly billing options.
+ 
+To learn more about each plan, its features, and billing methods, check out our [pricing section](/docs/pricing.md).
 
-   - Choose the number of virtual CPUs to allocate to your server. This determines the processing power available for running your applications and handling tasks.
 
-2. **Memory**:
+### Step 4: Select Payment Method
 
-   - Select the amount of memory (RAM) to allocate to your server. Memory is crucial for storing and accessing data while your applications are running. Choose a suitable amount based on the requirements of your applications and workload.
+After choosing your preferred plan, the Payment Tab will open, allowing you to complete your subscription. You can select from popular payment methods, including Stripe and Paystack.  
 
-3. **Storage**:
+After selecting a payment method, you’ll be redirected to a secure checkout page.
 
-   - Determine the storage capacity for your server, which includes both the operating system and data storage. Consider the size of your applications and the amount of data they generate to ensure you have adequate storage space. You can also choose between different storage types, such as solid-state drives (SSD) or hard disk drives (HDD), depending on performance and cost considerations.
 
-You can choose between the **Nova Sapa**, **Nova Pro**, **Nova Duo** and **Nova Chrono** server instances. Each instance comes with varying amounts of VCPU, Memory and storage.
+### Step 5: Access Your Dashboard
+Once your payment is confirmed, you will receive a pop-up notification. Your dashboard will then be available, allowing you to deploy applications to your newly created server.
 
-![Customize Your Server](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/07/02055350/91.png)
 
-By customizing these aspects of your server, you can optimize its performance and resource allocation to meet the specific demands of your applications and workload.
+### Step 6: Proceed to Project Deployment
 
-Once you've decided on your desired server instance, PipeOps will automatically check if your credit balance covers the cost.
-
-if you don't have enough credits for your desired server instance, you'll be directed to a payment portal where you can make the necessary payment to access seamless deployments with PipeOps.
-
-![Payment modal](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/07/02055408/92.png)
-
-However, if your credits are sufficient, the transaction will be deducted from your credit balance without any additional charges.
-
-### Step 4: Payment Completion
-
-After successfully making payment for your server, you'll receive a confirmation stating "Congratulations! Your subscription is active." Click on the **Done** button to proceed to the next steps in the setup process.
-
-### Step 5: Server Creation in Progress
-
-In this next step, the platform will display the progress of your server creation on the screen.
-
-![Server Creation Progress](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/In_Progress_65b9125d74.png)
-
-### Step 6: Server Creation Complete
-
-1. After the server creation is complete, a confirmation message will appear.
-2. Click **Proceed** to get to the server overview page of the server you just created.
-
-![Server Creation Successful](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/Done_daa41dcdec.png)
-
-![Server Overview](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/Overview_027a244c0c.png)
-
-### Step 7: Proceed to project deployment
-
-After successfully creating a server, you can now proceed to deploy your applications into that server. See the [project deployment guide](/docs/projects/project-deployment.md) for a comprehensive guide to getting your applications up and running with PipeOps.
+You can now proceed to deploy applications into your server. 
+See the [project deployment guide](/docs/projects/project-deployment.md) for a comprehensive guide to getting your applications up and running with PipeOps.
