@@ -4,73 +4,62 @@ sidebar_position: 2
 title: On Cloud Provider
 ---
 
-This section guides you through provisioning a server on your preferred cloud provider via your PipeOps dashboard.
+PipeOps supports Bring Your Own Cloud (BYOC) deployment model, allowing you to integrate your existing cloud accounts while leveraging PipeOps' features.  
+This section walks you through provisioning a server on your preferred cloud provider via the PipeOps dashboard.  
 
-### Step 1: Select Your Server Hosting Platform
 
-Whether you are just continuing your account creation process or just trying to deploy an extra server, The below guide still applies to both cases. After choosing to proceed from the previous step, you will be navigated to this page.
+### Step 1: Choose Cloud Hosting
 
-1. You will be prompted to choose where you want to create your server on.
-2. Select "**On Cloud Provider**" as your server creation method.
+Whether you are continuing your account creation process or just trying to deploy an additional server, The following guide still applies to both cases. After choosing to proceed from the previous step, you will be directed to this page.
+
+-  You will be prompted to choose where you want to create your server.
+-  Select "**On Cloud Provider**" as your server creation method.
 
 ![Choose path](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Deploy_On_Cloud_d5e1edc1a2.png)
 
 ### Step 2: Choose Your Preferred Cloud Provider
 
-After you choose to provision a server on a cloud provider, you will be navigated to this page, where you would see the list of supported cloud providers. You can proceed to do the either of the following:
+You can provision a server on different cloud providers, including:
+- Amazon Web Services (AWS)
+- Azure
+- Digital Ocean
+- Google Cloud
+- Huawei Cloud
 
-1. Pick a cloud provider, click on the **Connect** account button, then follow the on-screen instructions to connect to the cloud provider you have chosen.
-2. Pick a cloud provider, and select one of the accounts you have previously connected.
+Choose your preferred provider from the list. Click **Connect** and follow the on-screen instructions to link your cloud account with PipeOps.
 
-After successfully completing any of the above steps you will be navigated to a screen where you can configure and customize the specifications of the server you want to create.
+Check out the [Integrations](/docs/category/Integrations) section for details on how to link your account.
 
-![Server Management Level](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/Choose_Tier_37f13610a8.png)
+### Step 3: Select a Plan
 
-![Payment modal](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/07/02055408/92.png)
+The next step is to choose a subscription that best fits your needs. PipeOps offers three pricing plans: **Growth, Scale,** and **Custom**. You can choose monthly or yearly billing.
 
-### Step 3: Payment Completion
+To learn more about each plan, its features, and billing methods, check out our [pricing section](/docs/pricing.md).
 
-After successfully subscribing to a plan, you'll receive a confirmation stating "Congratulations! Your subscription is active." Click on the **Done** button to proceed to the next steps in the setup process.
 
-### Step 4: AWS Account
+### Step 4: Select Payment Method
+After choosing your preferred plan, the Payment Tab will open, allowing you to complete your subscription. Choose a payment method and proceed to checkout.
 
-If you have your **AWS account** linked already, proceed directly to creating your server.
 
-If your **AWS account** is not linked yet, see the [Server Provisioning](/docs/servers/server-provisioning#step-2-connecting-your-aws-account) page to make the necessary connections and come back here to continue on your server creation journey.
+### Step 5: Server Creation
+Once the payment is successful, you will be redirected to your dashboard. Click the **Proceed** button to start setting up your server. 
 
-You can create your server for development, staging, or production environments. Each environment has different EC2 instance types and associated prices for the provisioned EKS server.
+To set up your cloud server:  
+1. Select your preferred region and click **Next**.
+2. Choose a configuration method: 
+- Select **custom configuration** to manually set up CPU, storage, and memory.
+- Otherwise, select **Karpenter** for automatic scaling. 
 
-1. Choose the deployment environment: **Dev**, **Stage**, or **Prod**.
-2. Choose your preferred server type
-3. Select your preferred AWS region for deployment.
-4. Click **Proceed** to move to the next step.
+### Step 6: Configure Resources
+The next step is to customize your server resources. The options available on this page depend on your chosen configuration method.
 
-![Configure Server](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/create_Server_4395dd99a4.png)
+**Custom Configuration:** Choose a deployment environment (Dev, Staging, or Production) and an instance category (General Purpose, Compute Optimized, or Memory Optimized).
 
-### Step 5: Confirm Server Configuration
+**Karpenter Configuration:** Choose a preferred node architecture or proceed with default settings. You can also enable Spot instances to use cheaper cloud services.
 
-1. A modal will appear, summarizing your server configuration settings.
-2. Review the details carefully to ensure accuracy.
+Once configured, click the **Next** button to proceed. A modal will appear showing server creation progress in real time.
 
-![Server Configuration Summary](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/confirm_Create_Server_0b25266fac.png)
+### Step 7: Proceed to Project Deployment
 
-3. Click **Yes Create Server** to proceed with creating your server.
-
-### Step 6: Server creation in progress
-
-After reviewing your server details on the confirmation modal and choose to proceed, another modal will appear showing your server creation progress in realtime.
-
-![Server Creation Progress](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/creation_In_Progress_3fab10c0e8.png)
-
-### Step 7: Server Creation Complete
-
-1. After the server creation is complete, a confirmation message will appear.
-2. Click **Proceed** to get to the server overview page of the server you just created.
-
-![Server Creation Successful](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/Done_daa41dcdec.png)
-
-![Server Overview](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/Overview_027a244c0c.png)
-
-### Step 8: Proceed to project deployment
-
-After successfully creating a server, you can now proceed to deploy your applications into that server. See the [project deployment guide](/docs/projects/project-deployment.md) for a comprehensive guide to getting your applications up and running with PipeOps.
+Once your server creation is complete, you’ll see a modal indicating that. You can now deploy applications to the newly created server. 
+See the [project deployment guide](/docs/projects/project-deployment.md) for a comprehensive guide to getting your applications up and running with PipeOps.
