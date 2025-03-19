@@ -13,7 +13,7 @@ This documentation offers an extensive guide to navigating and leveraging the lo
 Before delving into Logs and Events, ensure you have the following prerequisites:
 
 1. **A PipeOps account**. Use the link [here](https://console.pipeops.io/signup) to sign up on PipeOps if you do not currently have an account.
-2. **A deployed project**. This can be a PipeOps template or a project from your Git (Github, Gitlab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
+2. **A deployed project**. This can be a PipeOps template or a project from your Git (GitHub, GitLab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
 
 ## Accessing Logs
 
@@ -26,7 +26,10 @@ Logs are detailed records of system activities and events occurring within a pro
 
 Logs are classified based on timeline and severity levels, and users can search for specific activities or events. PipeOps provides several features to help users leverage logs effectively:
 
-1. **Timeline View**: PipeOps offers a timeline view of logs, allowing users to track the sequence of events and identify any patterns or trends. This feature is particularly useful for diagnosing issues that may span multiple stages of the project.
+
+1. **Process Selection:** Logs are categorized by specific processes, such as web or other running services, enabling users to focus on relevant system events.
+
+2. **Time-Based Filtering:** PipeOps offers a timeline view of logs, allowing users to track the sequence of events and identify any patterns or trends. You can view logs from different timeframes, including relative periods (e.g., last 15 minutes, 1 hour, 1 day). You can also specify a custom date range for more precise analysis.
 
 2. **Search Functionality**: PipeOps includes a powerful search function that lets users quickly find specific log entries. Whether troubleshooting an error or auditing system activities, the search feature streamlines the process and saves time.
 
