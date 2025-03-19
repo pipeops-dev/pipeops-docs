@@ -13,14 +13,14 @@ This guide introduces PipeOps' rollback feature for easy deployment management. 
 Before delving into Rollback, ensure you have the following prerequisites:
 
 1. **A PipeOps account**. Use the link [here](https://console.pipeops.io/signup) to sign up on PipeOps if you do not currently have an account.
-2. **A deployed project**. This can be a PipeOps template or a project from your Git (Github, Gitlab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
+2. **A deployed project**. This can be a PipeOps template or a project from your Git (GitHub, GitLab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
 
 ## Accessing Rollback
 
 To access Rollback:
 
 1. Navigate to your project's main page in PipeOps.
-2. Select the “**Actions**” button to access the project actions dropdown menu
+2. Select the “**Actions**” button to access the project actions dropdown menu.
 3. Click on the "**Rollback**" button to trigger a rollback.
 
 Rollback refers to the process of reverting a deployment to a previous state, typically to address issues or errors that arise after a new deployment. This feature allows users to undo changes made during deployment quickly and efficiently.
