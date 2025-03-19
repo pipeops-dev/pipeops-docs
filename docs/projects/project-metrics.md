@@ -14,8 +14,8 @@ This documentation guides you through the process of accessing and exploring met
 
 To view the metrics for your project, follow these steps:
 
-1. Navigate to your Project in PipeOps.
-2. Click on the "Metrics" tab to access an overview of your project metrics, providing a high-level summary of its performance.
+1. Navigate to your Project's main page in PipeOps.
+2. Click on the "Metrics" tab to view a high-level summary of your project’s performance.
 
 ![Project Metrics Overview](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/52/Overview_2x_98e26adb25.png)
 
