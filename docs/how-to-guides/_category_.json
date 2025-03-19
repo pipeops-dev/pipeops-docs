@@ -1,6 +1,6 @@
 {
   "label": "How-to-guides",
-  "position": 9,
+  "position": 11,
   "link": {
     "type": "generated-index",
     "description": "Seamlessly deploy frameworks like React, PHP, Node.JS, and HTML with our comprehensive how-to guides. Optimize your workflow effortlessly."
