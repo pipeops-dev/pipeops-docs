@@ -34,5 +34,8 @@ The Project Overview page serves as the default landing page when accessing your
 4. **Recent Activity**:
    Stay informed about recent deployments and changes to your application with the Recent Activity section. Short notes provide key details such as the commit ID, repository name, and timestamps, giving you insights into the evolution of your project.
    For a more comprehensive view, refer to the [Project History documentation](/docs/projects/project-history.md), which delves into the detailed history of your project's changes.
+   
+
+### Exploring Further
 
 For more detailed information on any specific aspect mentioned in the overview, you can explore the corresponding tabs on the project page. These tabs are dedicated to different areas such as Metrics, terminal access, and project history, allowing you to delve deeper into the aspects that require your attention. Thus, the Project Overview provides a convenient starting point for monitoring your project's status and facilitates further exploration as needed.
