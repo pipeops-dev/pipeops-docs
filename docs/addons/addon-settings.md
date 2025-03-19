@@ -23,7 +23,7 @@ The add-on settings dashboard is organized into several subsections, each cateri
 
 In this section, you can manage basic add-on details such as:
 
-- **add-on Name:** Rename your add-on. This also customises your PipeOps domain name for you. For more information on this [click here](/docs/add-ons/customizing-default-domain)
+- **add-on Name:** Rename your add-on. This also customises your PipeOps domain name for you. For more information on this [click here](/docs/addons/customizing-default-domain)
 - **Custom Domain:** Input a custom domain name for your add-on.
 
 ![add-on General Settings](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28040027/5-2.png)
