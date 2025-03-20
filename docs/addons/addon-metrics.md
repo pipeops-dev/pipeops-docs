@@ -15,7 +15,8 @@ This documentation guides you through the process of accessing and exploring met
 To view the metrics for your add-on, follow these steps:
 
 1. Navigate to your add-on in PipeOps.
-2. Click on the "Metrics" tab to access an overview of your add-on metrics, providing a high-level summary of its performance.
+2. Click on the Metrics tab in the navigation menu.  
+This will open the Add-on Metrics Overview page, where you can monitor key performance indicators at a glance.
 
 ![add-on Metrics Overview](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/52/Overview_2x_98e26adb25.png)
 
@@ -23,7 +24,8 @@ The image above illustrates the add-on metrics overview, offering a quick glimps
 
 ## Exploring Individual Metrics
 
-PipeOps allows you to dive deeper into the details of each metric. Let's explore some key metrics available:
+PipeOps allows you to dive deeper into the details of each metric. You can filter your results by time period. Use the **Period** dropdown menu to select a relative time (e.g., 15 minutes, 1 hour, etc.) or a date range.
+Let's explore some key metrics available:
 
 ### CPU Metric
 
@@ -45,10 +47,14 @@ The storage metric focuses on the storage usage of your add-on, helping you trac
 
 ### Network I/O Metric
 
-The network I/O metric provides insights into the input and output activity of your add-on, offering an understanding of data transfer between your application and external systems. Here's an example of how the network I/O metric might be visualized:
+The network I/O metric provides insights into the input and output activity of your add-on, offering an understanding of data transfer between your application and external systems. 
+
+The Network I/O section provides insights into data transfer and HTTP requests handled by your add-on.
+
+Here's an example of how the network I/O metric might be visualized:
 
 ![Network I/O Metric Example](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/52/O_2x_4f5e9e8158.png)
 
 By exploring these individual metrics, you can gain a comprehensive understanding of how your add-on performs in different areas.
 
-With PipeOps add-on metrics, you have the power to monitor and analyze your add-on's metrics effectively. Leverage these insights to optimize performance, identify bottlenecks, and make data-driven decisions.
+With PipeOps add-on metrics, you have the power to monitor and analyze your add-on metrics effectively. Leverage these insights to optimize performance, identify bottlenecks, and make data-driven decisions.
