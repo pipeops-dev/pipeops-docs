@@ -8,14 +8,14 @@ title: Addon Settings
 
 This documentation provides a comprehensive guide to managing and configuring add-on settings in PipeOps. With PipeOps, you can easily customize various aspects of your add-on to meet specific requirements and optimize its performance.
 
-## Addon add-on Settings
+## Access add-on Settings
 
-To access addon settings:
+To access add-on settings:
 
 - Navigate to your add-on's main page on PipeOps.
 - Click on the "**Settings**" tab to access the add-on settings dashboard.
 
-## Exploring Individual Addon Settings
+## Explore Individual Addon Settings
 
 The add-on settings dashboard is organized into several subsections, each catering to specific configuration areas:
 
@@ -23,8 +23,7 @@ The add-on settings dashboard is organized into several subsections, each cateri
 
 In this section, you can manage basic add-on details such as:
 
-- **add-on Name:** Rename your add-on. This also customises your PipeOps domain name for you. For more information on this [click here](/docs/addons/customizing-default-domain)
-- **Custom Domain:** Input a custom domain name for your add-on.
+- **Add-on Name:** Rename your add-on. This also customises your PipeOps domain name for you. For more information on this [click here](/docs/addons/customizing-default-domain)
 
 ![add-on General Settings](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28040027/5-2.png)
 
@@ -57,13 +56,21 @@ There are 2 subsections under this:
 
 ![add-on Replication](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28042204/11-2.png)
 
+### Storage
+
+For database add-ons, this section allows you to add an extra storage space. To do that:
+
+- Click on the "Add Storage" button.
+- Specify the path for the additional storage.
+- Input the amount of storage you need (in Gigabytes) and click **Save**.
+
+
 ### Domains
 
 When you deploy your application on PipeOps, it comes with a randomly generated name, such as `familiar-team-thoughtless.pipeops.app`. But wouldn't it be great to have a custom and memorable domain like `https://shopmart.pipeops.app`? With PipeOps, you can easily set a unique domain for your add-on.
 
 To customise the URL of your deployed add-on:
 
-- First enter a valid domain name you would like to use
-- Click **Save** and a redeployment will be triggered for your add-on with the custom domain name you set for it
+- Enter a valid domain name you would like to use.
+- Click **Save** and a redeployment will be triggered for your add-on with the custom domain name you set for it.
 
-That's it! Now your add-on is accessible via your personalized PipeOps URL. Enjoy the convenience and branding benefits of having a custom domain for your PipeOps project.
