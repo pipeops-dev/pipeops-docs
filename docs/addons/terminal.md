@@ -13,11 +13,11 @@ Welcome to the guide for PipeOps' Add-on Terminal feature! With the Add-on Termi
 Before delving into working with the terminal, ensure you have the following prerequisites:
 
 1. **A PipeOps account**. Use the link [here](https://console.pipeops.io/signup) to sign up on PipeOps if you do not currently have an account.
-2. **A deployed add-on**. This can be a PipeOps template or a add-on from your Git (Github, Gitlab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
+2. **A deployed add-on**.
 
 ## Accessing the Terminal
 
-The terminal is a command line interface that provides users with direct access to the command line interface of their add-ons.
+The terminal provides users with direct access to the command line interface of their add-ons.
 
 Accessing the terminal in PipeOps is straightforward:
 
