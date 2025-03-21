@@ -13,14 +13,14 @@ This documentation provides a comprehensive guide to navigating and utilizing pr
 Before proceeding with project actions, ensure you have the following prerequisites:
 
 1. **A PipeOps account**. Use the link [here](https://console.pipeops.io/signup) to sign up on PipeOps if you do not currently have an account.
-2. **A deployed project**. This can be a PipeOps template or a project from your Git (Github, Gitlab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
+2. **A deployed project**. This can be a PipeOps template or a project from your Git (GitHub, GitLab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
 
 ## Accessing Project Actions
 
 To access project actions:
 
 - Navigate to the main page of your project within PipeOps.
-- Locate the "**Actions**" button and click on it to access project actions.
+- Locate the "**Actions**" button on the right side of your screen.
 
 ![Project Actions](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/43/Actions_d80b8a4011.png)
 
@@ -46,9 +46,13 @@ To access project actions:
 
 ### Rollback
 
-- View the Rollback guide [here](/docs/projects/rollback) for more information concerning this
+- View the Rollback guide [here](/docs/projects/rollback) for more information concerning this.
 - Allows you to revert to a previous state or version of your application if needed.
 - Enables quick recovery from errors or issues introduced by recent deployments.
+
+### Migrate Project
+- View the Migration guide [here](/docs/projects/project-migration.md) for more information.
+- Allows you to easily migrate your project from one server or environment to another.
 
 ### Delete Project
 

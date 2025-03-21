@@ -13,7 +13,7 @@ This documentation provides a comprehensive guide to managing and configuring pr
 Before delving into project settings, ensure you have the following prerequisites:
 
 1. **A PipeOps account**. Use the link [here](https://console.pipeops.io/signup) to sign up on PipeOps if you do not currently have an account.
-2. **A deployed project**. This can be a PipeOps template or a project from your Git (Github, Gitlab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
+2. **A deployed project**. This can be a PipeOps template or a project from your Git (GitHub, GitLab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
 
 ## Accessing Project Settings
 
@@ -30,10 +30,31 @@ The project settings dashboard is organized into several subsections, each cater
 
 In this section, you can manage basic project details such as:
 
-- **Project Name:** Rename your project. This also customises your PipeOps domain name for you. For more information on this [click here](/docs/projects/customizing-default-domain)
-- **Custom Domain:** Input a custom domain name for your project.
+- **Project Name:** Rename your project directly from this field. 
+
+- **Deployment Strategy:** Select a deployment strategy to ensure smooth updates with minimal downtime. Users can choose between two strategies:
+
+    1. **RollingUpdate:**  Gradually replaces old deployments with new ones, ensuring minimal downtime and continuous availability. This strategy is ideal for production environments where service uptime is critical.  
+    2. **Recreate:** Terminates all existing deployments before creating new ones. This approach ensures that the system starts fresh with every deployment but may cause temporary downtime.  
+
+Additionally, users can fine-tune deployment strategy:
+
+- **Max Unavailable (%):** Defines the percentage of replicas that can be unavailable during deployment.
+- **Max Surge (%):** Specifies the percentage of extra replicas that can be created during an update.
+
 
 ![Project General Settings](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28040027/5-2.png)
+
+### Source Control
+
+The settings here are subdivided into 2 sections:
+
+1. **CI/CD Settings:** You can specify if deployments are automatically triggered when you make new changes to a branch in your git (GitHub, GitLab, and Bitbucket) repository. You can also auto-rollback on failure, this means that if a deployment fails, it automatically redeploys the last working version of your application.
+
+2. **Source Control:** Here, you can select which git repository and production branch that PipeOps will deploy from.
+
+![Project Source Control](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28041243/7-1.png)
+
 
 ### Build Settings
 
@@ -45,15 +66,7 @@ Customize the build process with options including:
 
 ![Project Build Settings](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28041021/6-2.png)
 
-### Source Control
 
-The settings here are subdivided into 2 sections:
-
-1. **CI/CD Settings:** Here you can decide to manually trigger the deployment process and bypass automatic deployment. You can also auto-rollback on failure, this means that if a deployment fails, it automatically redeploys the last working version of your application.
-
-2. **Branch Rules:** You can specify if deployments are automatically triggered when you make new changes to a branch in your git (github, gitlab and bitbucket) repository. You can also select a production branch that PipeOps will deploy from.
-
-![Project Source Control](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28041243/7-1.png)
 
 ### Environment Variable
 
@@ -86,20 +99,47 @@ There are 2 subsections under this:
 
 ### Storage
 
-In this section you can easily add extra storage to meet your needs. Here’s how:
+In this section, you can easily add extra storage to meet your needs. Here’s how:
 
 ![Project storage](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28034712/3-2.png)
 
 1. **Specify the Path**: Determine where you want the extra storage to be added. This could be any directory within your application that requires more space.
-   
 2. **Set the Size**: Decide how much additional storage you need. Simply enter the number of Gigabytes required.
 
 ![Project storage added](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28035533/4-1.png)
 
-### Collaboration
+### Domain
+This allows you to configure custom domain names for your deployments. By entering a personalized domain (e.g., yourdomain.com), you can direct traffic to your application's HTTPS load balancer endpoint. This feature enables you to personalize your application's URL for better accessibility.
 
-Here you can input the email address of a friend or colleague that also has a PipeOps account to collaborate on a project with them. Invite collaborators by entering their PipeOps account email addresses to work on the project together.
 
-![Project Collaboration](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28042523/12-2.png)
+### Checks
+Health checks are crucial for ensuring the stability, availability, and performance of your applications. PipeOps provides three types of health checks:
+
+#### StartupCheck
+
+The **Startup Check** determines whether an application has successfully started. Configurable parameters include:
+    - **Initial Delay Seconds:** The time (in seconds) to wait before performing the first check after starting.
+    - **Failure Threshold:** The number of failed checks before the container is considered unhealthy.
+    - **Period Seconds:** The interval (in seconds) between consecutive checks.
+    - **Timeout Seconds:** The time (in seconds) a check is allowed to run before it is considered a failure.
+
+
+#### ReadinessCheck
+
+The **Readiness Check** determines whether the application is ready to serve traffic. Configurable parameters include:
+
+- **Initial Delay Seconds:** The waiting period before the first check is conducted.
+- **Failure Threshold:** Defines how many failed checks are needed before the container is marked as unready.
+- **Period Seconds:** Frequency at which the check runs.
+- **Timeout Seconds:** Duration before a check is considered failed.
+
+#### LivenessCheck
+The **Liveness Check** verifies whether an application is still running and responsive. Configurable parameters include:
+
+- **Initial Delay Seconds:** The time delay before the first liveness probe runs.
+- **Failure Threshold:** Number of failed attempts before the system restarts the container.
+- **Period Seconds:** The frequency of performing the check.
+- **Timeout Seconds:** How long the check waits for a response before marking it as failed.
+
 
 By navigating through these subsections, you can effectively tailor your project settings to meet specific requirements, ensuring seamless deployment and optimal performance. Make the most of PipeOps project settings to streamline your development process and collaborate efficiently.

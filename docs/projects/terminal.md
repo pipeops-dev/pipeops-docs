@@ -6,23 +6,23 @@ title: Terminal
 
 # Project Terminal
 
-Welcome to the guide for PipeOps' Project Terminal feature! With the Project Terminal, you can access your project's command line interface directly. This empowers you to execute commands, manage resources, and streamline workflows effectively. This guide covers the basics of using the terminal, accessing it within your project, and working with different terminal types and pods.
+With the Project Terminal, you gain direct access to your project's command line interface, empowering you to execute commands, manage resources, and streamline workflows effectively. This guide covers the basics of using the terminal, accessing it within your project, and working with different terminal types and pods.
 
 ## Prerequisites
 
 Before delving into working with the terminal, ensure you have the following prerequisites:
 
 1. **A PipeOps account**. Use the link [here](https://console.pipeops.io/signup) to sign up on PipeOps if you do not currently have an account.
-2. **A deployed project**. This can be a PipeOps template or a project from your Git (Github, Gitlab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
+2. **A deployed project**. This can be a PipeOps template or a project from your Git (GitHub, GitLab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
 
 ## Accessing the Terminal
 
-The terminal is a command line interface that provides users with direct access to the command line interface of their projects.
+The terminal provides users with direct access to the command line interface of their projects.
 
 Accessing the terminal in PipeOps is straightforward:
 
 1. Navigate to your project's main page in PipeOps.
-2. Click on the "**Terminal**" tab to access the project terminal dashboard.
+2. Click on the "**Terminal**" tab at the extreme right side of your screen.
 
 ![Terminal](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/48/1_692685a378.png)
 

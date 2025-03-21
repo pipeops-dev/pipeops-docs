@@ -1,0 +1,8 @@
+{
+  "label": "Choose Your Deployment Path",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Decide where to deploy your infrastructure — PipeOps' servers or your preferred cloud provider (e.g., AWS, Azure, GCP, Digital Ocean, Huawei Cloud). Enjoy a seamless deployment experience tailored to your needs."
+  }
+}
