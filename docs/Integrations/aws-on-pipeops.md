@@ -47,5 +47,5 @@ Then click on the "Create stack" button at the bottom right of the page.
 
 ![PipeOps AWS Create Cloud Formation Stack In Progess Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/PipeOpsAWSAccountConnected.png)
 
-Now that you have connected your AWS account to PipeOps, you can create a server to your connected AWS account using this guide [here](/docs/servers/server-provisioning).
+Now that you've connected your AWS account to PipeOps, you can create a server on your connected AWS account using this guide [here](/docs/servers/server-provisioning).
 

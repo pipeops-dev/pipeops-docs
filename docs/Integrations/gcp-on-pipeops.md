@@ -34,5 +34,4 @@ To connect your GCP account to PipeOps, follow these steps:
 
 ![PipeOps GCP Connection screen](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/PipeOpsGCPCredentialsUploaded.png)
 
-Now that you have connected your GCP account to PipeOps, you can create a server to your connected GCP account using this guide [here](/docs/servers/server-provisioning).
-
+Now that you've connected your GCP account to PipeOps, you can create a server on your connected GCP account using this guide [here](/docs/servers/server-provisioning).
