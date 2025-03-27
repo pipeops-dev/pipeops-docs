@@ -57,7 +57,7 @@ The next step is to customize your server resources. The options available on th
 
 **Karpenter Configuration:** Choose a preferred node architecture or proceed with default settings. You can also enable Spot instances to use cheaper cloud services.
 
-Once configured, click the **Next** button to proceed. A modal will appear showing server creation progress in real time.
+Once configured, click the **Create Server** button to proceed. A modal will appear showing server creation progress in real time.
 
 ### Step 7: Proceed to Project Deployment
 
