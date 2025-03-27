@@ -39,7 +39,7 @@ To learn more about each plan, its features, and billing methods, check out our 
 
 ### Step 4: Select Payment Method
 
-After choosing your preferred plan, the Payment Tab will open, allowing you to complete your subscription. You can select from popular payment methods, including Stripe and Paystack.  
+After choosing your preferred plan, a confirmation modal appears. Review your subscription plan and select a payment method to finalize your setup. You can select from popular payment methods, including Stripe and Paystack.  
 
 After selecting a payment method, you’ll be redirected to a secure checkout page.
 
