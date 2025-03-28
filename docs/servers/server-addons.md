@@ -20,8 +20,8 @@ The following add-ons are pre-installed when you create a server:
 
 - **Cluster autoscaler:** This component minimizes costs by ensuring that nodes are added to the server when needed and are removed when unused.
 - **Sealed secret:** This provides a mechanism to securely manage sensitive data in your server.
-- **Certificate manager:** This automatically creates and renews <abbr title="Transport Layer Security, or TLS, is a security protocol designed to facilitate privacy and data security for communications over the internet">TLS</abbr> certificates and stores them as Kubernetes secrets for easy use.
-- **Ingress-Nginx controller:** This manages external traffic coming into the server. It may also handle <abbr title="Secure Sockets Layer, or SSL, is a security protocol that encrypts data exchanged between a server and a browser (or between two servers)">SSL</abbr> configurations and load-balancing.
+- **Certificate manager:** This automatically creates and renews <abbr title="Transport Layer Security (TLS) is a security protocol designed to facilitate privacy and data security for communications over the internet">**TLS**</abbr> certificates and stores them as Kubernetes secrets for easy use.
+- **Ingress-Nginx controller:** This manages external traffic coming into the server. It may also handle <abbr title="Secure Sockets Layer, or SSL, is a security protocol that encrypts data exchanged between a server and a browser (or between two servers)">**SSL**</abbr> configurations and load-balancing.
 - **Metrics server:** A scalable, efficient source of container resource metrics for Kubernetes built-in autoscaling pipelines. It gathers data on how resources like CPU and memory are utilized. This data can be used for autoscaling.
 - **K8 dashboard:** A web-based Kubernetes dashboard for managing applications in a cluster.
 - **External DNS:** This refers to Domain Name System (DNS) records managed outside of an internal network. Examples of external DNS include Amazon Route 53, Azure DNS, and Google Cloud DNS.
