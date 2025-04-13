@@ -30,6 +30,8 @@ Creating a new team is a straightforward process:
 
 2. Select "Team" from the dropdown.
 
+
+
 3. In the new page that appears, fill out the necessary information, including:
 
 - **Team Name**: Provide a unique name to identify your team.
@@ -54,7 +56,7 @@ Refer to the images below, which illustrate the step-by-step process of creating
 ![Create New Team 3](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/39/team_project_ac64eeed27.png)
 
 
-Note: Team members can be invited after the team is created. Navigate to the **Invite Team Member** section on the right side of the page to add collaborators. Alternatively, you can follow the instructions below to add team members.
+Note: You can invite team members before you create a team. Navigate to the **Invite Team Member** section on the right side of the page to add collaborators. Alternatively, you can follow the instructions below to add team members.
 
 
 ## Adding Team Members

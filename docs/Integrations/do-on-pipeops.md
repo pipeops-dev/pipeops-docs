@@ -25,4 +25,4 @@ To connect your Digital Ocean account to PipeOps, follow these steps:
 5. After authorization, you will be redirected back to PipeOps. If successful, you'll see DigitalOcean listed as a connected provider.
 
 
-Now that you've connected your Digital Ocean account to PipeOps, you can create a server on your connected account using this guide [here](/docs/servers/server-provisioning).
+Now that you've connected your Digital Ocean account to PipeOps, you can create a server on your connected account using this [guide](/docs/servers/server-provisioning).
