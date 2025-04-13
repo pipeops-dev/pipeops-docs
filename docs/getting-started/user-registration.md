@@ -12,13 +12,13 @@ Welcome to PipeOps! In this guide, we'll walk you through the seamless registrat
 
 Open your preferred web browser and navigate to the PipeOps homepage. You can use the direct URL: [https://pipeops.io](https://pipeops.io).
 
-![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/homepage_d3d284d5fd.png)
+![PipeOps homepage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/landing-page.png)
 
 ## Step 2: Visit the Registration Page
 
 To begin the registration process, click on the "**Sign Up**" button in the top right corner. This will redirect you to the PipeOps console sign-up page. Alternatively, you can skip step 1 and use the direct URL: [https://console.pipeops.io/auth/signup](https://console.pipeops.io/auth/signup).
 
-![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/homepage1_331e37d64b.png)
+![PipeOps homepage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/landing-page-sign-up.png)
 
 ## Step 3: Sign Up Options
 
@@ -41,7 +41,7 @@ On the registration page, enter your first name, last name, and email address. E
 
 You will be redirected to a page requesting your registration OTP. Check your email inbox for a verification message containing the token, paste it into the provided box, and proceed.
 
-![PipeOps homepage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/otp_a12ad0250c.png)
+![PipeOps homepage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/otp-verification.png)
 
 ## Step 6: Customize Your Workspace
 
@@ -51,13 +51,13 @@ To personalize your PipeOps experience, we want to understand your specific requ
 
    - This section prompts you to choose a name for your workspace. The workspace name helps you organize and distinguish your projects within PipeOps.
 
-![Workspace name](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/workspace_76e1748c31.png)
+![Workspace name](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/choose-workspace-name.png)
 
 2. **Your Role/Job Title:**
 
    - Here, you can specify your role or job title, which provides context for your usage of PipeOps. Whether you're a software developer, founder, or DevOps engineer, identifying your role will help us serve you better.
 
-![Role](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/role_e2a25cc747.png)
+![Role](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/role-survey-question.png)
 
 3. **Your Goal of Using PipeOps:**
    - Choose your primary goal for using PipeOps, such as exploring its features for your company or deploying a simple project to the cloud. This helps us offer relevant guidance and support.
@@ -67,7 +67,7 @@ To personalize your PipeOps experience, we want to understand your specific requ
 4. **How you Discovered PipeOps:**
    - This section inquires about how you found out about PipeOps. Whether through LinkedIn, a Google search, or another avenue, knowing how users discover PipeOps helps us improve and reach more people.
 
-![Discover ](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/25/discover_419f076830.png)
+![Discover ](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/discovery-survey-question.png)
 
 Once you've answered these questions, your workspace will be configured accordingly, providing a personalized experience tailored to your needs.
 
