@@ -6,29 +6,50 @@ title: Server Provisioning
 
 In this section, we’ll guide you through how to create a new server from your PipeOps dashboard.
 
-### Step 1: Navigate to the server creation page
+### Navigate to the Server Creation Page
 
-Log in to your [PipeOps dashboard](https://console.pipeops.io/auth/signin).
+1. Log in to your [PipeOps dashboard](https://console.pipeops.io/auth/signin).
 
-Once you are logged in, you can create a new server by using one of the following methods:
+2. Once you are logged in, you can create a new server by using one of the following methods:
 
-1. **Top Navbar:** Click the **New** button on the top right corner of your screen. Select “Provision a Server” from the dropdown menu.
-2. **Side Navbar:** Alternatively, you can click on **Servers** from the sidebar menu.
+ -  **Top Navbar:** Click the **New** button on the top right corner of your screen. Select “Provision a Server” from the dropdown menu.
+ - **Side Navbar:** Alternatively, you can click on **Servers** from the sidebar menu.
 
 ![Dashboard](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/Dashboard_1_393ee1240f.png)
-Either of the above steps will redirect you to a page where you will select your server hosting platform. 
+Either of the above steps will redirect you to a page where you will select your server hosting method. 
 
 
-### Step 2: Choose a Hosting Method
+### Choose a Hosting Method
 After completing the previous step, the page below will appear. There are two options when creating a new server: **On PipeOps** and **On Cloud Provider**.
 
 ![Select Path](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/Select_Path_1_1d8bfb7a63.png)
 
-The **On PipeOps** option allows you to deploy applications on servers managed by PipeOps, hosted on  cloud providers like Digital Ocean, AWS, Google Cloud, and Azure. Choosing **On Cloud** lets you host applications in your own cloud account.
+- **PipeOps Nova Servers:** Deploy applications on servers managed by PipeOps, hosted on cloud providers such as Digital Ocean, AWS, Google Cloud, and Azure.
 
-Check out [Deployment path](/docs/getting-started/choose-your-deployment-path/on-pipeops.md) if you are provisioning your server On PipeOps.
+- **Cloud Provider:** Host applications on your own cloud account by connecting PipeOps to your preferred cloud provider.
 
-### Step 3: Connect Your Cloud Account
+Select your desired hosting method to proceed.
+
+
+### Provisioning On PipeOps Nova Servers
+
+#### Step 1: Customize your server:
+
+    - **Choose a preferred provider:** Digital Ocean, Google Cloud, Amazon Web Services, Azure, or Huawei Cloud.
+
+    - **Select region:** Pick the geographic location for deploying your server. We've implemented a geo-location pricing model to ensure you're billed in your local currency, protecting you from exchange rate fluctuations.
+
+    - **Review the monthly cost:** You can adjust resources such as CPU, memory, and storage to estimate your monthly cost. 
+
+#### Step 2: Click "Proceed" to finalize your set up:
+
+Once provisioning is complete, your server will be visible on your dashboard. You can proceed to deploy applications to the newly created server.
+
+
+
+### Provisioning On Cloud Provider
+
+#### Step 1: Connect Your Cloud Account
 
 To create a server on your chosen cloud provider, you must first connect your account to PipeOps:
 - Select from AWS, Digital Ocean, Azure, Google Cloud, or Huawei Cloud. 
@@ -36,25 +57,25 @@ To create a server on your chosen cloud provider, you must first connect your ac
 
 Check out [Integrations](/docs/category/Integrations) for detailed steps on how to link your cloud provider with PipeOps.
 
-### Step 4: Configure Cloud Server
+#### Step 2: Configure Cloud Server
 Now that you’ve successfully connected your cloud account to PipeOps, let’s configure your server:
 1. Select your preferred deployment region.
 2. Define security standards: Select the appropriate option for compliance: 
 
-- **PMS:** A security standard suitable for general deployments, including containers, databases, Terraform, Helm, and other applications.
-- **HIPAA Compliance:** A higher standard designed for users handling healthcare data, ensuring compliance with the Health Insurance Portability and Accountability Act (HIPAA).
-- **PCI DSS Compliance:** Provides security measures for businesses processing, storing, or transmitting credit card information.
+    - **PMS:** A security standard suitable for general deployments, including containers, databases, Terraform, Helm, and other applications.
+    - **HIPAA Compliance:** A higher standard designed for users handling healthcare data, ensuring compliance with the Health Insurance Portability and Accountability Act (HIPAA).
+    - **PCI DSS Compliance:** Provides security measures for businesses processing, storing, or transmitting credit card information.
 
 3. Select **Next** to proceed.
 
-### Step 5: Configure Method
+#### Step 3: Configure Method
 There are two configuration methods when provisioning your server:
 - **Custom configuration:** This option allows you to manually configure CPU, memory, storage, and other specifications.  
 
 - **Karpenter:** This automatically provisions and deprovisions resources based on demand. Consider Karpenter if you prefer automated scaling.
 
 
-### Step 6: Configure Resources
+#### Step 4: Configure Resources
 The next step is to configure server resources. The details that appear on this tab depend on your chosen configuration method.
 
 **Custom configuration**  
@@ -69,15 +90,12 @@ You can also explore **Expert Settings** for advanced configurations. Here, you 
 If you select Karpenter, you’ll have additional options to define how your infrastructure scales. Alternatively, you can leave everything on default and proceed to the next step.
 
 
-### Step 7: Finish Set Up
-A modal will appear showing the server creation is in progress. After the creation is complete, you’ll see a confirmation message. You can now proceed to deploy applications to the newly created server.
-
-
-![Server Creation Progress](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/creation_In_Progress_3fab10c0e8.png)
-
-![Server Creation Successful](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/server_Created_dd33edd741.png)
+#### Step 5: Finish Set Up
+Click the "Create Server" button to finish set up. After the creation is complete, you can proceed to deploy applications to the newly created server.
 
 ![Created Server](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/server_Overview_e7518cfacb.png)
+
+
 
 
 ## Deleting Servers
