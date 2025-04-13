@@ -8,8 +8,8 @@ slug: server-metrics
 
 ## Overview
 
-This documentation guides you through the process of accessing and exploring metrics for your deployed servers using PipeOps.  
-   
+This documentation guides you through the process of accessing and exploring metrics for your deployed servers using PipeOps.
+
 PipeOps allows users to gain valuable insights into the performance of deployed servers. By analyzing key metrics, you can identify potential issues, ensure efficient resource allocation, and maintain overall system health.
 
 ## Accessing Server Metrics
@@ -51,12 +51,6 @@ The storage metric helps you monitor disk space usage by your server. Here's an 
 This metric shows inbound and outbound data traffic. It helps you understand data transfer between your server and the outside world.
 
 ![Network I/O Metric Example](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/22/network_4a55527172.png)
-
-### Control Plane Metric
-
-This provides insights into the performance of your server’s control plane. It helps you monitor the cluster health of the underlying infrastructure.
-
-![Control Plane Metric Example](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/22/plane_b1426c4795.png)
 
 Monitoring the control plane metric enables you to identify potential issues and optimize server management. Keep a close eye on this metric to ensure smooth operation and maximize performance.
 

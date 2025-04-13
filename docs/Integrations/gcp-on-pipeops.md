@@ -10,7 +10,6 @@ title: Connect GCP to PipeOps
 
 This documentation will guide you through the process of connecting your GCP account to PipeOps. By following these steps, you’ll be able to create a GCP server on PipeOps and deploy projects on the server directly from your PipeOps dashboard.
 
-
 ## Steps to follow
 
 To connect your GCP account to PipeOps, follow these steps:
@@ -26,11 +25,11 @@ To connect your GCP account to PipeOps, follow these steps:
 ![PipeOps Cloud Providers List](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/PipeOpsConnectCloudProviderList.png)
 
 4. An instruction screen appears, outlining the steps required to generate your GCP credentials.
-You can follow this guide [here](/docs/how-to-guides/tutorials/generate-gcp-json-credentials) for a detailed walkthrough.
+   You can follow this guide [here](/docs/how-to-guides/tutorials/generate-gcp-json-credentials) for a detailed walkthrough.
 
 5. On the "Upload Credentials JSON" screen, you can provide an optional name to identify your uploaded GCP JSON credentials. The optional field is useful in scenarios where you want to connect more than one GCP account on PipeOps.
 
-![PipeOps GCP JSON Credentials Upload Screen](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/PipeOpsGCPJSONCredentialsFilled.png)
+![PipeOps GCP JSON Credentials Upload Screen](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-gcp-step-two.png)
 
 6. Click on the submit button at the bottom right. If the JSON credentials are valid, your GCP account will be successfully connected.
 
