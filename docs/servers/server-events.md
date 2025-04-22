@@ -23,6 +23,7 @@ To access events, follow these steps:
 
 Each event entry on your PipeOps dashboard has three features: **Severity, Time,** and **Summary.** 
 
+![Server Events](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-events.png)
 
 ### Severity
 This indicates the seriousness of the event, allowing you to prioritize critical issues. PipeOps categorizes events by different severity levels, such as **warning** and **normal**.

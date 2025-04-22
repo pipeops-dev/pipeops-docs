@@ -18,7 +18,7 @@ To view the metrics for your add-on, follow these steps:
 2. Click on the Metrics tab in the navigation menu.  
 This will open the Add-on Metrics Overview page, where you can monitor key performance indicators at a glance.
 
-![add-on Metrics Overview](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/52/Overview_2x_98e26adb25.png)
+![add-on Metrics Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/addon-metrics-overview.png)
 
 The image above illustrates the add-on metrics overview, offering a quick glimpse of how your add-on is performing in various metrics.
 
@@ -31,19 +31,19 @@ Let's explore some key metrics available:
 
 The CPU metric provides insights into the CPU usage of your add-on, helping you understand the processing power consumed by your application. Here's an example of how the CPU metric might be visualized:
 
-![CPU Metric Example](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/52/CPU_2x_7db6c689e5.png)
+![CPU Metric Example](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/addon-metrics-cpu.png)
 
 ### Memory Metric
 
 The memory metric provides information about the memory usage of your add-on, offering visibility into how much memory your application is utilizing. Here's an example of how the memory metric might be represented:
 
-![Memory Metric Example](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/52/Memory_2x_0fe5412856.png)
+![Memory Metric Example](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/addon-metrics-memory.png)
 
 ### Storage Metric
 
 The storage metric focuses on the storage usage of your add-on, helping you track the amount of disk space your application occupies. Here's an example of how the storage metric might be displayed:
 
-![Storage Metric Example](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/52/Storage_2x_1a82fbb2bd.png)
+![Storage Metric Example](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/addon-metrics-storage.png)
 
 ### Network I/O Metric
 
@@ -53,7 +53,7 @@ The Network I/O section provides insights into data transfer and HTTP requests h
 
 Here's an example of how the network I/O metric might be visualized:
 
-![Network I/O Metric Example](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/52/O_2x_4f5e9e8158.png)
+![Network I/O Metric Example](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/addon-metrics-network.png)
 
 By exploring these individual metrics, you can gain a comprehensive understanding of how your add-on performs in different areas.
 

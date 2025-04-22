@@ -12,6 +12,8 @@ The **Update History** feature provides a detailed log of all server updates, in
 2. Select the desired server from the list.
 3. Click on the **"Update History"** tab.
 
+![Server Update History](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-update-history.png)
+
 
 Your server update history consists of the following information per each deployment:
 
