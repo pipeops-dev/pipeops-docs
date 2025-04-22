@@ -23,6 +23,8 @@ You'll then be directed to:
 - **Select region:** Pick the geographic location for deploying your server. We've implemented a geo-location pricing model to ensure you're billed in your local currency, protecting you from exchange rate fluctuations.
 - **Review the monthly cost:** You can adjust resources such as CPU, memory, and storage to estimate your monthly cost.
 
+![Cost Estimator](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/cost-estimator.png)
+
 Use the sliders to adjust the following:
 
 - **CPU:** The number of virtual CPUs for your server. This determines the processing power available for running your applications.
@@ -31,7 +33,7 @@ Use the sliders to adjust the following:
 
 Note: This is an estimate to help you gauge costs. Your final charge will depend on your actual resource usage.
 
-![Cost Estimator](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/cost-estimator.png)
+
 
 ### Step 3: Select a Plan
 

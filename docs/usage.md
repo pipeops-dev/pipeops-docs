@@ -12,11 +12,14 @@ The Usage Section in PipeOps provides a comprehensive overview of your subscript
 
 1. Open your preferred web browser and navigate to your PipeOps dashboard. You can use the direct URL: [https://console.pipeops.io/auth/signin](https://console.pipeops.io/auth/signin).
 2. Once logged in, click on the "Usage" button at the top center of your screen.
+
+![Usage button](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-btn.png)
+
+
 3. Alternatively, you can click the power-like button at the top right end of the screen. Select "Usage" from the dropdown.
 
 
-![Usage](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/Usage_1_fa41920a06.png)
-
+![Access Usage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/access-usage.png)
 
 
 ### Active Subscription
@@ -33,6 +36,8 @@ The **Active Subscription** tab provides a high-level summary of your current su
     2. In the modal that appears, select the number of team seats you want.
     3. Click the "proceed to pay" button to complete your purchase.
 
+![Usage Active Subscription](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-active-sub.png)
+
 - **Deployments:** Monitor the number of deployments you have made versus the total number available.
 
 - **Available credit:** This section displays your available credits. Users can click the "Top Up" button to buy additional credits if needed. You can also apply for free credit by clicking the "Apply here" link.
@@ -46,6 +51,8 @@ The **Nova Usage** tab provides detailed insights into resource consumption for 
 - **Period Selector:** Use the dropdown menu to filter usage data by time periods (e.g., 1 month, 15 minutes). This allows you to analyze resource consumption over specific durations.
 
 - **Server Selector:** Use the dropdown menu to filter usage data by server. This allows you to analyze resource consumption for a particular server.
+
+![Nova Usage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-nova.png)
 
 - **Usage Breakdown:**  This section prominently displays the total cost incurred. It also provides a breakdown of resource consumption. You can view detailed metrics for:
 

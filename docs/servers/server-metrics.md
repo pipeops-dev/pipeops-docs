@@ -20,7 +20,7 @@ To view the metrics for your server, follow these steps:
 2. Select the desired server from the list.
 3. Click on the **Metrics** tab to open the metrics dashboard.
 
-![server Metrics Overview](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/22/overview_8f109aff39.png)
+![server Metrics Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-overview-metric.png)
 
 The image above illustrates the server metrics overview, offering a quick glimpse of how your server is performing across various metrics.
 
@@ -32,25 +32,25 @@ The **Metrics** dashboard includes various performance indicators that can help 
 
 The CPU metric displays real-time CPU utilization. It helps you understand the processing power consumed by your server. Here's an example of how the CPU metric might be visualized:
 
-![CPU Metric Example](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/22/CPU_761b23d167.png)
+![CPU Metric Example](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-cpu-metric.png)
 
 ### Memory Metric
 
 This metric provides insight into how much memory your server and applications are utilizing. Here's an example of how the memory metric might be represented:
 
-![Memory Metric Example](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/22/memory_6c36fc1c9d.png)
+![Memory Metric Example](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-memory-metric.png)
 
 ### Storage Metric
 
 The storage metric helps you monitor disk space usage by your server. Here's an example of how the storage metric might be displayed:
 
-![Storage Metric Example](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/22/storage_77078f2377.png)
+![Storage Metric Example](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-storage-metric.png)
 
 ### Network I/O Metric
 
 This metric shows inbound and outbound data traffic. It helps you understand data transfer between your server and the outside world.
 
-![Network I/O Metric Example](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/22/network_4a55527172.png)
+![Network I/O Metric Example](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-network-metric.png)
 
 Monitoring the control plane metric enables you to identify potential issues and optimize server management. Keep a close eye on this metric to ensure smooth operation and maximize performance.
 

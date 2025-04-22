@@ -16,6 +16,8 @@ To access server add-ons, follow these steps:
 2. Select the desired server from the list.
 3. Click on the **"Add-ons"** tab.
 
+![Server AddOn Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-addon-page.png)
+
 The following add-ons are pre-installed when you create a server:
 
 - **Cluster autoscaler:** This component minimizes costs by ensuring that nodes are added to the server when needed and are removed when unused.

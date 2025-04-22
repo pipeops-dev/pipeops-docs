@@ -25,14 +25,24 @@ To access Project Migration:
 
 <!-- ![Project migration]() -->
 
+![Migrate Projectt](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-actions-dropdown-migration.png)
+
 ### Migration Options
 A pop-up will appear after clicking the **Migrate Project** button, revealing two options:
+
+![Migration Options](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-migration-options.png)
 
 1. **Migrate Server** 
 - Select the server your project is currently hosted on and the server that you would be moving your project to.
 - Click the **Start Migration** button at the bottom of the page.  
 
+![Migrate Server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-migration-migrate-server.png)
+
 2. **Promote Environment**
+
+![Promote Environment](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/promote-project.png)
+
+
 - This moves the project to a different environment within the same server. For instance, you can move your project from beta to production.
 - Select your current environment and choose the destination environment from the Promotion Environment dropdown.
 - Click the **Start Migration** button at the bottom of the page.

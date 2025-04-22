@@ -21,12 +21,14 @@ To access server environments, follow these steps:
 There are two environments created for you by default: **beta** and **production**. 
 
 
-![Environments](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/41/Environments_b23b2fded1.png)
+![Environments](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-environments.png)
 
 
 ## Creating a New Environment
 
 1. Click on the "+ New Environment" button located on the right-hand side of the screen.
+
+![New Environment Button](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/new-server-environment-btn.png)
 
 2. Fill in Environment Details:
 
@@ -35,6 +37,8 @@ There are two environments created for you by default: **beta** and **production
     - Enter a unique name for your environment (e.g., Development, Staging).
 
     - Add environment variables. For each variable, specify the name (key) and value.
+
+![Edit Environment](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/new-server-environment.png)
 
 3. Click Save to finalize.
 
@@ -57,12 +61,12 @@ To edit your environment, follow these steps:
 
 2. Select **Edit Environment** from the dropdown.
 
-![Edit Environment](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/41/Env_Edit_57c02c46a8.png)
+![Edit Environment](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/edit-server-env.png)
 
 
 This will open a modal where you can edit your environment name and manage environment variables.
 
-![Edit Modal](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/41/Edit_97634cf3c2.png)
+![Edit Modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/edit-server-modal.png)
 
 3. Click **Save** to apply changes.
 
@@ -75,11 +79,11 @@ To delete an environment, follow these steps:
 
 2. Select **Delete Environment** from the dropdown.
 
-![Delete Env](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/41/Env_Delete_2be19f3294.png)
+![Delete Env](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/delete-server-env.png)
 
 3. A confirmation prompt will appear asking you to confirm deletion. Confirm by typing in the environment name and clicking **Delete**.
 
-![Delete Env Modal](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/41/Delete_b42380ad7c.png)
+![Delete Env Modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/delete-server-env-modal.png)
 
 
 

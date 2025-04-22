@@ -8,12 +8,7 @@ title: Project Settings
 
 This documentation provides a comprehensive guide to managing and configuring project settings in PipeOps. With PipeOps, you can easily customize various aspects of your project to meet specific requirements and optimize its performance.
 
-## Prerequisites
 
-Before delving into project settings, ensure you have the following prerequisites:
-
-1. **A PipeOps account**. Use the link [here](https://console.pipeops.io/signup) to sign up on PipeOps if you do not currently have an account.
-2. **A deployed project**. This can be a PipeOps template or a project from your Git (GitHub, GitLab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
 
 ## Accessing Project Settings
 
@@ -27,6 +22,8 @@ To access project settings:
 The project settings dashboard is organized into several subsections, each catering to specific configuration areas:
 
 ### General Settings
+
+
 
 In this section, you can manage basic project details such as:
 
@@ -43,7 +40,8 @@ Additionally, users can fine-tune deployment strategy:
 - **Max Surge (%):** Specifies the percentage of extra replicas that can be created during an update.
 
 
-![Project General Settings](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28040027/5-2.png)
+![Project General Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-overview.png)
+
 
 ### Source Control
 
@@ -53,7 +51,7 @@ The settings here are subdivided into 2 sections:
 
 2. **Source Control:** Here, you can select which git repository and production branch that PipeOps will deploy from.
 
-![Project Source Control](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28041243/7-1.png)
+![Project Source Control](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-setting-source-control.png)
 
 
 ### Build Settings
@@ -64,7 +62,7 @@ Customize the build process with options including:
 - **Build Method:** Select the build method.
 - **Lifecycle Command:** Define the command your project runs on.
 
-![Project Build Settings](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28041021/6-2.png)
+![Project Build Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-build-settings.png)
 
 
 
@@ -75,15 +73,16 @@ Here you can perform either of the following options:
 - **Edit Existing Variables:** Modify existing environment variables.
 - **Create New Variables:** Add new environment variables individually or in bulk. We will discuss the two ways to create environmental variables in more detail.
 
-![Project Env](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28041518/8-1.png)
+![Project Env](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-envs-settings.png)
+
 
 1. **Using the Bulk Edit Button:** After clicking on the bulk edit button, a pop-up appears where you can add all your environment variables at once. This is especially useful if your project has a lot of environment variables that it depends on.
 
-![Project Env Bulk Edit](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/45/Project_Settings_Bulk_Add_Env_bd3b6c0bd0.png)
+![Project Env Bulk Edit](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-bulk-env.png)
 
 2. **Using the Add Button:** After clicking on the Add button, a new row where you can add a new environment variable appears as shown below. Fill in the details for your new environment variable and click the save button on the bottom right corner of the pop-up.
 
-![Project Env Add Button](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28042155/10-1.png)
+![Project Env Add Button](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-add-env.png)
 
 ### Resources and Replication
 
@@ -91,29 +90,36 @@ There are 2 subsections under this:
 
 1. **General resources:** You can configure preset templates that will determine the CPU cores and the amount of memory that will be allocated to your project.
 
-![Project General Resources](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/45/Project_Settings_Presets_f701b89f80.png)
+![Project Replication](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-resources-and-replication-settings.png)
 
 2. **Replication:** Here you can select the number of replicas of your project that will be created. Replication is especially useful for enhanced redundancy and performance.
 
-![Project Replication](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28042204/11-2.png)
+
 
 ### Storage
 
 In this section, you can easily add extra storage to meet your needs. Here’s how:
 
-![Project storage](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28034712/3-2.png)
+![Project storage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-storage.png)
 
 1. **Specify the Path**: Determine where you want the extra storage to be added. This could be any directory within your application that requires more space.
 2. **Set the Size**: Decide how much additional storage you need. Simply enter the number of Gigabytes required.
 
-![Project storage added](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28035533/4-1.png)
+![Project storage added](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-add--storage.png)
 
 ### Domain
 This allows you to configure custom domain names for your deployments. By entering a personalized domain (e.g., yourdomain.com), you can direct traffic to your application's HTTPS load balancer endpoint. This feature enables you to personalize your application's URL for better accessibility.
 
 
+![Project Domain](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-domain.png)
+
 ### Checks
-Health checks are crucial for ensuring the stability, availability, and performance of your applications. PipeOps provides three types of health checks:
+Health checks are crucial for ensuring the stability, availability, and performance of your applications. 
+
+![Project Checks](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-checks-settings.png)
+
+
+PipeOps provides three types of health checks:
 
 #### StartupCheck
 

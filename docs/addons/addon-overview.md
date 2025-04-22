@@ -11,6 +11,10 @@ Upon successfully deploying an add-on, or if you select an already installed add
 
 ## Non-Database Add-on Overview
 
+
+![Non-DB Addon Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/none-db-add-on-overview-page.png)
+
+
 For non-database add-ons, you will find the following key sections on the overview page:
 
 1. **App Status**:
@@ -33,6 +37,8 @@ In addition to these features, you also have access to a tab navigation menu, wh
 - [**Settings Tab**](/docs/addons/logs-and-events): Manage and configure your add-on settings. This includes options to modify environment variables, update resource allocations, configure access controls, and manage domain settings. The settings tab provides a user-friendly interface for customizing your add-on's behavior and performance parameters.
 
 ## Database Add-on Overview Page
+
+![DB Addon Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/db-add-on-overview-page.png)
 
 For database add-ons, the overview page contains these key sections:
 

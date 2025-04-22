@@ -8,12 +8,6 @@ title: Worker And Jobs
 
 This guide provides detailed instructions on how to navigate the Worker and Jobs functionalities within PipeOps. These features help you efficiently manage background processes and scheduled tasks for your project. 
 
-## Prerequisites
-
-Before you begin, ensure you have the following:
-
-1. **A PipeOps account**. Use the link [here](https://console.pipeops.io/signup) to sign up on PipeOps if you do not currently have an account.
-2. **A deployed project**. This can be a PipeOps template or a project from your Git (Github, Gitlab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
 
 
 ## Accessing Worker
@@ -28,11 +22,16 @@ The Worker section in PipeOps allows users to define and manage background proce
 If no workers are available, you’ll see a message “No workers are available yet.” 
 1. Click the **+ New Worker** button.
 
+![New Worker](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-add-worker.png)
+
 2. A modal appears where you can customize the following:
     - Run Command: The command to be executed by the worker.
     - Replicas: The number of instances of the worker to run concurrently.
     - Memory: The amount of memory allocated to each worker instance.
     - CPU: The number of CPU cores allocated to each worker instance.
+
+
+![Worker Modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-add-worker-modal.png)
 
 3. Click the **Create** button to deploy your worker.
 
@@ -49,6 +48,9 @@ The Jobs section in PipeOps allows users to schedule and manage recurring tasks 
 If no Jobs have been created yet, you’ll see a message “No Jobs are available yet.” 
 1. Click the **+ New Job** button.
 
+![New Job](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-add-job.png)
+
+
 2. A modal appears where you can configure the following:
 
 - **Command:** The command to be executed by the job.
@@ -62,6 +64,10 @@ If no Jobs have been created yet, you’ll see a message “No Jobs are availabl
     2.  A user-friendly interface to set recurring schedules on specific days and times.
 
  - **Allocation:** Configure resource allocation for the job, including VCPU and Memory.
+
+
+ 
+![Job Modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-add-job-modal.png)
 
 
 3. Click the **Create** button to deploy your job.

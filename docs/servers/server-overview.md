@@ -17,13 +17,18 @@ On this page, you will see your server's name and a banner containing the follow
 - **Provider**: The cloud provider on which your server is hosted.
 - **Kubernetes Version**: The current Kubernetes version running on your server.
 
+![Server Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/pks-server-overview.png)
+
 Additionally, you will find cards displaying the following server-related information:
 
 - **Nodes**: The number of active nodes currently running on your server.
 - **Deployments**: The total number of deployments on your server, including both projects and add-ons.
-- **Total Resources**: Get a summary of your server’s capacity and utilization here. Stay informed about the number of unused environments, active subscriptions, team members, ypur current plan, and available credits.
+- **Total Resources**: Get a summary of your server’s capacity and utilization here. Stay informed about the number of unused environments, active subscriptions, team members, your current plan, and available credits.
 - **Current Usage**: This field provides a cost breakdown of your infrastructure usage powered by **OpenCost**.
- - **Grafana Labs:** This metric is available for servers deployed via a cloud provider. You can open the Grafana dashboard and monitor your server in real time.
+ - **Grafana Labs:** This metric is available to users who have installed the Grafana add-on. You can open the Grafana dashboard and monitor your server in real time.
+
+![Grafana Server Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/grafana.png)
+
 
 From the overview page, you will also see a **navigation menu** to other sections related to your server.
 
@@ -33,13 +38,19 @@ From the overview page, you will also see a **navigation menu** to other section
   - **Metrics** tab
   - **Events** tab
   - **Nodes** tab
+  - **Environments** tab
   - **Settings** tab
+ 
+ ![PKS Server Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/pks-server-overview.png)
 
 - If you deployed a server using a **cloud provider**, your navigation menu will include everything from the **PipeOps** server, plus:
   - **Add-ons** tab
   - **Dashboard/Prometheus** tab
   - **Pricing** tab
   - **Update History** tab
+
+![Created Server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/no-karpenter-no-opencost.png)
+
 
 You can also view real-time server events with a **Severity** filter to display specific event types. Events are displayed in a table with the following columns:
 

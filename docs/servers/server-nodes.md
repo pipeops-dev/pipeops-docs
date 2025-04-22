@@ -14,7 +14,7 @@ To access server nodes, follow these steps:
 2. Select the desired server from the list.
 3. Click on **Nodes** to open its dashboard.
 
-
+![Server Nodes](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-nodes-page.png)
 ## Filtering Options
 The Nodes tab offers filtering options to help you narrow down and focus on specific nodes:
 
