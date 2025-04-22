@@ -36,7 +36,7 @@ The **Active Subscription** tab provides a high-level summary of your current su
     2. In the modal that appears, select the number of team seats you want.
     3. Click the "proceed to pay" button to complete your purchase.
 
-![Usage Active Subscription](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-active-sub.png)
+![Usage Active Subscription](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-subscription.png)
 
 - **Deployments:** Monitor the number of deployments you have made versus the total number available.
 

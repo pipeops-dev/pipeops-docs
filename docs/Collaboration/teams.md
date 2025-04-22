@@ -12,7 +12,7 @@ Welcome to PipeOps Teams, a robust feature designed to help you efficiently mana
 
 Begin by clicking on your profile in the navigation bar. This action will reveal a dropdown menu. From the dropdown, select "Teams," and you will be redirected to the Teams page, where all available teams can be accessed.
 
-![Accessing Teams](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/teams-access.png)
+![Accessing Teams](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/access-teams.png)
 
 Alternatively, click the ‘’New” button on the top right corner of your screen. Select “Team” from the dropdown menu.
 
@@ -71,7 +71,7 @@ Take a look at the image below, which displays the form for adding a new team me
 
 To view the members of a team, simply click on the desired team. The image below provides a visual representation of the members of a specific team:
 
-![Team Members View](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/teams-view-members.png)
+![Team Members View](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/teams-view%20members.png)
 
 
 
@@ -85,7 +85,7 @@ The **Audit Trail** feature in PipeOps provides a detailed record of all actions
 2. Click on the specific team whose audit logs you wish to view.
 3. At the top of the page, select the Audit Trail tab.
 
-![Team Audit](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/team-audit.png)
+![Team Audit](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/teams-audit.png)
 
 ### Audit Trail Features
 
