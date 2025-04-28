@@ -66,6 +66,53 @@ Customize the build process with options including:
 
 
 
+### Networking
+
+The Networking section allows you to configure network ports and protocols for your project. This feature gives you control over how your application communicates with external services and users.
+
+- **Add Network Ports:** Specify the port number your application will use.
+
+- **Select Protocol:** Choose the protocol for traffic on this port — either TCP (Transmission Control Protocol) or UDP (User Datagram Protocol).
+
+
+- **Public Access:** Toggle the Public switch to make the port accessible from outside the cluster. When enabled, external clients can reach your application on this port.
+
+
+- **Add More Ports:** Click **Add More** to configure additional ports and protocols as needed for your application.
+
+After configuring your networking settings, click **Save** to apply changes or **Discard Changes** to revert.
+
+![Projects-networking](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/projects-networking.png)
+
+
+### Firewall Rules
+
+The Firewall Rules section lets you manage network access control for your project, enhancing security by restricting which sources can communicate with your application.
+
+- **Traffic Type:**  
+Choose to configure rules for Inbound Traffic (incoming requests) or Outbound Traffic (outgoing requests).
+
+- **Allowed Sources:**  
+Specify the IP addresses or CIDR blocks allowed to access your deployment. You can enter multiple values separated by commas.  
+
+    CIDR (Classless Inter-Domain Routing) lets you specify IP ranges efficiently using a format like 192.168.1.0/24, which includes all IPs from 192.168.1.0 to 192.168.1.255.
+
+- **Except:**  
+Optionally, list IPs or CIDRs that should be explicitly denied, even if they’re included in the allowed sources.
+
+
+- **Ports & Protocols:**
+Define which ports and protocols (TCP/UDP) are permitted. Add multiple rules as needed using the **Add More** button.
+
+
+Click **Save** to apply your firewall rules or **Discard Changes** to cancel.
+
+![Projects-firewall-rules](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/projects-firewall.png)
+
+Firewall rules are crucial for securing your application by limiting exposure to only trusted sources and required ports, helping protect against unauthorized access and attacks.
+
+
+
 ### Environment Variable
 
 Here you can perform either of the following options:
