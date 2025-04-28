@@ -27,7 +27,7 @@ Logs are classified based on timeline and severity levels, and users can search 
 
 4. **Follow**: Enable "Follow" to automatically scroll to the latest log entries as they are generated.
 
-![add-on Logs](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/42/Logs_6d73a5f99a.png)
+![add-on Logs](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/Addon-logs.png)
 
 ## Accessing Events
 
@@ -46,6 +46,6 @@ They are categorized by severity levels, allowing you to prioritize your respons
 
 3. **Actionable Insights**: Events in PipeOps provide actionable insights into system performance and security incidents. Analyzing event data helps users identify areas for improvement, implement proactive measures, and optimize workflows.
 
-![add-on Events](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/42/Events_2f1ab4058e.png)
+![add-on Events](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/Addon-events.png)
 
 In summary, the **Logs** and **Events** sections in PipeOps provide comprehensive insights into the activities and performance of your deployed add-ons. By leveraging these features, you can efficiently troubleshoot issues, monitor performance in real-time, and gain valuable insights into the operational history of your add-ons.
