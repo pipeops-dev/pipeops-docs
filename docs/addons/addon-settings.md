@@ -30,7 +30,7 @@ In this section, you can manage basic add-on details such as:
 
 ### Networking
 
-The Networking section allows you to configure network ports and protocols for your project. This feature gives you control over how your application communicates with external services and users.
+The networking section allows you to expose multiple ports from your deployed project. This feature gives you control over how your application communicates with services and users.
 
 - **Add Network Ports:** Specify the port number your application will use.
 

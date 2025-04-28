@@ -68,7 +68,8 @@ Customize the build process with options including:
 
 ### Networking
 
-The Networking section allows you to configure network ports and protocols for your project. This feature gives you control over how your application communicates with external services and users.
+The networking section allows you to expose multiple ports from your deployed project. This feature gives you control over how your application communicates with services and users.
+
 
 - **Add Network Ports:** Specify the port number your application will use.
 
