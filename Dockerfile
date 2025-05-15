@@ -1,6 +1,6 @@
 ARG NODE_IMAGE=node:lts-alpine
 ARG ENV=production
-ARG PORT
+ARG PORT=80
 
 FROM $NODE_IMAGE AS build
 
@@ -21,7 +21,8 @@ WORKDIR /opt/app
 
 # Set environment variable
 ENV NODE_ENV=$ENV
-ENV PORT=$PORT
+ENV ENV=production
+ENV PORT=80
 
 # Copy package.json and any lockfiles to the working directory.
 COPY package.json yarn.lock ./

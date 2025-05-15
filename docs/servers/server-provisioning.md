@@ -1,88 +1,143 @@
 ---
 slug: server-provisioning
-sidebar_position: 2
+sidebar_position: 1
 title: Server Provisioning
 ---
 
-In this section, we will show you how you can set up your PipeOps account and use your cloud Provider to create a server. Follow these steps to set up your account and seamlessly provision your server on AWS.
+In this section, we’ll guide you through how to create a new server from your PipeOps dashboard.
 
-### Step 1: Navigating to the server creation page
+### Navigate to the Server Creation Page
 
-Log in to your dashboard.
+1. Log in to your [PipeOps dashboard](https://console.pipeops.io/auth/signin).
 
-Once logged in, there are 2 major ways you can create your server. To create a new server, you can choose one of the following methods:
+2. Once you are logged in, you can create a new server by using one of the following methods:
 
-1. **From the Top Navbar:** Click on the **New** button at the upper right corner of your screen and select **Deploy server** from the dropdown menu. Or,
-2. **From the Side Navbar:** By selecting **Servers** from the sidebar menu.
+- **Top Navbar:** Click the **New** button on the top right corner of your screen. Select “Provision a Server” from the dropdown menu.
+- **Side Navbar:** Alternatively, you can click on **Servers** from the sidebar menu.
 
-![Dashboard](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/Dashboard_1_393ee1240f.png)
+![Dashboard](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/provision-server-nav.png)
+Either of the above steps will redirect you to a page where you will select your server hosting method.
 
-Either of the above will redirect you to a page where you will select your server hosting platform. See [Deployment Path](/docs/category/deployment-path) to make the necessary connections and come back here to continue on your server creation journey.
+### Choose a Hosting Method
 
-![Select Path](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/Select_Path_1_1d8bfb7a63.png)
+After completing the previous step, the page below will appear. There are two options when creating a new server: **On PipeOps** and **On Cloud Provider**.
 
-### Step 2: Connecting your AWS account
+![Select Path](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/provision-server-on-pipeops.png)
 
-After going through the preferred deployment path of your choice, proceed to connect your AWS account.
+- **PipeOps Nova Servers:** Deploy applications on servers managed by PipeOps, hosted on cloud providers such as Digital Ocean, AWS, Google Cloud, and Azure.
 
-If you have connected your AWS account to PipeOps already, skip to [step 6](/docs/servers/server-provisioning#step-6-configure-your-server) of this guide otherwise proceed to select your cloud provider.
+- **Cloud Provider:** Host applications on your own cloud account by connecting PipeOps to your preferred cloud provider.
 
-![Connect AWS](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/29/connect_AWS_fb14c2f4c4.png)
+Select your desired hosting method to proceed.
 
-Select **AWS** as your cloud provider (integration to more cloud providers coming soon).
+### Provisioning On PipeOps Nova Servers
 
-### Step 3: Enter AWS ID
+#### Step 1: Customize your server:
 
-1. In the AWS section, enter your AWS account ID.
-2. Click **Add** to proceed with the account verification process.
+    - **Choose a preferred provider:** Digital Ocean, Google Cloud, Amazon Web Services, Azure, or Huawei Cloud.
 
-![AWS ID](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/29/connect_AWSID_3ad56c1473.png)
+    - **Select region:** Pick the geographic location for deploying your server. We've implemented a geo-location pricing model to ensure you're billed in your local currency, protecting you from exchange rate fluctuations.
 
-### Step 4: Authorize IAM
+    - **Review the monthly cost:** You can adjust resources such as CPU, memory, and storage to estimate your monthly cost.
 
-1. Once your account ID is verified, click on the **Authorize IAM** button.
-2. This action redirects you to AWS CloudFormation on your AWS account to create a stack.
-3. The stack created by AWS CloudFormation includes an IAM role that allows us to create servers and other necessary infrastructure on your behalf.
+![Cost Estimator](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/cost-estimator.png)
 
-![AWS CloudFormation](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/29/stack_Created_78b52004e0.png)
 
-### Step 5: Account Verification
+#### Step 2: Click "Proceed" to finalize your set up:
 
-1. Wait for the CloudFormation stack creation to complete.
-2. Once the process is done, you'll see an "Account Connected" sign on your dashboard. You can then click on **Proceed** to continue with your server creation process.
+Once provisioning is complete, your server will be visible on your dashboard. You can proceed to deploy applications to the newly created server.
 
-![Account Connected](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/29/aws_Connected_c23029cc2c.png)
+![PKS Dashboard](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/pks-server-overview.png)
 
-### Step 6: Configure Your Server
+### Provisioning On Cloud Provider
 
-Now that your AWS account is connected, let's create your server for development, staging, or production environments. Each environment has different EC2 instance types and associated prices for the provisioned EKS server.
+#### Step 1: Connect Your Cloud Account
 
-1. Choose the deployment environment: **Dev**, **Stage**, or **Prod**.
-2. Choose your preferred server type
-3. Select your preferred AWS region for deployment.
-4. Click **Proceed** to move to the next step.
+To create a server on your chosen cloud provider, you must first connect your account to PipeOps:
 
-![Configure Server](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/create_Server_4395dd99a4.png)
+- Select from AWS, Digital Ocean, Azure, Google Cloud, or Huawei Cloud.
+- Click on the **Connect** button to begin the integration process.
 
-### Step 7: Confirm Server Configuration
+![Connect Cloud Provider](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/integrations-page.png)
 
-1. A modal will appear, summarizing your server configuration settings.
-2. Review the details carefully to ensure accuracy.
 
-![Server Configuration Summary](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/confirm_Create_Server_0b25266fac.png)
+Check out [Integrations](/docs/category/Integrations) for detailed steps on how to link your cloud provider with PipeOps.
 
-3. Click **Yes Create Server** to proceed with creating your server.
+#### Step 2: Configure Cloud Server
 
-### Step 8: Server creation in progress
+Now that you’ve successfully connected your cloud account to PipeOps, let’s configure your server:
 
-After reviewing your server details on the confirmation modal and choose to proceed, another modal will appear showing your server creation progress in realtime.
+1. Select your preferred deployment region.
+2. Define security standards: Select the appropriate option for compliance:
 
-![Server Creation Progress](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/creation_In_Progress_3fab10c0e8.png)
+![Region and Specification Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/region-and-security-specification.png)
 
-### Step 9: Completion
+   - **PMS:** A security standard suitable for general deployments, including containers, databases, Terraform, Helm, and other applications.
+   - **HIPAA Compliance:** A higher standard designed for users handling healthcare data, ensuring compliance with the Health Insurance Portability and Accountability Act (HIPAA).
+   - **PCI DSS Compliance:** Provides security measures for businesses processing, storing, or transmitting credit card information.
 
-Once your server has been successfully created, you will get a modal indicating that. Then you can click on **Proceed** to navigate to the server overview page of your newly created server.
+3. Select **Next** to proceed.
 
-![Server Creation Successful](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/server_Created_dd33edd741.png)
+#### Step 3: Configure Method
 
-![Created Server](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/26/server_Overview_e7518cfacb.png)
+There are two configuration methods when provisioning your server:
+
+![Configuration Method](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/configuration-method.png)
+
+- **Custom configuration:** This option allows you to manually configure CPU, memory, storage, and other specifications.
+
+- **Karpenter:** This automatically provisions and deprovisions resources based on demand. Consider Karpenter if you prefer automated scaling.
+
+#### Step 4: Configure Resources
+
+The next step is to configure server resources. The details that appear on this tab depend on your chosen configuration method.
+
+**Custom configuration**  
+If you opt for Custom Configuration, you will be presented with predefined server templates. You can create a server for development, staging, and production.
+
+![Custom Configuration](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/scaling-configuration.png)
+
+- **Choose a deployment environment:** Dev, Staging, or Production.
+- **Select your preferred instance category:** General purpose, Compute optimized, or Memory optimized.
+
+You can also explore **Expert Settings** for advanced configurations. Here, you can select from over ten instance types, specify node architecture, and define the minimum and maximum number of nodes.
+
+**Karpenter configuration**  
+If you select Karpenter, you’ll have additional options to define how your infrastructure scales. Alternatively, you can leave everything on default and proceed to the next step.
+
+![Karpenter Configuration](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/karpenter-configuration.png)
+
+
+#### Step 5: Finish Set Up
+
+Click the "Create Server" button to finish set up. After the creation is complete, you can proceed to deploy applications to the newly created server.
+
+If you chose **Custom Configuration**, here’s what the server overview page will look like:
+
+![Created Server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/no-karpenter-no-opencost.png)
+
+
+If you selected **Karpenter**, your overview page will appear as shown below:
+
+![Created Server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/has-karpenter-has-opencost-no-grafana.png)
+
+
+## Deleting Servers
+
+To permanently remove a server and all the projects deployed on it, follow the steps below:
+
+1. Delete all projects and addons associated with the server. You won’t be able to complete the deletion until these have been removed.
+
+2. After all associated resources are removed, go to your dashboard and select **“servers”** from the sidebar menu.
+
+2. Click on the server you want to delete.
+
+3. On the top right corner of your screen, click on the three dots. This reveals the delete option.
+
+![Delete Server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/delete-pipeops-server.png)
+
+4. Select **Delete Server**. A modal appears, prompting you to enter the name of the server to confirm deletion.
+
+![Confirm Server Deletion](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/confirm-server-deletion%20modal.png)
+
+5. Type in the name of your server and hit the delete button.

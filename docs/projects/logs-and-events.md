@@ -8,12 +8,6 @@ title: Logs And Events
 
 This documentation offers an extensive guide to navigating and leveraging the logging and event functionalities within PipeOps. With PipeOps, you gain effortless access to intricate logging details and insightful event management, empowering you to streamline troubleshooting processes and enhance system performance effectively.
 
-## Prerequisites
-
-Before delving into Logs and Events, ensure you have the following prerequisites:
-
-1. **A PipeOps account**. Use the link [here](https://console.pipeops.io/signup) to sign up on PipeOps if you do not currently have an account.
-2. **A deployed project**. This can be a PipeOps template or a project from your Git (Github, Gitlab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
 
 ## Accessing Logs
 
@@ -26,13 +20,16 @@ Logs are detailed records of system activities and events occurring within a pro
 
 Logs are classified based on timeline and severity levels, and users can search for specific activities or events. PipeOps provides several features to help users leverage logs effectively:
 
-1. **Timeline View**: PipeOps offers a timeline view of logs, allowing users to track the sequence of events and identify any patterns or trends. This feature is particularly useful for diagnosing issues that may span multiple stages of the project.
+
+1. **Process Selection:** Logs are categorized by specific processes, such as web or other running services, enabling users to focus on relevant system events.
+
+2. **Time-Based Filtering:** PipeOps offers a timeline view of logs, allowing users to track the sequence of events and identify any patterns or trends. You can view logs from different timeframes, including relative periods (e.g., last 15 minutes, 1 hour, 1 day). You can also specify a custom date range for more precise analysis.
 
 2. **Search Functionality**: PipeOps includes a powerful search function that lets users quickly find specific log entries. Whether troubleshooting an error or auditing system activities, the search feature streamlines the process and saves time.
 
 3. **Customization Options**: Users can customize log settings in PipeOps to tailor the display according to their preferences. This includes filtering logs based on specific criteria, adjusting the level of detail shown, and setting alerts for critical events.
 
-![Project Logs](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/42/Logs_6d73a5f99a.png)
+![Project Logs](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-logs.png)
 
 ## Accessing Events
 
@@ -51,6 +48,6 @@ They are categorized by severity levels, allowing users to prioritize their resp
 
 3. **Actionable Insights**: Events in PipeOps provide actionable insights into system performance and security incidents. Analyzing events data helps users identify areas for improvement, implement proactive measures, and optimize workflows.
 
-![Project Events](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/42/Events_2f1ab4058e.png)
+![Project Events](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-events.png)
 
 In summary, PipeOps offers powerful logging and event management tools for efficient troubleshooting and system optimization. With detailed logs and categorized events, users can monitor, analyze, and respond effectively to project activities. Through customizable log views and real-time event notifications, PipeOps ensures smooth project oversight and system stability.
