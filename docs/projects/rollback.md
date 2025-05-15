@@ -45,7 +45,7 @@ If you select the **By Git** tab, you will be able to rollback your project usin
 
 If you select the **By Action** tab, you will be able to rollback your project using your build history. You can simply select the specific build that you want to rollback to and click **Rollback** on the bottom-right side of the pop-up page.
 
-![Rollback By Action](![Rollback Project](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-rollback-by-action.png))
+![Rollback By Action](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-rollback-by-action.png)
 
 This immediately triggers a redeployment and you get a “**Rollback triggered successfully**” notification. A new deployment is initiated and the notification appears on the bottom left corner of the screen.
 

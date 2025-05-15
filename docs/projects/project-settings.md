@@ -90,27 +90,56 @@ After configuring your networking settings, click **Save** to apply changes or *
 
 The Firewall Rules section lets you manage network access control for your project, enhancing security by restricting which sources can communicate with your application.
 
-- **Traffic Type:**  
-Choose to configure rules for Inbound Traffic (incoming requests) or Outbound Traffic (outgoing requests).
+**Traffic Type:**  
 
-- **Allowed Sources:**  
+You can configure rules for:
+
+    - Inbound Traffic: incoming requests to your application.
+
+    - Outbound Traffic: outgoing requests from your application.
+
+
+**Allowed Sources:**  
 Specify the IP addresses or CIDR blocks allowed to access your deployment. You can enter multiple values separated by commas.  
 
-    CIDR (Classless Inter-Domain Routing) lets you specify IP ranges efficiently using a format like 192.168.1.0/24, which includes all IPs from 192.168.1.0 to 192.168.1.255.
-
-- **Except:**  
-Optionally, list IPs or CIDRs that should be explicitly denied, even if they’re included in the allowed sources.
+    **CIDR** (Classless Inter-Domain Routing) lets you specify IP ranges efficiently using a format like 192.168.1.0/24, which includes all IPs from 192.168.1.0 to 192.168.1.255.
 
 
-- **Ports & Protocols:**
-Define which ports and protocols (TCP/UDP) are permitted. Add multiple rules as needed using the **Add More** button.
+PipeOps also supports the following keywords:
+
+    - Any/all — allow access from any IP address.
+    - Private — allow access from private IP ranges only.
+    - Internal —  restrict access to your project’s internal network only.
+
+
+**Ports & Protocols:** 
+
+Define which ports and protocols are permitted:
+
+- Port: Enter the specific port number (e.g., 80, 443).
+
+- Protocol: Choose between TCP or UDP.
+
+Expose multiple ports as needed using the **Add More** button.
 
 
 Click **Save** to apply your firewall rules or **Discard Changes** to cancel.
 
-![Projects-firewall-rules](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/projects-firewall.png)
+![Projects-firewall-rules](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/projects-firewall-rules.png)
 
 Firewall rules are crucial for securing your application by limiting exposure to only trusted sources and required ports, helping protect against unauthorized access and attacks.
+
+> **Note**: The Firewall Rules feature is currently in beta and not enabled by default, except for users who have tracking protection. To access it, you must first enable it via the Feature Preview section in your PipeOps dashboard sidebar:
+
+    Click Feature Preview in the sidebar.
+
+    ![Feature Preview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/feature-preview.png)
+
+    Toggle on Firewall Rules in the list of beta features.
+
+    ![Firewall Rules Toggle](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/enable-beta-features.png)
+
+    After enabling, refresh the page to see the Firewall Rules option in your Project Settings.
 
 
 
