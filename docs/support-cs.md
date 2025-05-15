@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 14
 slug: support-and-community
 ---
 
@@ -18,6 +18,7 @@ If you have any questions, encounter issues, or need assistance with PipeOps, ou
 - **Live Chat:** Have a quick question or need immediate assistance? Chat with our support team directly through the live chat feature on our website.
 
 ## Community
+
 Join our vibrant community of developers, businesses, and enthusiasts to share insights, learn from each other, and stay updated on the latest PipeOps developments. Here's how you can get involved:
 
 - **Slack Community:** Participate in discussions, ask questions, and connect with fellow users on our [slack workspace](https://join.slack.com/t/pipeopscommunity/shared_invite/zt-23gmjrl0k-Pzm2cBgIMTsUu5Az73PYKg). It's a great place to exchange ideas, troubleshoot issues, and collaborate on projects.
@@ -27,6 +28,7 @@ Join our vibrant community of developers, businesses, and enthusiasts to share i
 - **[Blog:](https://blog.pipeops.io)** Explore our [blog](https://blog.pipeops.io) for in-depth articles, tutorials, case studies, and best practices on cloud infrastructure management, DevOps, and application development. Contribute your insights and experiences by submitting guest posts or commenting on existing articles.
 
 ## Contact Information
+
 Have specific inquiries or want to reach out to us directly? Here's how you can contact us:
 
 - **General Inquiries:** For general inquiries or business partnerships, please email us at [info@pipeops.io](mailto:info@pipeops.io).
@@ -36,5 +38,5 @@ Have specific inquiries or want to reach out to us directly? Here's how you can 
 - **Feedback and Suggestions:** We value your feedback and suggestions for improving PipeOps. Share your ideas, feature requests, and feedback with us at [feedback@pipeops.io](mailto:feedback@pipeops.io).
 
 ## Connect With Us Today
-We're here to support you every step of the way on your journey with PipeOps. Whether you need assistance, want to connect with fellow users, or have feedback to share, we're just a click away. Join the PipeOps community today and unlock the full potential of cloud infrastructure management and application development. Let's build something incredible together!
 
+We're here to support you every step of the way on your journey with PipeOps. Whether you need assistance, want to connect with fellow users, or have feedback to share, we're just a click away. Join the PipeOps community today and unlock the full potential of cloud infrastructure management and application development. Let's build something incredible together!

@@ -6,31 +6,30 @@ title: Terminal
 
 # Project Terminal
 
-Welcome to the guide for PipeOps' Project Terminal feature! With the Project Terminal, you can access your project's command line interface directly. This empowers you to execute commands, manage resources, and streamline workflows effectively. This guide covers the basics of using the terminal, accessing it within your project, and working with different terminal types and pods.
+With the Project Terminal, you gain direct access to your project's command line interface, empowering you to execute commands, manage resources, and streamline workflows effectively. This guide covers the basics of using the terminal, accessing it within your project, and working with different terminal types and pods.
 
-## Prerequisites
 
-Before delving into working with the terminal, ensure you have the following prerequisites:
-
-1. **A PipeOps account**. Use the link [here](https://console.pipeops.io/signup) to sign up on PipeOps if you do not currently have an account.
-2. **A deployed project**. This can be a PipeOps template or a project from your Git (Github, Gitlab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
 
 ## Accessing the Terminal
 
-The terminal is a command line interface that provides users with direct access to the command line interface of their projects.
+The terminal provides users with direct access to the command line interface of their projects.
 
 Accessing the terminal in PipeOps is straightforward:
 
 1. Navigate to your project's main page in PipeOps.
-2. Click on the "**Terminal**" tab to access the project terminal dashboard.
+2. Click on the "**Terminal**" tab at the extreme right side of your screen.
 
-![Terminal](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/48/1_692685a378.png)
+![Access Terminal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-terminal-access.png)
 
-## Terminal Types and Pods
+![Terminal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-terminal.png)
 
-The terminal in PipeOps offers various command line interface types, such as shell (SH), Bourne Again Shell (BASH), and Almquist Shell (ASH). Users can choose the terminal type that best suits their requirements and familiarity. Additionally, the terminal is associated with specific pods within the project's environment, allowing users to execute commands within the context of a particular pod.
 
-![Terminal](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/48/2_716fca11ef.png)
+
+### Terminal Pods
+
+The terminal is associated with specific pods within the project's environment, allowing users to execute commands within the context of a particular pod.
+
+
 
 ## Working with Commands
 
@@ -45,11 +44,11 @@ Users can execute these commands and more to inspect files, manage directories, 
 
 Here's an example of using the terminal in PipeOps to list directory contents (ls) and print the current working directory (pwd)
 
-![Terminal](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/48/3_46645af740.png)
+![Terminal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-terminal-in-use.png)
 
 The best part is that the terminal feature includes a convenient selection of commonly used commands, each accompanied by a description of its functionality. This makes it easy for users to find and execute commands, even if they don't remember the exact name. Some of these pre-added commands include **PS, FREE, DU**, and **PRINTENV**, providing users with essential tools for managing their projects effectively.
 
-![Terminal](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/48/1_692685a378.png)
+![Terminal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-terminal-printenv.png)
 
 ## Benefits of the Terminal Feature
 
