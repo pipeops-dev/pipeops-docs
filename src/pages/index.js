@@ -30,7 +30,7 @@ export default function Home() {
       title: "Slack",
       description: "Join our slack community for support and instant updates.",
       icon: <SiSlack />,
-      url: "https://join.slack.com/t/pipeopscommunity/shared_invite/zt-23gmjrl0k-Pzm2cBgIMTsUu5Az73PYKg",
+      url: "https://join.slack.com/t/pipeopscommunity/shared_invite/zt-36epz9i8k-p01_WcPQudJmabuF_NqD5Q",
     },
     {
       title: "Github",
