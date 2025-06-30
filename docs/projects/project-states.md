@@ -38,6 +38,8 @@ These states indicate issues that require user intervention.
 - **Crashed** – The project stopped running unexpectedly.
 - **OutOfMemory** – The project ran out of available memory.
 - **Maxed_Out** – The allocated resources (such as CPU or memory) have been exceeded, potentially affecting performance or stability.
+- **Unschedulable** - Your workload cannot be assigned to any available server or node due to resource constraints or configuration issues. This means your deployment is currently blocked.
+Please contact our support team to help resolve this issue and get things back on track.
 
 
 ## Deletion States
