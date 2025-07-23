@@ -150,7 +150,7 @@ Yes! New users receive a 14-day free trial upon signing up. During this period, 
 
 ### What's the difference between subscription and resource usage?
 
-Your subscription gives you access to the PipeOps platform and includes a fixed amount of covered Nova usage. If your monthly resource consumption stays within your plan's covered amount, you won’t pay anything extra. However, if you exceed the included usage, you’ll only be billed for the excess at the end of your billing cycle.
+Your subscription gives you access to the platform and its features and includes a fixed amount of covered Nova usage. If your monthly resource consumption stays within your plan’s coverage, you won’t pay anything extra. However, if you exceed it, you’ll only be billed for the excess at the end of your billing cycle.
 
 ### Which plan is best for me?
 - **Growth Tier:** Ideal for small teams or individual developers who need essential features and affordability.
