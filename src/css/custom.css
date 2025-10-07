@@ -25,6 +25,46 @@ html {
   scroll-behavior: smooth;
 }
 
+/* iframe-specific styles */
+html[data-iframe="true"] {
+  /* Ensure proper scrolling context in iframe */
+  overflow: auto;
+  height: 100%;
+}
+
+html[data-iframe="true"] .navbar {
+  /* Fix navbar positioning in iframe */
+  position: relative;
+  z-index: 1000;
+}
+
+html[data-iframe="true"] .theme-doc-sidebar-container {
+  /* Fix sidebar positioning in iframe */
+  position: relative;
+}
+
+html[data-iframe="true"] .main-wrapper {
+  /* Ensure main content is properly positioned */
+  position: relative;
+}
+
+/* Fix for Docusaurus components that might have positioning issues in iframe */
+html[data-iframe="true"] .theme-doc-sidebar-item-category-level-1,
+html[data-iframe="true"] .theme-doc-sidebar-item-category-level-2,
+html[data-iframe="true"] .theme-doc-sidebar-item-category-level-3 {
+  position: relative;
+}
+
+/* Ensure proper focus styles in iframe */
+html[data-iframe="true"] a:focus,
+html[data-iframe="true"] button:focus,
+html[data-iframe="true"] input:focus,
+html[data-iframe="true"] textarea:focus,
+html[data-iframe="true"] select:focus {
+  outline: 2px solid #007acc;
+  outline-offset: 2px;
+}
+
 @media (max-width: 992px) {
   html,
   body {

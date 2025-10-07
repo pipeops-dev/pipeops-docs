@@ -65,6 +65,13 @@ const config = {
     ],
   ],
 
+  scripts: [
+    {
+      src: "/js/iframe-compatibility.js",
+      async: true,
+    },
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
