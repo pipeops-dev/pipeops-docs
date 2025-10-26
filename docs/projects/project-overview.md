@@ -40,7 +40,7 @@ For more detailed information on any specific aspect mentioned in the overview, 
 You can also manage your projects using the PipeOps CLI for automation and scripting:
 
 - **List projects**: `pipeops project list` - View all your projects
-- **View logs**: `pipeops project logs --project my-app` - Access project logs from the terminal
-- **Manage environment variables**: `pipeops project env` - Configure environment settings
+- **View logs**: `pipeops project logs --project my-app --follow` - Access project logs in real-time
+- **Manage environment variables**: `pipeops project env list --project my-app` - Configure environment settings
 
 For more information, see the [CLI Project Commands documentation](/docs/cli/commands/projects).
