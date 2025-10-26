@@ -97,6 +97,6 @@ Many users find it beneficial to use both: the Web UI for exploration and monito
 - **Documentation**: You're here! Explore the CLI section for comprehensive guides
 - **GitHub**: [pipeops-dev on GitHub](https://github.com/pipeops-dev)
 - **Community**: Join our [Slack Community](https://join.slack.com/t/pipeopscommunity/shared_invite/zt-23gmjrl0k-Pzm2cBgIMTsUu5Az73PYKg)
-- **Support**: Visit [PipeOps Support](/docs/support-cs)
+- **Support**: Visit [PipeOps Support](https://pipeops.io/support)
 
 Ready to dive in? Head to the [Installation Guide](/docs/cli/getting-started/installation) to get started!

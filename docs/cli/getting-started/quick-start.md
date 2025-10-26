@@ -225,7 +225,7 @@ This is useful for:
 - **Command Help**: Run `pipeops <command> --help` for detailed information
 - **Troubleshooting**: Check the [Troubleshooting Guide](/docs/cli/reference/troubleshooting)
 - **Community**: Join our [Slack community](https://join.slack.com/t/pipeopscommunity/shared_invite/zt-23gmjrl0k-Pzm2cBgIMTsUu5Az73PYKg)
-- **Support**: Visit [PipeOps Support](/docs/support-cs)
+- **Support**: Visit [PipeOps Support](https://pipeops.io/support)
 
 ## Tips and Best Practices
 

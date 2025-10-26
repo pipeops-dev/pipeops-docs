@@ -312,4 +312,4 @@ Now that you have the CLI installed:
 2. **[Configure](/docs/cli/getting-started/configuration)**: Set up your CLI preferences
 3. **[Quick Start](/docs/cli/getting-started/quick-start)**: Deploy your first project
 
-Need help? Check the [Troubleshooting Guide](/docs/cli/reference/troubleshooting) or join our [community support channels](/docs/support-cs).
+Need help? Check the [Troubleshooting Guide](/docs/cli/reference/troubleshooting) or join our [Slack community](https://join.slack.com/t/pipeopscommunity/shared_invite/zt-23gmjrl0k-Pzm2cBgIMTsUu5Az73PYKg).
