@@ -1,0 +1,8 @@
+{
+  "label": "CLI",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "PipeOps Command Line Interface (CLI) - Manage your infrastructure, deploy applications, and automate workflows from your terminal."
+  }
+}

@@ -34,3 +34,13 @@ The Project Overview page serves as the default landing page when accessing your
 ### Exploring Further
 
 For more detailed information on any specific aspect mentioned in the overview, you can explore the corresponding tabs on the project page. These tabs are dedicated to different areas such as Metrics, terminal access, and project history, allowing you to delve deeper into the aspects that require your attention. Thus, the Project Overview provides a convenient starting point for monitoring your project's status and facilitates further exploration as needed.
+
+## Managing Projects via CLI
+
+You can also manage your projects using the PipeOps CLI for automation and scripting:
+
+- **List projects**: `pipeops project list` - View all your projects
+- **View logs**: `pipeops project logs --project my-app --follow` - Access project logs in real-time
+- **Manage environment variables**: `pipeops project env list --project my-app` - Configure environment settings
+
+For more information, see the [CLI Project Commands documentation](/docs/cli/commands/projects).

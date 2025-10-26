@@ -61,3 +61,22 @@ You can also view real-time server events with a **Severity** filter to display 
 ## Conclusion
 
 This page serves as a central hub for managing and monitoring your server, providing all the essential information at a glance. Use the tab navigation menu to explore additional aspects of your server.
+
+## Managing Servers via CLI
+
+You can also manage your servers using the PipeOps CLI:
+
+```bash
+# List all servers
+pipeops server list
+
+# Get server details
+pipeops server info my-server
+
+# Provision a new server
+pipeops server create --name prod-server --provider aws
+```
+
+For server management and agent installation, see:
+- [CLI Server Commands](/docs/cli/commands/servers)
+- [CLI Agent Commands](/docs/cli/commands/agents) - Install PipeOps agents on your infrastructure

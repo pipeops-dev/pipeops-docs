@@ -149,3 +149,23 @@ Here’s how to view your deployed project:
    1. Auto Deploy a branch when a code change is checked in.
 
 To delete a project, use the Delete Project guide [here](/docs/projects/project-actions#delete-project).
+
+## Deploying via CLI
+
+You can also deploy projects using the PipeOps CLI for automation and CI/CD integration:
+
+```bash
+# Create and deploy a project
+pipeops project create --name my-app --repo https://github.com/user/repo
+
+# Trigger a deployment
+pipeops deploy create --project my-app
+
+# Monitor deployment logs
+pipeops deploy logs --project my-app --follow
+```
+
+For detailed CLI deployment instructions, see:
+- [CLI Quick Start Guide](/docs/cli/getting-started/quick-start)
+- [CLI Deployment Commands](/docs/cli/commands/deployments)
+- [CI/CD Integration](/docs/cli/advanced/cicd)
