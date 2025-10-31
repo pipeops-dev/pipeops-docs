@@ -8,6 +8,10 @@ title: Installation Guide
 
 This guide walks you through installing the PipeOps Kubernetes Agent using various methods. Choose the installation method that best fits your environment and requirements.
 
+:::tip
+For detailed technical documentation and advanced configuration options, visit the [PipeOps Agent Documentation](https://agents.pipeops.io/).
+:::
+
 ## Prerequisites
 
 Before installing the agent, ensure your system meets these requirements:

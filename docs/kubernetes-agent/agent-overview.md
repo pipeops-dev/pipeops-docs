@@ -8,6 +8,10 @@ title: Agent Overview
 
 The PipeOps Kubernetes Agent is a powerful background service that transforms any virtual machine into a production-ready Kubernetes server, seamlessly integrated with the PipeOps platform for effortless project deployment and management.
 
+:::info Agent Documentation
+For detailed technical documentation, architecture details, and API specifications, visit the official **[PipeOps Agent Documentation](https://agents.pipeops.io/)**.
+:::
+
 ## What is the PipeOps Kubernetes Agent?
 
 The PipeOps Kubernetes Agent is a **background service** (not a CLI tool) that acts as a bridge between your infrastructure and the PipeOps platform. It automates the entire process of setting up, configuring, and managing Kubernetes clusters, allowing you to focus on deploying and scaling your applications rather than managing infrastructure.
@@ -146,7 +150,9 @@ Ready to get started? Here's what to do next:
 
 Need help? We're here for you:
 
-- **Documentation**: [https://docs.pipeops.io](https://docs.pipeops.io)
+- **Agent Documentation**: [https://agents.pipeops.io](https://agents.pipeops.io) - Complete technical documentation and API reference
+- **Platform Documentation**: [https://docs.pipeops.io](https://docs.pipeops.io)
+- **GitHub Repository**: [https://github.com/PipeOpsHQ/pipeops-k8-agent](https://github.com/PipeOpsHQ/pipeops-k8-agent)
 - **GitHub Issues**: [https://github.com/PipeOpsHQ/pipeops-k8-agent/issues](https://github.com/PipeOpsHQ/pipeops-k8-agent/issues)
 - **Community Forum**: [https://community.pipeops.io](https://community.pipeops.io)
 - **Email Support**: support@pipeops.io

@@ -8,6 +8,10 @@ title: Configuration Reference
 
 This page provides a comprehensive reference for all PipeOps Kubernetes Agent configuration options. The agent can be configured using environment variables, a YAML configuration file, or Helm values.
 
+:::tip Advanced Configuration
+For advanced configuration scenarios and detailed examples, refer to the [PipeOps Agent Documentation](https://agents.pipeops.io/).
+:::
+
 ## Environment Variables
 
 Environment variables provide the simplest way to configure the agent, especially for containerized deployments.
