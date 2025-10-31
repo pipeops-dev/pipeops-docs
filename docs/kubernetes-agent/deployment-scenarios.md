@@ -26,17 +26,17 @@ Use the intelligent installer for automatic environment detection and setup:
 ```bash
 export PIPEOPS_TOKEN="your-api-token"
 export CLUSTER_NAME="production-cluster"
-export DISABLE_MONITORING="false"
 
-curl -sSL https://get.pipeops.io/agent | bash
+curl -fsSL https://get.pipeops.dev/k8-install.sh | bash
 ```
 
 ### What Gets Installed
 
-1. **Kubernetes Distribution**: Automatically selected based on system resources
-   - k3s for production servers (default for 4GB+ RAM)
-   - minikube for development/testing
-   - Existing cluster detected if already present
+1. **Kubernetes Distribution**: Automatically selected based on:
+   - Available system resources (CPU, memory, disk)
+   - Environment type (Docker, LXC, WSL, macOS, bare metal)
+   - Supported options: k3s, minikube, k3d, kind
+   - k3s for production servers, minikube/k3d for development
 
 2. **PipeOps Agent**: Core agent service in `pipeops-system` namespace
 
@@ -52,12 +52,9 @@ curl -sSL https://get.pipeops.io/agent | bash
 # Recommended for production
 export PIPEOPS_TOKEN="your-api-token"
 export CLUSTER_NAME="prod-us-east-1"
-export CLUSTER_TYPE="k3s"
-export PIPEOPS_MONITORING_ENABLED="true"
-export PIPEOPS_CPU_LIMIT="1000m"
-export PIPEOPS_MEMORY_LIMIT="1Gi"
+export CLUSTER_TYPE="k3s"  # Or let it auto-detect with "auto"
 
-curl -sSL https://get.pipeops.io/agent | bash
+curl -fsSL https://get.pipeops.dev/k8-install.sh | bash
 ```
 
 ### Verification Steps
@@ -92,10 +89,7 @@ Deploy the agent to an existing Kubernetes cluster without installing additional
 Use Helm for precise control over what gets installed:
 
 ```bash
-helm repo add pipeops https://charts.pipeops.io
-helm repo update
-
-helm install pipeops-agent pipeops/pipeops-agent \
+helm install pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   --set agent.pipeops.token="your-api-token" \
   --set agent.cluster.name="existing-cluster" \
   --set monitoring.enabled=false \
@@ -145,7 +139,7 @@ serviceAccount:
 Install:
 
 ```bash
-helm install pipeops-agent pipeops/pipeops-agent \
+helm install pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   -f values.yaml \
   --namespace pipeops-system \
   --create-namespace
@@ -187,24 +181,23 @@ Use lightweight Kubernetes distribution:
 ```bash
 export PIPEOPS_TOKEN="your-api-token"
 export CLUSTER_NAME="dev-local"
-export CLUSTER_TYPE="minikube"  # or k3d, kind
-export PIPEOPS_MONITORING_ENABLED="false"  # Disable for dev
-export PIPEOPS_CPU_LIMIT="250m"
-export PIPEOPS_MEMORY_LIMIT="256Mi"
+export CLUSTER_TYPE="auto"  # Auto-detect best option: minikube, k3d, or kind
 
-curl -sSL https://get.pipeops.io/agent | bash
+curl -fsSL https://get.pipeops.dev/k8-install.sh | bash
 ```
 
-### Alternative: Minikube with Agent
+The installer will automatically choose the best lightweight distribution for development based on your system.
 
-If you prefer to set up Minikube yourself:
+### Alternative: Manual Cluster Setup with Agent
+
+If you prefer to set up your cluster yourself:
 
 ```bash
-# Start Minikube
+# Start Minikube (or k3d, kind)
 minikube start --cpus 2 --memory 4096
 
 # Install agent only
-helm install pipeops-agent pipeops/pipeops-agent \
+helm install pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   --set agent.pipeops.token="your-api-token" \
   --set agent.cluster.name="minikube-dev" \
   --set monitoring.enabled=false \

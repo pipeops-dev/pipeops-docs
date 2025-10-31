@@ -48,14 +48,15 @@ The agent's monitoring stack provides complete visibility into your Kubernetes c
 **Intelligent Installer:**
 ```bash
 export PIPEOPS_TOKEN="your-api-token"
-export PIPEOPS_MONITORING_ENABLED="true"
 
-curl -sSL https://get.pipeops.io/agent | bash
+curl -fsSL https://get.pipeops.dev/k8-install.sh | bash
 ```
+
+The monitoring stack (Prometheus, Grafana, Loki, OpenCost) is installed by default.
 
 **Helm Installation:**
 ```bash
-helm install pipeops-agent pipeops/pipeops-agent \
+helm install pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   --set agent.pipeops.token="your-api-token" \
   --set monitoring.enabled=true \
   --set monitoring.prometheus.enabled=true \
@@ -70,7 +71,7 @@ helm install pipeops-agent pipeops/pipeops-agent \
 If you initially installed without monitoring:
 
 ```bash
-helm upgrade pipeops-agent pipeops/pipeops-agent \
+helm upgrade pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   --set monitoring.enabled=true \
   --namespace pipeops-system \
   --reuse-values

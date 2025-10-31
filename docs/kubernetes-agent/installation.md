@@ -30,9 +30,8 @@ Before installing the agent, ensure your system meets these requirements:
 
 - Outbound HTTPS (443) access to:
   - `api.pipeops.sh` (PipeOps API)
-  - `get.pipeops.io` (installer scripts)
-  - `ghcr.io` (container images)
-  - `charts.pipeops.io` (Helm charts)
+  - `get.pipeops.dev` (installer scripts)
+  - `ghcr.io` (container images and Helm charts)
 - Ports for monitoring stack (if enabled):
   - 9090 (Prometheus)
   - 3000 (Grafana)
@@ -51,16 +50,16 @@ The intelligent installer is the easiest way to get started. It automatically de
 ### One-Line Installation
 
 ```bash
-curl -sSL https://get.pipeops.io/agent | bash
+curl -fsSL https://get.pipeops.dev/k8-install.sh | bash
 ```
 
 This command will:
-1. Detect your operating system and architecture
-2. Download the appropriate agent binary
-3. Detect or install a suitable Kubernetes distribution
-4. Configure the agent with your settings
-5. Start the agent service
-6. Optionally install the monitoring stack
+1. Analyze your system resources (CPU, memory, disk)
+2. Detect your environment (Docker, LXC, WSL, macOS, bare metal)
+3. Automatically select the optimal Kubernetes distribution (k3s, minikube, k3d, kind)
+4. Install the cluster and all required components
+5. Deploy the PipeOps agent as a pod in your cluster
+6. Install the monitoring stack (Prometheus, Loki, Grafana, OpenCost)
 
 ### Interactive Setup
 
@@ -79,31 +78,26 @@ For automation or CI/CD pipelines, use environment variables:
 ```bash
 export PIPEOPS_TOKEN="your-pipeops-api-token"
 export CLUSTER_NAME="production-cluster"
-export PIPEOPS_API_URL="https://api.pipeops.sh"
-export CLUSTER_TYPE="auto"
-export DISABLE_MONITORING="false"
-export NAMESPACE="pipeops-system"
+export CLUSTER_TYPE="auto"  # Options: auto, k3s, minikube, k3d, kind
 
-curl -sSL https://get.pipeops.io/agent | bash
+curl -fsSL https://get.pipeops.dev/k8-install.sh | bash
 ```
+
+The installer automatically detects the best Kubernetes distribution when `CLUSTER_TYPE=auto` (default) based on:
+- Available system resources
+- Environment type (Docker, LXC, WSL, macOS, bare metal)
+- Operating system capabilities
 
 ## Helm Installation (Kubernetes Clusters)
 
-If you already have a Kubernetes cluster, Helm provides the most flexible installation method.
-
-### Add the PipeOps Helm Repository
-
-```bash
-helm repo add pipeops https://charts.pipeops.io
-helm repo update
-```
+If you already have a Kubernetes cluster, Helm provides the most flexible installation method. The PipeOps agent chart is available as an OCI artifact in GitHub Container Registry.
 
 ### Minimal Installation
 
 Install with just the required configuration:
 
 ```bash
-helm install pipeops-agent pipeops/pipeops-agent \
+helm install pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   --set agent.pipeops.token="your-api-token" \
   --set agent.cluster.name="your-cluster-name" \
   --namespace pipeops-system \
@@ -115,7 +109,7 @@ helm install pipeops-agent pipeops/pipeops-agent \
 Enable the full monitoring stack (Prometheus, Grafana, Loki, OpenCost):
 
 ```bash
-helm install pipeops-agent pipeops/pipeops-agent \
+helm install pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   --set agent.pipeops.token="your-api-token" \
   --set agent.cluster.name="production-cluster" \
   --set monitoring.enabled=true \
@@ -168,7 +162,7 @@ monitoring:
 Install with your custom values:
 
 ```bash
-helm install pipeops-agent pipeops/pipeops-agent \
+helm install pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   -f values.yaml \
   --namespace pipeops-system \
   --create-namespace
@@ -176,12 +170,16 @@ helm install pipeops-agent pipeops/pipeops-agent \
 
 ## Kubernetes Manifest Installation
 
-For manual deployment without Helm, use raw Kubernetes manifests.
+For manual deployment without Helm, you can extract manifests from the Helm chart or use kubectl directly with the OCI registry.
 
-### Download Manifests
+### Extract Manifests from Helm Chart
 
 ```bash
-curl -sSL https://get.pipeops.io/agent/manifests/latest.yaml -o pipeops-agent.yaml
+# Pull the chart and extract manifests
+helm template pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
+  --set agent.pipeops.token="your-api-token" \
+  --set agent.cluster.name="your-cluster-name" \
+  --namespace pipeops-system > pipeops-agent.yaml
 ```
 
 ### Configure the Manifest

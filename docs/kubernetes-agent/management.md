@@ -149,19 +149,15 @@ helm search repo pipeops/pipeops-agent --versions
 
 **Upgrade to Latest Version:**
 ```bash
-# Update Helm repository
-helm repo update
-
 # Upgrade to latest version
-helm upgrade pipeops-agent pipeops/pipeops-agent \
+helm upgrade pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   --namespace pipeops-system \
   --reuse-values
 ```
 
 **Upgrade to Specific Version:**
 ```bash
-helm upgrade pipeops-agent pipeops/pipeops-agent \
-  --version 1.2.3 \
+helm upgrade pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent:1.2.3 \
   --namespace pipeops-system \
   --reuse-values
 ```
@@ -180,7 +176,7 @@ agent:
 EOF
 
 # Apply upgrade
-helm upgrade pipeops-agent pipeops/pipeops-agent \
+helm upgrade pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   -f updated-values.yaml \
   --namespace pipeops-system \
   --reuse-values
@@ -188,7 +184,7 @@ helm upgrade pipeops-agent pipeops/pipeops-agent \
 
 **Dry Run (Test Before Upgrade):**
 ```bash
-helm upgrade pipeops-agent pipeops/pipeops-agent \
+helm upgrade pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   --namespace pipeops-system \
   --reuse-values \
   --dry-run --debug
@@ -197,8 +193,9 @@ helm upgrade pipeops-agent pipeops/pipeops-agent \
 ### Kubernetes Manifest Upgrade
 
 ```bash
-# Download new version
-curl -sSL https://get.pipeops.io/agent/manifests/v1.2.3.yaml -o pipeops-agent-v1.2.3.yaml
+# Generate new manifests from helm chart
+helm template pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent:1.2.3 \
+  --namespace pipeops-system > pipeops-agent-v1.2.3.yaml
 
 # Review changes
 diff pipeops-agent-current.yaml pipeops-agent-v1.2.3.yaml
@@ -289,13 +286,13 @@ sudo systemctl start pipeops-agent
 **Helm (Recommended):**
 ```bash
 # Update single value
-helm upgrade pipeops-agent pipeops/pipeops-agent \
+helm upgrade pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   --set agent.cluster.name="new-name" \
   --namespace pipeops-system \
   --reuse-values
 
 # Update multiple values from file
-helm upgrade pipeops-agent pipeops/pipeops-agent \
+helm upgrade pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   -f updated-values.yaml \
   --namespace pipeops-system \
   --reuse-values
