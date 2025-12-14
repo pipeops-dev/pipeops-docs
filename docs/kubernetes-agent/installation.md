@@ -63,7 +63,9 @@ This command will:
 3. Automatically select the optimal Kubernetes distribution (k3s, minikube, k3d, kind)
 4. Install the cluster and all required components
 5. Deploy the PipeOps agent as a pod in your cluster
-6. Install the monitoring stack (Prometheus, Loki, Grafana, OpenCost)
+6. **Auto-install monitoring stack** (Metrics Server, VPA, Prometheus, Loki, Grafana, OpenCost)
+7. **Auto-install NGINX Ingress Controller** (if not present)
+8. Enable Gateway Proxy by default for automatic ingress route management
 
 ### Interactive Setup
 
@@ -96,6 +98,15 @@ The installer automatically detects the best Kubernetes distribution when `CLUST
 
 If you already have a Kubernetes cluster, Helm provides the most flexible installation method. The PipeOps agent chart is available as an OCI artifact in GitHub Container Registry.
 
+:::warning Component Auto-Installation Behavior
+When installing via Helm or Kubernetes manifests, the agent **does NOT auto-install** monitoring components by default. It only establishes secure tunnel and cluster management capabilities, assuming you have existing infrastructure.
+
+To enable automatic component installation (Metrics Server, VPA, Prometheus, Grafana, etc.):
+```bash
+--set agent.autoInstallComponents=true
+```
+:::
+
 ### Minimal Installation
 
 Install with just the required configuration:
@@ -108,21 +119,32 @@ helm install pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   --create-namespace
 ```
 
-### Installation with Monitoring Stack
+This installs:
+- PipeOps agent pod with WebSocket connectivity
+- Gateway proxy watcher (enabled by default)
+- Health check and metrics endpoints
+- Does NOT install monitoring stack (use next option or enable autoInstallComponents)
 
-Enable the full monitoring stack (Prometheus, Grafana, Loki, OpenCost):
+### Installation with Auto-Install Components
+
+Enable automatic installation of monitoring and cluster components:
 
 ```bash
 helm install pipeops-agent oci://ghcr.io/pipeopshq/pipeops-agent \
   --set agent.pipeops.token="your-api-token" \
   --set agent.cluster.name="production-cluster" \
-  --set monitoring.enabled=true \
-  --set monitoring.prometheus.enabled=true \
-  --set monitoring.grafana.enabled=true \
-  --set monitoring.loki.enabled=true \
+  --set agent.autoInstallComponents=true \
   --namespace pipeops-system \
   --create-namespace
 ```
+
+This will automatically install:
+- Metrics Server (for pod/node metrics)
+- Vertical Pod Autoscaler (VPA)
+- Prometheus (monitoring)
+- Loki (log aggregation)
+- Grafana (visualization)
+- NGINX Ingress Controller (if not present)
 
 ### Installation with Custom Values
 

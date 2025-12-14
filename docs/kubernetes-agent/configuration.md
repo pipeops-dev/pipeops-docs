@@ -33,8 +33,20 @@ Environment variables provide the simplest way to configure the agent, especiall
 | `CLUSTER_TYPE` | Kubernetes distribution to use | No | `auto` |
 | `KUBERNETES_IN_CLUSTER` | Running inside Kubernetes cluster | No | `true` |
 | `KUBECONFIG` | Path to kubeconfig file | No | `~/.kube/config` |
+| `AUTO_INSTALL_COMPONENTS` | Auto-install monitoring/cluster components | No | `true` (bash), `false` (Helm) |
 
 Valid `CLUSTER_TYPE` values: `auto`, `k3s`, `minikube`, `k3d`, `kind`, `existing`
+
+### Gateway Proxy Configuration
+
+| Variable | Description | Required | Default |
+|----------|-------------|----------|---------|
+| `ENABLE_INGRESS_SYNC` | Enable gateway proxy ingress watching | No | `true` |
+| `GATEWAY_PROXY_ENABLED` | Alias for ENABLE_INGRESS_SYNC | No | `true` |
+
+:::info Gateway Proxy
+Gateway proxy is **enabled by default** and automatically detects cluster type (public vs private) to optimize routing. Direct routing for public clusters (3-5x faster), tunnel routing for private clusters.
+:::
 
 ### Monitoring Configuration
 
@@ -112,6 +124,12 @@ agent:
   
   # Enable Grafana sub-path routing for ingress
   grafana_sub_path: true
+  
+  # Enable gateway proxy for ingress route management (default: true)
+  enable_ingress_sync: true
+  
+  # Auto-install monitoring/cluster components (bash: true, Helm: false)
+  autoInstallComponents: false
   
   # Custom labels for the agent
   labels:

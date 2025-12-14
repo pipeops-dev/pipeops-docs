@@ -6,7 +6,7 @@ title: Agent Overview
 
 # PipeOps Kubernetes Agent Overview
 
-The PipeOps Kubernetes Agent is a powerful background service that transforms any virtual machine into a production-ready Kubernetes server, seamlessly integrated with the PipeOps platform for effortless project deployment and management.
+The PipeOps Kubernetes Agent is a lightweight Kubernetes service that enables secure management and gateway proxy access for your Kubernetes clusters, supporting both private and public clusters with automatic detection and optimized routing.
 
 :::info Agent Documentation
 For detailed technical documentation, architecture details, and API specifications, visit the official **[PipeOps Agent Documentation](https://agents.pipeops.io/)**.
@@ -14,29 +14,51 @@ For detailed technical documentation, architecture details, and API specificatio
 
 ## What is the PipeOps Kubernetes Agent?
 
-The PipeOps Kubernetes Agent is a **background service** (not a CLI tool) that acts as a bridge between your infrastructure and the PipeOps platform. It automates the entire process of setting up, configuring, and managing Kubernetes clusters, allowing you to focus on deploying and scaling your applications rather than managing infrastructure.
+The PipeOps Kubernetes Agent is a **background service** deployed as a pod inside your Kubernetes cluster. It establishes an outbound connection to the PipeOps control plane and provides:
+
+1. **Secure Cluster Access** — WebSocket tunnel for secure API access without inbound firewall rules
+2. **Gateway Proxy** — Automatic ingress route management for private clusters without public LoadBalancer IPs (enabled by default)
+3. **Real-time Monitoring** — Integrated Prometheus, Loki, Grafana stack
+4. **Cluster Management** — Heartbeat, health checks, and real-time status reporting
 
 ### Key Capabilities
 
-- **VM to Server Transformation** — Converts any virtual machine into a Kubernetes-ready deployment server automatically
-- **PipeOps Integration** — Seamlessly connects your infrastructure to the PipeOps platform for unified project deployment  
-- **Automated Setup** — Handles Kubernetes installation, configuration, and management without manual intervention
-- **Project Deployment** — Enables easy deployment of applications and services through the PipeOps platform
-- **Infrastructure Management** — Manages server resources, networking, and scaling automatically
+- **Cloud-Native Design** — Runs as a pod inside your Kubernetes cluster
+- **In-Cluster Access** — Uses Kubernetes REST API directly (no kubectl dependencies)
+- **ServiceAccount Authentication** — Native Kubernetes authentication via mounted tokens
+- **Outbound-Only Connections** — No inbound ports required on your infrastructure
+- **WebSocket Tunneling** — Encrypted bidirectional communication for cluster API access
+- **Gateway Proxy** — Automatic ingress route discovery and registration (enabled by default)
+- **Dual Routing Modes** — Direct routing for public clusters, tunnel for private clusters
 - **Intelligent Cluster Detection** — Automatically selects the optimal Kubernetes distribution (k3s, minikube, k3d, kind)
-- **Comprehensive Monitoring** — Includes integrated Prometheus, Grafana, Loki, and OpenCost for complete observability
-- **Secure Tunneling** — Establishes encrypted connections between clusters and the PipeOps control plane
+- **Comprehensive Monitoring** — Optional Prometheus, Grafana, and Loki integration
+- **Secure by Default** — All connections encrypted with TLS
 
 ## How It Works
 
-The agent operates as a lightweight, always-running service on your infrastructure:
+The agent operates as a lightweight pod inside your Kubernetes cluster:
 
-1. **Installation**: Deploy the agent using one of several supported methods (intelligent installer, Helm, manifests, or binary)
-2. **Authentication**: Agent authenticates with PipeOps platform using your API token
-3. **Cluster Setup**: Automatically detects or installs the appropriate Kubernetes distribution for your environment
-4. **Monitoring Integration**: Optionally deploys a full monitoring stack (Prometheus, Grafana, Loki, OpenCost)
-5. **Secure Communication**: Establishes encrypted WebSocket tunnels for bidirectional communication with PipeOps
-6. **Project Deployment**: Ready to receive and deploy projects from the PipeOps platform
+1. **Installation**: Deploy using the intelligent bash installer, Helm chart, or Kubernetes manifests
+2. **WebSocket Registration**: Agent connects to PipeOps control plane via WebSocket (wss://api.pipeops.io)
+3. **Gateway Connection**: Receives gateway WebSocket URL and reconnects for heartbeat/proxy operations
+4. **Cluster Detection**: Automatically detects if cluster is public (LoadBalancer) or private
+5. **Route Management**: Monitors ingresses and registers routes with gateway (if enabled)
+6. **Secure Access**: Control plane can access cluster API through encrypted WebSocket tunnel
+7. **Real-time Updates**: Continuous heartbeat every 5-30 seconds with cluster metrics
+
+### Component Auto-Installation
+
+The agent's behavior differs based on installation method:
+
+**Fresh Installation (Bash Script):**
+- Automatically installs: Metrics Server, VPA, Prometheus, Loki, Grafana, NGINX Ingress Controller
+- Full monitoring and observability stack out-of-the-box
+
+**Existing Cluster (Helm/Kubernetes Manifests):**
+- Only establishes secure tunnel and cluster management
+- Does NOT auto-install components by default
+- Assumes existing monitoring infrastructure
+- Enable auto-install via: `--set agent.autoInstallComponents=true`
 
 ## Architecture
 
@@ -44,11 +66,12 @@ The agent is built on a modern, cloud-native architecture:
 
 ### Core Components
 
-- **Agent Service** — Main background service managing all cluster communication and operations
-- **Tunnel Manager** — Handles secure tunneling for cluster access, monitoring, and control
-- **Monitoring Stack** — Optional Prometheus, Grafana, and Loki integration for observability
-- **Control Plane Client** — Manages communication with the PipeOps platform
-- **Resource Manager** — Handles Kubernetes resource management, scheduling, and scaling
+- **WebSocket Client** — Maintains persistent connection to PipeOps control plane and gateway
+- **Gateway Watcher** — Monitors ingress resources and registers routes (enabled by default)
+- **Tunnel Manager** — Handles WebSocket tunneling for secure cluster API access
+- **Heartbeat Service** — Reports cluster status and metrics every 5-30 seconds
+- **HTTP Server** — Exposes health checks, metrics, and dashboard endpoints
+- **Monitoring Stack** — Optional Prometheus, Grafana, and Loki (auto-installed with bash script)
 
 ### Technology Stack
 
@@ -90,10 +113,38 @@ The agent is designed to work across diverse environments:
 - LXC/LXD containers
 - WSL2 on Windows
 
+## Gateway Proxy (Enabled by Default)
+
+The PipeOps Gateway Proxy provides external access to applications in your Kubernetes clusters and is **enabled by default** with automatic routing optimization.
+
+### Key Features
+
+- **Automatic Cluster Detection** — Identifies if cluster is public (with LoadBalancer) or private
+- **Dual Routing Modes**:
+  - **Direct Mode** — Public clusters with LoadBalancer (3-5x faster, no tunnel overhead)
+  - **Tunnel Mode** — Private clusters without public IPs (secure WebSocket tunnel)
+- **Selective Ingress Sync** — Only monitors ingresses managed by PipeOps
+- **Custom Domain Support** — Full support for custom domain mapping
+- **TLS Termination** — Secure HTTPS access at gateway level
+- **Automatic Re-sync** — Routes refreshed every 4 hours to prevent expiry
+
+### How It Works
+
+1. Agent detects cluster type on startup (checks for LoadBalancer external IP)
+2. Chooses routing mode automatically (direct or tunnel)
+3. Monitors ingress resources across all namespaces
+4. Registers routes with PipeOps gateway via REST API
+5. Gateway proxy routes traffic based on cluster type
+
+To disable gateway proxy (not recommended):
+```bash
+export ENABLE_INGRESS_SYNC=false
+```
+
 ## Use Cases
 
 ### New Cluster Deployment
-Perfect for setting up new Kubernetes infrastructure from scratch. The agent handles everything from selecting the right Kubernetes distribution to deploying monitoring tools.
+Perfect for setting up new Kubernetes infrastructure from scratch. The intelligent bash installer handles everything from selecting the right Kubernetes distribution to deploying monitoring tools.
 
 ### Existing Cluster Integration
 Easily integrate existing Kubernetes clusters with PipeOps. The agent deploys alongside your workloads with minimal resource overhead.
