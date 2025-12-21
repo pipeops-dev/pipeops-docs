@@ -14,8 +14,10 @@ With GitOps enabled, PipeOps:
 
 - **Watches your repository** for changes to the manifest file
 - **Automatically syncs** your deployment to match the desired state
-- **Detects drift** between git and live state
+- **Detects drift** between git and live state with automatic healing
 - **Provides visibility** into sync status and history
+- **Supports sync waves** for ordered deployments with dependencies
+- **Creates preview environments** automatically for pull requests
 
 ## Quick Start
 
@@ -292,6 +294,182 @@ Self Heal: true
 
 Always review the diff before syncing to production to understand what changes will be applied.
 
+## Advanced Features
+
+### Sync Waves (Ordering)
+
+Sync Waves allow you to control the order in which resources are deployed. This is essential when you have dependencies between resources (e.g., databases must be ready before applications).
+
+#### How Sync Waves Work
+
+Resources are grouped into "waves" using annotations. Lower wave numbers are deployed first, and PipeOps waits for resources to become healthy before moving to the next wave.
+
+```yaml
+apiVersion: pipeops.io/v1
+kind: Application
+metadata:
+  name: database
+  annotations:
+    pipeops.io/sync-wave: "0"    # Deployed first
+spec:
+  # ... database configuration
+---
+apiVersion: pipeops.io/v1
+kind: Application
+metadata:
+  name: cache
+  annotations:
+    pipeops.io/sync-wave: "1"    # Deployed after database
+spec:
+  # ... cache configuration
+---
+apiVersion: pipeops.io/v1
+kind: Application
+metadata:
+  name: api
+  annotations:
+    pipeops.io/sync-wave: "2"    # Deployed after cache
+spec:
+  # ... api configuration
+```
+
+#### Wave Ordering Rules
+
+| Wave | Typical Use Case | Example Resources |
+|------|------------------|-------------------|
+| `-1` | Pre-deployment hooks | Migrations, schema updates |
+| `0` | Infrastructure | Databases, message queues |
+| `1` | Dependencies | Caches, service meshes |
+| `2` | Applications | APIs, web servers |
+| `3` | Post-deployment | Monitoring, cleanup jobs |
+
+#### Enabling Sync Waves
+
+1. Navigate to **Project Settings** → **GitOps**
+2. Enable **Sync Waves**
+3. Set **Wave Timeout** (default: 5 minutes per wave)
+
+### Drift Detection
+
+Drift detection continuously monitors your deployments to identify when the live state differs from the desired state defined in Git.
+
+#### Types of Drift
+
+| Drift Type | Description | Example |
+|------------|-------------|---------|
+| **Configuration Drift** | Resource configuration changed | Replica count manually increased |
+| **Resource Drift** | Resources added or removed | Manual secret creation |
+| **Image Drift** | Container image changed | Emergency hotfix deployed |
+
+#### How Drift Detection Works
+
+1. **Scheduled Scans**: PipeOps scans live resources every 5 minutes by default
+2. **Comparison**: Live state is compared against the Git manifest
+3. **Reporting**: Differences are reported in the project dashboard
+4. **Alerting**: Optional notifications for detected drift
+
+#### Configuring Drift Detection
+
+```yaml
+spec:
+  gitops:
+    driftDetection:
+      enabled: true
+      interval: 5m              # Scan frequency
+      ignoreFields:             # Fields to ignore in comparison
+        - metadata.annotations["kubectl.kubernetes.io/last-applied-configuration"]
+        - status
+```
+
+#### Drift Response Options
+
+| Option | Behavior |
+|--------|----------|
+| **Alert Only** | Notify but don't auto-correct |
+| **Self Heal** | Automatically revert to Git state |
+| **Manual Review** | Require approval before correction |
+
+#### Viewing Drift Details
+
+1. Navigate to your GitOps project
+2. Click the **Drift** tab
+3. View detailed comparison of each drifted resource
+4. Choose to **Sync** (apply Git state) or **Ignore** (mark as accepted)
+
+### Preview Environments
+
+Preview environments automatically create temporary deployments for pull requests, enabling you to test changes before merging.
+
+#### How Preview Environments Work
+
+1. **PR Created**: Developer opens a pull request
+2. **Detection**: PipeOps detects the PR via webhook
+3. **Build**: Application is built from the PR branch
+4. **Deploy**: Temporary environment is provisioned
+5. **URL**: Unique preview URL is posted as PR comment
+6. **Cleanup**: Environment is automatically deleted when PR is closed/merged
+
+#### Enabling Preview Environments
+
+1. Navigate to **Project Settings** → **GitOps** → **Preview Environments**
+2. Enable **Preview Environments**
+3. Configure settings:
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| **Auto Deploy** | Automatically deploy on PR creation | `true` |
+| **URL Pattern** | Preview URL format | `pr-{number}.preview.{domain}` |
+| **TTL** | Maximum lifetime | `72 hours` |
+| **Resources** | Resource limits for previews | `50%` of production |
+
+#### Manifest Configuration
+
+```yaml
+spec:
+  gitops:
+    preview:
+      enabled: true
+      urlPattern: "pr-{{.PRNumber}}.preview.example.com"
+      ttl: 72h
+      resources:
+        cpu: "250m"
+        memory: "256Mi"
+      autoStop:
+        enabled: true
+        idleTimeout: 2h         # Stop after 2 hours of inactivity
+```
+
+#### Preview Environment Features
+
+- **Isolated Database**: Optional isolated database per preview
+- **Seeded Data**: Populate with test data automatically
+- **Branch-Specific Secrets**: Use branch-specific environment variables
+- **Collaboration**: Share preview URLs in PR comments
+
+#### Example PR Comment
+
+When a preview environment is ready, PipeOps posts a comment:
+
+```
+🚀 Preview Environment Ready!
+
+**URL**: https://pr-123.preview.example.com
+**Status**: Healthy
+**Branch**: feature/new-login
+**Expires**: 72 hours
+
+[View Logs](https://app.pipeops.io/...) | [View Deployment](https://app.pipeops.io/...)
+```
+
+#### Cleanup Policies
+
+| Trigger | Behavior |
+|---------|----------|
+| **PR Merged** | Environment deleted immediately |
+| **PR Closed** | Environment deleted after grace period (default: 1 hour) |
+| **TTL Expired** | Environment deleted after max lifetime |
+| **Manual** | Delete via dashboard or API |
+
 ## Troubleshooting
 
 ### Sync Failed
@@ -312,6 +490,27 @@ Always review the diff before syncing to production to understand what changes w
 1. Someone may have made manual changes
 2. Enable **Self Heal** to auto-correct drift
 3. Click **Sync** to reconcile
+
+### Sync Wave Timeout
+
+1. Check if the wave's resources are becoming healthy
+2. Increase the wave timeout in settings
+3. Verify resource dependencies are correct
+4. Check resource health probes and startup times
+
+### Drift Detection Not Working
+
+1. Verify drift detection is enabled in project settings
+2. Check if the scan interval is appropriate
+3. Ensure the cluster is accessible for scans
+4. Review ignored fields configuration
+
+### Preview Environment Not Created
+
+1. Verify webhooks are configured correctly
+2. Check if preview environments are enabled
+3. Ensure the PR branch has a valid `pipeops.yaml`
+4. Check cluster resources for preview quota limits
 
 ## Related Documentation
 
