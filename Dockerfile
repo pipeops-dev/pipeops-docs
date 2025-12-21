@@ -1,4 +1,4 @@
-ARG NODE_IMAGE=node:lts-alpine
+ARG NODE_IMAGE=node:20-alpine
 ARG ENV=production
 ARG PORT=80
 
