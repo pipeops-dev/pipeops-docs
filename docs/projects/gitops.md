@@ -317,4 +317,4 @@ Always review the diff before syncing to production to understand what changes w
 
 - [Project Deployment](./project-deployment.md)
 - [Project Settings](./project-settings.md)
-- [Environment Variables](/docs/Integrations/environment-variable)
+- [Environment Variables](./project-settings.md#environment-variable)
