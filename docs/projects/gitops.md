@@ -200,7 +200,7 @@ Before syncing, you can preview changes:
 For users with their own Kubernetes clusters (BYOC - Bring Your Own Cluster), PipeOps supports deploying raw Kubernetes manifests.
 
 :::warning Important
-Custom Kubernetes manifests are **NOT allowed** on PipeOps managed clusters (PKS) for security and stability reasons.
+Custom Kubernetes manifests are **NOT allowed** on PipeOps-managed clusters (PKS) for security and stability reasons.
 :::
 
 ### Cluster Type Support
