@@ -117,13 +117,18 @@ The agent is designed to work across diverse environments:
 
 The PipeOps Gateway Proxy provides external access to applications in your Kubernetes clusters and is **enabled by default** with automatic routing optimization.
 
+:::note Default Configuration
+Gateway proxy is enabled by default (`enableIngressSync: true`) and automatically detects the best routing mode. While the agent provides secure admin access always, the gateway proxy feature specifically handles ingress route management and external application access.
+:::
+
 ### Key Features
 
+- **Enabled by Default** — Gateway proxy starts automatically with ingress monitoring
 - **Automatic Cluster Detection** — Identifies if cluster is public (with LoadBalancer) or private
+- **Selective Ingress Sync** — Only monitors ingresses managed by PipeOps
 - **Dual Routing Modes**:
   - **Direct Mode** — Public clusters with LoadBalancer (3-5x faster, no tunnel overhead)
   - **Tunnel Mode** — Private clusters without public IPs (secure WebSocket tunnel)
-- **Selective Ingress Sync** — Only monitors ingresses managed by PipeOps
 - **Custom Domain Support** — Full support for custom domain mapping
 - **TLS Termination** — Secure HTTPS access at gateway level
 - **Automatic Re-sync** — Routes refreshed every 4 hours to prevent expiry
@@ -132,13 +137,15 @@ The PipeOps Gateway Proxy provides external access to applications in your Kuber
 
 1. Agent detects cluster type on startup (checks for LoadBalancer external IP)
 2. Chooses routing mode automatically (direct or tunnel)
-3. Monitors ingress resources across all namespaces
+3. Monitors ingress resources across namespaces (PipeOps-managed only)
 4. Registers routes with PipeOps gateway via REST API
 5. Gateway proxy routes traffic based on cluster type
 
-To disable gateway proxy (not recommended):
+To disable gateway proxy if needed:
 ```bash
 export ENABLE_INGRESS_SYNC=false
+# Or in Helm:
+# --set agent.enableIngressSync=false
 ```
 
 ## Use Cases
