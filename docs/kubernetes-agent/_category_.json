@@ -1,0 +1,8 @@
+{
+  "label": "Kubernetes Agent",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Complete guide to the PipeOps Kubernetes Agent - transform your VMs into production-ready Kubernetes servers."
+  }
+}
