@@ -85,7 +85,7 @@ Set the logging verbosity:
 
 ```bash
 export PIPEOPS_LOG_LEVEL=debug
-pipeops deploy create --project my-app
+pipeops status proj-123
 ```
 
 Available levels:
@@ -134,7 +134,7 @@ Global flags can be used with any command and override both configuration file a
 Output in JSON format:
 
 ```bash
-pipeops project list --json
+pipeops list --json
 ```
 
 Example output:
@@ -154,7 +154,7 @@ Example output:
 Enable verbose output:
 
 ```bash
-pipeops deploy create --project my-app --verbose
+pipeops status proj-123 --verbose
 ```
 
 This shows:
@@ -167,7 +167,7 @@ This shows:
 Suppress non-essential output:
 
 ```bash
-pipeops deploy create --project my-app --quiet
+pipeops list --quiet
 ```
 
 Only errors and critical information will be displayed.
@@ -178,8 +178,8 @@ Display help information:
 
 ```bash
 pipeops --help
-pipeops deploy --help
-pipeops deploy create --help
+pipeops list --help
+pipeops status --help
 ```
 
 ### `--version`
@@ -267,8 +267,8 @@ alias pipeops-staging='PIPEOPS_CONFIG_PATH=~/.pipeops.staging.json pipeops'
 
 Usage:
 ```bash
-pipeops-prod project list
-pipeops-staging deploy create --project my-app
+pipeops-prod list
+pipeops-staging status proj-123
 ```
 
 ## Authentication Configuration
@@ -331,8 +331,8 @@ Set a default project to avoid specifying it in every command:
 ### Using Environment Variable
 
 ```bash
-export PIPEOPS_DEFAULT_PROJECT=my-app
-pipeops deploy create
+export PIPEOPS_DEFAULT_PROJECT=proj-123
+pipeops status
 ```
 
 ### Commands without --project flag
@@ -341,10 +341,10 @@ Once set, you can omit the `--project` flag:
 
 ```bash
 # Instead of
-pipeops deploy create --project my-app
+pipeops status proj-123
 
 # You can use
-pipeops deploy create
+pipeops status
 ```
 
 ## Output Customization

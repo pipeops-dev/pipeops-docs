@@ -277,7 +277,8 @@ export PIPEOPS_AUTH_TOKEN=${{ secrets.PIPEOPS_TOKEN }}
 pipeops auth status
 
 # Run commands
-pipeops deploy create --project my-app
+pipeops list
+pipeops status proj-123
 ```
 
 ### Multiple Accounts

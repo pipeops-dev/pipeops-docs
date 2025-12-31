@@ -1,149 +1,84 @@
 ---
 sidebar_position: 4
-title: Deployment Commands
+title: Monitoring Commands
 ---
 
-# Deployment Commands
+# Monitoring Commands
 
-The `pipeops deploy` commands handle deployment operations, pipeline management, and deployment monitoring.
+The PipeOps CLI provides commands for monitoring and viewing information about your projects and deployments.
 
-## `pipeops deploy create`
+:::note
+The CLI currently focuses on **read operations** for monitoring projects. For deploying applications, use the [Web UI](/docs/projects/project-deployment).
+:::
 
-Create and trigger a new deployment.
 
-### Usage
+
+## Monitoring Deployments
+
+### Viewing Project Status
+
+Check the status of your projects:
 
 ```bash
-pipeops deploy create [flags]
+# Show status for linked project
+pipeops status
+
+# Show status for specific project
+pipeops status proj-123
+
+# Show status in JSON format
+pipeops status proj-123 --json
 ```
 
-### Flags
+### Viewing Project Logs
 
-| Flag | Type | Description |
-|------|------|-------------|
-| `--project` | string | Project name (required) |
-| `--branch` | string | Git branch to deploy (default: project default) |
-| `--commit` | string | Specific commit SHA to deploy |
-| `--env` | string | Override environment variables |
-
-### Examples
+View and stream logs from your project services:
 
 ```bash
-# Deploy latest commit
-pipeops deploy create --project my-app
+# View logs for linked project
+pipeops logs
 
-# Deploy specific branch
-pipeops deploy create --project my-app --branch develop
+# View logs for specific project
+pipeops logs proj-123
 
-# Deploy specific commit
-pipeops deploy create --project my-app --commit abc123
+# Stream logs in real-time
+pipeops logs --follow
 
-# With environment override
-pipeops deploy create \
-  --project my-app \
-  --env DEBUG=true
+# View last 100 lines
+pipeops logs --lines 100
+
+# Filter logs by service
+pipeops logs --service web-service
 ```
 
-**See also**: [Web UI Deployment](/docs/projects/project-deployment)
+### Listing Addon Deployments
 
----
-
-## `pipeops deploy status`
-
-Check deployment status.
-
-### Usage
+List addon deployments for a project:
 
 ```bash
-pipeops deploy status [flags]
+# List addon deployments for a project
+pipeops list --deployments --project proj-123
+
+# List addon deployments for linked project
+pipeops list --deployments
+
+# Output in JSON format
+pipeops list --deployments --project proj-123 --json
 ```
 
-### Flags
+### Listing Addons
 
-| Flag | Type | Description |
-|------|------|-------------|
-| `--project` | string | Project name (required) |
-| `--deployment-id` | string | Specific deployment ID |
-| `--watch` | boolean | Watch status updates |
-
-### Examples
+View available addons that can be deployed:
 
 ```bash
-# Get latest deployment status
-pipeops deploy status --project my-app
+# List all available addons
+pipeops list --addons
 
-# Watch deployment progress
-pipeops deploy status --project my-app --watch
+# Get information about a specific addon
+pipeops status --addon redis
 
-# Specific deployment
-pipeops deploy status \
-  --project my-app \
-  --deployment-id dep_123
-```
-
----
-
-## `pipeops deploy logs`
-
-View deployment logs.
-
-### Usage
-
-```bash
-pipeops deploy logs [flags]
-```
-
-### Flags
-
-| Flag | Type | Description |
-|------|------|-------------|
-| `--project` | string | Project name (required) |
-| `--deployment-id` | string | Specific deployment ID |
-| `--follow` | boolean | Follow logs in real-time |
-
-### Examples
-
-```bash
-# View latest deployment logs
-pipeops deploy logs --project my-app
-
-# Follow deployment logs
-pipeops deploy logs --project my-app --follow
-
-# Specific deployment
-pipeops deploy logs \
-  --project my-app \
-  --deployment-id dep_123
-```
-
----
-
-## `pipeops deploy pipeline`
-
-Manage deployment pipelines.
-
-### Usage
-
-```bash
-pipeops deploy pipeline [flags]
-```
-
-### Flags
-
-| Flag | Type | Description |
-|------|------|-------------|
-| `--project` | string | Project name (required) |
-| `--trigger` | boolean | Trigger the pipeline |
-| `--status` | boolean | Show pipeline status |
-
-### Examples
-
-```bash
-# Trigger pipeline
-pipeops deploy pipeline --project my-app --trigger
-
-# Check pipeline status
-pipeops deploy pipeline --project my-app --status
+# Output in JSON format
+pipeops list --addons --json
 ```
 
 ---

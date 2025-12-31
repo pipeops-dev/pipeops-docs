@@ -142,9 +142,9 @@ pipeops auth login
    curl -v https://api.pipeops.io/health
    ```
 
-2. **Increase timeout** (if supported):
+2. **Retry the request**:
    ```bash
-   pipeops deploy create --project my-app --timeout 600
+   pipeops list --json
    ```
 
 3. **Check for proxy issues**:
@@ -155,7 +155,7 @@ pipeops auth login
    
    # Temporarily disable proxy
    unset HTTP_PROXY HTTPS_PROXY
-   pipeops project list
+   pipeops list
    ```
 
 ### Rate Limiting
@@ -167,13 +167,13 @@ pipeops auth login
 1. Wait and retry:
    ```bash
    sleep 60
-   pipeops project list
+   pipeops list
    ```
 
 2. Implement retry logic in scripts:
    ```bash
    for i in {1..3}; do
-     if pipeops deploy create --project my-app; then
+     if pipeops status proj-123; then
        break
      fi
      sleep 30
@@ -205,43 +205,42 @@ pipeops auth login
 
 1. **List available projects**:
    ```bash
-   pipeops project list
+   pipeops list
    ```
 
-2. **Check project name spelling**:
+2. **Check project ID**:
    ```bash
-   # Project names are case-sensitive
-   pipeops deploy create --project MyApp  # ✓
-   pipeops deploy create --project myapp  # ✗
+   # Get the correct project ID
+   pipeops list --json | jq '.[] | {id, name}'
    ```
 
 3. **Set default project**:
    ```bash
-   export PIPEOPS_DEFAULT_PROJECT=my-app
+   export PIPEOPS_DEFAULT_PROJECT=proj-123
    ```
 
 ### Deployment Failures
 
-**Problem**: Deployment fails.
+**Problem**: Project issues.
 
 **Solutions**:
 
-1. **Check deployment logs**:
+1. **Check project logs**:
    ```bash
-   pipeops deploy logs --project my-app
+   pipeops logs proj-123
    ```
 
-2. **Verify build configuration**:
+2. **Verify project status**:
    ```bash
-   pipeops project info --project my-app
+   pipeops status proj-123
    ```
 
-3. **Check environment variables**:
+3. **List project information**:
    ```bash
-   pipeops project env list --project my-app
+   pipeops list --json | jq '.[] | select(.id=="proj-123")'
    ```
 
-4. **Try manual deployment from web UI** to isolate CLI issues
+4. **Use the web UI** for detailed diagnostics and management
 
 ---
 
@@ -493,8 +492,9 @@ env | grep PIPEOPS
 pipeops --help
 
 # Command-specific help
-pipeops project --help
-pipeops deploy create --help
+pipeops list --help
+pipeops status --help
+pipeops logs --help
 ```
 
 ### Check API Status

@@ -59,8 +59,8 @@ alias pipeops='docker run -it --rm -v ~/.pipeops:/root/.pipeops pipeops/cli:late
 Usage:
 ```bash
 pipeops auth login
-pipeops project list
-pipeops deploy create --project my-app
+pipeops list
+pipeops status proj-123
 ```
 
 ## CI/CD with Docker
@@ -68,36 +68,37 @@ pipeops deploy create --project my-app
 ### GitHub Actions
 
 ```yaml
-name: Deploy with PipeOps
+name: Monitor with PipeOps CLI
 
 on:
-  push:
-    branches: [main]
+  schedule:
+    - cron: '0 */6 * * *'
 
 jobs:
-  deploy:
+  monitor:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       
-      - name: Deploy to PipeOps
+      - name: Check project status
         env:
           PIPEOPS_AUTH_TOKEN: ${{ secrets.PIPEOPS_TOKEN }}
         run: |
           docker run --rm \
             -e PIPEOPS_AUTH_TOKEN \
             pipeops/cli:latest \
-            deploy create --project my-app
+            status proj-123
 ```
 
 ### GitLab CI
 
 ```yaml
-deploy:
+monitor:
   image: pipeops/cli:latest
   script:
     - pipeops auth status
-    - pipeops deploy create --project my-app
+    - pipeops list
+    - pipeops status proj-123
   variables:
     PIPEOPS_AUTH_TOKEN: $CI_PIPEOPS_TOKEN
   only:
@@ -117,9 +118,10 @@ pipeline {
         PIPEOPS_AUTH_TOKEN = credentials('pipeops-token')
     }
     stages {
-        stage('Deploy') {
+        stage('Monitor') {
             steps {
-                sh 'pipeops deploy create --project my-app'
+                sh 'pipeops list'
+                sh 'pipeops status proj-123'
             }
         }
     }
@@ -183,11 +185,11 @@ services:
     image: pipeops/cli:latest
     environment:
       - PIPEOPS_AUTH_TOKEN=${PIPEOPS_AUTH_TOKEN}
-      - PIPEOPS_DEFAULT_PROJECT=my-app
+      - PIPEOPS_DEFAULT_PROJECT=proj-123
     volumes:
       - ~/.pipeops:/root/.pipeops
       - ./scripts:/scripts
-    command: deploy create
+    command: status
 ```
 
 Run with:
@@ -195,9 +197,9 @@ Run with:
 docker-compose run pipeops-cli
 ```
 
-## Volume Mounts for Projects
+## Volume Mounts for Local Access
 
-When working with local files:
+When working with local configuration:
 
 ```bash
 docker run -it --rm \
@@ -205,7 +207,7 @@ docker run -it --rm \
   -v $(pwd):/workspace \
   -w /workspace \
   pipeops/cli:latest \
-  project create --repo /workspace
+  list --json
 ```
 
 ## Multi-Stage Builds
