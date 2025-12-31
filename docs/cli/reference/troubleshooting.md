@@ -221,26 +221,26 @@ pipeops auth login
 
 ### Deployment Failures
 
-**Problem**: Deployment fails.
+**Problem**: Project issues.
 
 **Solutions**:
 
-1. **Check deployment logs**:
+1. **Check project logs**:
    ```bash
-   pipeops deploy logs --project my-app
+   pipeops logs proj-123
    ```
 
-2. **Verify build configuration**:
+2. **Verify project status**:
    ```bash
-   pipeops project info --project my-app
+   pipeops status proj-123
    ```
 
-3. **Check environment variables**:
+3. **List project information**:
    ```bash
-   pipeops project env list --project my-app
+   pipeops list --json | jq '.[] | select(.id=="proj-123")'
    ```
 
-4. **Try manual deployment from web UI** to isolate CLI issues
+4. **Use the web UI** for detailed diagnostics and management
 
 ---
 

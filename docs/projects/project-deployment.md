@@ -164,15 +164,15 @@ pipeops status proj-123
 # View project logs in real-time
 pipeops logs proj-123 --follow
 
-# Deploy addons to your project
-pipeops deploy --addon postgres --project proj-123
+# List addon deployments
+pipeops list --deployments --project proj-123
 ```
 
 :::note
-For creating new projects and deploying application code, use the Web UI or `pipeops deploy pipeline` for local directory deployments. The CLI currently focuses on monitoring and viewing project information.
+For creating new projects and deploying application code, use the Web UI. The CLI currently focuses on monitoring and viewing project information.
 :::
 
 For detailed CLI usage instructions, see:
 - [CLI Quick Start Guide](/docs/cli/getting-started/quick-start)
-- [CLI Deployment Commands](/docs/cli/commands/deployments)
+- [CLI Monitoring Commands](/docs/cli/commands/deployments)
 - [CI/CD Integration](/docs/cli/advanced/cicd)

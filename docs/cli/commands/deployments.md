@@ -1,86 +1,17 @@
 ---
 sidebar_position: 4
-title: Deployment Commands
+title: Monitoring Commands
 ---
 
-# Deployment Commands
+# Monitoring Commands
 
-The `pipeops deploy` commands handle addon deployment operations and local directory deployments.
+The PipeOps CLI provides commands for monitoring and viewing information about your projects and deployments.
 
 :::note
-The CLI currently focuses on **read operations** for monitoring projects and **addon deployments**. For project code deployments, use the [Web UI](/docs/projects/project-deployment) or the `pipeops deploy pipeline` command for local directory deployments.
+The CLI currently focuses on **read operations** for monitoring projects. For deploying applications, use the [Web UI](/docs/projects/project-deployment).
 :::
 
-## `pipeops deploy`
 
-Deploy addons to existing projects.
-
-### Usage
-
-```bash
-pipeops deploy --addon <addon-id> --project <project-id> [flags]
-```
-
-### Flags
-
-| Flag | Type | Description |
-|------|------|-------------|
-| `--addon` | string | Addon ID to deploy (required) |
-| `--project` | string | Project ID (required or use linked project) |
-| `--env` | map | Environment variables for the addon |
-
-### Examples
-
-```bash
-# Deploy an addon to a project
-pipeops deploy --addon postgres --project proj-123
-
-# Deploy addon with environment variables
-pipeops deploy --addon redis --project proj-123 --env REDIS_PASSWORD=secret
-
-# Deploy addon to linked project
-pipeops deploy --addon postgres --env POSTGRES_DB=myapp
-```
-
-**See also**: [List Available Addons](#listing-addons)
-
----
-
-## `pipeops deploy pipeline`
-
-Deploy the current directory to PipeOps using a linked project.
-
-### Usage
-
-```bash
-pipeops deploy pipeline [flags]
-```
-
-### Flags
-
-| Flag | Type | Description |
-|------|------|-------------|
-| `--source, -s` | string | Source directory to deploy (default: current directory) |
-| `--name, -n` | string | Custom name for deployment |
-
-### Examples
-
-```bash
-# Deploy current directory
-pipeops deploy pipeline
-
-# Deploy with custom source
-pipeops deploy pipeline --source ./my-app
-
-# Deploy with custom name
-pipeops deploy pipeline --name "My App v2.0"
-```
-
-:::tip
-Make sure you have linked a project first using `pipeops link`.
-:::
-
----
 
 ## Monitoring Deployments
 

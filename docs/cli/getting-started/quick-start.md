@@ -98,20 +98,20 @@ View project logs in real-time:
 pipeops logs proj-123 --follow
 ```
 
-## Step 4: Deploy Addons
+## Step 4: List Available Addons
 
-You can deploy addons (like databases) to your existing projects:
+You can view available addons and their deployments:
 
 ```bash
 # List available addons
 pipeops list --addons
 
-# Deploy an addon to a project
-pipeops deploy --addon postgres --project proj-123
+# List addon deployments for a project
+pipeops list --deployments --project proj-123
 ```
 
 :::note
-For creating new projects and deploying application code, use the [Web UI](https://app.pipeops.io) or the `pipeops deploy pipeline` command for local directory deployments.
+For creating new projects and deploying application code (including addons), use the [Web UI](https://app.pipeops.io).
 :::
 
 ## Common Workflows
@@ -131,21 +131,18 @@ pipeops logs proj-123 --follow
 pipeops logs proj-123 --lines 100
 ```
 
-### Deploying Addons
+### Viewing Addons
 
-Deploy addons like databases to your projects:
+View available addons and their deployments:
 
 ```bash
 # List available addons
 pipeops list --addons
 
-# Deploy an addon
-pipeops deploy --addon postgres --project proj-123
+# Get addon information
+pipeops status --addon postgres
 
-# Deploy with environment variables
-pipeops deploy --addon redis --project proj-123 --env REDIS_PASSWORD=secret
-
-# List addon deployments
+# List addon deployments for a project
 pipeops list --deployments --project proj-123
 ```
 
@@ -277,7 +274,7 @@ pipeops update
 |------|-------------|--------|
 | Create Project | Use Web UI | Projects > New Project |
 | View Projects | `pipeops list` | Projects Dashboard |
-| Deploy Addons | `pipeops deploy --addon <addon>` | Project > Addons |
+| View Addons | `pipeops list --addons` | Project > Addons |
 | View Logs | `pipeops logs --follow` | Project > Logs |
 | Manage Servers | `pipeops server list` | Servers Dashboard |
 | Check Status | `pipeops status` | Project > Overview |
@@ -302,8 +299,8 @@ pipeops logs proj-123 --follow
 # 5. List available addons
 pipeops list --addons
 
-# 6. Deploy an addon
-pipeops deploy --addon postgres --project proj-123
+# 6. Get addon information
+pipeops status --addon postgres
 
 # 7. List addon deployments
 pipeops list --deployments --project proj-123

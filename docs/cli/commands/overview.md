@@ -17,8 +17,8 @@ pipeops <category> <command> [options] [flags]
 
 ```bash
 pipeops auth login
-pipeops project create --name my-app
-pipeops deploy logs --project my-app --follow
+pipeops list
+pipeops logs proj-123 --follow
 ```
 
 ## Command Categories
@@ -57,21 +57,6 @@ pipeops project <command>
 
 **Learn more**: [Project Commands](/docs/cli/commands/projects)
 
-### Deployment Commands
-
-Handle addon deployments and local directory deployments.
-
-```bash
-pipeops deploy <command>
-```
-
-| Command | Description |
-|---------|-------------|
-| `deploy` | Deploy addons to existing projects |
-| `pipeline` | Deploy current directory to PipeOps |
-
-**Learn more**: [Deployment Commands](/docs/cli/commands/deployments)
-
 ### Monitoring Commands
 
 Monitor projects and view logs.
@@ -82,7 +67,7 @@ Monitor projects and view logs.
 | `status` | Check project or addon status |
 | `logs` | View project logs |
 
-**Learn more**: [Deployment Commands](/docs/cli/commands/deployments)
+**Learn more**: [Monitoring Commands](/docs/cli/commands/deployments)
 
 ### Server Commands
 
@@ -249,8 +234,8 @@ pipeops auth --help
 pipeops project --help
 
 # Specific command help
-pipeops project create --help
-pipeops deploy logs --help
+pipeops list --help
+pipeops logs --help
 ```
 
 ### Example Output

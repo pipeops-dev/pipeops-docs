@@ -59,7 +59,7 @@ The PipeOps CLI organizes commands into logical categories:
 
 - **Authentication** (`pipeops auth`) - Login, logout, and account management
 - **Projects** (`pipeops project`) - Project lifecycle management
-- **Deployments** (`pipeops deploy`) - Deployment operations and pipeline management
+- **Monitoring** (`pipeops list`, `pipeops status`, `pipeops logs`) - View project and addon information
 - **Servers** (`pipeops server`) - Server provisioning and management
 - **Agents** (`pipeops agent`) - Agent installation and cluster management
 - **Utilities** - Status checks, version info, updates, and proxy management
