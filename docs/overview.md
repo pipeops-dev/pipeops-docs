@@ -25,6 +25,27 @@ Explore the following list of features that PipeOps offers:
 - **Server Deployment**: Seamlessly provision and manage servers to support your applications.
 - **Scalability**: Scale your infrastructure effortlessly to meet the demands of your growing applications.
 - **Automation**: Leverage automation capabilities to streamline repetitive tasks.
+- **CLI Tool**: Use the PipeOps CLI for command-line management and CI/CD integration.
+
+## Using PipeOps
+
+PipeOps provides two primary ways to interact with the platform:
+
+### Web Console
+The intuitive web interface at [console.pipeops.io](https://console.pipeops.io) provides:
+- Visual project and server management
+- Real-time monitoring and metrics
+- Easy configuration through forms and wizards
+- Team collaboration features
+
+### Command Line Interface (CLI)
+The [PipeOps CLI](/docs/cli/overview) enables:
+- Fast command-line operations
+- Automation and scripting
+- CI/CD pipeline integration
+- Infrastructure as code workflows
+
+**Get started with the CLI**: [Installation Guide](/docs/cli/getting-started/installation) | [Quick Start](/docs/cli/getting-started/quick-start)
 
 
 ## Guides
