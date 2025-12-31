@@ -234,8 +234,8 @@ This is useful for:
 Store sensitive information in environment variables instead of hardcoding:
 
 ```bash
-export PIPEOPS_PROJECT="my-app"
-pipeops deploy create --project $PIPEOPS_PROJECT
+export PIPEOPS_PROJECT="proj-123"
+pipeops status $PIPEOPS_PROJECT
 ```
 
 ### Using Aliases

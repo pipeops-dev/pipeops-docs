@@ -150,22 +150,29 @@ Here’s how to view your deployed project:
 
 To delete a project, use the Delete Project guide [here](/docs/projects/project-actions#delete-project).
 
-## Deploying via CLI
+## Monitoring via CLI
 
-You can also deploy projects using the PipeOps CLI for automation and CI/CD integration:
+You can monitor your projects using the PipeOps CLI for automation and CI/CD integration:
 
 ```bash
-# Create and deploy a project
-pipeops project create --name my-app --repo https://github.com/user/repo
+# List all projects
+pipeops list
 
-# Trigger a deployment
-pipeops deploy create --project my-app
+# Check project status
+pipeops status proj-123
 
-# Monitor deployment logs
-pipeops deploy logs --project my-app --follow
+# View project logs in real-time
+pipeops logs proj-123 --follow
+
+# Deploy addons to your project
+pipeops deploy --addon postgres --project proj-123
 ```
 
-For detailed CLI deployment instructions, see:
+:::note
+For creating new projects and deploying application code, use the Web UI or `pipeops deploy pipeline` for local directory deployments. The CLI currently focuses on monitoring and viewing project information.
+:::
+
+For detailed CLI usage instructions, see:
 - [CLI Quick Start Guide](/docs/cli/getting-started/quick-start)
 - [CLI Deployment Commands](/docs/cli/commands/deployments)
 - [CI/CD Integration](/docs/cli/advanced/cicd)
