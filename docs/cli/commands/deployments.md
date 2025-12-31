@@ -5,122 +5,50 @@ title: Deployment Commands
 
 # Deployment Commands
 
-The `pipeops deploy` commands handle deployment operations, pipeline management, and deployment monitoring.
+The `pipeops deploy` commands handle addon deployment operations and local directory deployments.
 
-## `pipeops deploy create`
+:::note
+The CLI currently focuses on **read operations** for monitoring projects and **addon deployments**. For project code deployments, use the [Web UI](/docs/projects/project-deployment) or the `pipeops deploy pipeline` command for local directory deployments.
+:::
 
-Create and trigger a new deployment.
+## `pipeops deploy`
+
+Deploy addons to existing projects.
 
 ### Usage
 
 ```bash
-pipeops deploy create [flags]
+pipeops deploy --addon <addon-id> --project <project-id> [flags]
 ```
 
 ### Flags
 
 | Flag | Type | Description |
 |------|------|-------------|
-| `--project` | string | Project name (required) |
-| `--branch` | string | Git branch to deploy (default: project default) |
-| `--commit` | string | Specific commit SHA to deploy |
-| `--env` | string | Override environment variables |
+| `--addon` | string | Addon ID to deploy (required) |
+| `--project` | string | Project ID (required or use linked project) |
+| `--env` | map | Environment variables for the addon |
 
 ### Examples
 
 ```bash
-# Deploy latest commit
-pipeops deploy create --project my-app
+# Deploy an addon to a project
+pipeops deploy --addon postgres --project proj-123
 
-# Deploy specific branch
-pipeops deploy create --project my-app --branch develop
+# Deploy addon with environment variables
+pipeops deploy --addon redis --project proj-123 --env REDIS_PASSWORD=secret
 
-# Deploy specific commit
-pipeops deploy create --project my-app --commit abc123
-
-# With environment override
-pipeops deploy create \
-  --project my-app \
-  --env DEBUG=true
+# Deploy addon to linked project
+pipeops deploy --addon postgres --env POSTGRES_DB=myapp
 ```
 
-**See also**: [Web UI Deployment](/docs/projects/project-deployment)
-
----
-
-## `pipeops deploy status`
-
-Check deployment status.
-
-### Usage
-
-```bash
-pipeops deploy status [flags]
-```
-
-### Flags
-
-| Flag | Type | Description |
-|------|------|-------------|
-| `--project` | string | Project name (required) |
-| `--deployment-id` | string | Specific deployment ID |
-| `--watch` | boolean | Watch status updates |
-
-### Examples
-
-```bash
-# Get latest deployment status
-pipeops deploy status --project my-app
-
-# Watch deployment progress
-pipeops deploy status --project my-app --watch
-
-# Specific deployment
-pipeops deploy status \
-  --project my-app \
-  --deployment-id dep_123
-```
-
----
-
-## `pipeops deploy logs`
-
-View deployment logs.
-
-### Usage
-
-```bash
-pipeops deploy logs [flags]
-```
-
-### Flags
-
-| Flag | Type | Description |
-|------|------|-------------|
-| `--project` | string | Project name (required) |
-| `--deployment-id` | string | Specific deployment ID |
-| `--follow` | boolean | Follow logs in real-time |
-
-### Examples
-
-```bash
-# View latest deployment logs
-pipeops deploy logs --project my-app
-
-# Follow deployment logs
-pipeops deploy logs --project my-app --follow
-
-# Specific deployment
-pipeops deploy logs \
-  --project my-app \
-  --deployment-id dep_123
-```
+**See also**: [List Available Addons](#listing-addons)
 
 ---
 
 ## `pipeops deploy pipeline`
 
-Manage deployment pipelines.
+Deploy the current directory to PipeOps using a linked project.
 
 ### Usage
 
@@ -132,18 +60,94 @@ pipeops deploy pipeline [flags]
 
 | Flag | Type | Description |
 |------|------|-------------|
-| `--project` | string | Project name (required) |
-| `--trigger` | boolean | Trigger the pipeline |
-| `--status` | boolean | Show pipeline status |
+| `--source, -s` | string | Source directory to deploy (default: current directory) |
+| `--name, -n` | string | Custom name for deployment |
 
 ### Examples
 
 ```bash
-# Trigger pipeline
-pipeops deploy pipeline --project my-app --trigger
+# Deploy current directory
+pipeops deploy pipeline
 
-# Check pipeline status
-pipeops deploy pipeline --project my-app --status
+# Deploy with custom source
+pipeops deploy pipeline --source ./my-app
+
+# Deploy with custom name
+pipeops deploy pipeline --name "My App v2.0"
+```
+
+:::tip
+Make sure you have linked a project first using `pipeops link`.
+:::
+
+---
+
+## Monitoring Deployments
+
+### Viewing Project Status
+
+Check the status of your projects:
+
+```bash
+# Show status for linked project
+pipeops status
+
+# Show status for specific project
+pipeops status proj-123
+
+# Show status in JSON format
+pipeops status proj-123 --json
+```
+
+### Viewing Project Logs
+
+View and stream logs from your project services:
+
+```bash
+# View logs for linked project
+pipeops logs
+
+# View logs for specific project
+pipeops logs proj-123
+
+# Stream logs in real-time
+pipeops logs --follow
+
+# View last 100 lines
+pipeops logs --lines 100
+
+# Filter logs by service
+pipeops logs --service web-service
+```
+
+### Listing Addon Deployments
+
+List addon deployments for a project:
+
+```bash
+# List addon deployments for a project
+pipeops list --deployments --project proj-123
+
+# List addon deployments for linked project
+pipeops list --deployments
+
+# Output in JSON format
+pipeops list --deployments --project proj-123 --json
+```
+
+### Listing Addons
+
+View available addons that can be deployed:
+
+```bash
+# List all available addons
+pipeops list --addons
+
+# Get information about a specific addon
+pipeops status --addon redis
+
+# Output in JSON format
+pipeops list --addons --json
 ```
 
 ---

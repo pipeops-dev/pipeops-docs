@@ -59,7 +59,7 @@ pipeops project <command>
 
 ### Deployment Commands
 
-Handle deployments and pipeline operations.
+Handle addon deployments and local directory deployments.
 
 ```bash
 pipeops deploy <command>
@@ -67,10 +67,20 @@ pipeops deploy <command>
 
 | Command | Description |
 |---------|-------------|
-| `create` | Create a new deployment |
-| `status` | Check deployment status |
-| `logs` | View deployment logs |
-| `pipeline` | Manage deployment pipelines |
+| `deploy` | Deploy addons to existing projects |
+| `pipeline` | Deploy current directory to PipeOps |
+
+**Learn more**: [Deployment Commands](/docs/cli/commands/deployments)
+
+### Monitoring Commands
+
+Monitor projects and view logs.
+
+| Command | Description |
+|---------|-------------|
+| `list` | List projects, addons, or deployments |
+| `status` | Check project or addon status |
+| `logs` | View project logs |
 
 **Learn more**: [Deployment Commands](/docs/cli/commands/deployments)
 
@@ -134,16 +144,16 @@ These flags work with all commands:
 
 ```bash
 # JSON output
-pipeops project list --json
+pipeops list --json
 
 # Verbose mode
-pipeops deploy create --project my-app --verbose
+pipeops status proj-123 --verbose
 
 # Quiet mode
-pipeops deploy create --project my-app --quiet
+pipeops list --quiet
 
 # Custom config
-pipeops --config /path/to/config.json project list
+pipeops --config /path/to/config.json list
 ```
 
 ## Common Patterns
@@ -154,12 +164,13 @@ Most commands support both interactive and non-interactive modes:
 
 **Interactive** (prompts for input):
 ```bash
-pipeops project create
+pipeops auth login
 ```
 
 **Non-Interactive** (all options via flags):
 ```bash
-pipeops project create --name my-app --repo https://github.com/user/repo
+pipeops list
+pipeops status proj-123
 ```
 
 ### Output Formats
@@ -169,7 +180,7 @@ pipeops project create --name my-app --repo https://github.com/user/repo
 Human-readable formatted output:
 
 ```bash
-pipeops project list
+pipeops list
 ```
 
 ```
@@ -183,7 +194,7 @@ other-app   stopped   2024-01-14 15:20:00
 Machine-readable JSON for scripting:
 
 ```bash
-pipeops project list --json
+pipeops list --json
 ```
 
 ```json
@@ -202,13 +213,13 @@ Use command-specific flags to filter results:
 
 ```bash
 # Filter by status
-pipeops project list --status running
-
-# Filter by date
-pipeops deploy logs --since 1h
+pipeops list --status running
 
 # Limit results
-pipeops project list --limit 10
+pipeops list --limit 10
+
+# View addon deployments
+pipeops list --deployments --project proj-123
 ```
 
 ### Real-Time Updates
@@ -217,10 +228,10 @@ Some commands support following output in real-time:
 
 ```bash
 # Follow logs
-pipeops project logs --follow
+pipeops logs --follow
 
-# Watch deployment status
-pipeops deploy status --watch
+# Follow logs for specific project
+pipeops logs proj-123 --follow
 ```
 
 ## Getting Help
@@ -245,28 +256,28 @@ pipeops deploy logs --help
 ### Example Output
 
 ```bash
-$ pipeops project --help
+$ pipeops auth --help
 
-Manage PipeOps projects
+Authenticate with PipeOps
 
 Usage:
-  pipeops project <command> [flags]
+  pipeops auth <command> [flags]
 
 Available Commands:
-  list        List all projects
-  create      Create a new project
-  logs        View project logs
-  env         Manage environment variables
+  login       Authenticate with PipeOps using OAuth
+  logout      Sign out and remove local credentials
+  status      Check current authentication status
+  me          Display current user information
 
 Flags:
-  -h, --help   help for project
+  -h, --help   help for auth
 
 Global Flags:
       --json      Output in JSON format
   -v, --verbose   Enable verbose output
   -q, --quiet     Suppress non-essential output
 
-Use "pipeops project <command> --help" for more information about a command.
+Use "pipeops auth <command> --help" for more information about a command.
 ```
 
 ## Command Aliases
@@ -275,10 +286,10 @@ Some commands have shorter aliases for convenience:
 
 ```bash
 # Full command
-pipeops project list
+pipeops list
 
-# Using common abbreviations (if supported)
-pipeops proj list
+# Using command shortcuts
+pipeops logs proj-123 --follow
 ```
 
 ## Exit Codes
@@ -295,10 +306,10 @@ The CLI uses standard exit codes:
 Use in scripts:
 
 ```bash
-if pipeops deploy create --project my-app; then
-  echo "Deployment succeeded"
+if pipeops status proj-123; then
+  echo "Project is running"
 else
-  echo "Deployment failed with code $?"
+  echo "Project check failed with code $?"
 fi
 ```
 
@@ -308,16 +319,16 @@ Commands respect environment variables for configuration:
 
 ```bash
 # Set default project
-export PIPEOPS_DEFAULT_PROJECT=my-app
-pipeops deploy create  # Uses my-app automatically
+export PIPEOPS_DEFAULT_PROJECT=proj-123
+pipeops status  # Uses proj-123 automatically
 
 # Set API endpoint
 export PIPEOPS_API_URL=https://api.staging.pipeops.io
-pipeops project list
+pipeops list
 
 # Set output format
 export PIPEOPS_OUTPUT_FORMAT=json
-pipeops project list  # Outputs JSON by default
+pipeops list  # Outputs JSON by default
 ```
 
 See [Configuration](/docs/cli/getting-started/configuration) for more details.
@@ -333,43 +344,30 @@ set -e  # Exit on error
 # Authenticate
 pipeops auth status || pipeops auth login
 
-# Create project
-PROJECT_NAME="my-app"
-pipeops project create \
-  --name "$PROJECT_NAME" \
-  --repo "https://github.com/user/repo" \
-  --branch main
+# List projects
+pipeops list
 
-# Deploy
-pipeops deploy create --project "$PROJECT_NAME"
+# Check project status
+PROJECT_ID="proj-123"
+pipeops status "$PROJECT_ID"
 
-# Wait for deployment
-while true; do
-  STATUS=$(pipeops deploy status --project "$PROJECT_NAME" --json | jq -r '.status')
-  if [ "$STATUS" = "success" ]; then
-    echo "Deployment successful!"
-    break
-  elif [ "$STATUS" = "failed" ]; then
-    echo "Deployment failed!"
-    exit 1
-  fi
-  sleep 10
-done
+# View logs
+pipeops logs "$PROJECT_ID" --lines 50
 ```
 
 ### Using JSON Output
 
 ```bash
 # Get project count
-COUNT=$(pipeops project list --json | jq 'length')
+COUNT=$(pipeops list --json | jq 'length')
 echo "You have $COUNT projects"
 
 # Get running projects
-pipeops project list --json | \
+pipeops list --json | \
   jq -r '.[] | select(.status=="running") | .name'
 
 # Get project URLs
-pipeops project list --json | \
+pipeops list --json | \
   jq -r '.[] | "\(.name): \(.url)"'
 ```
 

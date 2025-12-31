@@ -142,9 +142,9 @@ pipeops auth login
    curl -v https://api.pipeops.io/health
    ```
 
-2. **Increase timeout** (if supported):
+2. **Retry the request**:
    ```bash
-   pipeops deploy create --project my-app --timeout 600
+   pipeops list --json
    ```
 
 3. **Check for proxy issues**:
@@ -155,7 +155,7 @@ pipeops auth login
    
    # Temporarily disable proxy
    unset HTTP_PROXY HTTPS_PROXY
-   pipeops project list
+   pipeops list
    ```
 
 ### Rate Limiting
@@ -167,13 +167,13 @@ pipeops auth login
 1. Wait and retry:
    ```bash
    sleep 60
-   pipeops project list
+   pipeops list
    ```
 
 2. Implement retry logic in scripts:
    ```bash
    for i in {1..3}; do
-     if pipeops deploy create --project my-app; then
+     if pipeops status proj-123; then
        break
      fi
      sleep 30
@@ -205,19 +205,18 @@ pipeops auth login
 
 1. **List available projects**:
    ```bash
-   pipeops project list
+   pipeops list
    ```
 
-2. **Check project name spelling**:
+2. **Check project ID**:
    ```bash
-   # Project names are case-sensitive
-   pipeops deploy create --project MyApp  # ✓
-   pipeops deploy create --project myapp  # ✗
+   # Get the correct project ID
+   pipeops list --json | jq '.[] | {id, name}'
    ```
 
 3. **Set default project**:
    ```bash
-   export PIPEOPS_DEFAULT_PROJECT=my-app
+   export PIPEOPS_DEFAULT_PROJECT=proj-123
    ```
 
 ### Deployment Failures
@@ -493,8 +492,9 @@ env | grep PIPEOPS
 pipeops --help
 
 # Command-specific help
-pipeops project --help
-pipeops deploy create --help
+pipeops list --help
+pipeops status --help
+pipeops logs --help
 ```
 
 ### Check API Status

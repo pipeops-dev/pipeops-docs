@@ -341,10 +341,10 @@ Once set, you can omit the `--project` flag:
 
 ```bash
 # Instead of
-pipeops deploy create --project my-app
+pipeops status proj-123
 
 # You can use
-pipeops deploy create
+pipeops status
 ```
 
 ## Output Customization

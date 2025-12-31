@@ -30,9 +30,10 @@ The PipeOps Command Line Interface (CLI) is a powerful tool that enables you to 
 
 ### Deployment Operations
 - Deploy applications with a single command
-- Manage deployment pipelines
-- View deployment logs and status
+- Deploy addons (databases, caching services, etc.)
+- Manage local directory deployments
 - Monitor deployments in real-time
+- View deployment logs and status
 
 ### Server Management
 - List and manage servers

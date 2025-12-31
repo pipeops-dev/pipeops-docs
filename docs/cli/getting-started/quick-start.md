@@ -78,52 +78,75 @@ pipeops project create \
   --framework nodejs
 ```
 
-## Step 3: Deploy Your Application
+## Step 3: View Your Projects
 
-Once your project is created, deploy it:
-
-```bash
-pipeops deploy create --project my-app
-```
-
-Monitor the deployment progress:
+Once authenticated, view your projects:
 
 ```bash
-pipeops deploy status --project my-app
+pipeops list
 ```
 
-View deployment logs in real-time:
+Get detailed status for a specific project:
 
 ```bash
-pipeops deploy logs --project my-app --follow
+pipeops status proj-123
 ```
 
-## Step 4: View Your Deployed Application
-
-Get project information including the deployment URL:
+View project logs in real-time:
 
 ```bash
-pipeops project list --json | jq '.[] | select(.name=="my-app")'
+pipeops logs proj-123 --follow
 ```
 
-Or view project details in the web UI:
+## Step 4: Deploy Addons
+
+You can deploy addons (like databases) to your existing projects:
 
 ```bash
-# The CLI will show you the project URL in the output
+# List available addons
+pipeops list --addons
+
+# Deploy an addon to a project
+pipeops deploy --addon postgres --project proj-123
 ```
+
+:::note
+For creating new projects and deploying application code, use the [Web UI](https://app.pipeops.io) or the `pipeops deploy pipeline` command for local directory deployments.
+:::
 
 ## Common Workflows
 
-### Deploying Updates
+### Monitoring Projects
 
-After making changes to your code and pushing to Git:
+View project status and logs:
 
 ```bash
-# Trigger a new deployment
-pipeops deploy create --project my-app --branch main
+# Check project status
+pipeops status proj-123
 
-# Or use the pipeline command
-pipeops deploy pipeline --project my-app --trigger
+# View logs in real-time
+pipeops logs proj-123 --follow
+
+# View last 100 lines of logs
+pipeops logs proj-123 --lines 100
+```
+
+### Deploying Addons
+
+Deploy addons like databases to your projects:
+
+```bash
+# List available addons
+pipeops list --addons
+
+# Deploy an addon
+pipeops deploy --addon postgres --project proj-123
+
+# Deploy with environment variables
+pipeops deploy --addon redis --project proj-123 --env REDIS_PASSWORD=secret
+
+# List addon deployments
+pipeops list --deployments --project proj-123
 ```
 
 ### Viewing Logs
@@ -132,39 +155,16 @@ View project logs:
 
 ```bash
 # Recent logs
-pipeops project logs --project my-app
+pipeops logs proj-123
 
 # Follow logs in real-time
-pipeops project logs --project my-app --follow
+pipeops logs proj-123 --follow
 
-# Filter logs
-pipeops project logs --project my-app --since 1h
-```
+# Filter logs by service
+pipeops logs proj-123 --service web-service
 
-View deployment logs:
-
-```bash
-# Latest deployment logs
-pipeops deploy logs --project my-app
-
-# Specific deployment
-pipeops deploy logs --project my-app --deployment-id abc123
-```
-
-### Managing Environment Variables
-
-Set environment variables:
-
-```bash
-pipeops project env set --project my-app \
-  --key DATABASE_URL \
-  --value "postgresql://user:pass@host:5432/db"
-```
-
-List environment variables:
-
-```bash
-pipeops project env list --project my-app
+# View last 100 lines
+pipeops logs proj-123 --lines 100
 ```
 
 ### Checking Status
@@ -178,13 +178,13 @@ pipeops status
 Check project status:
 
 ```bash
-pipeops project list
+pipeops list
 ```
 
-Check deployment status:
+Check specific project status:
 
 ```bash
-pipeops deploy status --project my-app
+pipeops status proj-123
 ```
 
 ## Using JSON Output
@@ -238,14 +238,15 @@ export PIPEOPS_PROJECT="my-app"
 pipeops deploy create --project $PIPEOPS_PROJECT
 ```
 
-### Alias Common Commands
+### Using Aliases
 
 Create shell aliases for frequently used commands:
 
 ```bash
 alias ppo='pipeops'
-alias ppo-deploy='pipeops deploy create'
-alias ppo-logs='pipeops project logs --follow'
+alias ppo-status='pipeops status'
+alias ppo-logs='pipeops logs --follow'
+alias ppo-list='pipeops list'
 ```
 
 Add these to your `~/.bashrc` or `~/.zshrc`.
@@ -274,40 +275,38 @@ pipeops update
 
 | Task | CLI Command | Web UI |
 |------|-------------|--------|
-| Create Project | `pipeops project create` | Projects > New Project |
-| Deploy | `pipeops deploy create` | Project > Deploy |
-| View Logs | `pipeops project logs --follow` | Project > Logs |
+| Create Project | Use Web UI | Projects > New Project |
+| View Projects | `pipeops list` | Projects Dashboard |
+| Deploy Addons | `pipeops deploy --addon <addon>` | Project > Addons |
+| View Logs | `pipeops logs --follow` | Project > Logs |
 | Manage Servers | `pipeops server list` | Servers Dashboard |
-| Environment Variables | `pipeops project env set` | Project > Settings > Environment |
+| Check Status | `pipeops status` | Project > Overview |
 
 ## Example: Complete Workflow
 
-Here's a complete workflow from authentication to deployment:
+Here's a complete workflow from authentication to monitoring:
 
 ```bash
 # 1. Authenticate
 pipeops auth login
 
-# 2. Create a project
-pipeops project create \
-  --name my-node-app \
-  --repo https://github.com/myuser/node-app \
-  --branch main \
-  --framework nodejs
+# 2. List your projects
+pipeops list
 
-# 3. Set environment variables
-pipeops project env set --project my-node-app \
-  --key NODE_ENV \
-  --value production
+# 3. Check project status
+pipeops status proj-123
 
-# 4. Deploy
-pipeops deploy create --project my-node-app
+# 4. View logs in real-time
+pipeops logs proj-123 --follow
 
-# 5. Monitor deployment
-pipeops deploy logs --project my-node-app --follow
+# 5. List available addons
+pipeops list --addons
 
-# 6. Check status
-pipeops deploy status --project my-node-app
+# 6. Deploy an addon
+pipeops deploy --addon postgres --project proj-123
+
+# 7. List addon deployments
+pipeops list --deployments --project proj-123
 ```
 
 You're now ready to use the PipeOps CLI effectively! Explore the other sections of the documentation to learn about advanced features and workflows.
