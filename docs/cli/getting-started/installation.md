@@ -14,7 +14,7 @@ The PipeOps CLI is available for Linux, macOS, Windows, and FreeBSD. Choose the 
 Install the PipeOps CLI with a single command:
 
 ```bash
-curl -fsSL https://cli.pipeops.io/install.sh | bash
+curl -fsSL https://get.pipeops.dev/cli.sh | bash
 ```
 
 This script will:
@@ -28,7 +28,7 @@ This script will:
 Install using PowerShell:
 
 ```powershell
-irm https://cli.pipeops.io/install.ps1 | iex
+irm https://get.pipeops.dev/cli.ps1 | iex
 ```
 
 This script will:

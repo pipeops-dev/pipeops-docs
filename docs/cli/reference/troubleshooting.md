@@ -48,7 +48,7 @@ Common issues and solutions when using the PipeOps CLI.
 sudo chmod +x /usr/local/bin/pipeops
 
 # Or reinstall with proper permissions
-sudo curl -fsSL https://cli.pipeops.io/install.sh | bash
+sudo curl -fsSL https://get.pipeops.dev/cli.sh | bash
 ```
 
 ### Wrong Architecture
