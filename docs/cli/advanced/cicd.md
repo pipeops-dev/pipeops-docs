@@ -61,7 +61,7 @@ jobs:
     steps:
       - name: Install PipeOps CLI
         run: |
-          curl -fsSL https://cli.pipeops.io/install.sh | bash
+          curl -fsSL https://get.pipeops.dev/cli.sh | bash
           echo "$HOME/.local/bin" >> $GITHUB_PATH
 
       - name: Check project status
@@ -87,7 +87,7 @@ jobs:
       
       - name: Install PipeOps CLI
         run: |
-          curl -fsSL https://cli.pipeops.io/install.sh | bash
+          curl -fsSL https://get.pipeops.dev/cli.sh | bash
           echo "$HOME/.local/bin" >> $GITHUB_PATH
       
       - name: List projects
@@ -126,7 +126,7 @@ jobs:
     steps:
       - name: Install PipeOps CLI
         run: |
-          curl -fsSL https://cli.pipeops.io/install.sh | bash
+          curl -fsSL https://get.pipeops.dev/cli.sh | bash
           echo "$HOME/.local/bin" >> $GITHUB_PATH
       
       - name: Fetch logs
@@ -149,7 +149,7 @@ monitor-projects:
   image: alpine:latest
   before_script:
     - apk add --no-cache curl bash jq
-    - curl -fsSL https://cli.pipeops.io/install.sh | bash
+    - curl -fsSL https://get.pipeops.dev/cli.sh | bash
     - export PATH=$PATH:/root/.local/bin
   script:
     - pipeops list --json
@@ -164,7 +164,7 @@ check-logs:
   image: alpine:latest
   before_script:
     - apk add --no-cache curl bash
-    - curl -fsSL https://cli.pipeops.io/install.sh | bash
+    - curl -fsSL https://get.pipeops.dev/cli.sh | bash
     - export PATH=$PATH:/root/.local/bin
   script:
     - pipeops logs proj-123 --lines 50
@@ -190,7 +190,7 @@ pipeline {
         stage('Install CLI') {
             steps {
                 sh '''
-                    curl -fsSL https://cli.pipeops.io/install.sh | bash
+                    curl -fsSL https://get.pipeops.dev/cli.sh | bash
                     export PATH=$PATH:$HOME/.local/bin
                 '''
             }
@@ -247,7 +247,7 @@ jobs:
       - run:
           name: Install PipeOps CLI
           command: |
-            curl -fsSL https://cli.pipeops.io/install.sh | bash
+            curl -fsSL https://get.pipeops.dev/cli.sh | bash
             echo 'export PATH=$PATH:$HOME/.local/bin' >> $BASH_ENV
       
       - run:
@@ -289,7 +289,7 @@ pool:
 
 steps:
   - script: |
-      curl -fsSL https://cli.pipeops.io/install.sh | bash
+      curl -fsSL https://get.pipeops.dev/cli.sh | bash
       export PATH=$PATH:$HOME/.local/bin
     displayName: 'Install PipeOps CLI'
 
@@ -326,7 +326,7 @@ pipelines:
           image: alpine:latest
           script:
             - apk add --no-cache curl bash jq
-            - curl -fsSL https://cli.pipeops.io/install.sh | bash
+            - curl -fsSL https://get.pipeops.dev/cli.sh | bash
             - export PATH=$PATH:/root/.local/bin
             - pipeops list --json
             - pipeops status proj-123
@@ -339,7 +339,7 @@ pipelines:
           image: alpine:latest
           script:
             - apk add --no-cache curl bash
-            - curl -fsSL https://cli.pipeops.io/install.sh | bash
+            - curl -fsSL https://get.pipeops.dev/cli.sh | bash
             - export PATH=$PATH:/root/.local/bin
             - pipeops status proj-123
 ```
@@ -401,7 +401,7 @@ Cache the CLI installation to speed up builds:
 - name: Install PipeOps CLI
   if: steps.cache.outputs.cache-hit != 'true'
   run: |
-    curl -fsSL https://cli.pipeops.io/install.sh | bash
+    curl -fsSL https://get.pipeops.dev/cli.sh | bash
 ```
 
 ## Monitoring Patterns
