@@ -503,7 +503,7 @@ When a preview environment is ready, PipeOps posts a comment:
 1. Verify drift detection is enabled in project settings
 2. Check if the scan interval is appropriate
 3. Ensure the cluster is accessible for scans
-4. Review ignored fields configuration
+4. Review the ignored fields configuration
 
 ### Preview Environment Not Created
 
