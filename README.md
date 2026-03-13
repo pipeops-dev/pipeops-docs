@@ -24,3 +24,4 @@ npm run check:links
 - The product content is grouped into `getting-started`, `guides`, `applications`, `infrastructure`, `cli`, `troubleshooting`, and `changelog`.
 - Utility pages such as `about.mdx`, `pricing.mdx`, and `support.mdx` stay outside the primary navigation hierarchy.
 # pipeops-doc-v2
+# pipeops-doc-v2
