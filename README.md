@@ -1,41 +1,26 @@
-# Website
+# PipeOps Docs
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This repository now runs as a Mintlify documentation project.
 
-### Installation
+## Local development
 
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
+```bash
+npm install
+npm run dev
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Mintlify runs on port `3000` by default. Use `npm run dev:3001` if port `3000` is already occupied.
 
-### Build
+## Link validation
 
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```bash
+npm run check:links
 ```
 
-Not using SSH:
+## Project structure
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- `docs.json` is the source of truth for navigation, redirects, branding, analytics, and footer/navbar links.
+- `index.mdx` is the landing page for the docs home.
+- The product content is grouped into `getting-started`, `guides`, `applications`, `infrastructure`, `cli`, `troubleshooting`, and `changelog`.
+- Utility pages such as `about.mdx`, `pricing.mdx`, and `support.mdx` stay outside the primary navigation hierarchy.
+# pipeops-doc-v2
