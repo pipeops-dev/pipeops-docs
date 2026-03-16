@@ -2,6 +2,7 @@
 slug: addon-setting
 sidebar_position: 7
 title: Addon Settings
+description: "Manage and configure PipeOps add-on settings including general configuration, networking, port exposure, and protocol options."
 ---
 
 # Addon Settings

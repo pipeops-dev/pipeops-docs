@@ -2,6 +2,7 @@
 slug: server-overview
 sidebar_position: 2
 title: Server Overview
+description: "View your server dashboard in PipeOps including node details, deployments, resource usage, cost breakdown, and Grafana monitoring."
 ---
 
 # Server Overview

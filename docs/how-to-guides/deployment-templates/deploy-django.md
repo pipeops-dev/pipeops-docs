@@ -3,6 +3,7 @@ slug: deploy-a-django-template
 title: Deploy Django Template on PipeOps!
 sidebar_position: 2
 tags: [deployment, guide, django]
+description: "Deploy a Django application on PipeOps using a pre-built template with Dockerfile configuration for Python 3.11."
 ---
 
 # Deploying Django on PipeOps

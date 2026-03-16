@@ -3,6 +3,7 @@ slug: deploy-react-typescript-template
 title: Deploy React Typescript Template on PipeOps!
 sidebar_position: 17
 tags: [deployment, guide, react, typecript]
+description: "Deploy a React TypeScript application on PipeOps with step-by-step instructions for workspace setup and template selection."
 ---
 
 # Deploying React Typescript on PipeOps

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: CI/CD Integration
+description: "Integrate the PipeOps CLI into CI/CD pipelines for monitoring infrastructure status and viewing deployment logs."
 ---
 
 # CI/CD Integration

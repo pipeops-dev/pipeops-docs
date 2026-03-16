@@ -2,6 +2,7 @@
 sidebar_position: 13
 slug: understanding-project-states
 title: Understanding Project States
+description: "Reference guide for all PipeOps project lifecycle states including deployment, paused, error, and pending states."
 ---
 
 # Understanding Project States in PipeOps

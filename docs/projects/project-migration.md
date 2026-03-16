@@ -2,6 +2,7 @@
 slug: project-migration
 sidebar_position: 10
 title: Project Migration
+description: "Migrate projects between servers in PipeOps using server migration and repository migration options."
 ---
 
 In this section, we will show you how you can easily migrate your projects from one server to another. Follow these steps to seamlessly move your projects between servers.

@@ -3,6 +3,7 @@ slug: deploy-an-html-template
 title: Deploy HTML Template on PipeOps!
 sidebar_position: 9
 tags: [deployment, guide, html]
+description: "Deploy a static HTML application on PipeOps with step-by-step instructions for workspace setup and template-based deployment."
 ---
 
 # Deploying HTML on PipeOps

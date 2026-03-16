@@ -2,6 +2,7 @@
 sidebar_position: 2
 slug: Kubernetes Server Upgrade to Version 1.24
 title: Kubernetes Server Upgrade to Version 1.24
+description: "Changelog for the PipeOps platform upgrade to Kubernetes 1.24 covering Dockershim removal and Fluent Bit migration."
 tags: [deployment, guide, reactjs]
 ---
 

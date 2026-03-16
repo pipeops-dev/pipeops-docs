@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Authentication Commands
+description: "Reference for PipeOps CLI authentication commands covering login with OAuth 2.0, logout, status checks, and user info."
 ---
 
 # Authentication Commands

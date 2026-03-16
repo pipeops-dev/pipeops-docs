@@ -2,6 +2,7 @@
 sidebar_position: 1
 slug: overview
 title: Overview
+description: "Get started with PipeOps documentation, explore key features like app deployment, server management, scaling, and automation."
 ---
 
 # Welcome to PipeOps Documentation

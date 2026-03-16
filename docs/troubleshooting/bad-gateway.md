@@ -2,6 +2,7 @@
 sidebar_position: 1
 slug: bad-gateway
 title: 502 Bad Gateway Error
+description: "Diagnose and resolve 502 Bad Gateway errors on PipeOps by verifying your project port and HOST/PORT environment variables."
 ---
 
 # 502 Bad Gateway Error

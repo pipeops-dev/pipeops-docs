@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 title: Monitoring Commands
+description: "Reference for PipeOps CLI monitoring commands to check project status, view logs, and track deployments."
 ---
 
 # Monitoring Commands

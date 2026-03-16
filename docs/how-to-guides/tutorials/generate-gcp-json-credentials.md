@@ -1,6 +1,7 @@
 ---
 sidebar_position: 7
 title: Generate GCP JSON credentials
+description: "Generate GCP JSON service account credentials using Google Cloud Shell for integrating your GCP account with PipeOps."
 slug: generate-gcp-json-credentials
 ---
 

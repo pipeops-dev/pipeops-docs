@@ -2,6 +2,7 @@
 slug: server-addons
 sidebar_position: 5
 title: Server Add-ons
+description: "Browse pre-installed and available server add-ons like autoscaler, cert-manager, ingress-nginx, and Prometheus in PipeOps."
 ---
 
 # Server Add-Ons

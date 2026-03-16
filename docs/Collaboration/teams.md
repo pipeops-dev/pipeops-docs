@@ -1,6 +1,7 @@
 ---
 slug: teams
 title: Teams And Members
+description: "Create and manage teams in PipeOps including assigning resources, inviting members, and setting member roles."
 sidbar_position: 2
 ---
 

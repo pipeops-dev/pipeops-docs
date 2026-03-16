@@ -1,6 +1,7 @@
 ---
 sidebar_position: 9
 slug: general-account-setup
+description: "Configure your PipeOps account settings including profile management, payment methods, and Git repository provider connections."
 ---
 
 # General Account Settings

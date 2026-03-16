@@ -2,6 +2,7 @@
 slug: server-nodes
 sidebar_position: 6
 title: Server Nodes
+description: "View individual node details in your server cluster including roles, IP addresses, CPU and RAM usage, pods, and status."
 ---
 
 # Server Nodes

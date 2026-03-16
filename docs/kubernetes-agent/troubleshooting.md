@@ -2,6 +2,7 @@
 slug: troubleshooting
 sidebar_position: 7
 title: Troubleshooting Guide
+description: "Diagnose and resolve common PipeOps Kubernetes Agent issues including pod startup failures and connectivity problems."
 ---
 
 # Troubleshooting Guide

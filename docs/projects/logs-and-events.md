@@ -2,6 +2,7 @@
 slug: logs-and-events
 sidebar_position: 5
 title: Logs And Events
+description: "Access, filter, and search application logs and system events for troubleshooting your PipeOps projects."
 ---
 
 # Logs And Events

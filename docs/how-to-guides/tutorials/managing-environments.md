@@ -2,6 +2,7 @@
 sidebar_position: 10
 slug: managing-environments
 title: Managing Environments
+description: "View, switch between, and manage project environments like testing, development, and production in PipeOps."
 ---
 
 # Environments in PipeOps

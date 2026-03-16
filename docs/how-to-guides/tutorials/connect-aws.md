@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 title: Connecting AWS Account to PipeOps
+description: "Connect your AWS account to PipeOps by providing your AWS Account ID and completing the CloudFormation setup."
 slug: connect-aws
 ---
 

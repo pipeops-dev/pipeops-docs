@@ -2,6 +2,7 @@
 slug: agent-overview
 sidebar_position: 1
 title: Agent Overview
+description: "Overview of the PipeOps Kubernetes Agent, a lightweight in-cluster service for secure tunnel access, gateway proxy, and monitoring."
 ---
 
 # PipeOps Kubernetes Agent Overview

@@ -3,6 +3,7 @@ slug: deploy-golang-template
 title: Deploy Go Template on PipeOps!
 sidebar_position: 15
 tags: [deployment, guide, golang]
+description: "Deploy a Go application on PipeOps with step-by-step instructions for workspace creation, Git integration, and template selection."
 ---
 
 # Deploying Go on PipeOps

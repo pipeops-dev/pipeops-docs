@@ -1,6 +1,7 @@
 ---
 sidebar_position: 6
 title: Agent Commands
+description: "Reference for PipeOps CLI agent commands to install and manage self-hosted agents with Kubernetes cluster setup."
 ---
 
 # Agent Commands

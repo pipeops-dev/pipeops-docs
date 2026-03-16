@@ -3,6 +3,7 @@ slug: deploy-a-rust-template
 title: Deploy a Rust Template on PipeOps!
 sidebar_position: 6
 tags: [deployment, guide, rust]
+description: "Deploy a Rust application on PipeOps using a pre-built template with a multi-stage Dockerfile for optimized builds."
 ---
 
 # Deploying Rust on PipeOps

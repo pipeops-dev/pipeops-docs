@@ -2,6 +2,7 @@
 slug: azure-on-pipeops
 sidebar_position: 5
 title: Connect Azure to PipeOps
+description: "Integrate your Azure account with PipeOps by providing your Azure credentials to enable server creation and deployment."
 ---
 
 # Connecting Azure Account to PipeOps

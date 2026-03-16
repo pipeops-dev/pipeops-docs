@@ -2,6 +2,7 @@
 slug: management
 sidebar_position: 6
 title: Management & Operations
+description: "Day-to-day management and operations guide for the PipeOps Kubernetes Agent including upgrades, status checks, and backups."
 ---
 
 # Management & Operations

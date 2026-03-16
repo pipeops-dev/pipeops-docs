@@ -3,6 +3,7 @@ slug: deploy-a-flask-template
 title: Deploy a Flask Template on PipeOps!
 sidebar_position: 4
 tags: [deployment, guide, flask]
+description: "Deploy a Flask application on PipeOps using a pre-built template with Dockerfile configuration for Python 3.11."
 ---
 
 # Deploying Flask on PipeOps

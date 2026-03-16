@@ -1,6 +1,7 @@
 ---
 sidebar_position: 8
 title: Generate Huawei credentials
+description: "Create Huawei IAM user credentials with Access Key and Secret Key for connecting your Huawei account to PipeOps."
 slug: generate-huawei-credentials
 ---
 

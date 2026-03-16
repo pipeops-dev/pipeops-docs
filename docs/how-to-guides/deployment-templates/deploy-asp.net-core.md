@@ -3,6 +3,7 @@ slug: deploy-asp.net-template
 title: Deploy ASP.NET Core Template on PipeOps
 sidebar_position: 7
 tags: [deployment, guide, asp.net]
+description: "Deploy an ASP.NET Core 8.0 application on PipeOps using a template project with Git repository integration."
 ---
 
 # Deploying ASP.NET Core on PipeOps

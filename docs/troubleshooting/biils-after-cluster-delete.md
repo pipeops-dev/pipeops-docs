@@ -2,6 +2,7 @@
 sidebar_position: 3
 slug: bills-post-server-delete
 title: Resolving AWS Bills Post PipeOps server Deletion
+description: "Resolve unexpected AWS bills after deleting a PipeOps server by identifying and terminating lingering cloud resources."
 ---
 
 # Resolving AWS Bills Post PipeOps server Deletion

@@ -3,6 +3,7 @@ slug: deploy-adonisjs-template
 title: Deploy AdonisJs Template on PipeOps!
 sidebar_position: 18
 tags: [deployment, guide, adonisjs, typecript]
+description: "Deploy an AdonisJS application on PipeOps with step-by-step instructions for workspace setup, Git integration, and configuration."
 ---
 
 # Deploying AdonisJs on PipeOps

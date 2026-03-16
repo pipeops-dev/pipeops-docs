@@ -2,6 +2,7 @@
 sidebar_position: 3
 title: Server Metrics
 slug: server-metrics
+description: "Access and explore server performance metrics in PipeOps including CPU, memory, and other resource utilization graphs."
 ---
 
 # Server Metrics

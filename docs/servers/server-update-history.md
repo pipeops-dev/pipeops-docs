@@ -2,6 +2,7 @@
 slug: server-update-history
 sidebar_position: 9
 title: Server Update History
+description: "View the log of all server updates including version changes, deployment status, build SHAs, and execution details."
 ---
 
 # Server Update History

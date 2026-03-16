@@ -2,6 +2,7 @@
 slug: gcp-on-pipeops
 sidebar_position: 2
 title: Connect GCP to PipeOps
+description: "Integrate your GCP account with PipeOps by uploading JSON credentials to enable server creation and project deployment."
 ---
 
 # Connecting GCP Account to PipeOps

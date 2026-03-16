@@ -3,6 +3,7 @@ slug: deploy-fastapi-template
 title: Deploy FastApi Template on PipeOps!
 sidebar_position: 14
 tags: [deployment, guide, fastapi]
+description: "Deploy a FastAPI application on PipeOps with step-by-step instructions covering prerequisites, workspace setup, and configuration."
 ---
 
 # Deploying Fastapi on PipeOps

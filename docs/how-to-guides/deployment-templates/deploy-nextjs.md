@@ -3,6 +3,7 @@ slug: deploy-nextjs-template
 title: Deploy NextJS Template on PipeOps
 sidebar_position: 8
 tags: [deployment, guide, nextjs]
+description: "Deploy a Next.js application on PipeOps with instructions for workspace setup, Git repository integration, and configuration."
 ---
 
 # Deploying NextJS on PipeOps

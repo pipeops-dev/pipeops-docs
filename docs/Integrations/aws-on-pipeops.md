@@ -2,6 +2,7 @@
 slug: aws-on-pipeops
 sidebar_position: 1
 title: Connect AWS to PipeOps
+description: "Integrate your AWS account with PipeOps to create servers and deploy projects from the PipeOps dashboard."
 ---
 
 # Connecting AWS Account to PipeOps

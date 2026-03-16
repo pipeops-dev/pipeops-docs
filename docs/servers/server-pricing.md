@@ -2,6 +2,7 @@
 slug: server-pricing
 sidebar_position: 8
 title: Server Pricing
+description: "Understand estimated cloud cost breakdowns for servers deployed through PipeOps including per-resource pricing details."
 ---
 
 # Server Pricing

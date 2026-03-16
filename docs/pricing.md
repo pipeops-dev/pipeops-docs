@@ -2,6 +2,7 @@
 sidebar_position: 9
 slug: Pricing
 title: Pricing
+description: "Explore PipeOps usage-based pricing plans including Growth, Scale, and Custom tiers for teams of all sizes."
 ---
 
 # Pricing 

@@ -2,6 +2,7 @@
 slug: project-overview
 sidebar_position: 2
 title: Project Overview
+description: "View your project dashboard in PipeOps including application status, resource usage, HTTP path, and recent activity."
 ---
 
 # Project Overview

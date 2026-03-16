@@ -3,6 +3,7 @@ slug: deploy-php-template
 title: Deploy PHP Template on PipeOps!
 sidebar_position: 5
 tags: [deployment, guide, php]
+description: "Deploy a PHP application on PipeOps with support for versions 8.1 and 8.2 using a template project and Git integration."
 ---
 
 # Deploying PHP on PipeOps

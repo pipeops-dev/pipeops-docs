@@ -2,6 +2,7 @@
 slug: on-pipeops
 sidebar_position: 1
 title: On PipeOps
+description: "Deploy a server using PipeOps-managed hosting by choosing a cloud provider, selecting a region, and configuring resources."
 ---
 
 In this section, we’ll walk you through creating a server on PipeOps, enabling seamless application deployment.

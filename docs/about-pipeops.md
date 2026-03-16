@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: about-pipeops
+description: "Learn what PipeOps is and how it helps you build, deploy, and scale applications across multiple cloud providers."
 ---
 
 # About PipeOps

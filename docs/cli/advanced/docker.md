@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Docker Integration
+description: "Run the PipeOps CLI inside Docker containers for isolated, reproducible environments with persistent configuration."
 ---
 
 # Docker Integration

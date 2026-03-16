@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: CLI Overview
+description: "Introduction to the PipeOps CLI for managing authentication, projects, deployments, and servers from your terminal."
 ---
 
 # PipeOps CLI Overview

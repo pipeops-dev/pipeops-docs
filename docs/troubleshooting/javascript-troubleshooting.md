@@ -2,6 +2,7 @@
 sidebar_position: 5
 slug: js-deployment-troubleshooting
 title: JavaScript Deployment Troubleshooting Tips
+description: "Troubleshoot common JavaScript deployment issues on PipeOps including mimetype errors, missing images, and file rendering problems."
 ---
 
 # General JavaScript Deployment Troubleshooting Guide

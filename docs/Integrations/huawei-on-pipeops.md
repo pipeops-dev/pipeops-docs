@@ -2,6 +2,7 @@
 slug: huawei-on-pipeops
 sidebar_position: 3
 title: Connect Huawei to PipeOps
+description: "Integrate your Huawei cloud account with PipeOps using Access Key and Secret Key credentials for server and project deployment."
 ---
 
 # Connecting Huawei Account to PipeOps

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 9
 title: Generate Azure credentials
+description: "Generate the required Azure credentials including Resource Group, Subscription ID, Tenant ID, and Client Secret for PipeOps."
 slug: generate-azure-credentials
 ---
 

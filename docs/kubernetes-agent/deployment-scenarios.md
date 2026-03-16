@@ -2,6 +2,7 @@
 slug: deployment-scenarios
 sidebar_position: 4
 title: Deployment Scenarios
+description: "Common deployment scenarios for the PipeOps Kubernetes Agent including new cluster setup and existing cluster integration."
 ---
 
 # Deployment Scenarios
