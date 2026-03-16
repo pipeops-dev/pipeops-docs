@@ -1,6 +1,7 @@
 ---
 slug: how to deploy Grafana
 title: How to deploy Grafana with PipeOps!
+description: "Deploy a Grafana monitoring and visualization instance on PipeOps using the add-ons feature."
 sidebar_position: 2
 ---
 

@@ -2,6 +2,7 @@
 sidebar_position: 11
 slug: customizing-default-domain
 title: Customizing Default Domain Name
+description: "Customize your PipeOps project domain name from a randomly-generated default to a memorable custom subdomain."
 ---
 
 # Customizing Your PipeOps Default Domain Name

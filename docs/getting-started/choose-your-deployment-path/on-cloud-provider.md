@@ -2,6 +2,7 @@
 slug: on-cloud-provider
 sidebar_position: 2
 title: On Cloud Provider
+description: "Provision servers on your own AWS, Azure, DigitalOcean, Google Cloud, or Huawei account using PipeOps Bring Your Own Cloud."
 ---
 
 PipeOps supports Bring Your Own Cloud (BYOC) deployment model, allowing you to integrate your existing cloud accounts while leveraging PipeOps' features.  

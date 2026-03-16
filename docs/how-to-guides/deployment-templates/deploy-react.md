@@ -3,6 +3,7 @@ slug: deploy-react-template
 title: Deploy ReactJS Template on PipeOps!
 sidebar_position: 12
 tags: [deployment, guide, react]
+description: "Deploy a ReactJS application on PipeOps with step-by-step instructions for Git integration and template-based deployment."
 ---
 
 # How to deploy a ReactJS application | PipeOps

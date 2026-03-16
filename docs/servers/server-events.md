@@ -2,6 +2,7 @@
 slug: server-events
 sidebar_position: 4
 title: Server Events
+description: "View a chronological log of server activities and status changes for monitoring and troubleshooting in PipeOps."
 ---
 
 # Server Events

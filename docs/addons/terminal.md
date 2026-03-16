@@ -2,6 +2,7 @@
 slug: terminal
 sidebar_position: 6
 title: Terminal
+description: "Use the PipeOps in-browser terminal to access your add-on command line interface, execute commands, and manage pods."
 ---
 
 # Addon Terminal

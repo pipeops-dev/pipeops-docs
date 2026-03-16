@@ -2,6 +2,7 @@
 slug: server-environments
 sidebar_position: 10
 title: Server Environments
+description: "Create, manage, and delete isolated server environments for development, staging, and production workloads in PipeOps."
 ---
 
 # Server Environments 

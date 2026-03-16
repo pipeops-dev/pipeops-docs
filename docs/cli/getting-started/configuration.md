@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: Configuration
+description: "Configure the PipeOps CLI using its JSON config file, environment variables, and command-line flags."
 ---
 
 # Configuring the PipeOps CLI

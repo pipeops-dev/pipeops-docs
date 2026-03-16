@@ -1,6 +1,7 @@
 ---
 slug: workspaces
 title: Workspaces
+description: "Use PipeOps workspaces to switch between organizations and create dedicated environments for project collaboration."
 sidbar_position: 1
 ---
 

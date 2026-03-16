@@ -2,6 +2,7 @@
 slug: terminal
 sidebar_position: 6
 title: Terminal
+description: "Access and use the in-browser command line terminal for your PipeOps project including pod selection and common commands."
 ---
 
 # Project Terminal

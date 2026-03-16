@@ -1,6 +1,7 @@
 ---
 sidebar_position: 6
 title: Connecting GCP Account to PipeOps
+description: "Connect your Google Cloud Platform account to PipeOps by uploading your GCP JSON credentials."
 slug: connect-gcp
 ---
 

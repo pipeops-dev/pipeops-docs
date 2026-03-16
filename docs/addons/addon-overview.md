@@ -2,6 +2,7 @@
 slug: addon-overview
 sidebar_position: 2
 title: Add-on Overview
+description: "View add-on details in PipeOps including app status, resource usage, recent activity, and navigation for database and non-database add-ons."
 ---
 
 # Add-on Overview

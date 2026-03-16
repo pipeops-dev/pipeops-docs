@@ -2,6 +2,7 @@
 sidebar_position: 12
 slug: worker-and-jobs
 title: Worker And Jobs
+description: "Set up and manage background workers and scheduled cron jobs for your PipeOps project."
 ---
 
 # Worker and Jobs

@@ -1,6 +1,7 @@
 ---
 slug: how to deploy Redis
 title: How to deploy Redis with PipeOps!
+description: "Deploy a Redis caching instance on PipeOps using the add-ons feature with step-by-step configuration instructions."
 sidebar_position: 3
 ---
 

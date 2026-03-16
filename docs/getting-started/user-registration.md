@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: "Create a PipeOps account using GitHub, GitLab, BitBucket, or email with this step-by-step registration guide."
 ---
 
 # User Registration Guide

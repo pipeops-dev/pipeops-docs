@@ -3,6 +3,7 @@ slug: deploy-vuejs-template
 title: Deploy VueJS Template on PipeOps!
 sidebar_position: 11
 tags: [deployment, guide, vuejs]
+description: "Deploy a Vue.js application on PipeOps with step-by-step instructions for workspace setup, Git integration, and configuration."
 ---
 
 # Deploying VueJS on PipeOps

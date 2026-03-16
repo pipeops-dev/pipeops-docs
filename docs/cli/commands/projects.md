@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: Project Commands
+description: "Reference for PipeOps CLI project commands for listing, creating, monitoring, and configuring projects."
 ---
 
 # Project Commands

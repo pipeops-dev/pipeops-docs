@@ -3,6 +3,7 @@ slug: deploy-nestjs-template
 title: Deploy Nestjs Template on PipeOps!
 sidebar_position: 16
 tags: [deployment, guide, nestjs]
+description: "Deploy a NestJS application on PipeOps with step-by-step instructions for workspace setup, Git integration, and configuration."
 ---
 
 # Deploying NestJS on PipeOps

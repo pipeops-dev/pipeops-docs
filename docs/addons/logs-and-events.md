@@ -2,6 +2,7 @@
 slug: logs-and-events
 sidebar_position: 5
 title: Logs And Events
+description: "Access real-time logs and events for PipeOps add-ons including timeline views, search functionality, and filtering options."
 ---
 
 # Logs And Events

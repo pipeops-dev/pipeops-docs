@@ -2,6 +2,7 @@
 sidebar_position: 10
 slug: usage
 title: Usage
+description: "Monitor and manage your PipeOps resource usage including active subscriptions, server limits, environments, and credits."
 ---
 
 # Resources Usage

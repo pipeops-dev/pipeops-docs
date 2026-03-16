@@ -3,6 +3,7 @@ slug: deploy-a-nodejs-template
 title: Deploy NodeJS Template on PipeOps!
 sidebar_position: 3
 tags: [deployment, guide, nodejs]
+description: "Deploy a Node.js application on PipeOps with support for versions 14, 16, 18, and 20 using a template project."
 ---
 
 # Deploying Node.js on PipeOps

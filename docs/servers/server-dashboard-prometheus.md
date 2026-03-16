@@ -3,6 +3,7 @@ slug: server-dashboard-prometheus
 
 sidebar_position: 7
 title: Server Dashboard/Prometheus
+description: "Access the Kubernetes Dashboard and Prometheus for real-time cluster monitoring and alerting on your PipeOps server."
 ---
 
 # Server Dashboard/Prometheus

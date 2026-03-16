@@ -3,6 +3,7 @@ slug: deploy-php-laravel-template
 title: Deploy PHP Laravel Template on PipeOps!
 sidebar_position: 10
 tags: [deployment, guide, php laravel]
+description: "Deploy a PHP Laravel application on PipeOps with support for versions 8.1, 8.2, and 8.3 using a template project."
 ---
 
 # Deploying PHP Laravel on PipeOps

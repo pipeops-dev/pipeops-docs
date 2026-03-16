@@ -1,6 +1,7 @@
 ---
 sidebar_position: 7
 title: Connecting Huawei Account to PipeOps
+description: "Connect your Huawei cloud account to PipeOps using your Access Key and Secret Key credentials."
 slug: connect-huawei
 ---
 

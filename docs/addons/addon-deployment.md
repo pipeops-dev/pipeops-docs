@@ -1,6 +1,7 @@
 ---
 slug: addon-deployment
 title: Add-on Deployment
+description: "Deploy add-ons like databases and analytics tools from the PipeOps add-ons marketplace with step-by-step instructions."
 tags: [deployment, guide, addon]
 sidebar_position: 1
 ---

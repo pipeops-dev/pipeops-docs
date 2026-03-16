@@ -2,6 +2,7 @@
 slug: api-reference
 sidebar_position: 8
 title: API Reference
+description: "Complete API reference for the PipeOps Kubernetes Agent HTTP endpoints including health checks, metrics, and management."
 ---
 
 # API Reference

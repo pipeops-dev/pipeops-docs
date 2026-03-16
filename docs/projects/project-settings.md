@@ -2,6 +2,7 @@
 slug: project-setting
 sidebar_position: 7
 title: Project Settings
+description: "Manage project settings in PipeOps including general configuration, deployment strategy, networking, and environment variables."
 ---
 
 # Project Settings

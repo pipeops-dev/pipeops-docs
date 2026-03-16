@@ -2,6 +2,7 @@
 slug: server-provisioning
 sidebar_position: 1
 title: Server Provisioning
+description: "Create and provision a new server on PipeOps using either PipeOps-managed hosting or your own cloud provider account."
 ---
 
 In this section, we’ll guide you through how to create a new server from your PipeOps dashboard.

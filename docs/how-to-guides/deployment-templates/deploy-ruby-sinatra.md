@@ -3,6 +3,7 @@ slug: deploy-ruby-sinatra-template
 title: Deploy Ruby Sinatra Template on PipeOps!
 sidebar_position: 13
 tags: [deployment, guide, ruby]
+description: "Deploy a Ruby Sinatra application on PipeOps with step-by-step instructions for workspace creation and template-based deployment."
 ---
 
 # Deploying Ruby Sinatra on PipeOps

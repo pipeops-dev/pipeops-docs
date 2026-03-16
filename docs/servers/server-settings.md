@@ -2,6 +2,7 @@
 slug: server-settings
 sidebar_position: 11
 title: Server Settings
+description: "Configure server alert notifications in PipeOps for memory, storage, and CPU usage thresholds."
 ---
 
 # Server Settings

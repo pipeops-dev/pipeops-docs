@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Quick Start
+description: "Authenticate, create a project, and deploy your first application with the PipeOps CLI in minutes."
 ---
 
 # Quick Start Guide

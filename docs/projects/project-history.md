@@ -2,6 +2,7 @@
 slug: project-history
 sidebar_position: 3
 title: Project History
+description: "View deployment history records in PipeOps including build SHA, commit SHA, deployment status, and timestamps."
 ---
 
 # Project History

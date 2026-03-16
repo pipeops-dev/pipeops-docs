@@ -2,6 +2,7 @@
 slug: project-actions
 sidebar_position: 8
 title: Project Actions
+description: "Use project action controls in PipeOps to deploy, force rebuild, pause, resume, and delete your applications."
 ---
 
 # Project Actions

@@ -1,6 +1,7 @@
 ---
 slug: how to deploy postgresql
 title: How to deploy PostgreSQL with PipeOps!
+description: "Deploy a PostgreSQL database on PipeOps using the add-ons feature with step-by-step setup and configuration."
 sidebar_position: 1
 ---
 

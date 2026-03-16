@@ -2,6 +2,7 @@
 slug: project-metrics
 sidebar_position: 4
 title: Project Metrics
+description: "Access and explore CPU, memory, and other performance metrics for your deployed projects in PipeOps."
 ---
 
 # Project Metrics

@@ -2,6 +2,7 @@
 slug: do-on-pipeops
 sidebar_position: 4
 title: Connect Digital Ocean to PipeOps
+description: "Connect your DigitalOcean account to PipeOps via OAuth authorization to enable server creation and deployment."
 ---
 
 # Connecting Digital Ocean Account to PipeOps

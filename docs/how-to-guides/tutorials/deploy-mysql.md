@@ -1,6 +1,7 @@
 ---
 slug: how to deploy mysql
 title: MySQL Database Deployment and Management on PipeOps!
+description: "Deploy, configure, and manage a MySQL database on PipeOps using the add-ons feature."
 sidebar_position: 4
 ---
 

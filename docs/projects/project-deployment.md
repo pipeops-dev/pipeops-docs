@@ -3,6 +3,7 @@ slug: project-deployment
 title: Project Deployment
 tags: [deployment, guide, reactjs]
 sidebar_position: 1
+description: "Deploy a project on PipeOps by connecting your repository, selecting a project type, and configuring deployment settings."
 ---
 
 # Deploying A Project

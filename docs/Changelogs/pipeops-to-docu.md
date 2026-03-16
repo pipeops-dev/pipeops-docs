@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: "Changelog for the PipeOps documentation migration from Strapi to Docusaurus with improved search, versioning, and navigation."
 ---
 
 # Changelog: Documentation Platform Migration from Strapi to Docusaurus

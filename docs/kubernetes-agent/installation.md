@@ -2,6 +2,7 @@
 slug: installation
 sidebar_position: 2
 title: Installation Guide
+description: "Install the PipeOps Kubernetes Agent using bash scripts, Helm, Docker, or binary with system requirements and prerequisites."
 ---
 
 # Installation Guide

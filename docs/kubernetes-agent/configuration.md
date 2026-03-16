@@ -2,6 +2,7 @@
 slug: configuration
 sidebar_position: 3
 title: Configuration Reference
+description: "Configuration reference for the PipeOps Kubernetes Agent covering environment variables, YAML config files, and Helm values."
 ---
 
 # Configuration Reference
