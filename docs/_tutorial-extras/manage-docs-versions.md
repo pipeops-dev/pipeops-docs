@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: "Set up and manage documentation versioning in Docusaurus including creating versions, adding a dropdown, and editing versioned docs."
 ---
 
 # Manage Docs Versions

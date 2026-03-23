@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: "Create documentation pages in Docusaurus by adding Markdown files to the docs folder with sidebar metadata and navigation."
 ---
 
 # Create a Document
