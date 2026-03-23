@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: "Configure internationalization for your Docusaurus site including locale setup, document translation, and building localized versions."
 ---
 
 # Translate your site

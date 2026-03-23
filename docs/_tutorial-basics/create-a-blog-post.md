@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: "Learn how to create your first Docusaurus blog post by adding a Markdown file with frontmatter for title, authors, and tags."
 ---
 
 # Create a Blog Post

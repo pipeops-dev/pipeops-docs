@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+description: "Build and deploy your Docusaurus site as a static website using the build command and test it locally before deploying."
 ---
 
 # Deploy your site

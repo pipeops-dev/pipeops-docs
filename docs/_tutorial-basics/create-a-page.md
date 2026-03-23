@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: "Create standalone pages in Docusaurus using React components or Markdown files in the src/pages directory."
 ---
 
 # Create a Page

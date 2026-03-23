@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+description: "Summary of what you learned in the Docusaurus tutorial with links to advanced guides, community resources, and next steps."
 ---
 
 # Congratulations!
