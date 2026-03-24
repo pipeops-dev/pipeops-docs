@@ -197,9 +197,9 @@ Before syncing, you can preview changes:
 3. Review added, modified, and removed configurations
 4. Click **Sync** to apply changes
 
-## Custom Kubernetes Manifests (BYOC Only)
+## Custom Kubernetes Manifests (BYOC and BYOS)
 
-For users with their own Kubernetes clusters (BYOC - Bring Your Own Cluster), PipeOps supports deploying raw Kubernetes manifests.
+For users with their own Kubernetes clusters (BYOC - Bring Your Own Cluster) or their own server infrastructure (BYOS - Bring Your Own Server), PipeOps supports deploying raw Kubernetes manifests.
 
 :::warning Important
 Custom Kubernetes manifests are **NOT allowed** on PipeOps-managed clusters (PKS) for security and stability reasons.
@@ -214,6 +214,7 @@ Custom Kubernetes manifests are **NOT allowed** on PipeOps-managed clusters (PKS
 | GCP (User Account) | ✅ Allowed | ✅ Allowed |
 | Azure (User Account) | ✅ Allowed | ✅ Allowed |
 | BYOC (Agent-managed) | ✅ Allowed | ✅ Allowed |
+| BYOS (Bring Your Own Server) | ✅ Allowed | ✅ Allowed |
 
 ### Using Custom K8s Manifests
 
