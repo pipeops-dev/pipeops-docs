@@ -25,7 +25,7 @@ ENV ENV=production
 ENV PORT=80
 
 # Copy package.json and any lockfiles to the working directory.
-COPY package.json package-lock.json ./
+COPY package.json yarn.lock ./
 
 # Run CI for production
 RUN yarn install --production
