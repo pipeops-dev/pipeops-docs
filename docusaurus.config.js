@@ -72,6 +72,10 @@ const config = {
     },
   ],
 
+  clientModules: [
+    "./src/posthog.js",
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
