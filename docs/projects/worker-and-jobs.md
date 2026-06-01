@@ -1,76 +1,86 @@
 ---
 sidebar_position: 12
 slug: worker-and-jobs
-title: Worker And Jobs
+title: Workers and Jobs
 description: "Set up and manage background workers and scheduled cron jobs for your PipeOps project."
 ---
 
-# Worker and Jobs
+# Workers and Jobs
 
-This guide provides detailed instructions on how to navigate the Worker and Jobs functionalities within PipeOps. These features help you efficiently manage background processes and scheduled tasks for your project. 
+The **Worker** and **Jobs** tabs let you run background processes and scheduled tasks alongside your main application. Workers handle long-running or asynchronous processes, while Jobs run commands on a defined schedule.
 
+## Workers
 
+Navigate to your project and click the **Worker** tab. If no workers exist yet, you'll see a **No workers are available yet** message.
 
-## Accessing Worker
-To access Worker:
+![Worker Tab](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-worker.png)
 
-- Navigate to your project's main page in PipeOps.
-- Click on the "Worker" tab to access its dashboard.
+### Creating a Worker
 
-The Worker section in PipeOps allows users to define and manage background processes or tasks. Workers are useful for running asynchronous jobs, scheduled tasks, or any other type of processing that doesn’t require direct user interaction.
+1. Click **+ New Worker**.
+2. A panel opens with the following fields:
 
-### Setting Up a Worker
-If no workers are available, you’ll see a message “No workers are available yet.” 
-1. Click the **+ New Worker** button.
+| Field           | Description                                                       |
+| --------------- | ----------------------------------------------------------------- |
+| **Run Command** | The shell command the worker will execute (e.g. `npm run start`). |
+| **Replicas**    | The number of concurrent worker instances to run.                 |
+| **CPU**         | CPU cores allocated to each worker instance.                      |
+| **Memory**      | Memory allocated to each worker instance (in MB).                 |
 
-![New Worker](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-add-worker.png)
+3. Click **Create** to deploy the worker.
 
-2. A modal appears where you can customize the following:
-    - Run Command: The command to be executed by the worker.
-    - Replicas: The number of instances of the worker to run concurrently.
-    - Memory: The amount of memory allocated to each worker instance.
-    - CPU: The number of CPU cores allocated to each worker instance.
+![Create Worker Modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-worker-modal.png)
+![Created Worker](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-deployed-worker.png)
 
+### Managing Workers
 
-![Worker Modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-add-worker-modal.png)
+Once created, each worker appears as a row in the workers table with the following columns: **Worker ID**, **Worker Name**, **Command**, **Created**, and **Status**.
 
-3. Click the **Create** button to deploy your worker.
+Click the **Actions** button on any row to access the following options:
 
+| Action        | Description                                                        |
+| ------------- | ------------------------------------------------------------------ |
+| **Edit**      | Update the worker's run command, replicas, or resource allocation. |
+| **View Logs** | Open the log output for the worker.                                |
+| **Delete**    | Permanently remove the worker.                                     |
 
-## Accessing Jobs
-To access Jobs:
+## Jobs
 
-- Navigate to your project's main page in PipeOps.
-- Click on the "Jobs" tab to access its dashboard.
+Navigate to your project and click the **Jobs** tab. If no jobs exist yet, you'll see a **No jobs are available yet** message.
 
-The Jobs section in PipeOps allows users to schedule and manage recurring tasks or processes within their projects. Jobs are useful for automating routine operations, running maintenance tasks, or triggering processes at specific intervals.
+![Jobs Tab](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-job.png)
 
-### Scheduling Jobs
-If no Jobs have been created yet, you’ll see a message “No Jobs are available yet.” 
-1. Click the **+ New Job** button.
+### Creating a Job
 
-![New Job](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-add-job.png)
+1. Click **+ New Job**.
+2. A panel opens with the following fields:
 
+| Field        | Description                                                                         |
+| ------------ | ----------------------------------------------------------------------------------- |
+| **Command**  | The shell command to run on each execution (e.g. `npm audit`).                      |
+| **Timezone** | The timezone used to evaluate the schedule.                                         |
+| **Schedule** | Define when the job runs — either as a cron expression or using the visual builder. |
+| **CPU**      | CPU cores allocated to the job.                                                     |
+| **Memory**   | Memory allocated to the job (in MB).                                                |
 
-2. A modal appears where you can configure the following:
+**Schedule options:**
 
-- **Command:** The command to be executed by the job.
+- **Cron expression** — Enter a cron string directly (e.g. `30 5 * * 1,6` runs at 5:30 AM every Monday and Saturday).
+- **Visual builder** — Use the **Every**, **On**, and **At** dropdowns to build the schedule without writing cron syntax. Click **Clear** to reset the visual builder.
 
-- **Timezone:** Select the timezone for the job schedule.
+3. Click **Create** to deploy the job.
 
-- **Schedule:** Define the job schedule using either:
+![Create Job Modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-job-modal.png)
+![Created Job](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-deployed-job.png)
 
-    1. Cron syntax. The format is minute, hour, day of month, month, and day of week. For example: 30 5 * * 1,6 to run at 5:30 AM on Mondays and Saturdays.
+### Managing Jobs
 
-    2.  A user-friendly interface to set recurring schedules on specific days and times.
+Once created, each job appears as a row in the jobs table with the following columns: **ID**, **Job Name**, **Command**, **Created**, **RunInterval**, and **Status**.
 
- - **Allocation:** Configure resource allocation for the job, including VCPU and Memory.
+Each row provides three inline controls:
 
-
- 
-![Job Modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-add-job-modal.png)
-
-
-3. Click the **Create** button to deploy your job.
-
-In summary, Workers handle background processing, enabling you to execute tasks asynchronously and independently from the main application. Jobs, on the other hand, are designed for scheduling recurring operations, ensuring consistent and timely execution of routine processes. Both workers and jobs can be created and customized with specific configurations in PipeOps. By  utilizing Workers and Jobs, you can streamline project workflows and automate processes.
+| Control            | Description                                                                                       |
+| ------------------ | ------------------------------------------------------------------------------------------------- |
+| **View logs icon** | Opens the log output for the job.                                                                 |
+| **Edit icon**      | Update the job's command, schedule, or resource allocation.                                       |
+| **⋯ menu**         | Expands to reveal **Pause** (temporarily suspend the job) and **Delete** (permanently remove it). |

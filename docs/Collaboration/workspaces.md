@@ -7,35 +7,35 @@ sidbar_position: 1
 
 # Workspaces
 
-The PipeOps Workspace feature facilitates seamless collaboration across various organizations within PipeOps. With just a few clicks, you can effortlessly switch between workspaces and efficiently manage your projects. Let's dive into the details!
+A workspace in PipeOps is an isolated environment where you can manage
+projects, servers, and team members independently. Workspaces are useful
+when you need to separate work across different organizations, clients,
+or teams — each with its own resources and settings.
 
-## Accessing Workspaces
+:::note
+Each workspace requires its own active subscription. When you create a new workspace, you will be prompted to select and activate a subscription plan before you can start using it. There is no limit to the number of workspaces you can create.
+:::
 
-To view the list of available workspaces and switch between them, follow these steps:
+## Switching Between Workspaces
 
-1. Click on the "Workspace" tab in the navbar.
-2. A dropdown menu will appear, displaying the list of workspaces available to you.
+If you have access to multiple workspaces, you can switch between them
+from the workspace switcher in the top navigation bar.
 
-![Access Workspace](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/create-workspace-dropdown.png)
+1. Click the workspace name in the top navigation bar.
+2. A dropdown will appear listing all workspaces available to your account.
+3. Click any workspace in the list to switch to it.
 
-
-The image above provides an example of the workspace dropdown, allowing you to choose from the available workspaces associated with your account.
+![Workspace switcher dropdown showing available workspaces](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/workspace-dropdown.png)
 
 ## Creating a New Workspace
 
-In addition to switching between existing workspaces, PipeOps also empowers you to create your own workspace. Follow these steps to create a new workspace:
+1. Click the workspace name in the top navigation bar to open the
+   workspace switcher dropdown.
+2. Click **Create New Workspace** at the bottom of the dropdown.
+3. A form will appear — enter a name for your new workspace.
+4. Complete the setup and select a subscription plan for the new workspace.
 
-1. Click on the "Create New Workspace" button located in the workspace list dropdown.
-2. A form will be displayed, prompting you to provide the necessary information for the new workspace.
+![Create New Workspace form](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/workspace-creation-modal.png)
 
-
-![Create New Workspace](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/create-workspace-modal.png)
-
-
-The image above illustrates the form that will appear when creating a new workspace. Ensure to fill in the required details, such as a descriptive name for the workspace.
-
-By creating a new workspace, you can systematically organize your projects and collaborate effectively within a dedicated environment.
-
-With PipeOps Workspace, you gain the flexibility to switch between workspaces and create your own customized environments. Leverage this feature to streamline collaboration and project management.
-
-Now that you have a comprehensive understanding of how to work with PipeOps Workspace, you're ready to optimize your workflow and enhance collaboration across organizations. Happy workspace management!
+Once created, your new workspace will appear in the workspace switcher
+and you can start adding projects, servers, and team members to it.

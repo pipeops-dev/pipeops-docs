@@ -5,65 +5,117 @@ title: Usage
 description: "Monitor and manage your PipeOps resource usage including active subscriptions, server limits, environments, and credits."
 ---
 
-# Resources Usage
-The Usage Section in PipeOps provides a comprehensive overview of your subscription plan, resource usage, and available credits. It is designed to help you monitor and manage your server deployments, environments, team members, and overall resource consumption. In this guide, we'll walk you through the seamless process of managing your resources on PipeOps.
+# Usage
 
+The Usage page gives you a complete picture of your PipeOps resource consumption — from plan limits and wallet credit to Nova server charges and BYOS gateway bandwidth. Use it to monitor costs, top up resources, and understand which projects are driving usage.
 
-## Accessing Resources Usage
+## Accessing the Usage Page
 
-1. Open your preferred web browser and navigate to your PipeOps dashboard. You can use the direct URL: [https://console.pipeops.io/auth/signin](https://console.pipeops.io/auth/signin).
-2. Once logged in, click on the "Usage" button at the top center of your screen.
+1. Sign in to your PipeOps dashboard at [https://console.pipeops.io/auth/signin](https://console.pipeops.io/auth/signin).
+2. Click the account menu at the top-right corner of your dashboard.
+3. Under **Subscription**, select **Usage**.
+4. Alternatively, click the **Usage** button directly from the workspace switcher in the top navigation bar.
 
-![Usage button](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-btn.png)
+![Account menu open with the Usage option highlighted under Subscription](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-page/usage-1.png)
 
+The Usage page is organized into three tabs:
 
-3. Alternatively, you can click the power-like button at the top right end of the screen. Select "Usage" from the dropdown.
+| Tab                     | What it shows                                                      |
+| ----------------------- | ------------------------------------------------------------------ |
+| **Active Subscription** | Plan limits, available credit, and subscription details            |
+| **Nova Usage**          | Projected charges and resource breakdown for Nova-deployed servers |
+| **BYOS Bandwidth**      | Gateway bandwidth usage and estimated costs for BYOS clusters      |
 
+## Active Subscription
 
-![Access Usage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/access-usage.png)
+The **Active Subscription** tab gives you an overview of your current plan, how much of each resource you've used, and your wallet balance.
 
+![Active Subscription tab showing resource limits, available credit, and plan details](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-page/usage-2.png)
 
-### Active Subscription
+### Resource Usage
 
-The **Active Subscription** tab provides a high-level summary of your current subscription plan and usage limits. Key components include:
+At the top of the tab, your current resource usage is shown across four areas:
 
-- **Servers:**  These are the backbone of your operations on PipeOps. You can view the number of servers created versus the maximum allowed by your plan.
+- **BYOC Provider Server** — Number of BYOC provider servers created against your plan limit.
+- **Environments** — Number of environments available per server under your current plan.
+- **Team Seats** — Number of team seats in use. Click **Top Up** to purchase additional seats.
+- **Deployments** — Number of deployments used against your plan's deployment limit. Click **Top Up** to increase your allowance.
 
-- **Environment:** This section shows you the total environments created across all projects.
+### Available Credit
 
-- **Team Members:** Here, you can see the number of team members added versus the maximum allowed. You can always increase your team seat count by doing the following:
+The **Available Credit** card displays your current wallet balance. Click **Top Up** to add credit. A link below the button provides guidance on how to earn credits if needed.
 
-    1. Click the "top up" button close to team members.
-    2. In the modal that appears, select the number of team seats you want.
-    3. Click the "proceed to pay" button to complete your purchase.
+:::note
+PipeOps deducts your discounted monthly subscription fee and all resource usage costs from your wallet or connected card, depending on which has sufficient balance to cover the amount due.
+:::
 
-![Usage Active Subscription](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-subscription.png)
+### Plan Details
 
-- **Deployments:** Monitor the number of deployments you have made versus the total number available.
+The plan section shows your active plan name, billing interval, subscription period, and next billing cycle, along with the benefits included in your plan. From here you can:
 
-- **Available credit:** This section displays your available credits. Users can click the "Top Up" button to buy additional credits if needed. You can also apply for free credit by clicking the "Apply here" link.
+- Click **Upgrade Plan** to review, adjust your plan settings, or move to a higher tier.
+- Click **Cancel Subscription** to end your current subscription.
 
-- **Current Plan:** Here, you can view your active subscription tier (e.g., Scale, Growth, or Custom). It also displays your billing cycle. To upgrade your plan, click the "Upgrade Plan" button.
+## Nova Usage
 
+The **Nova Usage** tab shows a breakdown of resource consumption and projected costs for servers running on PipeOps Nova.
 
-### Nova Usage
-The **Nova Usage** tab provides detailed insights into resource consumption for servers deployed via PipeOps Nova. Key components include:
+![Nova Usage tab showing projected charges, resource cards, and project-level breakdown](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-page/usage-3.png)
 
-- **Period Selector:** Use the dropdown menu to filter usage data by time periods (e.g., 1 month, 15 minutes). This allows you to analyze resource consumption over specific durations.
+### Filters
 
-- **Server Selector:** Use the dropdown menu to filter usage data by server. This allows you to analyze resource consumption for a particular server.
+Use the filters at the top of the tab to scope the data:
 
-![Nova Usage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-nova.png)
+- **Period** — Select the time range to review (e.g. current month).
+- **Server** — Choose **All Servers** or select a specific server.
 
-- **Usage Breakdown:**  This section prominently displays the total cost incurred. It also provides a breakdown of resource consumption. You can view detailed metrics for:
+### Projected Charges
 
-   -  CPU: Current CPU usage and associated cost.
+The projected charges section summarizes your estimated bill for the selected period:
 
-   -  Memory: Memory usage in MB and its cost.
+- **Current Usage Cost** — Cost accrued so far in the selected period.
+- **Subscription Discount Applied** — Any plan-based discount deducted from your usage cost.
+- **Estimated Total Bill** — Your projected amount due after discounts.
 
-   -  Storage: Storage consumption and its cost.
-   
+Below the summary, individual cards show costs broken down by **CPU**, **Memory**, **Storage**, and **Network**.
 
-By leveraging these insights and functionalities, you'll be able to effectively monitor resource consumption, optimize your deployment strategies, and streamline your project management process with PipeOps.
+### Usage by Project
 
+The project breakdown table lists every project that contributed to usage in the selected period. Click on a project to expand it and view:
 
+- CPU, memory, and storage usage charts for that project
+- Each resource's percentage share of the total cost
+- The project's total cost for the period
+
+![Expanded project row showing usage charts, cost percentage split, and project total](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-page/usage-4.png)
+
+This breakdown helps you identify which projects are contributing most to your Nova costs and where to optimize.
+
+## BYOS Bandwidth
+
+The **BYOS Bandwidth** tab tracks data transfer through your BYOS gateway and estimates the associated costs for the current month.
+
+![BYOS Bandwidth tab showing current month summary cards and per-cluster breakdown](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-page/usage-5.png)
+
+### Current Month Summary
+
+The summary cards at the top show:
+
+- **Estimated Cost** — Projected bandwidth cost for the current month.
+- **Data In** — Total incoming traffic through the BYOS gateway.
+- **Data Out** — Total outgoing traffic through the BYOS gateway.
+- **Total Transfer** — Combined inbound and outbound bandwidth.
+
+Bandwidth is billed per GB for all BYOS gateway traffic.
+
+### Per-Cluster Breakdown
+
+The **Per-Cluster Breakdown** section shows bandwidth usage split by individual cluster. This is useful when you have multiple BYOS clusters and want to identify which one is generating the most traffic.
+
+### Bandwidth History
+
+The **Bandwidth History (Last 6 Months)** chart shows your monthly transfer volume and estimated cost over the past six months, giving you a trend view for capacity planning.
+
+<!-- PLACEHOLDER: [Screenshot 6] —  -->
+
+![Bandwidth history chart showing monthly transfer volume and estimated cost by month](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-page/usage-6.png)

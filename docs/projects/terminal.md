@@ -1,60 +1,43 @@
 ---
 slug: terminal
-sidebar_position: 6
+sidebar_position: 8
 title: Terminal
-description: "Access and use the in-browser command line terminal for your PipeOps project including pod selection and common commands."
+description: "Use the PipeOps in-browser terminal to access your project's shell, execute commands, and manage pods directly from the dashboard."
 ---
 
 # Project Terminal
 
-With the Project Terminal, you gain direct access to your project's command line interface, empowering you to execute commands, manage resources, and streamline workflows effectively. This guide covers the basics of using the terminal, accessing it within your project, and working with different terminal types and pods.
+The Terminal gives you direct shell access to your project's container without leaving the PipeOps dashboard. Use it to inspect files, check running processes, monitor resource usage, and perform administrative tasks.
 
+## Opening the Terminal
 
+The **Terminal** button is available in the top-right corner of any project page, regardless of which tab is active. Click it to open the terminal as an overlay panel.
 
-## Accessing the Terminal
+![project Terminal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-terminal.png)
 
-The terminal provides users with direct access to the command line interface of their projects.
+Once open, you'll see a welcome message confirming which pod you're connected to:
 
-Accessing the terminal in PipeOps is straightforward:
+```
+Welcome to PipeOps terminal!
+Connecting to pod: snowy-pond-eternal-nova-production-0
+```
 
-1. Navigate to your project's main page in PipeOps.
-2. Click on the "**Terminal**" tab at the extreme right side of your screen.
+A green **Interactive Terminal** indicator in the bottom-right corner of the panel confirms the session is active.
 
-![Access Terminal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-terminal-access.png)
+![project Terminal Open](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-terminal-open.png)
 
-![Terminal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-terminal.png)
+## Selecting a Process
 
+Use the **Processes** dropdown at the top of the terminal panel to switch between available pods (e.g. `production-0`). This is useful when your project runs multiple replicas and you need to target a specific instance.
 
+## Panel Controls
 
-### Terminal Pods
+| Control                | Description                            |
+| ---------------------- | -------------------------------------- |
+| **Processes dropdown** | Switch between pods                    |
+| **Fullscreen**         | Expand the terminal to fill the screen |
+| **✕**                  | Close the terminal panel               |
 
-The terminal is associated with specific pods within the project's environment, allowing users to execute commands within the context of a particular pod.
+```
 
-
-
-## Working with Commands
-
-Once inside the terminal, users can run a wide range of commands to manage their project effectively. Some commonly used commands include:
-
-- **ls**: List directory contents.
-- **pwd**: Print the current working directory.
-- **df**: Display disk space usage.
-- **du**: Estimate file space usage.
-
-Users can execute these commands and more to inspect files, manage directories, monitor resource usage, and perform various administrative tasks within their project's environment.
-
-Here's an example of using the terminal in PipeOps to list directory contents (ls) and print the current working directory (pwd)
-
-![Terminal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-terminal-in-use.png)
-
-The best part is that the terminal feature includes a convenient selection of commonly used commands, each accompanied by a description of its functionality. This makes it easy for users to find and execute commands, even if they don't remember the exact name. Some of these pre-added commands include **PS, FREE, DU**, and **PRINTENV**, providing users with essential tools for managing their projects effectively.
-
-![Terminal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-terminal-printenv.png)
-
-## Benefits of the Terminal Feature
-
-- **Efficient Resource Management**: The terminal provides direct access to project resources, allowing users to manage files, directories, and system processes efficiently.
-- **Streamlined Workflow**: By executing commands directly within the project's environment, users can streamline their workflow and perform tasks without switching between different interfaces or platforms.
-- **Enhanced Control**: With access to the command line interface, users have greater control over their project's environment, enabling them to troubleshoot issues, install dependencies, and customize configurations as needed.
-
-In summary, the terminal feature in PipeOps offers a powerful interface for managing projects, enabling users to execute commands directly within their project's environment and streamline their workflow effectively. Whether inspecting files, monitoring resources, or performing administrative tasks, the terminal provides a versatile and efficient tool for project management.
+```

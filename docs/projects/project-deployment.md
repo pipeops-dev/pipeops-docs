@@ -1,159 +1,218 @@
 ---
 slug: project-deployment
-title: Project Deployment
-tags: [deployment, guide, reactjs]
+title: Deploying a Project
+tags: [deployment, guide]
 sidebar_position: 1
-description: "Deploy a project on PipeOps by connecting your repository, selecting a project type, and configuring deployment settings."
+description: "Deploy a project on PipeOps by selecting a project type, 
+connecting your repository, and configuring build settings."
 ---
 
-# Deploying A Project
+# Deploying a Project
 
-This guide will take you through the steps to deploy a project on PipeOps. For this section, we will be using a sample React application to show the seamless deployment process. You can follow along with a personal project and achieve similar results.
+Deploying a project on PipeOps involves selecting a project type, connecting your repository, and configuring your build settings. Before you begin, make sure you have:
 
-## Prerequisites:
+- An active PipeOps workspace with a server provisioned.
+- A connected Git provider (GitHub, GitLab, or Bitbucket), or an
+  existing repository you want to deploy.
 
-- Basic understanding of web development concepts.
-- [Navigate to your PipeOps dashboard](https://console.pipeops.io/dashboard/projects).
+You can deploy from your own repository or use one of the provided
+templates.
 
-### Step 1: Navigate to the Projects Page
+## Step 1: Navigate to Deploy Project
 
-Log in to your PipeOps dashboard. Once you are logged in, you can access **Projects** by using one of the following methods:
-- **Side Navbar:** Click on “Projects” from the sidebar menu.
+From your PipeOps dashboard, click **+ New** in the top-right corner
+and select **Deploy Project** from the dropdown.
 
-- **Top Navbar:** Alternatively, click the ‘’New” button on the top right corner of your screen. Select “Deploy Project” from the dropdown menu.
+![Deploy Project Navigation](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-1.png)
 
-![Project Navigation Bar](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/deploy-project-nav.png)
+## Step 2: Choose a Project Type
 
+Select the type of project you want to deploy.
 
-Note: If you're not deploying for the first time, clicking "Projects" takes you directly to [Step 3: Choose a Project Type](#step-3-choose-a-project-type)
+| Type                   | Description                                                                            | Availability |
+| ---------------------- | -------------------------------------------------------------------------------------- | ------------ |
+| **Web**                | Build and deploy web applications, APIs, and full-stack solutions.                     | Available    |
+| **Container Registry** | Deploy images directly from Docker Hub or a private registry.                          | Available    |
+| **Database**           | Deploy database services to manage and store your data.                                | Available    |
+| **Worker (Runner)**    | Set up background services for task processing and job queues.                         | Available    |
+| **Function**           | Deploy serverless functions in Bun.js, Go, or Rust.                                    | Coming Soon  |
+| **Cron Job**           | Schedule and automate recurring tasks and processes.                                   | Coming Soon  |
+| **GitOps**             | Sync deployments from a Git repo manifest with ArgoCD-style continuous reconciliation. | Coming Soon  |
+| **Terraform**          | Provision and manage infrastructure as code.                                           | Coming Soon  |
 
+At the bottom of the page, you can also select **Deploy an Add-on**
+to choose from PipeOps' curated collection of production-ready add-on
+templates.
 
-##  Step 2: Connect Repository
+![Choose Project Type](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-2.png)
 
-The next step for first time users is to connect your repository. Connecting your repository to PipeOps allows for automatic deployment.
+For this guide, select **Web** to proceed.
 
+## Step 3: Select a Source
 
-1. Select your preferred repository provider (GitHub, GitLab, or Bitbucket).
+The **Deploy from a Repository or a Template Project** page offers two
+options. Choose the tab that matches your situation:
 
-![Repository Provider Selection](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-git-account.png)
+- **From Repository** — if you want to deploy code from your own
+  GitHub, GitLab, or Bitbucket repository.
+- **From Templates** — if you want to start from a pre-built PipeOps
+  template.
 
+### From Repository
 
-2. Authenticate your account to establish a connection between PipeOps and your repository.
+1. Click the **Select Git Provider** dropdown and choose your provider
+   (e.g. **GitHub**).
 
-3. Once authenticated, your repository will be visible on your dashboard.
+2. If this is your first time connecting GitHub, click Install PipeOps Git to install the PipeOps GitHub app. This grants PipeOps access to your repositories so it can read your code, detect branches, and trigger deployments on push. You'll be redirected to GitHub to complete the installation and then returned to PipeOps automatically.
 
-- Click the "Proceed" button to start your first deployment. This action takes you to [Step 4: Select Git Account and Organization](#step-4-select-git-account-and-organization)
+   ![Select Git Provider](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-3.png)
 
-![Repository Authentication](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connected-git-account.png)
+3. Select your **Organisation** from the dropdown. If your organisation
+   isn't listed, click **Add Organisation**.
 
+   ![Select Organisation](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-4.png)
 
-### Step 3: Choose a Project Type
+4. Search for and select the repository you want to deploy from the
+   list of accessible repositories.
 
-![Select Project Type](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/select-project-type.png)
+   ![Select Repository](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-5.png)
 
-From your second deployment onward, you’ll first be asked to select a project type before proceeding to select Git provider account.
+5. Select the **Branch** you want to deploy from, then click
+   **Proceed**.
 
-Here's an overview of some of the available project types:
+   ![Select Branch](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-6.png)
 
-- **Web:** This is ideal if you are deploying a website, full-stack solution, single-page application, or API.
-- **Worker (Runner):** Suitable for applications that require asynchronous task execution, background processing, or handling of job queues.
-- **Cron Job:** This is best for automating tasks that need to run on a schedule, like generating reports or backing up data. 
-- **Database:** You can deploy a database service to manage and store data for your applications.
+### From Templates
 
-Select the project type that aligns with your needs to proceed.
+Switch to the **From Templates** tab to browse PipeOps template
+projects. Click any template to use it as your project source and
+proceed directly to configuration.
 
+![Project Templates](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-templates.png)
 
-## Step 4: Select Git Account and Organization
+## Step 4: Configure Project Summary
 
-![Select Git Account](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/first-project-deployment-page.png)
+After selecting your source, you'll land on the **Project Summary**
+page. Review and configure the following fields before proceeding.
 
-- Choose your connected Git provider account from the dropdown. 
-- After that, choose the organization from which you’ll be deploying. Doing this will open a field showing a list of repositories.
-- Search and select the repository and branch you would like to deploy.  
+![Project Summary](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-7.png)
+
+| Field                 | Description                                                                                    |
+| --------------------- | ---------------------------------------------------------------------------------------------- |
+| **Project Name**      | Auto-generated by PipeOps. Edit it to something meaningful.                                    |
+| **Environment**       | Select the deployment environment (e.g. Production, Staging, Beta).                            |
+| **Server**            | Choose which server to deploy to. Click **Edit** to change the selection.                      |
+| **General Resources** | Adjust CPU and Memory sliders to allocate resources. Click **View Guide** for recommendations. |
+| **Project Source**    | Confirms the repository being deployed.                                                        |
+
+:::note
+You can create additional environments up to your plan's limit. During
+deployment, all available environments are selectable — you are not
+limited to the default options.
+:::
+
 Click **Proceed** to continue.
 
+## Step 5: Configure Build Settings
 
-### Test with Templates  
-PipeOps provides multiple template projects for users. If you are not ready to deploy your custom project, you can test how the service works with any of the provided templates. Here is how to get started:
+On the **Project Build Settings** page, configure how your project
+is built and run.
 
+![Build Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-8.png)
 
-1. Select from the template projects on the right pane of the screen. For this guide, we’ll use PipeOps React Javascript.
+### Build Method
 
-   ![Deploy React Template](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment-react.png)
+PipeOps automatically detects your project's framework and recommends a build method (e.g. `Docker`, `Nixpack`). If a build method is not detected, you can fill it in manually. Use Advanced Settings to expand additional build configuration options.
+**Ask Ora** opens **Ora**, PipeOps' built-in AI assistant. **Ora** can help with build configuration questions as well as broader questions about your project and the platform.
 
-2. Click on the desired template. This takes you to the configuration page. 
+### Lifecycle Command
 
+Enter a **Release Command** that runs just before your project goes
+live on each deployment. This is typically used for tasks such as
+database migrations.
 
-## Step 5: Configure Project 
+:::warning
+Commands that fail or take longer than **10 minutes** will cause the
+deployment to fail. Test your command locally before adding it here.
+:::
 
-Whether you're using a template project or deploying your custom project, the configuration process will look very similar.
-Once you've selected your repository and branch (or a template), you'll be taken to the **Project Summary** page. 
+### Networking
 
-   ![Project Summary](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-summary.png)
+Configure how your project is exposed publicly.
 
-Here, you can:  
-- Choose a custom name for your project. PipeOps generates a name automatically for you, but you can edit it to your liking.
-- Select a deployment environment. Example: staging, development, or production.
-- Specify which of your servers you want to deploy into.
-- Configure general resources, including sCPU and memory.
+- An auto-generated domain is shown with its port and protocol
+  (e.g. `plastic-actor.antqube.io · Port 3826 · HTTP`).
+- Use **Generate Domain**, **Custom Domain**, or **TCP Proxy** to
+  manage access to your project.
 
+### Environment Variables
 
-Click the **Proceed** button to continue.
+Add any variables your project needs at build or runtime using
+**+ Add Env**.
 
-## Step 6: Configure Build Settings
+Once you have reviewed all settings, click **Deploy Project** in the
+top-right corner to start the deployment.
 
-In this section, we will configure the project build settings. For this guide, we will choose the ReactJS framework and Node (Static Frontend) build method.
+## Step 6: Monitor the Deployment Pipeline
 
-   ![Configure Build Setttings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-build-settings.png)
+After clicking **Deploy Project**, the **Deployment Pipeline** panel
+shows real-time progress across four sequential stages.
 
-Click the **Deploy Project** button to start the build process.
+![Deployment Pipeline](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-9.png)
 
+| Stage      | Description                                                                                   |
+| ---------- | --------------------------------------------------------------------------------------------- |
+| **Commit** | Confirms the source commit being built.                                                       |
+| **Scan**   | Runs a security scan on your code (shown as **Security scan enabled** in the project header). |
+| **Build**  | Compiles and builds your project. Live logs stream in real time.                              |
+| **Deploy** | Deploys the built image to your server.                                                       |
 
-## Step 7: Monitor Deployment Progress
+You can click **Cancel** during the Build stage to abort the
+deployment.
 
-- PipeOps will start the build process, and you’ll be able to view the build logs to track progress. 
+:::note
+If any stage fails, the pipeline stops and displays an error. Check
+the live logs in the **Build** stage for details on what went wrong
+before retrying.
+:::
 
-   ![Build Logs](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment-build-logs.png)
+Once all stages complete successfully, a **Project Deployed!** modal
+confirms your deployment.
 
+![Successful Deployment](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-10.png)
 
-- Once the deployment is complete, you’ll get a notification stating the project has been deployed successfully.
+Click **Got it** to go to your project dashboard.
 
-   ![Successful Project Deployment](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-successful-deployment.png)
+## Step 7: View Your Deployed Project
 
+After dismissing the success modal, you'll land on the **Project
+Overview** page.
 
-  Click “Got it” to return to the project’s dashboard.
+![Project Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-live-url.png)
 
+From here you can confirm your app is running, check resource usage,
+and see recent deployment activity. Click **Live Url** in the
+top-right corner to open your application in a new tab.
 
-- The dashboard provides an overview of all the project details. You can view the status of the project - whether it’s running or not, and access additional information like resource usage.
+Explore the rest of your project from the tabs below:
 
+| Tab                                                       | Description                                         |
+| --------------------------------------------------------- | --------------------------------------------------- |
+| [History](/docs/projects/project-history)                 | Full deployment history with logs and statuses.     |
+| [Metrics](/docs/projects/project-metrics)                 | CPU, memory, and network usage over time.           |
+| [Logs](/docs/projects/logs-and-events#accessing-logs)     | Real-time and historical application log output.    |
+| [Events](/docs/projects/logs-and-events#accessing-events) | Infrastructure-level events such as pod scheduling. |
+| [Worker](/docs/projects/worker-and-jobs)                  | Background worker process management.               |
+| [Jobs](/docs/projects/worker-and-jobs)                    | Scheduled and on-demand job management.             |
+| [Settings](/docs/projects/project-setting)                | Full project configuration.                         |
 
-    ![Project Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-overview.png)
-
-
-
-PipeOps provides various metrics to help you monitor, de-bug, and re-configure deployed projects. These include [History](/docs/projects/project-history), [Metrics](/docs/projects/project-metrics), [Logs](/docs/projects/logs-and-events#accessing-logs), [Events](/docs/projects/logs-and-events#accessing-events), [Terminal](/docs/projects/terminal) and [Settings](/docs/projects/project-setting).
-
-
-### Accessing Deployed Project
-
-Here’s how to view your deployed project:
-- Click the **View Project** link at the top right corner of your screen.
-
-   ![View Project](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/view-project.png)
-
-- This automatically launches the application in a new tab.
-
- This setup has some basic configurations applied by default
-   1. Application Network Port
-   1. Network Access Port ([Environment Variable])
-   1. Single Replica with 0.1 CPU and 212MB RAM ([Scaling and Replication])
-   1. Auto Deploy a branch when a code change is checked in.
-
-To delete a project, use the Delete Project guide [here](/docs/projects/project-actions#delete-project).
+To delete a project, see the [Delete Project](/docs/projects/project-actions#delete-project) guide.
 
 ## Monitoring via CLI
 
-You can monitor your projects using the PipeOps CLI for automation and CI/CD integration:
+If you prefer working from the terminal or are integrating PipeOps
+into a CI/CD pipeline, you can monitor your deployed projects using
+the PipeOps CLI.
 
 ```bash
 # List all projects
@@ -170,10 +229,13 @@ pipeops list --deployments --project proj-123
 ```
 
 :::note
-For creating new projects and deploying application code, use the Web UI. The CLI currently focuses on monitoring and viewing project information.
+The CLI is currently focused on monitoring and viewing project
+information. For creating projects and deploying application code,
+use the Web UI.
 :::
 
-For detailed CLI usage instructions, see:
+For detailed CLI usage, see:
+
 - [CLI Quick Start Guide](/docs/cli/getting-started/quick-start)
 - [CLI Monitoring Commands](/docs/cli/commands/deployments)
 - [CI/CD Integration](/docs/cli/advanced/cicd)

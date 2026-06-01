@@ -1,229 +1,241 @@
 ---
-slug: project-setting
+slug: project-settings
 sidebar_position: 7
 title: Project Settings
-description: "Manage project settings in PipeOps including general configuration, deployment strategy, networking, and environment variables."
+description: "Manage project settings in PipeOps including general configuration, source control, build settings, networking, environment variables, resources, storage, and security policy."
 ---
 
 # Project Settings
 
-This documentation provides a comprehensive guide to managing and configuring project settings in PipeOps. With PipeOps, you can easily customize various aspects of your project to meet specific requirements and optimize its performance.
+The **Settings** tab is where you configure your project's behaviour and infrastructure. It is divided into nine sections, accessible from the left sidebar: General Settings, Source Control, Build Settings, Networking, Firewall Rules, Environment Variables, Resources & Replications, Storage, and Security Policy.
 
+## General Settings
 
+![General Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-general-settings.png)
 
-## Accessing Project Settings
+### Project Name
 
-To access project settings:
+Rename your project by updating the **Project Name** field and clicking **Save**.
 
-- Navigate to your project's main page in PipeOps.
-- Click on the "**Settings**" tab to access the project settings dashboard.
+:::warning
+The project name is used to generate your project's public PipeOps domain. Renaming your project will change its domain, which will break any existing links or integrations pointing to the old address.
+:::
 
-## Exploring Individual Project Settings
+### Deployment Strategy
 
-The project settings dashboard is organized into several subsections, each catering to specific configuration areas:
+Controls how new deployments replace existing ones. Select a strategy type and configure its parameters, then click **Save**.
 
-### General Settings
+| Strategy           | Description                                                                                                                   |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Rolling Update** | Gradually replaces old instances with new ones, maintaining availability throughout. Recommended for production environments. |
+| **Recreate**       | Terminates all existing instances before starting new ones. May cause brief downtime but ensures a clean start.               |
 
+When **Rolling Update** is selected, two additional parameters are available:
 
+- **Max Unavailable (%)** — The percentage of replicas that may be unavailable during the update. Default is `0`.
+- **Max Surge (%)** — The percentage of extra replicas that can be created above the desired count during an update. Default is `25`.
 
-In this section, you can manage basic project details such as:
+## Source Control
 
-- **Project Name:** Rename your project directly from this field. 
+![Source Control](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-source-control.png)
 
-- **Deployment Strategy:** Select a deployment strategy to ensure smooth updates with minimal downtime. Users can choose between two strategies:
+### CI/CD Settings
 
-    1. **RollingUpdate:**  Gradually replaces old deployments with new ones, ensuring minimal downtime and continuous availability. This strategy is ideal for production environments where service uptime is critical.  
-    2. **Recreate:** Terminates all existing deployments before creating new ones. This approach ensures that the system starts fresh with every deployment but may cause temporary downtime.  
+Automates the build and deployment pipeline when changes are pushed to your repository.
 
-Additionally, users can fine-tune deployment strategy:
-
-- **Max Unavailable (%):** Defines the percentage of replicas that can be unavailable during deployment.
-- **Max Surge (%):** Specifies the percentage of extra replicas that can be created during an update.
-
-
-![Project General Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-overview.png)
-
+| Setting                      | Description                                                                                                                    |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Auto Deploy Branches**     | When enabled, PipeOps automatically triggers a new deployment whenever changes are pushed to the configured deployment branch. |
+| **Auto-Rollback on Failure** | When enabled, PipeOps automatically reverts to the last successful deployment if a new deployment fails.                       |
 
 ### Source Control
 
-The settings here are subdivided into 2 sections:
+Connects your project to a specific Git repository and branch.
 
-1. **CI/CD Settings:** You can specify if deployments are automatically triggered when you make new changes to a branch in your git (GitHub, GitLab, and Bitbucket) repository. You can also auto-rollback on failure, this means that if a deployment fails, it automatically redeploys the last working version of your application.
+| Field                 | Description                                                  |
+| --------------------- | ------------------------------------------------------------ |
+| **Git Organization**  | The GitHub organisation or account that owns the repository. |
+| **Github Repository** | The repository PipeOps will build and deploy from.           |
+| **Deployment Branch** | The branch PipeOps monitors and deploys (e.g. `main`).       |
 
-2. **Source Control:** Here, you can select which git repository and production branch that PipeOps will deploy from.
+Click **Save** to apply changes.
 
-![Project Source Control](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-setting-source-control.png)
+## Build Settings
 
+![Build Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-build-settings.png)
 
-### Build Settings
+### Framework & Build Method
 
-Customize the build process with options including:
+Specifies how PipeOps builds your project.
 
-- **Framework:** Choose the framework for your project.
-- **Build Method:** Select the build method.
-- **Lifecycle Command:** Define the command your project runs on.
+- **Framework** — Select the framework your project uses (e.g. `Html`, `Node`, `Next.js`).
+- **Build Method** — Select the tool used to build the project (e.g. `Nixpack`, `Dockerfile`).
 
-![Project Build Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-build-settings.png)
+Two additional controls are available:
 
+- **Ask Ora** — Opens the Ora AI assistant to help determine the right framework or build method for your project.
+- **Advance Settings** — Expands additional build configuration options.
 
+### LifeCycle Command
 
-### Networking
+Defines a **Release Command** that runs just before your project goes live on each deployment. Use this for tasks such as database migrations or cache warming.
 
-The networking section allows you to expose multiple ports from your deployed project. This feature gives you control over how your application communicates with services and users.
+:::warning
+Commands that fail or take longer than **10 minutes** will cause the deployment to fail. Test your command locally before configuring it here.
+:::
 
+Click **Redeploy Project** after saving to apply the lifecycle command to a new deployment.
 
-- **Add Network Ports:** Specify the port number your application will use.
+## Networking
 
-- **Select Protocol:** Choose the protocol for traffic on this port — either TCP (Transmission Control Protocol) or UDP (User Datagram Protocol).
+Controls how your project is reachable from the internet and from within your cluster.
 
+![Networking](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-networking.png)
 
-- **Public Access:** Toggle the Public switch to make the port accessible from outside the cluster. When enabled, external clients can reach your application on this port.
+### Public Networking
 
+Exposes your project on a public endpoint. Any exposed port is accessible from the internet, so ensure you have strong credentials and firewall rules configured.
 
-- **Add More Ports:** Click **Add More** to configure additional ports and protocols as needed for your application.
+Three actions are available:
 
-After configuring your networking settings, click **Save** to apply changes or **Discard Changes** to revert.
+- **Generate Domain** — Creates a PipeOps-managed public domain for your project.
+- **Custom Domain** — Attach your own domain name.
+- **TCP/UDP Proxy** — Expose a non-HTTP port via a TCP or UDP proxy.
 
-![Projects-networking](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/projects-networking.png)
+Existing public endpoints are listed with their domain and port mapping. Use the copy, edit, or delete icons to manage each entry.
 
+### Private Networking
 
-### Firewall Rules
+Displays internal DNS names for service-to-service communication within your cluster. These are not publicly accessible. Three fully qualified domain names are provided:
 
-The Firewall Rules section lets you manage network access control for your project, enhancing security by restricting which sources can communicate with your application.
+- `<project-name>.eternal-nova-production.svc.cluster.local`
+- `<project-name>.eternal-nova-production.pipeops.internal`
+- `<project-name>.eternal-nova-production.svc.pipeops.internal`
 
-**Traffic Type:**  
+All are port-agnostic — use whichever suits your internal routing needs.
 
-You can configure rules for:
+## Firewall Rules
 
-    - Inbound Traffic: incoming requests to your application.
+Defines which traffic is allowed to reach your project.
 
-    - Outbound Traffic: outgoing requests from your application.
+![Firewall Rules](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-firewall-rules.png)
 
+### Traffic Type
 
-**Allowed Sources:**  
-Specify the IP addresses or CIDR blocks allowed to access your deployment. You can enter multiple values separated by commas.  
+Select whether the rule applies to **Inbound Traffic** (incoming connections) or **Outbound Traffic** (connections your project initiates).
 
-    **CIDR** (Classless Inter-Domain Routing) lets you specify IP ranges efficiently using a format like 192.168.1.0/24, which includes all IPs from 192.168.1.0 to 192.168.1.255.
+### Allowed Sources
 
+Enter the IPs or CIDR ranges permitted to access the project as a comma-separated list. The following keywords are also supported:
 
-PipeOps also supports the following keywords:
+| Keyword       | Meaning                       |
+| ------------- | ----------------------------- |
+| `any` / `all` | All sources                   |
+| `private`     | Private network ranges only   |
+| `internal`    | Internal cluster traffic only |
 
-    - Any/all — allow access from any IP address.
-    - Private — allow access from private IP ranges only.
-    - Internal —  restrict access to your project’s internal network only.
+### Ports & Protocols
 
+Specify which ports and protocols are permitted. Each entry takes a port number and a protocol (`TCP` or `UDP`). Click **+ Add More** to define additional rules.
 
-**Ports & Protocols:** 
+Click **Save** to apply changes or **Discard Changes** to revert.
 
-Define which ports and protocols are permitted:
+## Environment Variables
 
-- Port: Enter the specific port number (e.g., 80, 443).
+Inject runtime configuration and secrets into your project's container environment.
 
-- Protocol: Choose between TCP or UDP.
+![Environment Variables](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-environment-variables.png)
 
-Expose multiple ports as needed using the **Add More** button.
+Variables are accessible at both runtime and build time. Each entry has a **key** and a masked **value**. Click **+ Add** to create a new variable, or the red **✕** to delete one.
 
+The **⋯** menu next to the Add button provides additional options:
 
-Click **Save** to apply your firewall rules or **Discard Changes** to cancel.
+- **Bulk Edit** — Edit multiple environment variables at once in a single text interface, useful when adding or updating several variables at a time.
+- **Add Database Credentials** — If you have a database deployed as a PipeOps add-on, use this option to inject its connection credentials directly into your project without manually copying them one by one.
 
-![Projects-firewall-rules](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/projects-firewall-rules.png)
+### Adding Database Credentials
 
-Firewall rules are crucial for securing your application by limiting exposure to only trusted sources and required ports, helping protect against unauthorized access and attacks.
+Instead of navigating to your database add-on, copying each credential, and adding them individually, PipeOps can inject them automatically:
 
-> **Note**: The Firewall Rules feature is currently in beta and not enabled by default, except for users who have tracking protection. To access it, you must first enable it via the Feature Preview section in your PipeOps dashboard sidebar:
+1. Click the **⋯** menu and select **Add Database Credentials**.
+2. A modal lists all your deployed database add-ons. Select the one you want to connect to.
+3. On the **Review Credentials** screen, choose whether to inject credentials using the **Internal** or **Public** network connection.
+4. Review the list of variables to be injected (e.g. `POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_HOST`, `POSTGRES_PORT`, `DATABASE_URL`). All are selected by default — uncheck any you don't need. You can also rename keys before injecting to avoid conflicts.
+5. Click **Inject Variables** to add them to your project.
 
-    Click Feature Preview in the sidebar.
+:::warning
+Existing environment variables with the same key will be overwritten. Rename any conflicting keys before clicking **Inject Variables**.
+:::
 
-    ![Feature Preview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/feature-preview.png)
+:::tip
+Don't have a database add-on yet? Browse available database add-ons on the [PipeOps Add-on Marketplace](https://pipeops.io/addons) and deploy one in minutes. [Learn more about Add-ons](/docs/addons/addon-overview).
+:::
 
-    Toggle on Firewall Rules in the list of beta features.
+Click **Save** to apply any manually added or edited variables.
 
-    ![Firewall Rules Toggle](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/enable-beta-features.png)
+## Resources & Replications
 
-    After enabling, refresh the page to see the Firewall Rules option in your Project Settings.
+Controls the compute resources allocated to your project and how many instances run simultaneously.
 
+![Resources and Replications](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-resources-and-replication.png)
 
+### General Resources
 
-### Environment Variable
+Select a **Preset** from the dropdown to apply a predefined resource configuration (e.g. `Tiny - Shared Resources`), or adjust the **CPU** and **Memory** sliders manually.
 
-Here you can perform either of the following options:
+### Replication
 
-- **Edit Existing Variables:** Modify existing environment variables.
-- **Create New Variables:** Add new environment variables individually or in bulk. We will discuss the two ways to create environmental variables in more detail.
+- **Replicas** — Set the number of running instances. Defaults to `1`.
+- **Auto Scale** — Toggle to allow PipeOps to automatically adjust replica count based on load.
 
-![Project Env](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-envs-settings.png)
+> Increasing replicas multiplies your project's total CPU and memory requirements proportionally.
 
+:::note
+The maximum number of replicas you can configure is determined by your PipeOps plan. Upgrade your plan if you need to exceed your current limit.
+:::
 
-1. **Using the Bulk Edit Button:** After clicking on the bulk edit button, a pop-up appears where you can add all your environment variables at once. This is especially useful if your project has a lot of environment variables that it depends on.
+:::warning
+Auto Scale is not available when your project has persistent storage volumes attached. Remove any configured storage volumes first to enable it.
+:::
 
-![Project Env Bulk Edit](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-bulk-env.png)
+Click **Save** to apply changes.
 
-2. **Using the Add Button:** After clicking on the Add button, a new row where you can add a new environment variable appears as shown below. Fill in the details for your new environment variable and click the save button on the bottom right corner of the pop-up.
+## Storage
 
-![Project Env Add Button](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-add-env.png)
+Configures persistent volumes mounted into your project's container, ensuring data survives restarts and redeployments.
 
-### Resources and Replication
+![Storage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-storage-empty.png)
 
-There are 2 subsections under this:
+If no volumes are configured, the section shows a **Nothing's here** empty state. Click **+ New Storage** to add a volume. Each storage entry requires:
 
-1. **General resources:** You can configure preset templates that will determine the CPU cores and the amount of memory that will be allocated to your project.
+- **Storage Path** — The file system path inside the container where the volume is mounted.
+- **Enabled** — Toggle to activate or deactivate the volume without deleting its configuration.
+- **Storage (GB)** — The size of the persistent volume.
 
-![Project Replication](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-resources-and-replication-settings.png)
+Click **Save** to apply changes.
 
-2. **Replication:** Here you can select the number of replicas of your project that will be created. Replication is especially useful for enhanced redundancy and performance.
+## Security Policy
 
+Runs automated security scans on every deployment and optionally blocks deployments that exceed defined vulnerability thresholds.
 
+![Security Policy](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-security-policy.png)
 
-### Storage
+### Policy Gate
 
-In this section, you can easily add extra storage to meet your needs. Here’s how:
+The **Policy gate** toggle controls whether scan results can block a deployment. When off, scans still run on every deploy but nothing is blocked — results are informational only. Enable the gate to enforce the thresholds configured below.
 
-![Project storage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-storage.png)
+### Vulnerability Thresholds
 
-1. **Specify the Path**: Determine where you want the extra storage to be added. This could be any directory within your application that requires more space.
-2. **Set the Size**: Decide how much additional storage you need. Simply enter the number of Gigabytes required.
+Define the conditions under which a deployment is blocked based on vulnerability severity. Each threshold can be toggled on or off independently.
 
-![Project storage added](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-add--storage.png)
+| Severity     | Description                                                                                                        |
+| ------------ | ------------------------------------------------------------------------------------------------------------------ |
+| **Critical** | Block if any critical vulnerabilities are found. Threshold defaults to `0` (block on any).                         |
+| **High**     | Block if the number of high vulnerabilities exceeds the set threshold. Set to `-1` for unlimited (not enforced).   |
+| **Medium**   | Block if the number of medium vulnerabilities exceeds the set threshold. Set to `-1` for unlimited (not enforced). |
+| **Total**    | Block if the total vulnerability count across all severities exceeds the threshold.                                |
+| **CVSS**     | Block if the CVSS score exceeds a value between `0–10`. Defaults to not enforced.                                  |
 
-### Domain
-This allows you to configure custom domain names for your deployments. By entering a personalized domain (e.g., yourdomain.com), you can direct traffic to your application's HTTPS load balancer endpoint. This feature enables you to personalize your application's URL for better accessibility.
+### Secrets Detection
 
-
-![Project Domain](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-domain.png)
-
-### Checks
-Health checks are crucial for ensuring the stability, availability, and performance of your applications. 
-
-![Project Checks](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-checks-settings.png)
-
-
-PipeOps provides three types of health checks:
-
-#### StartupCheck
-
-The **Startup Check** determines whether an application has successfully started. Configurable parameters include:
-    - **Initial Delay Seconds:** The time (in seconds) to wait before performing the first check after starting.
-    - **Failure Threshold:** The number of failed checks before the container is considered unhealthy.
-    - **Period Seconds:** The interval (in seconds) between consecutive checks.
-    - **Timeout Seconds:** The time (in seconds) a check is allowed to run before it is considered a failure.
-
-
-#### ReadinessCheck
-
-The **Readiness Check** determines whether the application is ready to serve traffic. Configurable parameters include:
-
-- **Initial Delay Seconds:** The waiting period before the first check is conducted.
-- **Failure Threshold:** Defines how many failed checks are needed before the container is marked as unready.
-- **Period Seconds:** Frequency at which the check runs.
-- **Timeout Seconds:** Duration before a check is considered failed.
-
-#### LivenessCheck
-The **Liveness Check** verifies whether an application is still running and responsive. Configurable parameters include:
-
-- **Initial Delay Seconds:** The time delay before the first liveness probe runs.
-- **Failure Threshold:** Number of failed attempts before the system restarts the container.
-- **Period Seconds:** The frequency of performing the check.
-- **Timeout Seconds:** How long the check waits for a response before marking it as failed.
-
-
-By navigating through these subsections, you can effectively tailor your project settings to meet specific requirements, ensuring seamless deployment and optimal performance. Make the most of PipeOps project settings to streamline your development process and collaborate efficiently.
+- **Block on secrets found** — When enabled, halts the deployment if secrets such as API keys or credentials are detected in the source code.
