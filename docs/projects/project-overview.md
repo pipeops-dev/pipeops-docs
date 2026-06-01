@@ -2,39 +2,53 @@
 slug: project-overview
 sidebar_position: 2
 title: Project Overview
-description: "View your project dashboard in PipeOps including application status, resource usage, HTTP path, and recent activity."
+description: "View your project dashboard in PipeOps including application status, resource usage, and recent deployment activity."
 ---
 
 # Project Overview
 
-Welcome to the Project Overview feature in PipeOps! This dashboard provides a convenient snapshot of your application's essential details, empowering you with insights into its status, resource usage, HTTP path, and recent activity.
+The **Overview** tab is the default landing page for any project in PipeOps. It gives you a quick snapshot of your application's current state, resource consumption, and recent deployment activity.
 
+![Project Overview Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-11.png)
 
+## App Status
 
-## Accessing Project Overview
+Shows whether your application is currently running, along with the server it is deployed on and its region. A green indicator and the message **Your App Is Running!** confirms a healthy deployment.
 
-The Project Overview page serves as the default landing page when accessing your project. It offers a convenient dashboard providing basic details about your application at a glance. Here's what you can find on this page:
+Your application can be in a number of different states depending on its current condition — such as deploying, failed, or paused. [Learn more →](/docs/projects/project-states.md)
 
- ![Project Overview Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-overview.png)
+## Resource Usage
 
-1. **App Status**:
-   In the App Status section, you can quickly assess the state of your application. Whether it's live or not, you'll know at a glance. Additionally, you'll have access to the server name and the region where your application is deployed, ensuring you have visibility into its infrastructure.
+Displays real-time CPU and memory consumption as gauge charts. Click **Full resource metrics** to navigate to the Metrics tab for a more detailed breakdown of your application's performance over time.
 
-2. **Resource Usage**:
-   Understanding resource usage is crucial for maintaining optimal performance. PipeOps offers intuitive charts detailing memory, CPU, and disk usage. You'll receive automatic alerts if any of these resources reach critical levels, helping you proactively manage your application's performance and stability.
-   For more information about resource usage, refer to the Project Metrics documentation, which delves deeper into the different project metrics that are being monitored by PipeOps
+## Recent Activity
 
-3. **HTTP Path**:
-   You can quickly locate and reference the path your application is hosted on, facilitating seamless access for both users and administrators.
+Lists recent deployments with key details for each entry: the commit hash, the branch deployed from, the linked repository, the timestamp, and the deployment status (e.g. **Live**). Click **View all deployments** to see the full deployment history on the History tab.
 
-4. **Recent Activity**:
-   Stay informed about recent deployments and changes to your application with the Recent Activity section. Short notes provide key details such as the commit ID, repository name, and timestamps, giving you insights into the evolution of your project.
-   For a more comprehensive view, refer to the [Project History documentation](/docs/projects/project-history.md), which delves into the detailed history of your project's changes.
-   
+## Page Actions
 
-### Exploring Further
+Two persistent controls are available in the top-right corner of the page regardless of which tab is active:
 
-For more detailed information on any specific aspect mentioned in the overview, you can explore the corresponding tabs on the project page. These tabs are dedicated to different areas such as Metrics, terminal access, and project history, allowing you to delve deeper into the aspects that require your attention. Thus, the Project Overview provides a convenient starting point for monitoring your project's status and facilitates further exploration as needed.
+- **Live Url** — Opens your application's public URL directly in a new tab.
+- **Terminal** — Opens an in-browser shell connected to your application's container.
+
+## Actions Menu
+
+The **Actions** button in the top-right corner provides controls for managing your project's deployment lifecycle, including redeploying, pausing, rolling back, and deleting the project. [See Project Actions](/docs/projects/project-actions.md) for a full breakdown of each option.
+
+## Exploring Further
+
+The project page includes the following tabs for deeper inspection:
+
+| Tab          | Description                                                                       |
+| ------------ | --------------------------------------------------------------------------------- |
+| **History**  | Full deployment history with logs and status for each deploy.                     |
+| **Metrics**  | Detailed CPU, memory, and network usage charts.                                   |
+| **Logs**     | Real-time and historical application log output.                                  |
+| **Events**   | Infrastructure-level events such as pod scheduling and restarts.                  |
+| **Worker**   | Configuration and status of background worker processes.                          |
+| **Jobs**     | Scheduled and on-demand job management.                                           |
+| **Settings** | Project configuration including environment variables, networking, and resources. |
 
 ## Managing Projects via CLI
 

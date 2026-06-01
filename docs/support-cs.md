@@ -14,7 +14,7 @@ If you have any questions, encounter issues, or need assistance with PipeOps, ou
 
 - **Email Support:** Drop us an email at [support@pipeops.io](mailto:support@pipeops.io), and our team will get back to you promptly with assistance.
 
-- **Knowledge Base:** Visit our comprehensive knowledge base at https://blog.pipeops.io for answers to frequently asked questions, tutorials, troubleshooting guides, and more.
+- **Knowledge Base:** Visit our comprehensive knowledge base at https://pipeops.io/blog for answers to frequently asked questions, tutorials, troubleshooting guides, and more.
 
 - **Live Chat:** Have a quick question or need immediate assistance? Chat with our support team directly through the live chat feature on our website.
 
@@ -26,7 +26,7 @@ Join our vibrant community of developers, businesses, and enthusiasts to share i
 
 - **Social Media:** Follow us on [Twitter](https://twitter.com/pipeopshq), [LinkedIn](https://www.linkedin.com/company/pipeops/), and other social media platforms to stay informed about product updates, events, and industry news. Engage with us and fellow community members through likes, comments, and shares.
 
-- **[Blog:](https://blog.pipeops.io)** Explore our [blog](https://blog.pipeops.io) for in-depth articles, tutorials, case studies, and best practices on cloud infrastructure management, DevOps, and application development. Contribute your insights and experiences by submitting guest posts or commenting on existing articles.
+- **[Blog:](https://pipeops.io/blog)** Explore our [blog](https://pipeops.io/blog) for in-depth articles, tutorials, case studies, and best practices on cloud infrastructure management, DevOps, and application development. Contribute your insights and experiences by submitting guest posts or commenting on existing articles.
 
 ## Contact Information
 

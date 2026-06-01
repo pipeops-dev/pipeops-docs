@@ -2,143 +2,203 @@
 slug: server-provisioning
 sidebar_position: 1
 title: Server Provisioning
-description: "Create and provision a new server on PipeOps using either PipeOps-managed hosting or your own cloud provider account."
+description: "Create and provision a new server on PipeOps using 
+PipeOps-managed Nova hosting, your own cloud account, or your 
+own server."
 ---
 
-In this section, we’ll guide you through how to create a new server from your PipeOps dashboard.
+# Server Provisioning
 
-### Navigate to the Server Creation Page
+Servers in PipeOps are the infrastructure layer your projects run on.
+PipeOps gives you three ways to provision a server depending on how
+much control you want over the underlying infrastructure.
+
+## Navigate to Server Creation
 
 1. Log in to your [PipeOps dashboard](https://console.pipeops.io/auth/signin).
+2. Create a new server using one of the following methods:
+   - Click **+ New** in the top-right corner and select
+     **Provision a Server** from the dropdown.
+   - Click **Servers** in the left sidebar to open the Servers list,
+     then click **+ Create new Server** in the top-right corner.
 
-2. Once you are logged in, you can create a new server by using one of the following methods:
+![Servers list page showing existing servers and the Create new Server button](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/provision-server-nav.png)
 
-- **Top Navbar:** Click the **New** button on the top right corner of your screen. Select “Provision a Server” from the dropdown menu.
-- **Side Navbar:** Alternatively, you can click on **Servers** from the sidebar menu.
+## Select a Hosting Method
 
-![Dashboard](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/provision-server-nav.png)
-Either of the above steps will redirect you to a page where you will select your server hosting method.
+Select how you want to provision your server.
 
-### Choose a Hosting Method
+![Server hosting method selection showing On PipeOps, Bring Your Own Cloud, and Bring Your Own Server options](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-deployment-path.png)
 
-After completing the previous step, the page below will appear. There are two options when creating a new server: **On PipeOps** and **On Cloud Provider**.
+| Option                    | Description                                                                                                                   |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **On PipeOps**            | Provision servers managed by PipeOps (Nova), hosted on Digital Ocean, AWS, Google Cloud, or Azure. No cloud account required. |
+| **Bring Your Own Cloud**  | Provision a server on your existing cloud account by connecting PipeOps to your preferred cloud provider.                     |
+| **Bring Your Own Server** | Connect your own private or public machine, or a VM you control, directly to PipeOps.                                         |
 
-![Select Path](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/provision-server-on-pipeops.png)
+Select your preferred option and click **Proceed**.
 
-- **PipeOps Nova Servers:** Deploy applications on servers managed by PipeOps, hosted on cloud providers such as Digital Ocean, AWS, Google Cloud, and Azure.
+---
 
-- **Cloud Provider:** Host applications on your own cloud account by connecting PipeOps to your preferred cloud provider.
+## Provisioning on PipeOps (Nova)
 
-Select your desired hosting method to proceed.
+### Step 1: Choose a Provider and Region
 
-### Provisioning On PipeOps Nova Servers
+Select your preferred cloud provider and deployment region. Once you
+select a region, PipeOps displays the per-hour resource rates for
+that region:
 
-#### Step 1: Customize your server:
+- **Provider** — Choose from Azure or Google Cloud.
+- **Region** — Select the geographic location for your server.
+  PipeOps uses geo-location pricing to bill you in your local
+  currency, protecting you from exchange rate fluctuations.
+- **Per-hour rates** — CPU, Memory, and Storage rates are shown
+  for the selected region so you can estimate your usage costs
+  before proceeding.
 
-    - **Choose a preferred provider:** Digital Ocean, Google Cloud, Amazon Web Services, Azure, or Huawei Cloud.
+  ![Nova server configuration showing provider selection, region, and per-hour pricing](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-csp.png)
 
-    - **Select region:** Pick the geographic location for deploying your server. We've implemented a geo-location pricing model to ensure you're billed in your local currency, protecting you from exchange rate fluctuations.
+Click **Proceed** to create the server.
 
-    - **Review the monthly cost:** You can adjust resources such as CPU, memory, and storage to estimate your monthly cost.
+### Step 2: View Your Server
 
-![Cost Estimator](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/cost-estimator.png)
+Once provisioning is complete, your server will appear on the
+Servers list and is ready for project deployments. Click the server
+to open its overview page.
 
+From the server overview, you can monitor activity across the
+following tabs:
 
-#### Step 2: Click "Proceed" to finalize your set up:
+| Tab              | Description                                             |
+| ---------------- | ------------------------------------------------------- |
+| **Overview**     | Nodes, deployments, current resource usage, and events. |
+| **Metrics**      | CPU, memory, and storage usage over time.               |
+| **Events**       | Infrastructure-level events for the server.             |
+| **Nodes**        | Node-level details and status.                          |
+| **Environments** | Environments configured on this server.                 |
+| **Settings**     | Server configuration and management options.            |
 
-Once provisioning is complete, your server will be visible on your dashboard. You can proceed to deploy applications to the newly created server.
+![Nova server overview page showing nodes, deployments, usage, and events](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/pks-server-overview.png)
 
-![PKS Dashboard](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/pks-server-overview.png)
+## Provisioning with Bring Your Own Cloud (BYOC)
 
-### Provisioning On Cloud Provider
+### Step 1: Connect Your Cloud Account
 
-#### Step 1: Connect Your Cloud Account
+Select your cloud provider from the list — Google Cloud Platform,
+Amazon Web Services, Digital Ocean, or Azure — and click **Connect**
+to link your account.
 
-To create a server on your chosen cloud provider, you must first connect your account to PipeOps:
+![AWS selected from the integrations list](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-aws-page.png)
 
-- Select from AWS, Digital Ocean, Azure, Google Cloud, or Huawei Cloud.
-- Click on the **Connect** button to begin the integration process.
+For detailed steps on connecting each provider, see
+[Integrations](/docs/category/integrations). Once your account is
+connected, click **Proceed** to continue.
 
-![Connect Cloud Provider](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/integrations-page.png)
+### Step 2: Select Region and Security Standard
 
+Configure the deployment settings for your cloud server.
 
-Check out [Integrations](/docs/category/integrations) for detailed steps on how to link your cloud provider with PipeOps.
+![Create A New Server page showing region selection and security specification](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-5.png)
 
-#### Step 2: Configure Cloud Server
+1. **Select Region** — Choose the geographic location to deploy
+   your server.
+2. **Security Specification** — Select the standard that matches
+   your compliance requirements:
 
-Now that you’ve successfully connected your cloud account to PipeOps, let’s configure your server:
+| Standard               | Best For                                                                                                                   |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **PMS Standard**       | General deployments including containers, databases, Terraform, Helm, and other applications.                              |
+| **HIPAA Compliance**   | Deployments that handle healthcare data, ensuring compliance with the Health Insurance Portability and Accountability Act. |
+| **PCI DSS Compliance** | Businesses that process, store, or transmit credit card information.                                                       |
 
-1. Select your preferred deployment region.
-2. Define security standards: Select the appropriate option for compliance:
+Click **Next: Configure Method** to proceed.
 
-![Region and Specification Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/region-and-security-specification.png)
+### Step 3: Choose a Configuration Method
 
-   - **PMS:** A security standard suitable for general deployments, including containers, databases, Terraform, Helm, and other applications.
-   - **HIPAA Compliance:** A higher standard designed for users handling healthcare data, ensuring compliance with the Health Insurance Portability and Accountability Act (HIPAA).
-   - **PCI DSS Compliance:** Provides security measures for businesses processing, storing, or transmitting credit card information.
+Select how you want to manage server resources.
 
-3. Select **Next** to proceed.
+![Create A New Server page showing Custom Configuration and Karpenter options](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-custom-config-7.png)
 
-#### Step 3: Configure Method
+| Method                   | Description                                                                                           |
+| ------------------------ | ----------------------------------------------------------------------------------------------------- |
+| **Custom Configuration** | Manually configure CPU, memory, storage, and other specifications for precise control.                |
+| **Karpenter** _(Beta)_   | Automated scaling based on demand. Recommended for teams that prefer a hands-off approach to scaling. |
 
-There are two configuration methods when provisioning your server:
+Click **Next: Configure Resources** to proceed.
 
-![Configuration Method](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/configuration-method.png)
+### Step 4: Configure Resources
 
-- **Custom configuration:** This option allows you to manually configure CPU, memory, storage, and other specifications.
+The options available on this step depend on the configuration
+method you selected.
 
-- **Karpenter:** This automatically provisions and deprovisions resources based on demand. Consider Karpenter if you prefer automated scaling.
+**Custom Configuration**
 
-#### Step 4: Configure Resources
+Choose from predefined instance templates suited for different
+environments.
 
-The next step is to configure server resources. The details that appear on this tab depend on your chosen configuration method.
+![Configure Scaling and Resources Management page showing Dev/Staging, Production, and Expert Settings tabs with instance options and estimated cost](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-custom-config-8.png)
 
-**Custom configuration**  
-If you opt for Custom Configuration, you will be presented with predefined server templates. You can create a server for development, staging, and production.
+- **Environment Tab** — Switch between **Dev/Staging**,
+  **Production**, or **Expert Settings** to see relevant
+  instance options for each.
+- **Instance Category** — Select from **General purpose** or
+  **Compute optimized** instance types. Each card shows the
+  instance name, vCPUs, RAM, and Storage for that option.
+- **Estimated Cost** — An estimated monthly cost is displayed on
+  the right based on your current selection. Click **View
+  Breakdown** for a detailed cost summary.
 
-![Custom Configuration](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/scaling-configuration.png)
+For advanced control, switch to the **Expert Settings** tab to
+select from a wider range of instance types, specify node
+architecture, and define minimum and maximum node counts.
 
-- **Choose a deployment environment:** Dev, Staging, or Production.
-- **Select your preferred instance category:** General purpose, Compute optimized, or Memory optimized.
+**Karpenter** _(Beta)_
 
-You can also explore **Expert Settings** for advanced configurations. Here, you can select from over ten instance types, specify node architecture, and define the minimum and maximum number of nodes.
+Configure how your infrastructure scales, or leave settings on
+default and proceed.
 
-**Karpenter configuration**  
-If you select Karpenter, you’ll have additional options to define how your infrastructure scales. Alternatively, you can leave everything on default and proceed to the next step.
+![Karpenter configuration screen](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-karpentar-12.png)
 
-![Karpenter Configuration](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/karpenter-configuration.png)
+### Step 5: Create the Server
 
+Click **Create Server** to complete provisioning.
 
-#### Step 5: Finish Set Up
+Once provisioning is complete, your server will appear on the
+Servers list and its overview page will reflect the configuration
+method you chose.
 
-Click the "Create Server" button to finish set up. After the creation is complete, you can proceed to deploy applications to the newly created server.
+**Custom Configuration:**
 
-If you chose **Custom Configuration**, here’s what the server overview page will look like:
+![Server overview page for a Custom Configuration server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/no-karpenter-no-opencost.png)
 
-![Created Server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/no-karpenter-no-opencost.png)
+**Karpenter:**
 
+![Server overview page for a Karpenter server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/has-karpenter-has-opencost-no-grafana.png)
 
-If you selected **Karpenter**, your overview page will appear as shown below:
+## Provisioning with Bring Your Own Server (BYOS)
 
-![Created Server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/has-karpenter-has-opencost-no-grafana.png)
+The **Bring Your Own Server** option lets you connect an existing
+private or public machine, or a VM you control, directly to PipeOps.
+See [Bring Your Own Server](/docs/servers/bring-your-own-server) for
+the full setup steps.
 
+## Deleting a Server
 
-## Deleting Servers
+:::warning
+Deleting a server is permanent and cannot be undone. All projects
+and add-ons on the server must be removed before deletion can proceed.
+:::
 
-To permanently remove a server and all the projects deployed on it, follow the steps below:
+1. Delete all projects and add-ons associated with the server.
+2. In the left sidebar, click **Servers** and select the server
+   you want to delete.
+3. Click the three-dot menu in the top-right corner of the server
+   page.
 
-1. Delete all projects and addons associated with the server. You won’t be able to complete the deletion until these have been removed.
+![Three-dot menu on the server page revealing the delete option](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/delete-pipeops-server.png)
 
-2. After all associated resources are removed, go to your dashboard and select **“servers”** from the sidebar menu.
+4. Select **Delete Server**. A confirmation modal will appear.
 
-2. Click on the server you want to delete.
+![Server deletion confirmation modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/confirm-server-deletion%20modal.png)
 
-3. On the top right corner of your screen, click on the three dots. This reveals the delete option.
-
-![Delete Server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/delete-pipeops-server.png)
-
-4. Select **Delete Server**. A modal appears, prompting you to enter the name of the server to confirm deletion.
-
-![Confirm Server Deletion](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/confirm-server-deletion%20modal.png)
-
-5. Type in the name of your server and hit the delete button.
+5. Type the server name to confirm, then click **Delete**.

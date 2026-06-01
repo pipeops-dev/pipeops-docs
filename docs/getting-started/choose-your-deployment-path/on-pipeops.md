@@ -2,63 +2,124 @@
 slug: on-pipeops
 sidebar_position: 1
 title: On PipeOps
-description: "Deploy a server using PipeOps-managed hosting by choosing a cloud provider, selecting a region, and configuring resources."
+description: "Provision a cloud server and deploy your first project on PipeOps from GitHub, GitLab, Bitbucket, or Azure DevOps."
 ---
 
-In this section, we’ll walk you through creating a server on PipeOps, enabling seamless application deployment.
+# Deploy on PipeOps
 
-### Step 1: Choose PipeOps Hosting Option
+The following steps cover provisioning a PipeOps-managed server and deploying your first project — from choosing a plan to monitoring your live deployment.
 
-Whether you're continuing your account setup or adding an extra server, the following steps apply to both scenarios. After proceeding from the previous step, you’ll be directed to this page.
+## Before You Begin
 
-- You will be prompted to choose where you want to create your server.
-- Select "**On PipeOps**" as your server creation method.
+Ensure the following are in place before starting:
 
-![Choose path](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/provision-server-on-pipeops.png)
+- A PipeOps account
+- A repository hosted on GitHub, GitLab, Bitbucket, or Azure DevOps
+- Permission to install the PipeOps Git app on your organization
+
+### Step 1: Choose On PipeOps
+
+On the **Choose Your Deployment Path** page, select **On PipeOps**, then click **Proceed**.
+
+![Deployment Path page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-deployment-path.png)
 
 ### Step 2: Customize Your Server
 
-You'll then be directed to:
+Select the cloud provider and region where PipeOps will provision your server. The page displays hourly rates for CPU, memory, and storage for cost estimation.
 
-- **Choose a preferred provider:** Digital Ocean, Google Cloud, Amazon Web Services, Azure, or Huawei Cloud.
-- **Select region:** Pick the geographic location for deploying your server. We've implemented a geo-location pricing model to ensure you're billed in your local currency, protecting you from exchange rate fluctuations.
-- **Review the monthly cost:** You can adjust resources such as CPU, memory, and storage to estimate your monthly cost.
+Click **Proceed** once your provider and region are set.
 
-![Cost Estimator](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/cost-estimator.png)
-
-Use the sliders to adjust the following:
-
-- **CPU:** The number of virtual CPUs for your server. This determines the processing power available for running your applications.
-- **Memory:** This specifies the amount of RAM to allocate to your server. Sufficient memory is crucial for smooth operation, especially when running multiple applications or handling large datasets.
-- **Storage:** The storage capacity for your server, including the operating system and data.
-
-Note: This is an estimate to help you gauge costs. Your final charge will depend on your actual resource usage.
-
-
+![Server customization page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-csp.png)
 
 ### Step 3: Select a Plan
 
-After customizing your server, the next step is to choose a subscription that best fits your needs. PipeOps offers three pricing plans: **Growth, Scale,** and **Custom**, with monthly or yearly billing options.
+If you do not have an active subscription, PipeOps displays the plan selection paywall. Choose a plan, toggle between **Monthly** and **Yearly** billing to compare pricing, then click **Subscribe** on the preferred plan.
 
-To learn more about each plan, its features, and billing methods, check out our [pricing section](/docs/pricing.md).
+Each plan displays its included limits for reference.
 
-![Plan Modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/plan-modal.png)
+> **Note:** If you already have an active subscription, skip this step. Continue creating servers and deploying projects within the limits of your current plan.
 
-### Step 4: Select Payment Method
+![Select a Plan modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-plan-modal.png)
 
-After choosing your preferred plan, a confirmation modal appears. Review your subscription plan and select a payment method to finalize your setup. You can select from popular payment methods, including Stripe and Paystack.
+### Step 4: Confirm and Subscribe
 
-After selecting a payment method, you’ll be redirected to a secure checkout page.
+Review your plan details before completing the subscription. Any applicable free trial or workspace credit will appear on this page.
 
-![Payment Modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/payment-modal.png)
+Select a payment method, then click **Proceed to Subscribe**.
+
+![Plan confirmation panel](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-plan-confirmation.png)
 
 ### Step 5: Access Your Dashboard
 
-Once your payment is confirmed, you will receive a pop-up notification. Your dashboard will then be available, allowing you to deploy applications to your newly created server.
+Once the subscription is confirmed — or if an active subscription already exists — PipeOps provisions your server and opens your dashboard. The server is now ready for deployments.
 
-![Dashboard](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/welcome-dashboard.png)
+### Step 6: Connect a Git Provider and Select a Source
 
-### Step 6: Proceed to Project Deployment
+PipeOps supports the following Git providers:
 
-You can now proceed to deploy applications into your server.
-See the [project deployment guide](/docs/projects/project-deployment.md) for a comprehensive guide to getting your applications up and running with PipeOps.
+- GitHub
+- GitLab
+- Bitbucket
+- Azure DevOps
+
+![Connect a Git provider or deploy a template project](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-connect-git-provider.png)
+
+On the project deployment page, select **From Repository**, choose a Git provider,
+
+![Deploy from repository page with Git provider selection](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-git-provider.png)
+
+then select or add an organization. If prompted, install the PipeOps Git app to grant access to your repositories.
+
+![Git organization selection and PipeOps Git app installation prompt](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-organization.png)
+
+Alternatively, select **From Templates** to deploy a pre-built starter project.
+
+### Step 7: Select a Repository and Branch
+
+Choose the repository to deploy,
+
+![Repository selection list with search field](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-repo.png)
+
+then select the branch PipeOps should build from. Click **Proceed**.
+
+![Branch selection page with a selected branch](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-branch.png)
+
+### Step 8: Review the Project Summary
+
+Confirm the project configuration before proceeding:
+
+- **Project name** — update as needed
+- **Deployment environment** — select from available environments or create a new one. PipeOps includes Production and Beta by default; additional environments can be created up to the limit your plan allows
+- **Target server** — the server provisioned in Step 5
+- **CPU and memory** — adjust resource allocation as needed
+- **Project source** — verify the correct repository and branch are selected
+
+Click **Proceed** when the configuration is correct.
+
+![Project Summary page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-project-summary-config.png)
+
+### Step 9: Configure Build Settings
+
+PipeOps detects your framework and recommends a build method automatically. Review and adjust the following as needed before deploying:
+
+- **Build method and framework**
+- **Networking** — enable public access, configure custom domains, or set up TCP proxy settings
+- **Environment variables** — add any variables the application requires at runtime
+
+Click **Deploy Project** to start the deployment.
+
+![Project Build Settings page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-project-build-settings-config.png)
+
+### Step 10: Monitor the Deployment
+
+Track progress in the deployment pipeline. Build logs and app logs update in real time.
+
+![Deployment pipeline with live build logs](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-project-build-logs.png)
+
+### Step 11: Deployment Complete
+
+When the deployment succeeds, PipeOps confirms that the project is live.
+
+![Project Deployed success modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-project-successful-deployment-modal.png)
+
+The project is now running on the newly created server. To manage environments, configure custom domains, or set up CI/CD triggers, see the [Project Deployment guide](/docs/category/projects).

@@ -2,55 +2,47 @@
 slug: project-metrics
 sidebar_position: 4
 title: Project Metrics
-description: "Access and explore CPU, memory, and other performance metrics for your deployed projects in PipeOps."
+description: "Access and explore performance metrics for deployed projects in PipeOps including CPU, memory, storage, and network I/O."
 ---
 
 # Project Metrics
 
-## Overview
+The **Metrics** tab gives you a real-time and historical view of your project's performance across CPU, memory, storage, and network activity. Use these charts to spot usage trends, identify resource bottlenecks, and track how your project behaves over time.
 
-This documentation guides you through the process of accessing and exploring metrics for your deployed projects using PipeOps. With PipeOps, you can gain valuable insights into the performance and behavior of your projects.
+## Accessing Metrics
 
-## Accessing Project Metrics
+Navigate to your project and click the **Metrics** tab. The **Overview** section loads by default, showing a summary of all key metrics at a glance — including current CPU and memory usage gauges, used/total resource tiles, and time-series charts for storage and memory.
 
-To view the metrics for your project, follow these steps:
+![project Metrics Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-server-metrics.png)
 
-1. Navigate to your Project's main page in PipeOps.
-2. Click on the "Metrics" tab to view a high-level summary of your project’s performance.
+## Filtering by Time Period
 
+Use the **Period** dropdown at the top of the page to filter all charts by a relative time window (e.g. `5m`, `15m`, `1h`). All charts update simultaneously when the period changes.
 
-![Project Metrics Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-overview-metrics.png)
+## Metric Sections
 
-The image above illustrates the project metrics overview, offering a quick glimpse of how your project is performing in various metrics.
+Use the left sidebar to navigate between metric categories. Each section provides a dedicated time-series chart for that resource.
 
-## Exploring Individual Metrics
+### CPU
 
-PipeOps allows you to dive deeper into the details of each metric. Let's explore some key metrics available:
+Shows the processing power consumed by your project over the selected period. Use this to identify compute spikes or sustained high load that may require scaling.
 
-### CPU Metric
+![CPU Metric](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-cpu-metrics.png)
 
-The CPU metric provides insights into the CPU usage of your project, helping you understand the processing power consumed by your application. Here's an example of how the CPU metric might be visualized:
+### Memory
 
-![CPU Metric Example](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-cpu-metrics.png)
+Shows how much memory your project is consuming over time. The Overview also surfaces a **Restart Count** chart — a flat line at zero indicates no unexpected restarts. Rising memory that doesn't level off may indicate a memory leak or a need to increase your resource allocation.
 
-### Memory Metric
+![Memory Metric](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-memory-metrics.png)
 
-The memory metric provides information about the memory usage of your project, offering visibility into how much memory your application is utilizing. Here's an example of how the memory metric might be represented:
+### Storage
 
-![Memory Metric Example](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-memory-metrics.png)
+Tracks disk space usage over time. Particularly useful for database projects where storage is expected to grow steadily. Monitor this to avoid running out of disk space unexpectedly.
 
-### Storage Metric
+![Storage Metric](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-storage-metrics.png)
 
-The storage metric focuses on the storage usage of your project, helping you track the amount of disk space your application occupies. Here's an example of how the storage metric might be displayed:
+### Network I/O
 
-![Storage Metric Example](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-storage-metrics.png)
+Shows inbound (**Data Received**) and outbound (**Data Sent**) transfer activity over time. Use this to understand traffic patterns and detect unusual spikes in data transfer.
 
-### Network I/O Metric
-
-The network I/O metric provides insights into the input and output activity of your project, offering an understanding of data transfer between your application and external systems. Here's an example of how the network I/O metric might be visualized:
-
-![Network I/O Metric Example](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-network-metrics.png)
-
-By exploring these individual metrics, you can gain a comprehensive understanding of how your project performs in different areas.
-
-With PipeOps project metrics, you have the power to monitor and analyze your project's metrics effectively. Leverage these insights to optimize performance, identify bottlenecks, and make data-driven decisions.
+![Network I/O Metric](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-network-metrics.png)

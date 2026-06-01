@@ -1,79 +1,108 @@
 ---
 sidebar_position: 1
-description: "Create a PipeOps account using GitHub, GitLab, BitBucket, or email with this step-by-step registration guide."
+description: "Create a PipeOps account using GitHub, GitLab, Bitbucket, Google, email, or a passkey with this step-by-step registration guide."
 ---
 
 # User Registration Guide
 
 ## Setting Up Your PipeOps Account
 
-Welcome to PipeOps! In this guide, we'll walk you through the seamless registration process to get started with your PipeOps account.
+Welcome to PipeOps! This guide walks you through creating an account and completing the onboarding questions that help personalize your workspace.
 
 ## Step 1: Visit the Home Page
 
-Open your preferred web browser and navigate to the PipeOps homepage. You can use the direct URL: [https://pipeops.io](https://pipeops.io).
+Open your preferred web browser and go to the PipeOps homepage: [https://pipeops.io](https://pipeops.io).
 
-![PipeOps homepage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/landing-page.png)
+![PipeOps Homepage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/pipeops-landing-page-homepage.png)
 
 ## Step 2: Visit the Registration Page
 
-To begin the registration process, click on the "**Sign Up**" button in the top right corner. This will redirect you to the PipeOps console sign-up page. Alternatively, you can skip step 1 and use the direct URL: [https://console.pipeops.io/auth/signup](https://console.pipeops.io/auth/signup).
+Click **Sign In** in the top navigation. The Sign In page also handles new account creation.
 
-![PipeOps homepage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/landing-page-sign-up.png)
+![PipeOps Sign Up Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/pipeops-sign-up-page.png)
 
 ## Step 3: Sign Up Options
 
-In the 'Create an account' sign up box, you have four options. You can sign up using your existing:
+On the **Create an account** page, choose how you want to sign up. You can create your account using:
 
-- GitHub account
-- GitLab account
-- BitBucket account
-- Email address and password
+- GitHub
+- GitLab
+- Bitbucket
+- Google
+- Microsoft
+- Email
+- Passkey
 
-If you choose GitHub, GitLab, or Bitbucket, ensure that you're already logged into your account. You'll be prompted to authorize PipeOps to connect to your account.
+If you choose a provider such as GitHub, GitLab, Bitbucket, Google, or Microsoft, follow the authorization prompts to continue. To register with your email address, click **Continue with email**.
 
-![PipeOps homepage](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28014413/Screenshot-2024-06-27-223350.png)
+To register with a passkey, click **Continue with a passkey** and follow the prompts from your browser or device.
 
-## Step 4: Signing up using Your Email Address and Password
+## Step 4: Sign Up With Email
 
-On the registration page, enter your first name, last name, and email address. Ensure you provide a valid email address, as it will serve as your primary contact for important updates and notifications. After entering your email, create a secure password and click '**Proceed**' to continue.
+Enter your full name, email address, and password, then click **Sign up**.
+
+Use an email address you can access, as PipeOps sends a verification code to complete registration.
+
+Your password must meet these requirements:
+
+- 12 or more characters
+- No spaces
+- ASCII characters only
+- At least one lowercase letter
+- At least one uppercase letter
+- At least one number
+- At least one special character
+- Must not be common
+- No sequential characters
+- No two consecutive identical characters
+
+![PipeOps Sign Up Form](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/pipeops-sign-up-form.png)
 
 ## Step 5: Verify Your Email Address
 
-You will be redirected to a page requesting your registration OTP. Check your email inbox for a verification message containing the token, paste it into the provided box, and proceed.
+After signing up with email, PipeOps displays the **Verify OTP** page. Check your inbox for the OTP sent to your email address, enter the code, and click **Proceed**.
 
-![PipeOps homepage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/otp-verification.png)
+The OTP expires after 5 minutes. If you do not receive the code or it expires, click **Resend** to request for a new code.
+
+<!-- PLACEHOLDER: [Screenshot 4] — Verify OTP page with code fields and Proceed button -->
+
+![PipeOps OTP Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-otp-page.png)
 
 ## Step 6: Customize Your Workspace
 
-To personalize your PipeOps experience, we want to understand your specific requirements. This helps us provide you with the most relevant features and support for your development workflow. Please take a moment to answer the following questions:
+After verification, PipeOps asks a few quick questions to customize your experience.
 
-1. **Workspace Name:**
+First, enter a workspace name. This name helps you identify and organize your projects in PipeOps.
 
-   - This section prompts you to choose a name for your workspace. The workspace name helps you organize and distinguish your projects within PipeOps.
+<!-- PLACEHOLDER: [Screenshot 5] — Workspace name screen with a workspace name input field -->
 
-![Workspace name](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/choose-workspace-name.png)
+![PipeOps Workspace Form](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-specify-workspace-name.png)
 
-2. **Your Role/Job Title:**
+Next, answer the onboarding questions:
 
-   - Here, you can specify your role or job title, which provides context for your usage of PipeOps. Whether you're a software developer, founder, or DevOps engineer, identifying your role will help us serve you better.
+1. **What role best describes you?**
 
-![Role](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/role-survey-question.png)
+   Choose the option that best matches your role, such as Founder/Co-Founder/C-Executive, Software Engineer/Developer, DevOps Engineer, or Others.
 
-3. **Your Goal of Using PipeOps:**
-   - Choose your primary goal for using PipeOps, such as exploring its features for your company or deploying a simple project to the cloud. This helps us offer relevant guidance and support.
+![PipeOps Role selection question](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-role-page.png)
 
-![Goal](https://d23lxlhhocltbo.cloudfront.net/wp-content/uploads/2024/06/28015249/2-2.png)
+2. **What type of project do you plan on deploying?**
 
-4. **How you Discovered PipeOps:**
-   - This section inquires about how you found out about PipeOps. Whether through LinkedIn, a Google search, or another avenue, knowing how users discover PipeOps helps us improve and reach more people.
+   Select the project type that best describes what you want to deploy, such as a personal project, open source project, startup/business project, private project, or case study/portfolio project.
 
-![Discover ](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/discovery-survey-question.png)
+![PipeOps Project type question](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-signup-project-type-question.png)
 
-Once you've answered these questions, your workspace will be configured accordingly, providing a personalized experience tailored to your needs.
+3. **How did you discover PipeOps?**
+
+   Choose how you found PipeOps, such as Google Search, the PipeOps website, LinkedIn, Twitter, a blog post, a referral, a team invite, or Others.
+
+![Discovery source question](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-signup-discovery-question.png)
 
 ## Step 7: Complete Registration
 
-After customizing your workspace, you're now ready to complete the registration process. Review the information you've provided, make any necessary adjustments, and click the "**Finish**" button.
+After entering your workspace name and answering the onboarding questions, click **Proceed** to complete registration.
 
-You are set to proceed with deploying your server either on PipeOps or a cloud provider. Head to the [Deployment Path](/docs/category/choose-your-deployment-path) section for guidance.
+Next, choose where you want to deploy:
+
+- [Deploy on PipeOps](/docs/getting-started/choose-your-deployment-path/on-pipeops)
+- [Deploy on your cloud provider](/docs/getting-started/choose-your-deployment-path/on-cloud-provider)

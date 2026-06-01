@@ -2,39 +2,92 @@
 slug: gcp-on-pipeops
 sidebar_position: 2
 title: Connect GCP to PipeOps
-description: "Integrate your GCP account with PipeOps by uploading JSON credentials to enable server creation and project deployment."
+description: "Integrate your GCP account with PipeOps by uploading JSON 
+credentials to enable server creation and project deployment."
 ---
 
-# Connecting GCP Account to PipeOps
+# Connect GCP to PipeOps
 
-## Overview
+Connecting your GCP account to PipeOps lets you provision GCP servers
+and deploy projects directly from your PipeOps dashboard. The
+connection requires a GCP service account JSON key file, which you
+can generate directly from within the connection flow.
 
-This documentation will guide you through the process of connecting your GCP account to PipeOps. By following these steps, you’ll be able to create a GCP server on PipeOps and deploy projects on the server directly from your PipeOps dashboard.
+## Connect Your GCP Account
 
-## Steps to follow
+### Step 1: Open the Integrations Page
 
-To connect your GCP account to PipeOps, follow these steps:
+In the left sidebar, click **Integrations**.
 
-1. Ensure you have downloaded your GCP JSON credentials. If not, you can follow the guide [here](/docs/how-to-guides/tutorials/generate-gcp-json-credentials).
+![Steps to navigate to the integrations page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/navigating-to-integrations-page.png)
 
-2. On the left menu, click on the "Integrations" tab.
+:::note
+You can also get here by clicking **+ New** in the top-right corner
+of your dashboard and selecting **Add Server** under **Action**, then
+choosing to connect a new cloud provider.
+:::
 
-![PipeOps Cloud Integration Tab](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-gcp.png)
+### Step 2: Select Google Cloud Platform
 
-3. Select "Google Cloud Platform" from the list of cloud providers shown and click the "Connect" button.
+From the list of cloud providers, find **Google Cloud Platform** and click **Connect**.
 
+![Integrations Page With GCP selected](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-gcp-page.png)
 
-4. An instruction screen appears, outlining the steps required to generate your GCP credentials.
-   You can follow this guide [here](/docs/how-to-guides/tutorials/generate-gcp-json-credentials) for a detailed walkthrough.
+A side drawer labeled **Connect GCP** will open.
 
-![GCP Instruction Screen](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-gcp-step-one.png)
+### Step 3: Generate Your GCP Credentials
 
+The first screen in the drawer — **Generate GCP Credentials** — walks
+you through creating a service account and downloading your JSON key
+file. Follow the three steps shown:
 
-5. On the "Upload Credentials JSON" screen, you can provide an optional name to identify your uploaded GCP JSON credentials. The optional field is useful in scenarios where you want to connect more than one GCP account on PipeOps.
+1. **Open Google Cloud Console** — Log in to the
+   [Google Cloud Console](https://console.cloud.google.com) and create
+   a new project or open an existing one.
 
-![PipeOps GCP JSON Credentials Upload Screen](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-gcp-step-two.png)
+2. **Run the Setup Command** — Open Google Cloud Shell in your project,
+   paste the command below, and run it to create a service account and
+   generate the `key.json` file.
 
-6. Click on the submit button at the bottom right. If the JSON credentials are valid, your GCP account will be successfully connected.
+```bash
+   curl -fsSL https://get.pipeops.dev/create_credentials | bash
+```
 
+Click **Copy** in the drawer to copy the command to your clipboard.
 
-Now that you've connected your GCP account to PipeOps, you can create a server on your connected GCP account using this [guide](/docs/servers/server-provisioning).
+3. **Download & Upload the Key File** — In Cloud Shell, click
+   **Download**, enter the path `~/key.json`, and download the file
+   to your machine.
+
+   ![Connect GCP drawer showing Generate GCP Credentials steps and curl command](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-gcp-modal-step-1.png)
+
+Once you have your `key.json` file downloaded, click **Proceed** in
+the drawer to continue.
+
+:::note
+For a detailed walkthrough of the credential generation process, see
+[Generate GCP JSON Credentials](/docs/how-to-guides/tutorials/generate-gcp-json-credentials).
+:::
+
+### Step 4: Upload Your Credentials
+
+The second drawer screen — **Upload Credentials JSON** — is where you
+connect the account.
+
+1. **Name** _(optional)_ — Enter a label to identify this GCP account
+   in PipeOps. This is useful if you plan to connect more than one
+   GCP account.
+2. **Upload the JSON key file** — Click **Upload File** and select the
+   `key.json` file you downloaded in the previous step.
+3. Click **Connect Account**.
+
+![Connect GCP drawer showing Upload Credentials JSON screen](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-gcp-modal-step-2.png)
+
+If the credentials are valid, your GCP account will be connected and
+appear under Google Cloud Platform on the Integrations page.
+
+![Connected GCP Integration](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connected-gcp-integration.png)
+
+Your GCP account is now connected to PipeOps. You can proceed to
+provision a server on your connected GCP account — see
+[Server Provisioning](/docs/servers/server-provisioning).

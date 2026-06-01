@@ -5,67 +5,67 @@ title: Understanding Project States
 description: "Reference guide for all PipeOps project lifecycle states including deployment, paused, error, and pending states."
 ---
 
-# Understanding Project States in PipeOps
+# Understanding Project States
 
-Your PipeOps projects can exist in a variety of system states, such as **Running**, **Paused**, **Deploying,** and more. These states reflect the current status of your project’s lifecycle — from initial creation to deployment, maintenance, or failure.
+PipeOps projects can exist in a variety of states that reflect where they are in their lifecycle — from initial creation through active deployment, maintenance, and failure recovery.
 
-**Note**: While this section focuses on project states, many of the definitions below also apply to servers on PipeOps.
-
+:::note
+While this page focuses on project states, most of the states described below also apply to servers on PipeOps.
+:::
 
 ## Deployment States
 
-These states indicate the lifecycle of your application or server from creation to active execution.
+States that reflect the lifecycle of your project from creation to active execution.
 
-- **Creating** – The project is in the process of being created.
-- **Deploying** – The project is being deployed and is not yet operational.
-- **Updating** – The project is undergoing updates, which may affect availability.
-- **Running** – The project is actively running and operational.
-- **Active** – Similar to "Running," indicating full functionality.
-- **Deployed** – The deployment process has been completed successfully.
-
+| State         | Description                                                             |
+| ------------- | ----------------------------------------------------------------------- |
+| **Creating**  | The project is being created and is not yet ready.                      |
+| **Deploying** | A deployment is in progress. The project is not yet operational.        |
+| **Updating**  | The project is being updated. Availability may be temporarily affected. |
+| **Deployed**  | The deployment completed successfully.                                  |
+| **Running**   | The project is active and fully operational.                            |
+| **Active**    | The project is fully functional. Equivalent to Running.                 |
 
 ## Paused & Inactive States
-These states indicate that the project is not currently running but has not encountered a failure.
 
-- **Paused** – The project has been intentionally paused by the user.
-- **Inactive** – The project is in a dormant state but not deleted.
-- **Deactivated** – The project has been turned off but can be reactivated.
+States indicating the project is not running but has not encountered a failure.
 
+| State           | Description                                             |
+| --------------- | ------------------------------------------------------- |
+| **Paused**      | The project was intentionally paused by the user.       |
+| **Inactive**    | The project is dormant but has not been deleted.        |
+| **Deactivated** | The project has been turned off but can be reactivated. |
 
 ## Error & Failure States
-These states indicate issues that require user intervention.
 
-- **Failed** – The project failed to deploy or encountered a critical issue.
-- **Crashed** – The project stopped running unexpectedly.
-- **OutOfMemory** – The project ran out of available memory.
-- **Maxed_Out** – The allocated resources (such as CPU or memory) have been exceeded, potentially affecting performance or stability.
-- **Unschedulable** - Your workload cannot be assigned to any available server or node due to resource constraints or configuration issues. This means your deployment is currently blocked.
-Please contact our support team to help resolve this issue and get things back on track.
+States that indicate an issue requiring your attention.
 
+| State             | Description                                                                                                                                                                                                                                                                 |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Failed**        | The project failed to deploy or encountered a critical error.                                                                                                                                                                                                               |
+| **Crashed**       | The project stopped running unexpectedly. PipeOps will typically attempt to recover a crashed project automatically — however, the status may take some time to reflect the latest state. Check your project directly to confirm whether it has recovered or is still down. |
+| **OutOfMemory**   | The project ran out of available memory.                                                                                                                                                                                                                                    |
+| **Maxed Out**     | Allocated resources such as CPU or memory have been exceeded, which may affect performance or stability.                                                                                                                                                                    |
+| **Unschedulable** | The workload cannot be assigned to any available node due to resource constraints or configuration issues. The deployment is blocked. Contact [support](mailto:support@pipeops.io) to resolve this.                                                                         |
+
+Check the [Logs](/docs/projects/logs-and-events.md) tab for details when investigating any of the above states.
 
 ## Deletion States
-These states indicate user-initiated actions to remove or stop a project.
 
-- **Cancelled** – The project has been successfully canceled.
-- **Deleting** – The project is being deleted and will no longer be available.
-
+| State         | Description                                                                                     |
+| ------------- | ----------------------------------------------------------------------------------------------- |
+| **Deleting**  | The project is being removed and will no longer be available once complete.                     |
+| **Cancelled** | A specific deployment was cancelled and did not complete. The project itself remains available. |
 
 ## Success States
-These confirm that a project or server has completed an action successfully.
-- **Successful** – The project or server has completed deployment without issues.
 
+| State          | Description                                                     |
+| -------------- | --------------------------------------------------------------- |
+| **Successful** | The project or server completed its last action without issues. |
 
 ## Restricted & Special States
-- **Cordorned** – New changes cannot be made to your project or server.
-- **Degraded** – This shows the last or recent deployment has issues and might affect your current running project.
 
-
-### How to Use States for Monitoring
-- Regularly check the state of your applications on the dashboard to ensure smooth operations.
-
-- Investigate error states such as "Out of Memory" or "Crashed" by accessing logs via the [Logs](/docs/projects/logs-and-events.md) tab for troubleshooting.
-
-- Use action states like "Updating" or "Deleting" to track ongoing processes and avoid interruptions.
-
-## Conclusion
-Understanding these states allows you to effectively monitor your applications and servers on PipeOps, ensuring timely responses to issues and maintaining optimal performance.
+| State        | Description                                                                          |
+| ------------ | ------------------------------------------------------------------------------------ |
+| **Cordoned** | New changes cannot be made to the project or server.                                 |
+| **Degraded** | The most recent deployment has issues that may affect the currently running project. |
