@@ -2,39 +2,59 @@
 slug: server-pricing
 sidebar_position: 8
 title: Server Pricing
-description: "Understand estimated cloud cost breakdowns for servers deployed through PipeOps including per-resource pricing details."
+description: "Understand estimated cloud cost breakdowns for servers 
+deployed through PipeOps including per-resource pricing details."
 ---
 
 # Server Pricing
-This documentation provides an overview of the **Server Pricing** feature on PipeOps. Server Pricing gives you an estimated breakdown of cloud costs based on the resources provisioned through PipeOps. This feature is useful for users deploying servers to their cloud accounts, offering transparency on monthly cost estimates.
+
+The **Pricing** tab shows an estimated monthly cost breakdown for
+the resources provisioned on your server through PipeOps.
+
+:::note
+The Pricing tab is available on **Bring Your Own Cloud** servers
+only. Nova server costs are tracked separately in the
+[Usage](/docs/usage) section.
+:::
 
 ## Accessing Server Pricing
-To access server pricing, follow these steps:
-1. Navigate to the **Servers** section.
-2. Select the desired server from the list.
-3. Click on **Pricing** to open its dashboard.
 
+From the **Servers** section, select a BYOC server and click the
+**Pricing** tab.
 
-### Key Sections
+![Server Pricing Breakdown](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-pricing.png)
 
-The main information displayed on the Server Pricing page includes:
+## Pricing Information
 
-**Total Costs**  
-You will view the total estimated monthly cost for the provisioned resources here.
+The Pricing tab displays the following:
 
-**Region**  
-This shows the geographical region where the server is deployed. Cloud costs often vary based on region due to differences in infrastructure, energy costs, and demand.
+| Field              | Description                                                                    |
+| ------------------ | ------------------------------------------------------------------------------ |
+| **Total Costs**    | The total estimated monthly cost for all provisioned resources on this server. |
+| **Region**         | The geographic region where the server is deployed. Pricing varies by region.  |
+| **Default Node**   | The primary node instance type configured for the server.                      |
+| **Cost Breakdown** | An itemized estimate of monthly costs per resource type.                       |
 
-**Default Node**  
-This specifies the primary node configuration for the server.
+## Cost Breakdown
 
-**Cost Breakdown**  
-PipeOps details the monthly cost estimate of what you are provisioning through the platform. You will be able to view an estimate for resources, such as:
+The cost breakdown lists estimated monthly costs for each resource
+component provisioned through PipeOps. The specific line items
+depend on the cloud provider your server is connected to.
+
+For example, an AWS-connected server may show:
+
 - Memory
 - Dedicated instance
 - Storage volume
 - Elastic Kubernetes Service (EKS)
 - Elastic Load Balancer
 
-The **Server Pricing** section in PipeOps is designed to offer a clear breakdown of estimated costs for servers deployed to your cloud account. This feature enhances cost predictability, helping you budget effectively while avoiding unexpected charges.
+A GCP or Azure-connected server will display equivalent cost
+components for those providers.
 
+:::note
+All costs shown are **estimates** based on the resources currently
+provisioned. Actual charges are determined by your cloud provider
+and may differ based on usage, reserved pricing, or provider
+discounts.
+:::

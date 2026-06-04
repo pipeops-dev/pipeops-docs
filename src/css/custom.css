@@ -131,6 +131,44 @@ a.navbar__brand {
   align-items: center;
 }
 
+.dsla-search-wrapper {
+  display: flex;
+  align-items: center;
+  min-width: 10rem;
+}
+
+.dsla-search-wrapper .aa-Autocomplete,
+.dsla-search-wrapper .dsla-search-field {
+  width: 100%;
+}
+
+.dsla-search-wrapper .aa-DetachedSearchButton,
+.dsla-search-wrapper .aa-Form {
+  background: #1f1f21;
+  border: 1px solid #363538;
+  border-radius: 9999px;
+  color: #d8d8d8;
+}
+
+.dsla-search-wrapper .aa-DetachedSearchButton {
+  height: 2.25rem;
+  padding: 0 0.85rem;
+}
+
+.dsla-search-wrapper .aa-Input,
+.dsla-search-wrapper .aa-DetachedSearchButtonPlaceholder {
+  color: #d8d8d8;
+}
+
+.dsla-search-wrapper .aa-Input::placeholder {
+  color: #a0a0a0;
+}
+
+.dsla-search-wrapper .aa-DetachedSearchButtonIcon,
+.dsla-search-wrapper .aa-SubmitIcon {
+  color: #825dff;
+}
+
 a.card {
   background: #1f1f21;
   border-radius: 28px;

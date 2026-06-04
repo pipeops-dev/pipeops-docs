@@ -2,82 +2,136 @@
 slug: server-overview
 sidebar_position: 2
 title: Server Overview
-description: "View your server dashboard in PipeOps including node details, deployments, resource usage, cost breakdown, and Grafana monitoring."
+description: "View server details in PipeOps across Nova, Bring Your 
+Own Cloud, and Bring Your Own Server provisioning methods."
 ---
 
 # Server Overview
 
-Here, we’ll talk about the Server Overview feature on PipeOps. This dashboard provides a snapshot of your server’s essential details and associated resources.
+The **Overview** tab is the default page when you open a server in
+PipeOps. It gives you a quick summary of the server's status,
+infrastructure details, resource usage, active deployments, and
+recent events.
 
-The Overview tab is the default landing page when you select a server. Some details may vary depending on whether you created your server using **PipeOps** or a **cloud provider**.
+The exact layout and available sections vary depending on how the
+server was provisioned — [On PipeOps](/docs/getting-started/choose-your-deployment-path/on-pipeops),
+[Bring Your Own Cloud](/docs/getting-started/choose-your-deployment-path/on-cloud-provider),
+or [Bring Your Own Server](/docs/getting-started/choose-your-deployment-path/bring-your-own-server)
+— but the core questions it answers are the same: where is this
+server running, what is deployed on it, how much capacity is in use,
+and are there any events that need attention?
 
-On this page, you will see your server's name and a banner containing the following information:
+## Accessing the Overview
 
-- **Created**: The date and time your server was created.
-- **Region**: The location where your server is currently deployed.
-- **Provider**: The cloud provider on which your server is hosted.
-- **Kubernetes Version**: The current Kubernetes version running on your server.
+From the **Servers** section, select a server. The **Overview** tab
+opens by default. If you are in another tab, click **Overview** in
+the server navigation to return to it.
 
-![Server Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/pks-server-overview.png)
+## Server Details Banner
 
-Additionally, you will find cards displaying the following server-related information:
+At the top of every Overview tab, a details banner summarizes the
+server's infrastructure metadata.
 
-- **Nodes**: The number of active nodes currently running on your server.
-- **Deployments**: The total number of deployments on your server, including both projects and add-ons.
-- **Total Resources**: Get a summary of your server’s capacity and utilization here. Stay informed about the number of unused environments, active subscriptions, team members, your current plan, and available credits.
-- **Current Usage**: This field provides a cost breakdown of your infrastructure usage powered by **OpenCost**.
- - **Grafana Labs:** This metric is available to users who have installed the Grafana add-on. You can open the Grafana dashboard and monitor your server in real time.
+| Field                  | Description                                                                                   |
+| ---------------------- | --------------------------------------------------------------------------------------------- |
+| **Created**            | How long ago the server was created or connected.                                             |
+| **Region**             | The deployment region or gateway region associated with the server.                           |
+| **Provider**           | The infrastructure provider — such as PipeOps PKS, Amazon EKS, or another connected provider. |
+| **Kubernetes Version** | The Kubernetes version running on the server.                                                 |
+| **Egress IP**          | The outbound IP address used by the server. Availability depends on the server type.          |
 
-![Grafana Server Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/grafana.png)
+## Summary Cards
 
+Below the details banner, three summary cards show the server's
+current scale and activity.
 
-From the overview page, you will also see a **navigation menu** to other sections related to your server.
+| Card                | What it shows                                                                                                           |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **Nodes**           | The number of nodes currently attached to the server. Click to open node-level details.                                 |
+| **Deployments**     | The number of projects and add-ons deployed to this server.                                                             |
+| **Total Resources** | The combined count of Kubernetes resources — such as pods, services, and config maps — currently tracked on the server. |
 
-- If you created a server on **PipeOps**, your navigation menu will include:
+## PipeOps Nova Server Overview
 
-  - **Overview** tab
-  - **Metrics** tab
-  - **Events** tab
-  - **Nodes** tab
-  - **Environments** tab
-  - **Settings** tab
- 
- ![PKS Server Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/pks-server-overview.png)
+Nova servers are provisioned and managed by PipeOps. Their overview
+focuses on the resources PipeOps provisions and bills for on your
+behalf.
 
-- If you deployed a server using a **cloud provider**, your navigation menu will include everything from the **PipeOps** server, plus:
-  - **Add-ons** tab
-  - **Dashboard/Prometheus** tab
-  - **Pricing** tab
-  - **Update History** tab
+![PipeOps Nova server overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-create-nova%20server-overview-page.png)
 
-![Created Server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/no-karpenter-no-opencost.png)
+| Section                                 | What it shows                                                      |
+| --------------------------------------- | ------------------------------------------------------------------ |
+| **Server Details**                      | Created date, region, provider, Kubernetes version, and egress IP. |
+| **Nodes, Deployments, Total Resources** | High-level counts for the server.                                  |
+| **Current Usage**                       | CPU, memory, and storage costs for the current month.              |
+| **Usage & Capacity**                    | Capacity indicators for pods, CPU cores, and memory.               |
+| **K8 Dashboard**                        | A shortcut for Kubernetes cluster monitoring, when available.      |
+| **Events**                              | Recent server events with severity, time, and summary.             |
 
+## Bring Your Own Cloud Server Overview
 
-You can also view real-time server events with a **Severity** filter to display specific event types. Events are displayed in a table with the following columns:
+BYOC servers run in a cloud account you connected to PipeOps. The
+overview reflects cloud-provider-specific infrastructure and may
+include additional sections depending on the provider and
+configuration method selected during provisioning.
 
-- **Severity**: Filters events by severity level (**Normal**, **Warning**, and **Error**).
-- **Time**: Displays the timestamp of when the event occurred.
-- **Summary**: Provides a brief summary of the incident details.
+![Cloud provider server overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-created-custom-overview-details.png)
 
-## Conclusion
+| Section                                 | What it shows                                                                                                   |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Server Details**                      | Created date, region, connected provider, and Kubernetes version.                                               |
+| **Nodes, Deployments, Total Resources** | A summary of the resources PipeOps tracks in the connected cluster.                                             |
+| **Add-ons**                             | Installed or available cluster add-ons such as autoscaling, certificate management, or secret management tools. |
+| **Events**                              | Recent server events with severity, time, and summary.                                                          |
 
-This page serves as a central hub for managing and monitoring your server, providing all the essential information at a glance. Use the tab navigation menu to explore additional aspects of your server.
+## Bring Your Own Server Overview
 
-## Managing Servers via CLI
+BYOS servers are machines or VMs you connected to PipeOps. The
+overview reflects the connected machine's agent-reported state.
 
-You can also manage your servers using the PipeOps CLI:
+![Bring Your Own Server overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-byos-overview-page.png)
 
-```bash
-# List all servers
-pipeops server list
+| Section                                 | What it shows                                                                     |
+| --------------------------------------- | --------------------------------------------------------------------------------- |
+| **Server Details**                      | Created date, gateway region, provider, and Kubernetes version.                   |
+| **Nodes, Deployments, Total Resources** | Summary counts for the connected server.                                          |
+| **Current Usage**                       | CPU, memory, storage, and bandwidth costs for the current month where applicable. |
+| **K8 Dashboard**                        | A shortcut for Kubernetes-level visibility, when available.                       |
+| **Usage & Capacity**                    | Capacity indicators for pods, CPU cores, and memory.                              |
+| **Events**                              | Recent server events with severity, time, and summary.                            |
 
-# Get server details
-pipeops server info my-server
+## Server Navigation Tabs
 
-# Provision a new server
-pipeops server create --name prod-server --provider aws
-```
+The tabs available on a server vary by provisioning method and
+enabled features.
 
-For server management and agent installation, see:
-- [CLI Server Commands](/docs/cli/commands/servers)
-- [CLI Agent Commands](/docs/cli/commands/agents) - Install PipeOps agents on your infrastructure
+| Tab              | Description                                                              |
+| ---------------- | ------------------------------------------------------------------------ |
+| **Overview**     | Server status, infrastructure details, resource usage, and events.       |
+| **Metrics**      | CPU, memory, storage, network I/O, and control plane performance charts. |
+| **Events**       | A dedicated full-page view of server events.                             |
+| **Nodes**        | Node-level details, resource usage, and status.                          |
+| **Environments** | Environments configured for deployments on this server.                  |
+| **Settings**     | Server configuration and management options.                             |
+
+Depending on the server type, you may also see tabs such as
+**Add-ons**, **Pricing**, **Update History**, **Dashboard**, or
+**K8 Dashboard**.
+
+## Events
+
+Every server type includes an **Events** section on the Overview tab.
+If it is not immediately visible, scroll down the page.
+
+Use the **Severity** filter to narrow the event list by level.
+Each event row shows:
+
+| Column       | Description                                  |
+| ------------ | -------------------------------------------- |
+| **Severity** | The event level — normal, warning, or error. |
+| **Time**     | When the event occurred.                     |
+| **Summary**  | A short description of what happened.        |
+
+Check the Events section when a server changes state unexpectedly,
+a deployment behaves abnormally, or you want server-level context
+before moving into metrics, logs, or node details.

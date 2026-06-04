@@ -21,10 +21,10 @@ The overview page for non-database add-ons contains the following sections:
 
 The tab navigation along the top provides access to:
 
-- [**Metrics**](/docs/addons/addon-metrics) — detailed charts for CPU, memory, storage, and network I/O activity.
-- [**Logs**](/docs/addons/logs-and-events) — real-time log output for the add-on.
-- [**Events**](/docs/addons/logs-and-events) — a chronological record of deployment events, configuration changes, and system notifications.
-- [**Settings**](/docs/addons/addon-settings) — options to update environment variables, resource allocations, and other configuration settings.
+- [**Metrics**](/docs/add-ons/add-on-metrics) — detailed charts for CPU, memory, storage, and network I/O activity.
+- [**Logs**](/docs/add-ons/logs-and-events) — real-time log output for the add-on.
+- [**Events**](/docs/add-ons/logs-and-events) — a chronological record of deployment events, configuration changes, and system notifications.
+- [**Settings**](/docs/add-ons/add-on-settings) — options to update environment variables, resource allocations, and other configuration settings.
 
 ## Database Add-on Overview
 
@@ -45,4 +45,4 @@ Below the status bar, the page contains:
 
 The tab navigation for database add-ons includes all the tabs available on non-database add-ons, plus:
 
-- [**Studio**](/docs/addons/addon-studio) — a built-in interface for interacting directly with your database without needing an external client.
+- [**Studio**](/docs/add-ons/add-on-database-studio) — a built-in interface for interacting directly with your database without needing an external client.
