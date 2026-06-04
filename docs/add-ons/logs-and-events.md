@@ -1,19 +1,19 @@
 ---
 slug: logs-and-events
-sidebar_position: 5
+sidebar_position: 6
 title: Logs And Events
-description: "Access real-time logs and deployment events for PipeOps projects, with filtering, search, and export options."
+description: "Access real-time logs and deployment events for PipeOps add-ons, with filtering, search, and export options."
 ---
 
 # Logs And Events
 
-The **Logs** and **Events** tabs give you visibility into your project's runtime behaviour and deployment activity. Use them together to troubleshoot issues, monitor performance, and trace the sequence of infrastructure events.
+The **Logs** and **Events** tabs give you visibility into your add-on's runtime behaviour and deployment activity. Use them together to troubleshoot issues, monitor performance, and trace the sequence of infrastructure events.
 
 ## Logs
 
-Navigate to your project and click the **Logs** tab to view a real-time stream of output from your project's container.
-![project Overview Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-11.png)
-![project Logs](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-logs.png)
+Navigate to your add-on and click the **Logs** tab to view a real-time stream of output from your add-on's container.
+![Add-on Overview Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-overview-logs.png)
+![Add-on Logs](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-logs.png)
 
 ### Filtering and Search
 
@@ -33,14 +33,14 @@ Navigate to your project and click the **Logs** tab to view a real-time stream o
 
 ## Events
 
-Navigate to your project and click the **Events** tab to view a timestamped record of infrastructure-level activity, such as pod scheduling, volume attachment, image pulls, and container lifecycle changes.
+Navigate to your add-on and click the **Events** tab to view a timestamped record of infrastructure-level activity, such as pod scheduling, volume attachment, image pulls, and container lifecycle changes.
 
-![project Events](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-server-events.png)
+![Add-on Events](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-events.png)
 
 ### Filtering
 
 - **Severity** — Filter events by severity level. Available options include `All`, `Normal`, and `Warning`. Normal events reflect expected system activity; warnings indicate conditions that may need attention.
-- **Pods** — Scope the event list to a specific pod (e.g. `Production-0`) when your project runs multiple replicas.
+- **Pods** — Scope the event list to a specific pod (e.g. `Production-0`) when your add-on runs multiple replicas.
 
 ### Reading Events
 

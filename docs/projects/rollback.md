@@ -1,57 +1,43 @@
 ---
 slug: rollback
-sidebar_position: 9
+sidebar_position: 10
 title: Rollback
-description: "Revert a PipeOps deployment to a previous version using git commit history or deployment history."
+description: "Revert a PipeOps deployment to a previous version using git commit history or deployment action history."
 ---
 
 # Rollback
 
-This guide introduces PipeOps' rollback feature for easy deployment management. Recent updates offer a user-friendly option with visual confirmation for swift reversals and notifications for conflicts. Detailed logs aid monitoring, and integration with monitoring tools provides real-time insights.
+Rollback lets you revert your project to a previously deployed version. Use it to quickly recover from a bad deployment without waiting for a new build.
 
+## Triggering a Rollback
 
-## Accessing Rollback
+There are two ways to initiate a rollback:
 
-To access Rollback:
+- **From the Actions menu** — Click the **Actions** button on any project page and select **Rollback**.
+- **From the History tab** — Locate the deployment you want to revert to and click the **Rollback** button on that row. Only rows with a **Deployed** status show this option.
 
-1. Navigate to your project's main page in PipeOps.
-2. Select the “**Actions**” button to access the project actions dropdown menu.
-3. Click on the "**Rollback**" button to trigger a rollback.
+![Project Actions Rollback](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-rollback-option.png)
 
-Rollback refers to the process of reverting a deployment to a previous state, typically to address issues or errors that arise after a new deployment. This feature allows users to undo changes made during deployment quickly and efficiently.
+## Selecting a Version
 
-Key aspects of the rollback feature in PipeOps include:
+Both entry points open the **Rollback Project** modal, which offers two methods for selecting the target version:
 
-- **User-Friendly Interface**: PipeOps provides a user-friendly interface for initiating rollbacks, making the process quick and straightforward.
+### By Git
 
-- **Instant Confirmation**: After initiating a rollback, you'll receive instant confirmation, so you always know what's happening throughout the process.
+Rolls back using your Git commit history. Each entry shows the commit SHA, commit message, deployment status, and timestamp. Select the commit you want to revert to and click **Rollback**.
 
-- **Notifications**: After the successful completion of a rollback, you'll get notifications, including alerts for any issues that might affect it.
+![Rollback By Git](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-rollback-modal.png)
 
-- **Detailed Logging**: PipeOps offers detailed logs for all rollback operations, allowing users to monitor progress and track changes effectively.
+### By Action
 
-- **Manual Version Selection**: Users have the flexibility to manually select a previous version for rollback, providing full control over deployment management.
+Rolls back using your deployment action history. Each entry shows the build SHA, the action that triggered it, deployment status, and timestamp. Select the build you want to revert to and click **Rollback**.
 
-![Project Actions](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-actions-dropdown-rollback.png)
+![Rollback By Action](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-rollback-by-actions.png)
 
-A pop-up appears after clicking on the rollback button, there are 2 ways you can rollback your project.
+Click **Cancel** at any point to close the modal without making changes.
 
-1. **By Git**
+## After Rollback
 
-If you select the **By Git** tab, you will be able to rollback your project using your git commit history. You can simply select the specific commit that you want to rollback to and click **Rollback** on the bottom-right side of the pop-up page.
+Once confirmed, a new deployment is triggered immediately using the selected version.
 
-![Rollback By Git](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-rollback-by-git.png)
-
-2. **By Action**
-
-If you select the **By Action** tab, you will be able to rollback your project using your build history. You can simply select the specific build that you want to rollback to and click **Rollback** on the bottom-right side of the pop-up page.
-
-![Rollback By Action](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-rollback-by-action.png)
-
-This immediately triggers a redeployment and you get a “**Rollback triggered successfully**” notification. A new deployment is initiated and the notification appears on the bottom left corner of the screen.
-
-![Rollback Success](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/rollback-successful.png)
-
-After the deployment has been successfully completed, you can view it under deployment history. You can also go to confirm that the version of your project that you rolled back to is now live.
-
-In summary, PipeOps' rollback feature offers a seamless solution for effective deployment management. With its user-friendly interface, instant confirmation, detailed logging, and manual version selection, users can confidently address issues or errors by reverting to previous states.
+The rollback deployment will appear as a new entry in the **History** tab once complete. You can then verify that the intended version is live via the **Live Url** button.

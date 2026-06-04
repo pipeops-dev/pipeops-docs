@@ -65,12 +65,27 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@cmfcmf/docusaurus-search-local",
+      {
+        indexDocs: true,
+        indexDocSidebarParentCategories: 2,
+        indexPages: true,
+        language: "en",
+        maxSearchResults: 10,
+      },
+    ],
+  ],
+
   scripts: [
     {
       src: "/js/iframe-compatibility.js",
       async: true,
     },
   ],
+
+  clientModules: ["./src/posthog.js"],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -88,6 +103,10 @@ const config = {
           src: "img/pipeops-light.svg",
         },
         items: [
+          {
+            type: "search",
+            position: "right",
+          },
           {
             href: "https://github.com/pipeops-dev",
             label: "GitHub",

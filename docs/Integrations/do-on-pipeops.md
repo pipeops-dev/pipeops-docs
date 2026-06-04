@@ -1,34 +1,57 @@
 ---
 slug: do-on-pipeops
 sidebar_position: 4
-title: Connect Digital Ocean to PipeOps
-description: "Connect your DigitalOcean account to PipeOps via OAuth authorization to enable server creation and deployment."
+title: Connect DigitalOcean to PipeOps
+description: "Connect your DigitalOcean account to PipeOps via OAuth 
+authorization to enable server creation and deployment."
 ---
 
-# Connecting Digital Ocean Account to PipeOps
+# Connect DigitalOcean to PipeOps
 
-## Overview
+Connecting your DigitalOcean account to PipeOps uses OAuth
+authorization, which grants PipeOps secure access to your DigitalOcean
+account for resource management. Once connected, you can provision
+DigitalOcean servers and deploy projects directly from your PipeOps
+dashboard.
 
-This documentation will guide you through the process of connecting your Digital Ocean account to PipeOps. By following these steps, you’ll be able to create a Digital Ocean server on PipeOps and deploy projects on the server directly from your PipeOps dashboard.
+## Connect Your DigitalOcean Account
 
-## Steps to follow
+### Step 1: Open the Integrations Page
 
-To connect your Digital Ocean account to PipeOps, follow these steps:
+In the left sidebar, click **Integrations**.
 
-1. In the PipeOps Dashboard, click on the "Integrations" tab from the left menu.
+![Steps to navigate to the integrations page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/navigating-to-integrations-page.png)
 
-2. Select "Digital Ocean" from the list of cloud providers and click "Connect" to proceed.
+:::note
+You can also get here by clicking **+ New** in the top-right corner
+of your dashboard and selecting **Add Server** under **Action**, then
+choosing to connect a new cloud provider.
+:::
 
-![PipeOps Cloud Providers List](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-do-main-page.png)
+### Step 2: Select DigitalOcean
 
-3. On the **Authorize DigitalOcean** screen, click the "Authorize my Digital Ocean" button. This will open a new tab to the right.
+Select **Digital Ocean** from the list, then click **Connect**.
 
-![PipeOps Cloud Providers List](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-digital-ocean.png)
+![DigitalOcean selected from the list of CSP's](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-do-page.png)
 
-4. You will be redirected to DigitalOcean’s authorization page, as shown below. Click the "**Authorize Authorization**" button to grant PipeOps the necessary permissions.
+A modal titled **Connect Digital Ocean Cloud** will appear.
 
-5. After authorization, you will be redirected back to PipeOps. If successful, you'll see DigitalOcean listed as a connected provider.
+### Step 3: Authorize PipeOps
 
-![Connected Digital Ocean Screen](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connected-do-screen.png)
+In the modal, click **Authorize**. You will be redirected to
+DigitalOcean's OAuth authorization page, where you can review and
+approve the access PipeOps is requesting.
 
-Now that you've connected your Digital Ocean account to PipeOps, you can create a server on your connected account using this [guide](/docs/servers/server-provisioning).
+![Connect Digital Ocean modal showing the Authorize button](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-do-modal.png)
+
+### Step 4: Confirm the Connection
+
+After approving access on DigitalOcean's page, you will be redirected
+back to PipeOps. Your DigitalOcean account will appear as a connected
+provider under the Digital Ocean section on the Integrations page.
+
+![Connected DigitalOcean account in PipeOps](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connected-do-integration.png)
+
+Your DigitalOcean account is now connected to PipeOps. You can proceed
+to provision a server on your connected account — see
+[Server Provisioning](/docs/servers/server-provisioning).

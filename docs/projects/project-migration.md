@@ -2,52 +2,63 @@
 slug: project-migration
 sidebar_position: 10
 title: Project Migration
-description: "Migrate projects between servers in PipeOps using server migration and repository migration options."
+description: "Migrate projects between servers or promote them across environments in PipeOps."
 ---
 
-In this section, we will show you how you can easily migrate your projects from one server to another. Follow these steps to seamlessly move your projects between servers.
+# Project Migration
 
-## Prerequisites
-
-Before delving into exploring Project migration, ensure you have the following prerequisites:
-
-1. **A PipeOps account**. Use the link [here](https://console.pipeops.io/signup) to sign up on PipeOps if you do not have an account.
-2. **A deployed project**. This can be a PipeOps template or a project from your Git (GitHub, GitLab, Bitbucket) account. You can select a PipeOps template [here](https://github.com/orgs/pipeops-dev/repositories).
+PipeOps allows you to move a project to a different server or promote it to a different environment without recreating it from scratch. Both options are accessible from the **Actions** menu on your project page.
 
 ## Accessing Project Migration
 
-Project migration is the process of transferring your projects from one server to another. This process is essential for tasks such as upgrading server resources, changing hosting locations, or optimizing performance. By migrating projects, you ensure that your applications remain accessible and operational while adjusting to changing requirements or infrastructure configurations.
-
-To access Project Migration:
-
 1. Navigate to your project's main page in PipeOps.
-2. Select the “**Actions**” button to access the project actions dropdown menu.
-3. Click on the "**Migrate Project**" button to view the options.
+2. Click the **Actions** button in the top-right corner.
+3. Select **Migrate Project** from the dropdown.
 
-<!-- ![Project migration]() -->
+![Migrate Project Action](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-actions-dropdown.png)
 
-![Migrate Projectt](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-actions-dropdown-migration.png)
+A modal will appear prompting you to choose a migration type.
 
-### Migration Options
-A pop-up will appear after clicking the **Migrate Project** button, revealing two options:
+![Migration Options](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-migration-options-modal.png)
 
-![Migration Options](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-migration-options.png)
+---
 
-1. **Migrate Server** 
-- Select the server your project is currently hosted on and the server that you would be moving your project to.
-- Click the **Start Migration** button at the bottom of the page.  
+## Migrate Server
 
-![Migrate Server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-migration-migrate-server.png)
+Moves your entire project to a different server. Use this to change hosting infrastructure, switch regions, or move to a more appropriately sized server.
 
-2. **Promote Environment**
+1. Select **Migrate Server** from the migration options modal. A panel will open showing your **Current Server** and a **Migration Server** dropdown listing all available servers on your account. Each server entry shows its name, region, cloud provider, and current status.
 
-![Promote Environment](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/promote-project.png)
+![Migrate Server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-server-migration-modal.png)
 
+:::tip
+Only select servers marked as **Available**. Servers with a **Failed** or **Delete Failed** status are not suitable migration targets.
+:::
 
-- This moves the project to a different environment within the same server. For instance, you can move your project from beta to production.
-- Select your current environment and choose the destination environment from the Promotion Environment dropdown.
-- Click the **Start Migration** button at the bottom of the page.
+2. Select your target server and click **Start Migration**.
 
-Wait for the process to be completed. You will receive a notification once the migration is complete.
+3. A **Migration Project Summary** page will load, showing the project name, target environment, destination server, resource allocation, and project source. Review these details before proceeding.
 
-By following these steps, you can seamlessly migrate your projects between servers or environments, ensuring continuous operation and efficient management of your projects.
+4. Click **Migrate** to trigger the **Confirm Migration** modal. The modal will display the exact source and destination servers and confirm that a new deployment of the same project will be triggered on the new server.
+
+5. Click **Yes, migrate** to confirm. The migration will begin and a new deployment will be triggered on the destination server.
+
+---
+
+## Promote Environment
+
+Moves your project to a different environment within the same server — for example, from **Production** to **Beta**. This triggers a new deployment of the same project under the target environment.
+
+1. Select **Promote Environment** from the migration options modal. A panel will open showing the current server, your **Current Environment**, and a **Promotion Environment** dropdown to select the target.
+
+![Promote Environment](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-environment-migration-modal.png)
+
+2. Select the destination environment from the **Promotion Environment** dropdown and click **Start Migration**.
+
+3. A **Confirm Migration** modal will appear, summarising the move — for example, confirming the project will be migrated from **production** to **beta**. Click **Yes, migrate** to confirm.
+
+4. A **Project Summary** page will load showing the updated project name, environment, server, resource allocation, and project source. Click **Proceed** to complete the migration.
+
+:::note
+Promoting an environment triggers a new deployment of the same project under the destination environment. The original environment deployment remains unaffected.
+:::
