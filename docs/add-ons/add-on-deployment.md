@@ -37,7 +37,8 @@ When you are ready to continue, click **Deploy App**.
 On the **Configure Add-on** page, choose where the add-on should run and review the services that will be deployed.
 
 - **Server** — select the server where the add-on should be deployed
-- **Environment** — select from your available environments, or create a new one. PipeOps includes Production and Beta by default, but you can create additional environments up to the limit your plan allows. [Learn more about environments](/docs/how-to-guides/tutorials/managing-environments)
+- **Environment** — select from your available environments, or create a new one. PipeOps includes Production and Beta by default, but you can create additional environments up to the limit your plan allows.
+<!-- [Learn more about environments](/docs/how-to-guides/tutorials/managing-environments) -->
 - **Services** — review the services included in the deployment. Click **Add More** to include additional services if your setup requires them
 - **Estimated usage** — review the projected resource cost before deploying
 

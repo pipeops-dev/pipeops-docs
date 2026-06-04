@@ -196,15 +196,15 @@ top-right corner to open your application in a new tab.
 
 Explore the rest of your project from the tabs below:
 
-| Tab                                                       | Description                                         |
-| --------------------------------------------------------- | --------------------------------------------------- |
-| [History](/docs/projects/project-history)                 | Full deployment history with logs and statuses.     |
-| [Metrics](/docs/projects/project-metrics)                 | CPU, memory, and network usage over time.           |
-| [Logs](/docs/projects/logs-and-events#accessing-logs)     | Real-time and historical application log output.    |
-| [Events](/docs/projects/logs-and-events#accessing-events) | Infrastructure-level events such as pod scheduling. |
-| [Worker](/docs/projects/worker-and-jobs)                  | Background worker process management.               |
-| [Jobs](/docs/projects/worker-and-jobs)                    | Scheduled and on-demand job management.             |
-| [Settings](/docs/projects/project-setting)                | Full project configuration.                         |
+| Tab                                         | Description                                         |
+| ------------------------------------------- | --------------------------------------------------- |
+| [History](/docs/projects/project-history)   | Full deployment history with logs and statuses.     |
+| [Metrics](/docs/projects/project-metrics)   | CPU, memory, and network usage over time.           |
+| [Logs](/docs/projects/logs-and-events)      | Real-time and historical application log output.    |
+| [Events](/docs/projects/logs-and-events)    | Infrastructure-level events such as pod scheduling. |
+| [Worker](/docs/projects/worker-and-jobs)    | Background worker process management.               |
+| [Jobs](/docs/projects/worker-and-jobs)      | Scheduled and on-demand job management.             |
+| [Settings](/docs/projects/project-settings) | Full project configuration.                         |
 
 To delete a project, see the [Delete Project](/docs/projects/project-actions#delete-project) guide.
 

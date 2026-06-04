@@ -2,38 +2,53 @@
 slug: server-update-history
 sidebar_position: 9
 title: Server Update History
-description: "View the log of all server updates including version changes, deployment status, build SHAs, and execution details."
+description: "View the log of all server updates including version 
+changes, deployment status, build SHAs, and execution details."
 ---
 
 # Server Update History
-The **Update History** feature provides a detailed log of all server updates, including version changes, deployment status, and execution logs. It helps users track deployment progress, view build logs, and troubleshoot issues.
 
-## Accessing Server Update History
-1. Navigate to the **"Servers"** section.
-2. Select the desired server from the list.
-3. Click on the **"Update History"** tab.
+The **Update History** tab shows a log of all updates applied to
+your server, including version changes, build details, and the
+outcome of each update. Use it to track when updates ran, confirm
+which Kubernetes version is active, and investigate failed updates
+through their logs.
 
-![Server Update History](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-update-history.png)
+## Accessing Update History
 
+From the **Servers** section, select a server and click the
+**Update History** tab.
 
-Your server update history consists of the following information per each deployment:
+![Server Update History tab showing the update log](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-update-history.png)
 
-- **Build SHA:** This is the unique identifier for each build or update. Clicking the link allows you to inspect the specific build log.
+## Update Log Fields
 
-- **Server Type:** This displays the type of server that was used during each build.
+Each entry in the update log includes the following:
 
-- **Version:** This displays the version of the update applied to the server. It helps you know which Kubernetes version is currently running or failed.
+| Field           | Description                                                                                                   |
+| --------------- | ------------------------------------------------------------------------------------------------------------- |
+| **Build SHA**   | The unique identifier for the build. Click the link to open the specific build log for that update.           |
+| **Server Type** | The type of server used during the update.                                                                    |
+| **Version**     | The Kubernetes version applied or attempted during the update.                                                |
+| **Start Time**  | When the update process began.                                                                                |
+| **End Time**    | When the update process completed or stopped.                                                                 |
+| **Status**      | The outcome of the update — such as **Success** or **Failed**.                                                |
+| **Action**      | A **View Logs** button that opens the full execution log for that update, including any errors that occurred. |
 
-- **Start Time:** The timestamp when the update process began. This is useful for tracking update durations.
+:::note
+The **Build SHA** link and the **View Logs** button both provide
+access to build log information. The Build SHA link opens the log
+for that specific build, while **View Logs** opens the full
+execution log for the update process.
+:::
 
-- **End Time:**  This indicates when the update process was completed.
+## Using Update History for Troubleshooting
 
-- **Action:** This provides a **View Logs** button, allowing you to access detailed deployment logs. Logs provide insights into what occurred during the update process, including errors.
+When an update shows a **Failed** status, click **View Logs** to
+review the execution log for that entry. The log shows what occurred
+during the update process and where it stopped, giving you the
+context needed to identify the cause before retrying or escalating.
 
-- **Status:** This indicates whether the update was successful or failed.
-
-With PipeOps' **update history** functionality, you can efficiently monitor all your server update records.
-
-
-
-
+Cross-reference the **Version** and **Start Time** columns to
+confirm which Kubernetes version is currently running and when it
+was last successfully applied.

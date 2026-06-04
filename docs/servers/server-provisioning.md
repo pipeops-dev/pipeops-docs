@@ -18,17 +18,17 @@ much control you want over the underlying infrastructure.
 1. Log in to your [PipeOps dashboard](https://console.pipeops.io/auth/signin).
 2. Create a new server using one of the following methods:
    - Click **+ New** in the top-right corner and select
-     **Provision a Server** from the dropdown.
+     **Add Server** from the dropdown.
    - Click **Servers** in the left sidebar to open the Servers list,
      then click **+ Create new Server** in the top-right corner.
 
-![Servers list page showing existing servers and the Create new Server button](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/provision-server-nav.png)
+![Servers list page showing existing servers and the Create new Server button](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-create-nav.png)
 
 ## Select a Hosting Method
 
 Select how you want to provision your server.
 
-![Server hosting method selection showing On PipeOps, Bring Your Own Cloud, and Bring Your Own Server options](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-deployment-path.png)
+![Server hosting method selection showing On PipeOps, Bring Your Own Cloud, and Bring Your Own Server options](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-create-choose-path.png)
 
 | Option                    | Description                                                                                                                   |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -56,7 +56,7 @@ that region:
   for the selected region so you can estimate your usage costs
   before proceeding.
 
-  ![Nova server configuration showing provider selection, region, and per-hour pricing](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-csp.png)
+  ![Nova server configuration showing provider selection, region, and per-hour pricing](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-create-nova.png)
 
 Click **Proceed** to create the server.
 
@@ -78,7 +78,7 @@ following tabs:
 | **Environments** | Environments configured on this server.                 |
 | **Settings**     | Server configuration and management options.            |
 
-![Nova server overview page showing nodes, deployments, usage, and events](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/pks-server-overview.png)
+![Nova server overview page showing nodes, deployments, usage, and events](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-create-nova-server-details..png)
 
 ## Provisioning with Bring Your Own Cloud (BYOC)
 
@@ -98,7 +98,7 @@ connected, click **Proceed** to continue.
 
 Configure the deployment settings for your cloud server.
 
-![Create A New Server page showing region selection and security specification](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-5.png)
+![Create A New Server page showing region selection and security specification](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-create-region-config.png)
 
 1. **Select Region** — Choose the geographic location to deploy
    your server.
@@ -117,7 +117,7 @@ Click **Next: Configure Method** to proceed.
 
 Select how you want to manage server resources.
 
-![Create A New Server page showing Custom Configuration and Karpenter options](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-custom-config-7.png)
+![Create A New Server page showing Custom Configuration and Karpenter options](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-create-custom-config.png)
 
 | Method                   | Description                                                                                           |
 | ------------------------ | ----------------------------------------------------------------------------------------------------- |
@@ -136,7 +136,7 @@ method you selected.
 Choose from predefined instance templates suited for different
 environments.
 
-![Configure Scaling and Resources Management page showing Dev/Staging, Production, and Expert Settings tabs with instance options and estimated cost](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-custom-config-8.png)
+![Configure Scaling and Resources Management page showing Dev/Staging, Production, and Expert Settings tabs with instance options and estimated cost](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-create-custom-config-2.png)
 
 - **Environment Tab** — Switch between **Dev/Staging**,
   **Production**, or **Expert Settings** to see relevant
@@ -157,7 +157,7 @@ architecture, and define minimum and maximum node counts.
 Configure how your infrastructure scales, or leave settings on
 default and proceed.
 
-![Karpenter configuration screen](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-karpentar-12.png)
+![Karpenter configuration screen](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-create-karpenter-config-2.png)
 
 ### Step 5: Create the Server
 
@@ -169,17 +169,17 @@ method you chose.
 
 **Custom Configuration:**
 
-![Server overview page for a Custom Configuration server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/no-karpenter-no-opencost.png)
+![Server overview page for a Custom Configuration server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-created-custom-overview-details.png)
 
 **Karpenter:**
 
-![Server overview page for a Karpenter server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/has-karpenter-has-opencost-no-grafana.png)
+![Server overview page for a Karpenter server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-created-karpenta-overview-details.png)
 
 ## Provisioning with Bring Your Own Server (BYOS)
 
 The **Bring Your Own Server** option lets you connect an existing
 private or public machine, or a VM you control, directly to PipeOps.
-See [Bring Your Own Server](/docs/servers/bring-your-own-server) for
+See [Bring Your Own Server](/docs/getting-started/choose-your-deployment-path/bring-your-own-server.md) for
 the full setup steps.
 
 ## Deleting a Server
@@ -195,10 +195,10 @@ and add-ons on the server must be removed before deletion can proceed.
 3. Click the three-dot menu in the top-right corner of the server
    page.
 
-![Three-dot menu on the server page revealing the delete option](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/delete-pipeops-server.png)
+![Three-dot menu on the server page revealing the delete option](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-create-delete.png)
 
 4. Select **Delete Server**. A confirmation modal will appear.
 
-![Server deletion confirmation modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/confirm-server-deletion%20modal.png)
+![Server deletion confirmation modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-create-delete-modal.png)
 
 5. Type the server name to confirm, then click **Delete**.

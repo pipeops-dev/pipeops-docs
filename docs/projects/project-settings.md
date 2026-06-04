@@ -168,7 +168,7 @@ Existing environment variables with the same key will be overwritten. Rename any
 :::
 
 :::tip
-Don't have a database add-on yet? Browse available database add-ons on the [PipeOps Add-on Marketplace](https://pipeops.io/addons) and deploy one in minutes. [Learn more about Add-ons](/docs/addons/addon-overview).
+Don't have a database add-on yet? Browse available database add-ons on the [PipeOps Add-on Marketplace](https://pipeops.io/addons) and deploy one in minutes. [Learn more about Add-ons](/docs/add-ons/add-on-overview).
 :::
 
 Click **Save** to apply any manually added or edited variables.

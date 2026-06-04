@@ -2,38 +2,48 @@
 slug: server-events
 sidebar_position: 4
 title: Server Events
-description: "View a chronological log of server activities and status changes for monitoring and troubleshooting in PipeOps."
+description: "View a chronological log of server activities and status 
+changes for monitoring and troubleshooting in PipeOps."
 ---
 
 # Server Events
 
-This documentation offers a comprehensive guide to navigating and leveraging the Server Events functionality within PipeOps.
-
-The Server Events tab shows a chronological record of significant activities and status changes related to your server. From this tab, you can:
-- Monitor the health and behavior of your server
-- Troubleshoot issues
-- Gain insights into its operational history
-
+The **Events** tab shows a chronological record of significant
+activities and status changes on your server. Use it to track what
+has happened on the server, understand state changes, and investigate
+issues before diving into metrics or logs.
 
 ## Accessing Server Events
 
-To access events, follow these steps:
-1. Navigate to the **"Servers"** section.
-2. Select the desired server from the list.
-3. Click on the **Events** tab to open its dashboard.
+From the **Servers** section, select a server and click the
+**Events** tab.
 
-Each event entry on your PipeOps dashboard has three features: **Severity, Time,** and **Summary.** 
+![Server Events tab showing event entries with severity, time, and summary columns](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-events.png)
 
-![Server Events](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-events.png)
+## Filtering Events
 
-### Severity
-This indicates the seriousness of the event, allowing you to prioritize critical issues. PipeOps categorizes events by different severity levels, such as **warning** and **normal**.
+Use the **Severity** dropdown to filter the event list by level.
+This is useful when you want to focus on warnings or errors without
+scrolling through normal activity.
 
-### Time 
-This shows the date and time an event occurred. PipeOps delivers real-time notifications for status changes. Whether it's a critical issue or a system update, users receive timely alerts.
+## Event Columns
 
-### Summary 
-This section provides a brief description of the event. When troubleshooting, **Summary** gives you insight into what went wrong, making it easier to fix issues. 
+Each entry in the events table includes three columns:
 
+| Column       | Description                                                                                                                        |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Severity** | The level of the event — such as **Normal** or **Warning** — indicating how much attention it requires.                            |
+| **Time**     | The date and time the event occurred.                                                                                              |
+| **Summary**  | A short description of what happened, such as a pod being scheduled, a container failing to start, or a node becoming unavailable. |
 
-In conclusion, the events tab records significant occurences within your server environment. Analyzing events is a powerful way to identify causes and their potential troubleshooting steps. 
+## Using Events for Troubleshooting
+
+Events give you server-level context that sits between high-level
+status indicators and detailed logs. When a deployment behaves
+unexpectedly or a server changes state, check the Events tab first
+to identify what occurred and when before moving into metrics or
+application logs.
+
+Look for **Warning** severity events as a starting point — these
+typically indicate resource pressure, scheduling failures, or
+connectivity issues that may affect running workloads.
