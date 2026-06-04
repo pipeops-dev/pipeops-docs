@@ -43,7 +43,7 @@
     ]
   },
   "resolutions": {
-    "serialize-javascript": "^7.0.5",
+    "serialize-javascript": "6.0.2",
     "webpackbar": "7.0.0"
   },
   "engines": {
