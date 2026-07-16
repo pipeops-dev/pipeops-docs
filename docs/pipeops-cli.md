@@ -51,11 +51,21 @@ pipeops workspace get <workspace-uuid> --json
 pipeops project list --json
 pipeops list --json
 pipeops project get <project-id> --json
+pipeops project env get <project-id> --json
 pipeops project deployments <project-id> --json
 pipeops project deployment-history <project-id> --json
 ```
 
-`pipeops list` is a top-level shortcut for listing projects.
+`pipeops list` is a top-level shortcut for listing projects. `project env get` returns the project's environment variables as key/value pairs.
+
+## Environments
+
+```bash
+pipeops environment list --json
+pipeops environment get <environment-id> --json
+```
+
+`environment list` returns environments in the selected workspace. `environment get` returns one environment by UUID or ID.
 
 ## Add-ons
 
@@ -83,9 +93,20 @@ pipeops addons deployment get <deployment-id> --json
 ```bash
 pipeops server list --json
 pipeops server status <server-id> --json
+pipeops server connection <server-id> --json
+pipeops server cost <server-id> --json
 ```
 
-These commands return the servers available in the current workspace and details for a single server.
+These commands return servers in the current workspace, server details, connection status, and cost allocation data. If OpenCost does not have allocation data yet, `server cost` returns a structured JSON response with `available: false`.
+
+## Service account tokens
+
+```bash
+pipeops token list --json
+pipeops token get <token-id> --json
+```
+
+These commands list service account tokens for the selected workspace and return details for a single token.
 
 ## Removed placeholder commands
 
@@ -97,14 +118,3 @@ pipeops proxy
 pipeops exec
 pipeops shell
 ```
-
-## Commands pending API or SDK support
-
-The following read commands are intentionally not listed as working commands yet because they currently depend on API or SDK follow-up work:
-
-- `pipeops environment list --json`
-- `pipeops project env get <project-id> --json`
-- `pipeops token list --json`
-- `pipeops server connection <server-id> --json`
-- `pipeops server cost <server-id> --json`
-
