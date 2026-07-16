@@ -11,6 +11,15 @@ const config = {
   tagline: "Seamless deployment",
   favicon: "img/favicon.ico",
 
+  headTags: [
+    {
+      tagName: "style",
+      attributes: {},
+      innerHTML:
+        "html,body,#__docusaurus{background:#18181a;color-scheme:dark;}",
+    },
+  ],
+
   // Set the production url of your site here
   url: "https://docs.pipeops.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
