@@ -58,7 +58,7 @@ The PipeOps Command Line Interface (CLI) is a powerful tool that enables you to 
 
 The PipeOps CLI organizes commands into logical categories:
 
-- **Authentication** (`pipeops auth`) - Login, logout, and account management
+- **Authentication** (`pipeops login`, `pipeops logout`, `pipeops status`, `pipeops me`) - Login, logout, and account management
 - **Projects** (`pipeops project`) - Project lifecycle management
 - **Monitoring** (`pipeops list`, `pipeops status`, `pipeops logs`) - View project and addon information
 - **Servers** (`pipeops server`) - Server provisioning and management
