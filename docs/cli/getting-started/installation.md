@@ -141,7 +141,7 @@ docker pull pipeops/cli:latest
 docker run -it --rm pipeops/cli:latest --help
 
 # Run with persistent configuration
-docker run -it --rm -v ~/.pipeops:/root/.pipeops pipeops/cli:latest auth login
+docker run -it --rm -v ~/.pipeops:/root/.pipeops pipeops/cli:latest login
 ```
 
 For convenience, create an alias:

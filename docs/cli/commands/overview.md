@@ -17,7 +17,7 @@ pipeops <category> <command> [options] [flags]
 ### Examples
 
 ```bash
-pipeops auth login
+pipeops login
 pipeops list
 pipeops logs proj-123 --follow
 ```
@@ -29,7 +29,10 @@ pipeops logs proj-123 --follow
 Manage authentication and user accounts.
 
 ```bash
-pipeops auth <command>
+pipeops login
+pipeops logout
+pipeops status
+pipeops me
 ```
 
 | Command | Description |
@@ -150,7 +153,7 @@ Most commands support both interactive and non-interactive modes:
 
 **Interactive** (prompts for input):
 ```bash
-pipeops auth login
+pipeops login
 ```
 
 **Non-Interactive** (all options via flags):
@@ -231,7 +234,8 @@ Get help for any command:
 pipeops --help
 
 # Category help
-pipeops auth --help
+pipeops login --help
+pipeops logout --help
 pipeops project --help
 
 # Specific command help
@@ -242,28 +246,23 @@ pipeops logs --help
 ### Example Output
 
 ```bash
-$ pipeops auth --help
+$ pipeops login --help
 
 Authenticate with PipeOps
 
 Usage:
-  pipeops auth <command> [flags]
-
-Available Commands:
-  login       Authenticate with PipeOps using OAuth
-  logout      Sign out and remove local credentials
-  status      Check current authentication status
-  me          Display current user information
+  pipeops login [flags]
 
 Flags:
-  -h, --help   help for auth
+      --auth-url string   OAuth2 authorization URL
+  -h, --help              help for login
 
 Global Flags:
       --json      Output in JSON format
   -v, --verbose   Enable verbose output
   -q, --quiet     Suppress non-essential output
 
-Use "pipeops auth <command> --help" for more information about a command.
+Use "pipeops [command] --help" for more information about a command.
 ```
 
 ## Command Aliases
@@ -328,7 +327,7 @@ See [Configuration](/docs/cli/getting-started/configuration) for more details.
 set -e  # Exit on error
 
 # Authenticate
-pipeops auth status || pipeops auth login
+pipeops status || pipeops login
 
 # List projects
 pipeops list

@@ -73,7 +73,7 @@ sudo curl -fsSL https://get.pipeops.dev/cli.sh | bash
 
 ### Authentication Failed
 
-**Problem**: `pipeops auth login` fails.
+**Problem**: `pipeops login` fails.
 
 **Solutions**:
 
@@ -85,12 +85,12 @@ sudo curl -fsSL https://get.pipeops.dev/cli.sh | bash
 2. **Clear existing configuration**:
    ```bash
    rm ~/.pipeops.json
-   pipeops auth login
+   pipeops login
    ```
 
 3. **Use manual browser authentication**:
    ```bash
-   pipeops auth login --no-browser
+   pipeops login --no-browser
    # Copy and paste the URL into your browser
    ```
 
@@ -102,8 +102,8 @@ sudo curl -fsSL https://get.pipeops.dev/cli.sh | bash
 
 ```bash
 # Re-authenticate
-pipeops auth logout
-pipeops auth login
+pipeops logout
+pipeops login
 ```
 
 ### Invalid Token
@@ -125,7 +125,7 @@ pipeops auth login
 
 3. **Re-authenticate**:
    ```bash
-   pipeops auth login
+   pipeops login
    ```
 
 ---
@@ -262,7 +262,7 @@ pipeops auth login
    ```bash
    mv ~/.pipeops.json ~/.pipeops.json.backup
    echo '{}' > ~/.pipeops.json
-   pipeops auth login
+   pipeops login
    ```
 
 ### Environment Variables Not Working
@@ -525,7 +525,7 @@ For persistent issues:
 | Error | Cause | Solution |
 |-------|-------|----------|
 | `command not found: pipeops` | CLI not in PATH | Add to PATH or reinstall |
-| `not authenticated` | No valid auth token | Run `pipeops auth login` |
+| `not authenticated` | No valid auth token | Run `pipeops login` |
 | `token expired` | Auth token expired | Re-authenticate |
 | `project not found` | Invalid project name | Check project name with `project list` |
 | `permission denied` | Insufficient permissions | Use `sudo` or check file permissions |
@@ -541,7 +541,7 @@ If you've tried the solutions above and still have problems:
 1. **Collect debug information**:
    ```bash
    pipeops --version
-   pipeops auth status
+   pipeops status
    cat ~/.pipeops.json
    env | grep PIPEOPS
    ```
@@ -549,7 +549,7 @@ If you've tried the solutions above and still have problems:
 2. **Create a minimal reproduction**:
    ```bash
    # Document exact steps to reproduce
-   pipeops auth login
+   pipeops login
    pipeops project list
    # etc.
    ```
