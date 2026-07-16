@@ -33,7 +33,7 @@ The CLI stores its configuration in a JSON file located at:
 | Option | Description | Default |
 |--------|-------------|---------|
 | `api_url` | PipeOps API endpoint | `https://api.pipeops.io` |
-| `auth_token` | Authentication token (set by `auth login`) | - |
+| `auth_token` | Authentication token (set by `login`) | - |
 | `default_project` | Default project for commands | - |
 | `output_format` | Output format (`text`, `json`) | `text` |
 | `log_level` | Logging level (`debug`, `info`, `warn`, `error`) | `info` |
@@ -63,7 +63,7 @@ Specify a custom location for the configuration file:
 
 ```bash
 export PIPEOPS_CONFIG_PATH=/path/to/custom/config.json
-pipeops auth login
+pipeops login
 ```
 
 #### `PIPEOPS_API_URL`
@@ -276,7 +276,7 @@ pipeops-staging status proj-123
 
 ### Login Flow
 
-When you run `pipeops auth login`, the CLI:
+When you run `pipeops login`, the CLI:
 
 1. Opens your browser for OAuth authentication
 2. Receives an authorization code
@@ -314,7 +314,7 @@ For CI/CD pipelines, use secrets management to store tokens securely.
 Tokens are automatically refreshed by the CLI. If authentication expires:
 
 ```bash
-pipeops auth login
+pipeops login
 ```
 
 ## Project-Specific Configuration
@@ -506,7 +506,7 @@ If the configuration file is corrupted:
 mv ~/.pipeops.json ~/.pipeops.json.backup
 
 # Create new configuration
-pipeops auth login
+pipeops login
 ```
 
 ### Environment Variable Not Working
@@ -529,7 +529,7 @@ To start fresh:
 
 ```bash
 rm ~/.pipeops.json
-pipeops auth login
+pipeops login
 ```
 
 ## Next Steps

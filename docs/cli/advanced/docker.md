@@ -35,7 +35,7 @@ To maintain authentication between container runs, mount the configuration direc
 ```bash
 docker run -it --rm \
   -v ~/.pipeops:/root/.pipeops \
-  pipeops/cli:latest auth login
+  pipeops/cli:latest login
 ```
 
 ### Using Environment Variables
@@ -59,7 +59,7 @@ alias pipeops='docker run -it --rm -v ~/.pipeops:/root/.pipeops pipeops/cli:late
 
 Usage:
 ```bash
-pipeops auth login
+pipeops login
 pipeops list
 pipeops status proj-123
 ```
@@ -97,7 +97,7 @@ jobs:
 monitor:
   image: pipeops/cli:latest
   script:
-    - pipeops auth status
+    - pipeops status
     - pipeops list
     - pipeops status proj-123
   variables:
