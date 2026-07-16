@@ -6,16 +6,16 @@ description: "Reference for PipeOps CLI authentication commands covering login w
 
 # Authentication Commands
 
-The `pipeops auth` commands manage authentication and user account information. These commands handle login, logout, and session management for the PipeOps CLI.
+The PipeOps CLI authentication commands manage login, logout, session status, and user account information.
 
-## `pipeops auth login`
+## `pipeops login`
 
 Authenticate with PipeOps using OAuth 2.0 with PKCE flow.
 
 ### Usage
 
 ```bash
-pipeops auth login [flags]
+pipeops login [flags]
 ```
 
 ### Description
@@ -33,12 +33,12 @@ Opens your default web browser to complete OAuth authentication. Once authentica
 
 **Standard login**:
 ```bash
-pipeops auth login
+pipeops login
 ```
 
 **Login without opening browser**:
 ```bash
-pipeops auth login --no-browser
+pipeops login --no-browser
 ```
 
 Output:
@@ -73,13 +73,13 @@ The CLI uses OAuth 2.0 with PKCE (Proof Key for Code Exchange) for secure authen
 **Browser doesn't open**:
 ```bash
 # Manually copy and open the URL
-pipeops auth login --no-browser
+pipeops login --no-browser
 ```
 
 **Authentication timeout**:
 ```bash
 # Restart the process
-pipeops auth login
+pipeops login
 ```
 
 **Permission denied**:
@@ -90,19 +90,19 @@ chmod 600 ~/.pipeops.json
 
 ---
 
-## `pipeops auth logout`
+## `pipeops logout`
 
 Sign out and remove local credentials.
 
 ### Usage
 
 ```bash
-pipeops auth logout [flags]
+pipeops logout [flags]
 ```
 
 ### Description
 
-Removes the authentication token from local configuration. After logout, you'll need to run `pipeops auth login` again to use authenticated commands.
+Removes the authentication token from local configuration. After logout, you'll need to run `pipeops login` again to use authenticated commands.
 
 ### Flags
 
@@ -114,7 +114,7 @@ Removes the authentication token from local configuration. After logout, you'll 
 
 **Standard logout**:
 ```bash
-pipeops auth logout
+pipeops logout
 ```
 
 Output:
@@ -125,7 +125,7 @@ Are you sure you want to logout? [y/N] y
 
 **Force logout without confirmation**:
 ```bash
-pipeops auth logout --force
+pipeops logout --force
 ```
 
 ### What Gets Removed
@@ -140,14 +140,14 @@ Logging out does **not** revoke the token on the server. To fully revoke access,
 
 ---
 
-## `pipeops auth status`
+## `pipeops status`
 
 Check current authentication status.
 
 ### Usage
 
 ```bash
-pipeops auth status [flags]
+pipeops status [flags]
 ```
 
 ### Description
@@ -158,7 +158,7 @@ Verifies if you're currently authenticated and displays session information.
 
 **Check auth status**:
 ```bash
-pipeops auth status
+pipeops status
 ```
 
 Output when authenticated:
@@ -170,12 +170,12 @@ Token expires: 2024-12-31 23:59:59
 Output when not authenticated:
 ```
 ✗ Not authenticated
-Run 'pipeops auth login' to authenticate
+Run 'pipeops login' to authenticate
 ```
 
 **JSON output**:
 ```bash
-pipeops auth status --json
+pipeops status --json
 ```
 
 ```json
@@ -198,25 +198,25 @@ pipeops auth status --json
 
 ```bash
 # Check if authenticated before running commands
-if pipeops auth status > /dev/null 2>&1; then
+if pipeops status > /dev/null 2>&1; then
   echo "Authenticated, proceeding..."
   pipeops project list
 else
   echo "Not authenticated, please login"
-  pipeops auth login
+  pipeops login
 fi
 ```
 
 ---
 
-## `pipeops auth me`
+## `pipeops me`
 
 Display current user information.
 
 ### Usage
 
 ```bash
-pipeops auth me [flags]
+pipeops me [flags]
 ```
 
 ### Description
@@ -227,7 +227,7 @@ Shows detailed information about the currently authenticated user.
 
 **View user info**:
 ```bash
-pipeops auth me
+pipeops me
 ```
 
 Output:
@@ -241,7 +241,7 @@ Account ID:   usr_1234567890
 
 **JSON output**:
 ```bash
-pipeops auth me --json
+pipeops me --json
 ```
 
 ```json
@@ -275,7 +275,7 @@ For CI/CD pipelines, use environment variables instead of interactive login:
 export PIPEOPS_AUTH_TOKEN=${{ secrets.PIPEOPS_TOKEN }}
 
 # Verify authentication
-pipeops auth status
+pipeops status
 
 # Run commands
 pipeops list
@@ -288,10 +288,10 @@ Manage multiple PipeOps accounts using different config files:
 
 ```bash
 # Login to production account
-PIPEOPS_CONFIG_PATH=~/.pipeops-prod.json pipeops auth login
+PIPEOPS_CONFIG_PATH=~/.pipeops-prod.json pipeops login
 
 # Login to staging account
-PIPEOPS_CONFIG_PATH=~/.pipeops-staging.json pipeops auth login
+PIPEOPS_CONFIG_PATH=~/.pipeops-staging.json pipeops login
 
 # Use specific account
 alias pipeops-prod='PIPEOPS_CONFIG_PATH=~/.pipeops-prod.json pipeops'
@@ -319,8 +319,8 @@ Best practices for token management:
 
 4. **Rotate tokens regularly**:
    ```bash
-   pipeops auth logout
-   pipeops auth login
+   pipeops logout
+   pipeops login
    ```
 
 ### Headless Servers
@@ -329,7 +329,7 @@ For servers without a browser:
 
 ```bash
 # On the headless server
-pipeops auth login --no-browser
+pipeops login --no-browser
 
 # Copy the URL and open it on your local machine
 # After authorization, the server CLI will authenticate automatically
@@ -354,23 +354,23 @@ echo '{"auth_token":"your-token-here"}' > ~/.pipeops.json
 **"Not authenticated"**:
 ```
 Error: not authenticated
-Run 'pipeops auth login' to authenticate
+Run 'pipeops login' to authenticate
 ```
-**Solution**: Run `pipeops auth login`
+**Solution**: Run `pipeops login`
 
 **"Token expired"**:
 ```
 Error: authentication token has expired
-Run 'pipeops auth login' to re-authenticate
+Run 'pipeops login' to re-authenticate
 ```
-**Solution**: Run `pipeops auth login` to refresh
+**Solution**: Run `pipeops login` to refresh
 
 **"Invalid token"**:
 ```
 Error: invalid authentication token
-Run 'pipeops auth login' to re-authenticate
+Run 'pipeops login' to re-authenticate
 ```
-**Solution**: Run `pipeops auth logout` then `pipeops auth login`
+**Solution**: Run `pipeops logout` then `pipeops login`
 
 **"Permission denied"**:
 ```

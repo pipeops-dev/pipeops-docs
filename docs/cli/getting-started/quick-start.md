@@ -19,7 +19,7 @@ This guide will help you get up and running with the PipeOps CLI in minutes. You
 First, authenticate with your PipeOps account:
 
 ```bash
-pipeops auth login
+pipeops login
 ```
 
 This will:
@@ -39,13 +39,13 @@ Opening browser for authentication...
 Check your authentication status:
 
 ```bash
-pipeops auth status
+pipeops status
 ```
 
 View your account information:
 
 ```bash
-pipeops auth me
+pipeops me
 ```
 
 ## Step 2: Create Your First Project
@@ -286,7 +286,7 @@ Here's a complete workflow from authentication to monitoring:
 
 ```bash
 # 1. Authenticate
-pipeops auth login
+pipeops login
 
 # 2. List your projects
 pipeops list

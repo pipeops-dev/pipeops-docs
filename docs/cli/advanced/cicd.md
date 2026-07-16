@@ -356,7 +356,7 @@ Always handle errors gracefully:
 set -e
 
 # Check authentication
-if ! pipeops auth status > /dev/null 2>&1; then
+if ! pipeops status > /dev/null 2>&1; then
   echo "Authentication failed"
   exit 1
 fi
@@ -469,7 +469,7 @@ pipeops --version
 echo $PIPEOPS_AUTH_TOKEN | wc -c
 
 # Test authentication
-pipeops auth status
+pipeops status
 ```
 
 #### JSON Parsing Errors
