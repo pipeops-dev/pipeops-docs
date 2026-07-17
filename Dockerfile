@@ -1,7 +1,4 @@
 ARG NODE_IMAGE=node:20-alpine
-ARG ENV=production
-ARG PORT=8000
-ARG HOST=0.0.0.0
 
 FROM $NODE_IMAGE AS build
 
@@ -17,12 +14,16 @@ RUN yarn install && \
 # Stage 2: Create the production image
 FROM $NODE_IMAGE AS prod
 
+ARG ENV=production
+ARG PORT=8000
+ARG HOST=0.0.0.0
+
 # Set the working directory in the container to /opt/app
 WORKDIR /opt/app
 
 # Set environment variable
 ENV NODE_ENV=$ENV
-ENV ENV=production
+ENV ENV=$ENV
 ENV PORT=$PORT
 ENV HOST=$HOST
 
@@ -39,4 +40,4 @@ COPY --from=build /opt/app/build ./build
 COPY --from=build /opt/app/docusaurus.config.js .
 
 # Command to run docusaurus
-CMD ["sh", "-c", "yarn run serve --host 0.0.0.0 --port $PORT"]
+CMD ["sh", "-c", "yarn run serve --host \"$HOST\" --port \"$PORT\""]
