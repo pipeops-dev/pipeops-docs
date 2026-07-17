@@ -115,7 +115,7 @@ General utility and system commands.
 | `status` | Overall system status |
 | `version` | Display CLI version |
 | `update` | Update CLI to latest version |
-| `proxy` | Manage proxy connections |
+| `mcp` | Show hosted MCP endpoint and client setup instructions |
 
 ## Global Flags
 
@@ -232,6 +232,7 @@ Get help for any command:
 ```bash
 # General help
 pipeops --help
+pipeops mcp --help
 
 # Category help
 pipeops login --help

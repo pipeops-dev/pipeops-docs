@@ -108,6 +108,17 @@ pipeops token get <token-id> --json
 
 These commands list service account tokens for the selected workspace and return details for a single token.
 
+## MCP setup
+
+Use the CLI to discover the hosted PipeOps MCP endpoint and copy client setup instructions:
+
+```bash
+pipeops mcp
+pipeops mcp --json
+```
+
+The command does not expose your CLI login token. Create a dedicated service token and follow the [PipeOps MCP guide](/docs/integrations/pipeops-mcp).
+
 ## Removed placeholder commands
 
 The following placeholder commands are not currently available in the CLI:
