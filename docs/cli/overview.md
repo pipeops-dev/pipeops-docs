@@ -52,6 +52,7 @@ The PipeOps Command Line Interface (CLI) is a powerful tool that enables you to 
 - Colored and formatted output
 - JSON output mode for scripting
 - Comprehensive help system
+- Hosted MCP setup discovery with `pipeops mcp`
 - Auto-update functionality
 
 ## Command Categories
@@ -64,6 +65,7 @@ The PipeOps CLI organizes commands into logical categories:
 - **Servers** (`pipeops server`) - Server provisioning and management
 - **Agents** (`pipeops agent`) - Agent installation and cluster management
 - **Utilities** - Status checks, version info, updates, and proxy management
+- **AI assistants** (`pipeops mcp`) - Discover the hosted PipeOps MCP endpoint and secure setup instructions
 
 ## Getting Started
 
@@ -72,6 +74,7 @@ To get started with the PipeOps CLI:
 1. **[Install the CLI](/docs/cli/getting-started/installation)** - Quick installation on any platform
 2. **[Quick Start Guide](/docs/cli/getting-started/quick-start)** - Deploy your first project using the CLI
 3. **[Configuration](/docs/cli/getting-started/configuration)** - Configure the CLI for your environment
+4. **[Connect an AI assistant](/docs/integrations/pipeops-mcp)** - Use the hosted PipeOps MCP server
 
 ## Next Steps
 
@@ -84,12 +87,12 @@ To get started with the PipeOps CLI:
 
 The PipeOps CLI and Web UI provide complementary ways to interact with the platform:
 
-| Feature | CLI | Web UI |
-|---------|-----|--------|
-| **Speed** | Fast command execution | Visual navigation |
-| **Automation** | Scriptable, CI/CD ready | Manual workflows |
-| **Learning Curve** | Command syntax | Visual interface |
-| **Use Cases** | Development, automation, scripting | Monitoring, exploration, configuration |
+| Feature            | CLI                                | Web UI                                 |
+| ------------------ | ---------------------------------- | -------------------------------------- |
+| **Speed**          | Fast command execution             | Visual navigation                      |
+| **Automation**     | Scriptable, CI/CD ready            | Manual workflows                       |
+| **Learning Curve** | Command syntax                     | Visual interface                       |
+| **Use Cases**      | Development, automation, scripting | Monitoring, exploration, configuration |
 
 Many users find it beneficial to use both: the Web UI for exploration and monitoring, and the CLI for day-to-day development and automation tasks.
 
