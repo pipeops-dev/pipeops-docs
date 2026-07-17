@@ -39,4 +39,4 @@ COPY --from=build /opt/app/build ./build
 COPY --from=build /opt/app/docusaurus.config.js .
 
 # Command to run docusaurus
-CMD ["sh", "-c", "yarn run serve --host $HOST --port $PORT"]
+CMD ["sh", "-c", "yarn run serve --host 0.0.0.0 --port $PORT"]
