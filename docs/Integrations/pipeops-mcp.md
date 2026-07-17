@@ -17,16 +17,26 @@ You do not need to install or run a local MCP server.
 | Transport      | Streamable HTTP               |
 | Authentication | Bearer service token          |
 
+## Find PipeOps MCP in the Console
+
+1. Sign in to the [PipeOps Console](https://console.pipeops.io/).
+2. Select the workspace you want the assistant to access.
+3. Open **Developer Tools** from the dashboard sidebar.
+4. Select **PipeOps MCP**.
+
+You can also open [Developer Tools](https://console.pipeops.io/dashboard/developer-tools) directly. The **PipeOps MCP** card opens this setup guide.
+
+To create or revoke credentials for an MCP client, open [Integrations → Service Tokens](https://console.pipeops.io/dashboard/integrations?cloudIntegrations=tokens). If **Service Tokens** is not visible, confirm that you have permission to manage integrations for the workspace or contact PipeOps support.
+
 ## Before you connect
 
 Create a dedicated service token for your AI client:
 
-1. Open **Developer Tools** in the [PipeOps Console](https://console.pipeops.io/dashboard/developer-tools).
-2. Select **PipeOps MCP**.
-3. Open [Integrations → Service Tokens](https://console.pipeops.io/dashboard/integrations?cloudIntegrations=tokens).
-4. Create a token with `api:read` for read-only tools.
-5. Add `api:write` only if the client needs to deploy, restart, stop, create, update, or delete resources.
-6. Copy the token when it is shown. Store it securely because it should not be pasted into an AI conversation or committed to source control.
+1. Open [Integrations → Service Tokens](https://console.pipeops.io/dashboard/integrations?cloudIntegrations=tokens).
+2. Select **Create Service Token**.
+3. Create a token with `api:read` for read-only tools.
+4. Add `api:write` only if the client needs to deploy, restart, stop, create, update, or delete resources.
+5. Copy the token when it is shown. Store it securely because it should not be pasted into an AI conversation or committed to source control.
 
 :::tip Least privilege
 Start with `api:read`. Create a separate, short-lived token for write access instead of granting `api:full` to a general-purpose assistant.
