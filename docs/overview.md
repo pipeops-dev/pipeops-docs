@@ -27,6 +27,7 @@ Explore the following list of features that PipeOps offers:
 - **Scalability**: Scale your infrastructure effortlessly to meet the demands of your growing applications.
 - **Automation**: Leverage automation capabilities to streamline repetitive tasks.
 - **CLI Tool**: Use the PipeOps CLI for command-line management and CI/CD integration.
+- **MCP Server**: Connect AI assistants to your PipeOps account with scoped, token-based access.
 
 ## Using PipeOps
 
@@ -48,6 +49,14 @@ The [PipeOps CLI](/docs/cli/overview) enables:
 
 **Get started with the CLI**: [Installation Guide](/docs/cli/getting-started/installation) | [Quick Start](/docs/cli/getting-started/quick-start)
 
+### AI Assistants (MCP)
+
+The hosted [PipeOps MCP server](/docs/integrations/pipeops-mcp) enables:
+
+- Read-only account and infrastructure discovery
+- Project and deployment operations with explicit write access
+- Remote Streamable HTTP connections without a local server install
+- Service-token scopes and workspace isolation
 
 ## Guides
 
