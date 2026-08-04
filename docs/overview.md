@@ -54,10 +54,11 @@ The [PipeOps CLI](/docs/cli/overview) enables:
 [Rexec](https://rexec.sh) provides **AI-native sandboxes** — short-lived, isolated Linux workspaces for agents and developers:
 
 - Create and manage sandboxes from the browser or API  
-- Official SDKs (JS, Python, Go, Rust, Ruby, .NET, Java, PHP)  
+- Official SDKs (JS, Python, Go, Rust, Ruby, .NET, Java, PHP) — prefer `sandboxes.*` (v1.1.0+)  
 - Files API + interactive terminal over WebSocket  
+- Runnable multi-language happy path: [PipeOpsHQ/sandbox-example](https://github.com/PipeOpsHQ/sandbox-example)  
 
-**Get started**: [What are sandboxes?](/docs/rexec/overview) · [SDK Quick Start](/docs/rexec/sdk-quick-start) · [SDK Reference](/docs/rexec/sdk-reference)
+**Get started**: [What are sandboxes?](/docs/rexec/overview) · [SDK Quick Start](/docs/rexec/sdk-quick-start) · [SDK Reference](/docs/rexec/sdk-reference) · [Examples](https://github.com/PipeOpsHQ/sandbox-example)
 
 ### AI Assistants (MCP)
 
