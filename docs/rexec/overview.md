@@ -21,16 +21,17 @@ Sandboxes are ideal for:
 | **Hosted API** | `https://rexec.sh` |
 | **Auth** | `Authorization: Bearer <token>` |
 | **Open source** | [github.com/PipeOpsHQ/Rexec](https://github.com/PipeOpsHQ/Rexec) |
+| **SDK examples** | [github.com/PipeOpsHQ/sandbox-example](https://github.com/PipeOpsHQ/sandbox-example) |
 | **In-app SDK docs** | [rexec.sh/docs/sdk](https://rexec.sh/docs/sdk) |
 
 ## Sandbox vs container (terminology)
 
 | Term | Meaning in Rexec |
 |------|------------------|
-| **Sandbox** | Product concept: your isolated Linux workspace (what you create, share, and delete) |
-| **Container** | Implementation / API resource name (`/api/containers`, SDK methods like `containers.list()`) |
+| **Sandbox** | Product concept **and preferred SDK name** (`client.sandboxes`, `Sandbox`) |
+| **Container** | HTTP wire path (`/api/containers`) and **deprecated** SDK aliases (`client.containers`) |
 
-Docs and SDKs may say **sandbox** and **container** interchangeably. The REST paths still use `/api/containers`.
+Use **`sandboxes.*`** in new code (SDK **v1.1.0+**). REST paths still use `/api/containers`.
 
 ## Lifecycle
 
@@ -60,6 +61,7 @@ Full catalog: **`GET /api/images`**.
 |---------|----------|
 | **Web console** | Browser UI, terminal, settings, API tokens |
 | **Official SDKs** | Automate create/list/delete from app or agent code |
+| **Example repo** | Runnable happy paths for every language |
 | **REST + WebSocket** | Custom clients against the same API |
 | **Self-hosted** | Run the open-source stack on your infra |
 
@@ -75,5 +77,6 @@ There is **no** primary HTTP `exec()` API on hosted Rexec. Run commands through 
 
 - [SDK Quick Start](./sdk-quick-start.md) — install a client and create a sandbox in ~5 minutes  
 - [SDK & API Reference](./sdk-reference.md) — languages, endpoints, errors, registries  
+- **Clone & run:** [PipeOpsHQ/sandbox-example](https://github.com/PipeOpsHQ/sandbox-example) — create → poll running → get → delete in JS, Python, Go, Ruby, Rust, Java, PHP, .NET  
 - Product UI: [rexec.sh](https://rexec.sh)  
 - Upstream API reference: [Rexec SDK.md](https://github.com/PipeOpsHQ/Rexec/blob/main/docs/SDK.md)
