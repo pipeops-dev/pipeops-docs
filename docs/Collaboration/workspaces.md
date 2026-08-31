@@ -1,8 +1,6 @@
 ---
-slug: workspaces
 title: Workspaces
 description: "Use PipeOps workspaces to switch between organizations and create dedicated environments for project collaboration."
-sidbar_position: 1
 ---
 
 # Workspaces
@@ -12,9 +10,9 @@ projects, servers, and team members independently. Workspaces are useful
 when you need to separate work across different organizations, clients,
 or teams — each with its own resources and settings.
 
-:::note
+<Note>
 Each workspace requires its own active subscription. When you create a new workspace, you will be prompted to select and activate a subscription plan before you can start using it. There is no limit to the number of workspaces you can create.
-:::
+</Note>
 
 ## Switching Between Workspaces
 

@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: Quick Start
 description: "Authenticate, create a project, and deploy your first application with the PipeOps CLI in minutes."
 ---
@@ -111,9 +110,9 @@ pipeops list --addons
 pipeops list --deployments --project proj-123
 ```
 
-:::note
+<Note>
 For creating new projects and deploying application code (including addons), use the [Web UI](https://app.pipeops.io).
-:::
+</Note>
 
 ## Common Workflows
 

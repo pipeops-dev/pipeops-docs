@@ -1,8 +1,6 @@
 ---
-sidebar_position: 7
 title: Generate GCP JSON credentials
 description: "Generate GCP JSON service account credentials using Google Cloud Shell for integrating your GCP account with PipeOps."
-slug: generate-gcp-json-credentials
 ---
 
 Creating a GCP JSON credentials is required to connect your GCP Account to PipeOps. The followings steps would highlight how to generate the JSON credentials to be securely uploaded on PipeOps platform.

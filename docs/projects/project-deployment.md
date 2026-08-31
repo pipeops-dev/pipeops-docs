@@ -1,8 +1,6 @@
 ---
-slug: project-deployment
 title: Deploying a Project
 tags: [deployment, guide]
-sidebar_position: 1
 description: "Deploy a project on PipeOps by selecting a project type, 
 connecting your repository, and configuring build settings."
 ---
@@ -105,11 +103,11 @@ page. Review and configure the following fields before proceeding.
 | **General Resources** | Adjust CPU and Memory sliders to allocate resources. Click **View Guide** for recommendations. |
 | **Project Source**    | Confirms the repository being deployed.                                                        |
 
-:::note
+<Note>
 You can create additional environments up to your plan's limit. During
 deployment, all available environments are selectable — you are not
 limited to the default options.
-:::
+</Note>
 
 Click **Proceed** to continue.
 
@@ -131,10 +129,10 @@ Enter a **Release Command** that runs just before your project goes
 live on each deployment. This is typically used for tasks such as
 database migrations.
 
-:::warning
+<Warning>
 Commands that fail or take longer than **10 minutes** will cause the
 deployment to fail. Test your command locally before adding it here.
-:::
+</Warning>
 
 ### Networking
 
@@ -170,11 +168,11 @@ shows real-time progress across four sequential stages.
 You can click **Cancel** during the Build stage to abort the
 deployment.
 
-:::note
+<Note>
 If any stage fails, the pipeline stops and displays an error. Check
 the live logs in the **Build** stage for details on what went wrong
 before retrying.
-:::
+</Note>
 
 Once all stages complete successfully, a **Project Deployed!** modal
 confirms your deployment.
@@ -228,11 +226,11 @@ pipeops logs proj-123 --follow
 pipeops list --deployments --project proj-123
 ```
 
-:::note
+<Note>
 The CLI is currently focused on monitoring and viewing project
 information. For creating projects and deploying application code,
 use the Web UI.
-:::
+</Note>
 
 For detailed CLI usage, see:
 

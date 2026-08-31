@@ -1,6 +1,4 @@
 ---
-slug: monitoring
-sidebar_position: 5
 title: Monitoring & Observability
 description: "Monitor your PipeOps Kubernetes Agent using the built-in observability stack with Prometheus, Grafana, Loki, and OpenCost."
 ---

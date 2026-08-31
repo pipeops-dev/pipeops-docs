@@ -1,6 +1,4 @@
 ---
-sidebar_position: 2
-slug: no-buildpack-detected
 title: No Buildpack Detected
 description: "Resolve the No Buildpack Detected error during application deployment on PipeOps by verifying project structure and configuration."
 ---

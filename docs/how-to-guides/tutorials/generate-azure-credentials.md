@@ -1,8 +1,6 @@
 ---
-sidebar_position: 9
 title: Generate Azure credentials
 description: "Generate the required Azure credentials including Resource Group, Subscription ID, Tenant ID, and Client Secret for PipeOps."
-slug: generate-azure-credentials
 ---
 
 Creating Azure credentials is required to connect your Azure Account to PipeOps. You need the following details to integrate your Azure account successfully:

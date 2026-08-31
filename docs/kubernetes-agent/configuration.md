@@ -1,6 +1,4 @@
 ---
-slug: configuration
-sidebar_position: 3
 title: Configuration Reference
 description: "Configuration reference for the PipeOps Kubernetes Agent covering environment variables, YAML config files, and Helm values."
 ---
@@ -9,9 +7,10 @@ description: "Configuration reference for the PipeOps Kubernetes Agent covering 
 
 This page provides a comprehensive reference for all PipeOps Kubernetes Agent configuration options. The agent can be configured using environment variables, a YAML configuration file, or Helm values.
 
-:::tip Advanced Configuration
+<Tip>
+**Advanced Configuration**
 For advanced configuration scenarios and detailed examples, refer to the [PipeOps Agent Documentation](https://agents.pipeops.io/).
-:::
+</Tip>
 
 ## Environment Variables
 
@@ -45,9 +44,10 @@ Valid `CLUSTER_TYPE` values: `auto`, `k3s`, `minikube`, `k3d`, `kind`, `existing
 | `ENABLE_INGRESS_SYNC` | Enable gateway proxy ingress watching | No | `true` |
 | `GATEWAY_PROXY_ENABLED` | Alias for ENABLE_INGRESS_SYNC | No | `true` |
 
-:::info Gateway Proxy
+<Info>
+**Gateway Proxy**
 Gateway proxy is **enabled by default** and automatically detects cluster type (public vs private) to optimize routing. Direct routing for public clusters (3-5x faster), tunnel routing for private clusters.
-:::
+</Info>
 
 ### Monitoring Configuration
 

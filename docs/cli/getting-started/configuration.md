@@ -1,5 +1,4 @@
 ---
-sidebar_position: 3
 title: Configuration
 description: "Configure the PipeOps CLI using its JSON config file, environment variables, and command-line flags."
 ---
@@ -104,9 +103,9 @@ export PIPEOPS_AUTH_TOKEN=your-token-here
 pipeops project list
 ```
 
-:::caution
+<Warning>
 Be careful when using this in scripts. Never commit tokens to version control.
-:::
+</Warning>
 
 #### `PIPEOPS_NO_COLOR`
 
@@ -305,9 +304,9 @@ export PIPEOPS_AUTH_TOKEN="your-token-here"
 echo '{"auth_token":"your-token-here"}' > ~/.pipeops.json
 ```
 
-:::tip
+<Tip>
 For CI/CD pipelines, use secrets management to store tokens securely.
-:::
+</Tip>
 
 ### Token Refresh
 

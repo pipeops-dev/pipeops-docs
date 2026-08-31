@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Commands Overview
 description: "Overview of all PipeOps CLI command categories, their structure, and common flags for output formatting."
 ---

@@ -1,5 +1,4 @@
 ---
-sidebar_position: 4
 title: Monitoring Commands
 description: "Reference for PipeOps CLI monitoring commands to check project status, view logs, and track deployments."
 ---
@@ -8,9 +7,9 @@ description: "Reference for PipeOps CLI monitoring commands to check project sta
 
 The PipeOps CLI provides commands for monitoring and viewing information about your projects and deployments.
 
-:::note
+<Note>
 The CLI currently focuses on **read operations** for monitoring projects. For deploying applications, use the [Web UI](/docs/projects/project-deployment).
-:::
+</Note>
 
 
 

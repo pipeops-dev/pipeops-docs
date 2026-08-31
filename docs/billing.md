@@ -1,7 +1,5 @@
 ---
-sidebar_position: 9.5
 sidebar_label: Billing
-slug: billing
 title: Billing
 description: Manage your PipeOps subscription plan, payment methods, billing contact, and view your full invoice history from the Billing page.
 ---
@@ -31,9 +29,9 @@ The plan card shows:
 - **Subscription period** — the start and end dates of the current billing cycle
 - **Next Billing Cycle** — the amount due and the scheduled charge date
 
-:::note
-Your discounted monthly subscription fee and all resource usage costs are deducted from your wallet balance and connected card. See [Pricing](./Pricing) for a full breakdown of how charges are calculated.
-:::
+<Note>
+Your discounted monthly subscription fee and all resource usage costs are deducted from your wallet balance and connected card. See [Pricing](./pricing) for a full breakdown of how charges are calculated.
+</Note>
 
 ## What's Included
 
@@ -51,7 +49,7 @@ Below the plan card, the **What's Included** section lists every feature and res
 | Environments                     | 5              |
 | Database Deployment / Management | Included       |
 
-For a full comparison of all available tiers, see the [Pricing](./Pricing) page.
+For a full comparison of all available tiers, see the [Pricing](./pricing) page.
 
 ## Upgrading Your Plan
 
@@ -63,9 +61,9 @@ Upgrades take effect immediately.
 
 To end your current subscription, click **Cancel Subscription** at the bottom of the plan section. You will be prompted to confirm before any change is applied.
 
-:::caution
+<Warning>
 Cancelling your subscription removes access to plan-specific features immediately. However, any resource usage costs already incurred during the cycle will still be charged before you can resume your subscription.
-:::
+</Warning>
 
 ## Billing Contact
 
@@ -96,9 +94,9 @@ The **Payment Method** section shows the card currently charged for subscription
 
 ![Update Default Payment Card dialog listing saved cards, Active and Primary badges, Add a New Card option, and Save and Cancel buttons](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/billing-page/billing-cards-modal.png)
 
-:::note
+<Note>
 Changes to your default payment card apply immediately or take effect on your next billing cycle.
-:::
+</Note>
 
 ### Removing a Card
 
@@ -120,9 +118,9 @@ Each row in the table contains the following columns:
 | **Date**           | The timestamp when the invoice was issued                                                     |
 | **Status**         | **PAID** for settled invoices; **UNPAID** for outstanding ones                                |
 
-:::note
+<Note>
 When an invoice shows an **UNPAID** status, a **Pay Now** button appears directly beside the status badge. Click it to settle the outstanding balance immediately.
-:::
+</Note>
 
 Use the pagination controls at the bottom of the table to browse through all pages of your billing history.
 

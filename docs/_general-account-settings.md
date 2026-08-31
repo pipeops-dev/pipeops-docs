@@ -1,6 +1,4 @@
 ---
-sidebar_position: 14
-slug: general-account-settings
 description: "Configure your PipeOps account settings including profile management, payment methods, and Git repository provider connections."
 ---
 
@@ -10,7 +8,7 @@ In this section, we'll go through the account settings shown in your PipeOps das
 
 To access your profile settings, click the account button at the top-right corner of your dashboard, then select **Profile**.
 
-<!-- PLACEHOLDER: Screenshot 1 — Account menu opened from the top-right dashboard button -->
+{/* PLACEHOLDER: Screenshot 1 — Account menu opened from the top-right dashboard button */}
 
 ## Profile
 
@@ -22,7 +20,7 @@ The **Account** area displays your basic account information. You can review you
 
 You can also use the available **Edit** actions to update editable details such as your full name or password.
 
-<!-- PLACEHOLDER: Screenshot 2 — Profile page account, security, and debit/credit card sections -->
+{/* PLACEHOLDER: Screenshot 2 — Profile page account, security, and debit/credit card sections */}
 
 ### Security
 
@@ -49,7 +47,7 @@ PipeOps supports:
 
 If a provider is connected, you can click **Disconnect** to remove the connection. If a provider is not connected, click **Connect** to link it to your account.
 
-<!-- PLACEHOLDER: Screenshot 3 — Profile page connected providers, OAuth methods, and danger zone sections -->
+{/* PLACEHOLDER: Screenshot 3 — Profile page connected providers, OAuth methods, and danger zone sections */}
 
 ### OAuth Methods
 

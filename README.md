@@ -1,27 +1,46 @@
 # PipeOps Docs
 
-This repository now runs as a Mintlify documentation project.
+This repository contains the PipeOps documentation site powered by Mintlify.
 
 ## Local development
+
+Install dependencies and start Mintlify’s local preview:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Mintlify runs on port `3000` by default. Use `npm run dev:3001` if port `3000` is already occupied.
+The preview normally runs on `http://localhost:3000`.
 
-## Link validation
+## Validation
+
+Run the deterministic migration/content checks:
 
 ```bash
-npm run check:links
+npm run test:migration
+npm run check:migration
 ```
+
+`check:migration` validates `docs.json` navigation targets, local Markdown links, and remaining Docusaurus-only syntax.
+
+`npm run build` runs Mintlify’s strict documentation validator. Production hosting and custom-domain setup are managed through the Mintlify dashboard.
 
 ## Project structure
 
 - `docs.json` is the source of truth for navigation, redirects, branding, analytics, and footer/navbar links.
-- `index.mdx` is the landing page for the docs home.
-- The product content is grouped into `getting-started`, `guides`, `applications`, `infrastructure`, `cli`, `troubleshooting`, and `changelog`.
-- Utility pages such as `about.mdx`, `pricing.mdx`, and `support.mdx` stay outside the primary navigation hierarchy.
-# pipeops-doc-v2
-# pipeops-doc-v2
+- `docs/` contains the active product documentation.
+- `static/` contains logos, favicons, screenshots, and other public assets.
+- `design-archive/docusaurus-theme/` preserves the previous Docusaurus theme, colors, fonts, logos, and custom components for possible future reuse.
+- `design-archive/docusaurus-content/` preserves Docusaurus tutorial/demo pages intentionally excluded from the product navigation.
+- `scripts/check-mintlify-migration.mjs` performs repository-level migration checks.
+- `docs/superpowers/mintlify-migration-status.md` records completed work, skipped pages, blockers, setup requirements, and Mintlify limitations.
+
+## External Mintlify setup
+
+After connecting this repository in Mintlify:
+
+1. Configure the `docs.pipeops.io` custom domain and DNS records.
+2. Confirm the GA4, Google Tag Manager, and PostHog integrations in the Mintlify dashboard.
+3. If iframe embedding is still required, replace the retired Docusaurus iframe script with a Mintlify-supported custom integration.
+4. Decide whether Docker-based self-hosting remains necessary; the previous Docusaurus Dockerfile is no longer part of the active runtime.

@@ -1,8 +1,6 @@
 ---
-slug: teams
 title: Teams
 description: "Create and manage teams in PipeOps including team access, assigned resources, invited members, and audit trail activity."
-sidebar_position: 2
 ---
 
 # Teams
@@ -97,10 +95,10 @@ To invite a member:
 
 ![New Member drawer showing email, role, access level, and resource assignment fields](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/teams-page/team-5.png)
 
-:::note
+<Note>
 Invitations are sent after the team is fully created, not immediately
 when you click **Add Invite**.
-:::
+</Note>
 
 ## Manage a Team
 

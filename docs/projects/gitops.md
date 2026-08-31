@@ -1,5 +1,4 @@
 ---
-sidebar_position: 14
 title: GitOps Deployments
 description: Deploy applications using GitOps principles with declarative configuration
 ---
@@ -199,9 +198,10 @@ Before syncing, you can preview changes:
 
 For users with their own Kubernetes clusters (BYOC - Bring Your Own Cluster), PipeOps supports deploying raw Kubernetes manifests.
 
-:::warning Important
+<Warning>
+**Important**
 Custom Kubernetes manifests are **NOT allowed** on PipeOps-managed clusters (PKS) for security and stability reasons.
-:::
+</Warning>
 
 ### Cluster Type Support
 

@@ -1,6 +1,4 @@
 ---
-slug: project-metrics
-sidebar_position: 4
 title: Project Metrics
 description: "Access and explore performance metrics for deployed projects in PipeOps including CPU, memory, storage, and network I/O."
 ---

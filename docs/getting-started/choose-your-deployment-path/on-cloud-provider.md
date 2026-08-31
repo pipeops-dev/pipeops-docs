@@ -1,6 +1,4 @@
 ---
-slug: on-cloud-provider
-sidebar_position: 2
 title: On Cloud Provider
 description: "Provision a server on your own AWS, Azure, DigitalOcean, or Google Cloud account using PipeOps Bring Your Own Cloud, then deploy a project to it."
 ---
@@ -9,7 +7,7 @@ description: "Provision a server on your own AWS, Azure, DigitalOcean, or Google
 
 PipeOps supports a Bring Your Own Cloud (BYOC) deployment model. Connect an existing cloud account, provision a server through PipeOps, and deploy projects directly to that infrastructure without leaving your own cloud environment.
 
-AWS is used as the example provider in the steps below. The flow is the same for Google Cloud, Azure, and DigitalOcean, though the connection fields differ. See the [Integrations guide](/docs/category/integrations) for provider-specific setup instructions.
+AWS is used as the example provider in the steps below. The flow is the same for Google Cloud, Azure, and DigitalOcean, though the connection fields differ. See the [Integrations guide](/docs/Integrations/aws-on-pipeops) for provider-specific setup instructions.
 
 ## Before You Begin
 
@@ -43,7 +41,7 @@ If no account has been connected for the selected provider, click **Connect**.
 
 The connection fields vary by provider. For AWS, enter an optional account name and your AWS Account ID, then click **Add**. PipeOps uses this to initiate the IAM authorization flow for your account.
 
-For setup instructions specific to your provider, see the [Integrations guide](/docs/category/integrations).
+For setup instructions specific to your provider, see the [Integrations guide](/docs/Integrations/aws-on-pipeops).
 
 ![Connect AWS panel](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-3.png)
 
@@ -159,4 +157,4 @@ When the deployment succeeds, PipeOps confirms that the project is live.
 
 ![Project Deployed success modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-21.png)
 
-The project is now running on your BYOC server. To manage environments, configure custom domains, or set up CI/CD triggers, see the [Project Overview page](/docs/projects/project-overview.md).
+The project is now running on your BYOC server. To manage environments, configure custom domains, or set up CI/CD triggers, see the [Project Overview page](/docs/projects/project-overview).

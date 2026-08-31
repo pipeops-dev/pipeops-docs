@@ -1,6 +1,4 @@
 ---
-sidebar_position: 10
-slug: usage
 title: Usage
 description: "Monitor and manage your PipeOps resource usage including active subscriptions, server limits, environments, and credits."
 ---
@@ -45,9 +43,9 @@ At the top of the tab, your current resource usage is shown across four areas:
 
 The **Available Credit** card displays your current wallet balance. Click **Top Up** to add credit. A link below the button provides guidance on how to earn credits if needed.
 
-:::note
+<Note>
 PipeOps deducts your discounted monthly subscription fee and all resource usage costs from your wallet or connected card, depending on which has sufficient balance to cover the amount due.
-:::
+</Note>
 
 ### Plan Details
 
@@ -116,6 +114,6 @@ The **Per-Cluster Breakdown** section shows bandwidth usage split by individual 
 
 The **Bandwidth History (Last 6 Months)** chart shows your monthly transfer volume and estimated cost over the past six months, giving you a trend view for capacity planning.
 
-<!-- PLACEHOLDER: [Screenshot 6] —  -->
+{/* PLACEHOLDER: [Screenshot 6] —  */}
 
 ![Bandwidth history chart showing monthly transfer volume and estimated cost by month](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-page/usage-6.png)

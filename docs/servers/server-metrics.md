@@ -1,7 +1,5 @@
 ---
-sidebar_position: 3
 title: Server Metrics
-slug: server-metrics
 description: "Monitor server performance in PipeOps with CPU, memory, 
 storage, network I/O, control plane, and overview metric charts."
 ---

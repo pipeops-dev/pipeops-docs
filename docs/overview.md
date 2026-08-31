@@ -1,6 +1,4 @@
 ---
-sidebar_position: 1
-slug: overview
 title: Overview
 description: "Get started with PipeOps documentation, explore key features like app deployment, server management, scaling, and automation."
 ---
@@ -15,8 +13,8 @@ PipeOps is the go-to platform for seamless application and server deployment in 
 
 If you're new to PipeOps, the following resources will help you get started in seconds:
 
-- [User Registration Guide](/docs/getting-started/user-registration.md): Easily set up your PipeOps account.
-- [How-To Guides](/docs/category/tutorials): Dive into a simple tutorial to deploy your first application.
+- [User Registration Guide](/docs/getting-started/user-registration): Easily set up your PipeOps account.
+- [How-To Guides](/docs/how-to-guides/templates-deployment/deploy-template-projects): Dive into a simple tutorial to deploy your first application.
 
 ## Features
 
@@ -51,7 +49,7 @@ The [PipeOps CLI](/docs/cli/overview) enables:
 
 ### AI Assistants (MCP)
 
-The hosted [PipeOps MCP server](/docs/integrations/pipeops-mcp) enables:
+The hosted [PipeOps MCP server](/docs/Integrations/pipeops-mcp) enables:
 
 - Read-only account and infrastructure discovery
 - Project and deployment operations with explicit write access
@@ -62,12 +60,12 @@ The hosted [PipeOps MCP server](/docs/integrations/pipeops-mcp) enables:
 
 Dive deeper into specific topics with our in-depth guides:
 
-- [Hands-on Tutorials](/docs/category/tutorials): Advanced tutorials to fit your specific requirements.
-- [Deployment Templates](/docs/category/deployment-templates): Quickly setup deployment templates to get familiar with the platform.
+- [Hands-on Tutorials](/docs/how-to-guides/templates-deployment/deploy-template-projects): Advanced tutorials to fit your specific requirements.
+- [Deployment Templates](/docs/how-to-guides/templates-deployment/deploy-template-projects): Quickly setup deployment templates to get familiar with the platform.
 
 ## Troubleshooting
 
-Encountering issues? Check our [Troubleshooting Guide](/docs/category/troubleshooting) for solutions to common problems.
+Encountering issues? Check our [Troubleshooting Guide](/docs/troubleshooting/bad-gateway) for solutions to common problems.
 
 ## Community and Support
 

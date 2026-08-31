@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Troubleshooting
 description: "Solutions for common PipeOps CLI issues including installation problems, authentication errors, and command failures."
 ---

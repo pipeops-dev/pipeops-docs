@@ -1,6 +1,4 @@
 ---
-slug: rollback
-sidebar_position: 10
 title: Rollback
 description: "Revert a PipeOps deployment to a previous version using git commit history or deployment action history."
 ---

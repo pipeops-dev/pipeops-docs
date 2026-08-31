@@ -1,6 +1,4 @@
 ---
-slug: server-dashboard
-sidebar_position: 7
 title: Server Dashboard
 description: "Access the Prometheus monitoring 
 tool for your PipeOps server."
@@ -12,10 +10,10 @@ The **Dashboard** tab gives you direct access to the Prometheus monitoring tool 
 inspect cluster resources in real time and review performance metrics
 without leaving PipeOps.
 
-:::note
+<Note>
 The Dashboard tab is not available on all server types. Availability
 depends on your provisioning method and server configuration.
-:::
+</Note>
 
 ## Accessing the Dashboard
 
@@ -34,10 +32,10 @@ you access to:
 - Custom metric queries for deeper performance analysis.
 - Alerting data for conditions you want to track over time.
 
-<!-- PLACEHOLDER: Screenshot of the Prometheus view or metrics interface -->
+{/* PLACEHOLDER: Screenshot of the Prometheus view or metrics interface */}
 
-:::note
+<Note>
 If the tool is unavailable for your server, the relevant section
 will indicate that it has not been configured or is not supported
 for your server type.
-:::
+</Note>

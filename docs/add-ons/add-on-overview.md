@@ -1,6 +1,4 @@
 ---
-slug: add-on-overview
-sidebar_position: 2
 title: Add-on Overview
 description: "View add-on status, connection details, resource usage, and recent activity for deployed add-ons in PipeOps."
 ---
@@ -45,4 +43,4 @@ Below the status bar, the page contains:
 
 The tab navigation for database add-ons includes all the tabs available on non-database add-ons, plus:
 
-- [**Studio**](/docs/add-ons/add-on-database-studio) — a built-in interface for interacting directly with your database without needing an external client.
+- [**Studio**](/docs/add-ons/add-on-databse-studio) — a built-in interface for interacting directly with your database without needing an external client.

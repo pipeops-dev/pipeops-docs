@@ -1,0 +1,258 @@
+/* PipeOps visual layer for Mintlify's built-in theme. */
+
+:root {
+  --pipeops-bg: #18181a;
+  --pipeops-surface: #1f1f21;
+  --pipeops-surface-hover: #242426;
+  --pipeops-border: #363538;
+  --pipeops-border-soft: #2a2a2d;
+  --pipeops-accent: #825dff;
+  --pipeops-text: #d8d8d8;
+  --pipeops-muted: #a0a0a0;
+}
+
+/* Keep the topbar and the two navigation rails visually framed. */
+#navbar {
+  border-bottom: 1px solid var(--pipeops-border-soft);
+}
+
+#sidebar {
+  border-right: 1px solid var(--pipeops-border);
+  box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.02);
+}
+
+#table-of-contents-content {
+  border-left: 1px solid var(--pipeops-border);
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.02);
+  padding-left: 1rem;
+}
+
+/* The three-way theme control is inserted beside the logo by theme-toggle.js. */
+#pipeops-theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.125rem;
+  margin-left: 0.75rem;
+  padding: 0.125rem;
+  border: 1px solid var(--pipeops-border);
+  border-radius: 999px;
+  background: var(--pipeops-surface);
+}
+
+#pipeops-theme-toggle button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  color: var(--pipeops-muted);
+  background: transparent;
+}
+
+#pipeops-theme-toggle button:hover,
+#pipeops-theme-toggle button[data-active="true"] {
+  color: var(--pipeops-text);
+  background: var(--pipeops-surface-hover);
+}
+
+/* Match the screenshot's compact, dark navigation surfaces. */
+sidebar-group,
+sidebar-title {
+  color: var(--pipeops-text);
+}
+
+sidebar-group-header,
+toc-item {
+  color: var(--pipeops-muted);
+}
+
+/* Top-level groups are made collapsible by sidebar-accordion.js. */
+.pipeops-sidebar-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.pipeops-sidebar-toggle::after {
+  content: "⌄";
+  margin-left: auto;
+  color: var(--pipeops-muted);
+  font-size: 0.9rem;
+  line-height: 1;
+  transition: transform 160ms ease;
+}
+
+[data-pipeops-sidebar-section][data-collapsed] .pipeops-sidebar-toggle::after {
+  transform: rotate(-90deg);
+}
+
+[data-pipeops-sidebar-section][data-collapsed] > .sidebar-group {
+  display: none;
+}
+
+.pipeops-sidebar-toggle:focus-visible {
+  outline: 2px solid var(--pipeops-accent);
+  outline-offset: 3px;
+}
+
+sidebar-group[data-active] sidebar-group-header,
+toc-item[data-active],
+toc-item[data-active-deepest] {
+  color: var(--pipeops-accent);
+}
+
+/* Match the reference active state: a slim accent rule, without a filled pill. */
+#sidebar-content li[data-active] {
+  border-left: 1px solid var(--pipeops-accent);
+}
+
+#sidebar-content li[data-active] > a {
+  border-radius: 0;
+  background: transparent;
+  color: var(--pipeops-accent);
+}
+
+#table-of-contents-content li[data-active] {
+  margin-left: -1rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--pipeops-accent);
+}
+
+/* Mintlify provides the copy/view/AI actions; this only shapes the trigger. */
+[data-component-name="contextual-menu"],
+#contextual-menu {
+  border: 1px solid var(--pipeops-border);
+  border-radius: 999px;
+  background: var(--pipeops-surface);
+}
+
+/* Make the previous/next controls read as one compact navigation rail. */
+#pagination {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  padding: 0.25rem;
+  border: 1px solid var(--pipeops-border-soft);
+  border-radius: 1rem;
+  background: var(--pipeops-surface);
+}
+
+#pagination [data-component-part="pagination-prev"],
+#pagination [data-component-part="pagination-next"] {
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  border: 0;
+  border-radius: 0.75rem;
+  background: transparent;
+  color: var(--pipeops-muted);
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+#pagination [data-component-part="pagination-prev"] {
+  flex: 0 0 7rem;
+  justify-content: flex-start;
+  padding-inline: 0.75rem;
+}
+
+#pagination [data-component-part="pagination-prev"]::before {
+  content: "‹ Previous";
+  white-space: nowrap;
+}
+
+#pagination [data-component-part="pagination-prev"] [data-component-part="pagination-title"],
+#pagination [data-component-part="pagination-prev"] [data-component-part="pagination-chevron"] {
+  display: none;
+}
+
+#pagination [data-component-part="pagination-next"] {
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  gap: 0;
+  padding: 0.25rem 0.75rem 0.25rem 1.25rem;
+  border: 1px solid var(--pipeops-border-soft);
+  border-radius: 0.75rem;
+  background: var(--pipeops-bg);
+}
+
+#pagination [data-component-part="pagination-next"] [data-component-part="pagination-title"] {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-inline: 0;
+  color: var(--pipeops-text);
+  font-weight: 600;
+}
+
+#pagination [data-component-part="pagination-next"]::after {
+  content: "Next ›";
+  flex: 0 0 4.25rem;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--pipeops-border-soft);
+  color: var(--pipeops-muted);
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: right;
+}
+
+#pagination [data-component-part="pagination-next"] [data-component-part="pagination-chevron"] {
+  display: none;
+}
+
+#pagination [data-component-part="pagination-prev"]:hover,
+#pagination [data-component-part="pagination-next"]:hover {
+  color: var(--pipeops-text);
+}
+
+#pagination [data-component-part="pagination-prev"]:hover {
+  background: transparent;
+}
+
+#pagination [data-component-part="pagination-next"]:hover {
+  background: var(--pipeops-bg);
+  border-color: var(--pipeops-accent);
+}
+
+#pagination [data-component-part="pagination-title"] {
+  color: var(--pipeops-text);
+  font-weight: 600;
+}
+
+#pagination [data-component-part="pagination-title"]:hover {
+  background: transparent;
+}
+
+@media (max-width: 640px) {
+  #pagination [data-component-part="pagination-prev"] {
+    flex-basis: 6rem;
+  }
+
+  #pagination [data-component-part="pagination-title"] {
+    padding-inline: 0.75rem;
+  }
+
+  #pagination [data-component-part="pagination-next"]::after {
+    flex-basis: 3.75rem;
+    margin-left: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+/* Preserve keyboard visibility against the dark surfaces. */
+:where(a, button):focus-visible {
+  outline: 2px solid var(--pipeops-accent);
+  outline-offset: 3px;
+}

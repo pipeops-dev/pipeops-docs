@@ -1,6 +1,4 @@
 ---
-slug: project-pr-preview
-sidebar_position: 6
 title: PR Previews
 description: "Automatically deploy isolated preview environments for every pull request in your PipeOps project."
 ---
@@ -17,9 +15,9 @@ Navigate to your project and click the **PR Previews** tab. Use the toggle at th
 
 Once enabled, a **PR Previews enabled** confirmation appears in the bottom-right corner and the **Preview Settings** panel becomes active.
 
-:::note
+<Note>
 When enabled, PipeOps will automatically create a preview environment for each pull request. Previews expire after the configured TTL and are automatically cleaned up when the PR is closed or merged.
-:::
+</Note>
 
 ## Preview Settings
 

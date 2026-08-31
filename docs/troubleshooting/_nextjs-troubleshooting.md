@@ -1,6 +1,4 @@
 ---
-sidebar_position: 4
-slug: nextjs-deployment-troubleshooting
 title: NextJS Deployment Troubleshooting Tips
 description: "Troubleshoot common Next.js deployment issues on PipeOps including Firebase PEM errors, 503 errors, and missing images."
 ---

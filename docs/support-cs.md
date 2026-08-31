@@ -1,6 +1,4 @@
 ---
-sidebar_position: 14
-slug: support-and-community
 description: "Find PipeOps support channels, community resources, and contact information for getting help with your account or deployments."
 ---
 

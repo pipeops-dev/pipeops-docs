@@ -1,5 +1,4 @@
 ---
-sidebar_position: 5
 title: Server Commands
 description: "Reference for PipeOps CLI server commands for listing and managing server infrastructure and provisioning."
 ---

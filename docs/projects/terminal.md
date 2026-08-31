@@ -1,6 +1,4 @@
 ---
-slug: terminal
-sidebar_position: 8
 title: Terminal
 description: "Use the PipeOps in-browser terminal to access your project's shell, execute commands, and manage pods directly from the dashboard."
 ---

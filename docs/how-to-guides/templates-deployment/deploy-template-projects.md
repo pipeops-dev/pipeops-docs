@@ -1,6 +1,4 @@
 ---
-slug: deploy-template-projects
-sidebar_position: 1
 title: Deploy Template Projects
 description: "Deploy a starter project from a PipeOps template without connecting a Git repository first."
 ---
@@ -23,11 +21,11 @@ Make sure you have:
 - At least one server available for deployments.
 - Access to the PipeOps dashboard.
 
-:::info
+<Info>
 If you do not have a server yet, create one before deploying your
 template project. See [Server Provisioning](/docs/servers/server-provisioning)
 for the full setup guide.
-:::
+</Info>
 
 ## Start a Template Deployment
 
@@ -91,11 +89,11 @@ deployment.
 
 ![Project Summary page showing project name, environment, server, resources, and project source](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/template-deployment-6.png)
 
-:::tip
+<Tip>
 For a first test deployment, the default resource values are usually
 enough. Increase CPU or memory when the project requires more capacity
 or if the app becomes slow under load.
-:::
+</Tip>
 
 ## Review Build Settings
 

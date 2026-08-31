@@ -1,6 +1,4 @@
 ---
-slug: installation
-sidebar_position: 2
 title: Installation Guide
 description: "Install the PipeOps Kubernetes Agent using bash scripts, Helm, Docker, or binary with system requirements and prerequisites."
 ---
@@ -9,9 +7,9 @@ description: "Install the PipeOps Kubernetes Agent using bash scripts, Helm, Doc
 
 This guide walks you through installing the PipeOps Kubernetes Agent using various methods. Choose the installation method that best fits your environment and requirements.
 
-:::tip
+<Tip>
 For detailed technical documentation and advanced configuration options, visit the [PipeOps Agent Documentation](https://agents.pipeops.io/).
-:::
+</Tip>
 
 ## Prerequisites
 
@@ -99,14 +97,15 @@ The installer automatically detects the best Kubernetes distribution when `CLUST
 
 If you already have a Kubernetes cluster, Helm provides the most flexible installation method. The PipeOps agent chart is available as an OCI artifact in GitHub Container Registry.
 
-:::warning Component Auto-Installation Behavior
+<Warning>
+**Component Auto-Installation Behavior**
 When installing via Helm or Kubernetes manifests, the agent **does NOT auto-install** monitoring components by default. It only establishes secure tunnel and cluster management capabilities, assuming you have existing infrastructure.
 
 To enable automatic component installation (Metrics Server, VPA, Prometheus, Grafana, etc.):
 ```bash
 --set agent.autoInstallComponents=true
 ```
-:::
+</Warning>
 
 ### Minimal Installation
 

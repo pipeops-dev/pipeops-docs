@@ -1,6 +1,4 @@
 ---
-slug: on-pipeops
-sidebar_position: 1
 title: On PipeOps
 description: "Provision a cloud server and deploy your first project on PipeOps from GitHub, GitLab, Bitbucket, or Azure DevOps."
 ---
@@ -122,4 +120,4 @@ When the deployment succeeds, PipeOps confirms that the project is live.
 
 ![Project Deployed success modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-project-successful-deployment-modal.png)
 
-The project is now running on the newly created server. To manage environments, configure custom domains, or set up CI/CD triggers, see the [Project Deployment guide](/docs/category/projects).
+The project is now running on the newly created server. To manage environments, configure custom domains, or set up CI/CD triggers, see the [Project Deployment guide](/docs/projects/project-overview).

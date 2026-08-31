@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Installation
 description: "Install the PipeOps CLI on macOS, Linux, and Windows using install scripts and package managers."
 ---

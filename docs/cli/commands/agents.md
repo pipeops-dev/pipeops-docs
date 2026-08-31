@@ -1,5 +1,4 @@
 ---
-sidebar_position: 6
 title: Agent Commands
 description: "Reference for PipeOps CLI agent commands to install and manage self-hosted agents with Kubernetes cluster setup."
 ---
@@ -607,6 +606,6 @@ sudo journalctl -u kube-apiserver
 
 ## See Also
 
-- [PipeOps Servers](/docs/category/servers)
+- [PipeOps Servers](/docs/servers/server-overview)
 - [Infrastructure Management](/docs/servers/server-nodes)
 - [Environment Management](/docs/servers/server-environments)

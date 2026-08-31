@@ -1,6 +1,4 @@
 ---
-sidebar_position: 13
-slug: understanding-project-states
 title: Understanding Project States
 description: "Reference guide for all PipeOps project lifecycle states including deployment, paused, error, and pending states."
 ---
@@ -9,9 +7,9 @@ description: "Reference guide for all PipeOps project lifecycle states including
 
 PipeOps projects can exist in a variety of states that reflect where they are in their lifecycle — from initial creation through active deployment, maintenance, and failure recovery.
 
-:::note
+<Note>
 While this page focuses on project states, most of the states described below also apply to servers on PipeOps.
-:::
+</Note>
 
 ## Deployment States
 

@@ -1,9 +1,7 @@
 ---
-slug: add-on-deployment
 title: Add-on Deployment
 description: "Browse the PipeOps Add-ons Marketplace and deploy databases, analytics tools, and other services directly to your server."
 tags: [deployment, guide, addon]
-sidebar_position: 1
 ---
 
 # Add-ons
@@ -38,7 +36,7 @@ On the **Configure Add-on** page, choose where the add-on should run and review 
 
 - **Server** — select the server where the add-on should be deployed
 - **Environment** — select from your available environments, or create a new one. PipeOps includes Production and Beta by default, but you can create additional environments up to the limit your plan allows.
-<!-- [Learn more about environments](/docs/how-to-guides/tutorials/managing-environments) -->
+{/* [Learn more about environments](/docs/how-to-guides/tutorials/managing-environments) */}
 - **Services** — review the services included in the deployment. Click **Add More** to include additional services if your setup requires them
 - **Estimated usage** — review the projected resource cost before deploying
 

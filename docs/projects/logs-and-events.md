@@ -1,6 +1,4 @@
 ---
-slug: logs-and-events
-sidebar_position: 5
 title: Logs And Events
 description: "Access real-time logs and deployment events for PipeOps projects, with filtering, search, and export options."
 ---

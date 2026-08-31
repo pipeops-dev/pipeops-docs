@@ -1,6 +1,4 @@
 ---
-slug: server-update-history
-sidebar_position: 9
 title: Server Update History
 description: "View the log of all server updates including version 
 changes, deployment status, build SHAs, and execution details."
@@ -35,12 +33,12 @@ Each entry in the update log includes the following:
 | **Status**      | The outcome of the update — such as **Success** or **Failed**.                                                |
 | **Action**      | A **View Logs** button that opens the full execution log for that update, including any errors that occurred. |
 
-:::note
+<Note>
 The **Build SHA** link and the **View Logs** button both provide
 access to build log information. The Build SHA link opens the log
 for that specific build, while **View Logs** opens the full
 execution log for the update process.
-:::
+</Note>
 
 ## Using Update History for Troubleshooting
 

@@ -1,6 +1,4 @@
 ---
-slug: add-on-metrics
-sidebar_position: 5
 title: Add-on Metrics
 description: "Access and explore performance metrics for deployed add-ons in PipeOps including CPU, memory, storage, and network I/O."
 ---

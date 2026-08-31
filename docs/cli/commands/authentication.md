@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: Authentication Commands
 description: "Reference for PipeOps CLI authentication commands covering login with OAuth 2.0, logout, status checks, and user info."
 ---
@@ -134,9 +133,9 @@ pipeops logout --force
 - Session information
 - Cached credentials
 
-:::note
+<Note>
 Logging out does **not** revoke the token on the server. To fully revoke access, log in to the web console and revoke the CLI application under Settings > Security > Authorized Applications.
-:::
+</Note>
 
 ---
 

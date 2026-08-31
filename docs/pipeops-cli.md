@@ -1,6 +1,4 @@
 ---
-sidebar_position: 11
-slug: pipeops-cli
 title: PipeOps CLI
 ---
 
@@ -117,7 +115,7 @@ pipeops mcp
 pipeops mcp --json
 ```
 
-The command does not expose your CLI login token. Create a dedicated service token and follow the [PipeOps MCP guide](/docs/integrations/pipeops-mcp).
+The command does not expose your CLI login token. Create a dedicated service token and follow the [PipeOps MCP guide](/docs/Integrations/pipeops-mcp).
 
 ## Removed placeholder commands
 

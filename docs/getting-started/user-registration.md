@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 description: "Create a PipeOps account using GitHub, GitLab, Bitbucket, Google, email, or a passkey with this step-by-step registration guide."
 ---
 
@@ -64,7 +63,7 @@ After signing up with email, PipeOps displays the **Verify OTP** page. Check you
 
 The OTP expires after 5 minutes. If you do not receive the code or it expires, click **Resend** to request for a new code.
 
-<!-- PLACEHOLDER: [Screenshot 4] — Verify OTP page with code fields and Proceed button -->
+{/* PLACEHOLDER: [Screenshot 4] — Verify OTP page with code fields and Proceed button */}
 
 ![PipeOps OTP Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-otp-page.png)
 
@@ -74,7 +73,7 @@ After verification, PipeOps asks a few quick questions to customize your experie
 
 First, enter a workspace name. This name helps you identify and organize your projects in PipeOps.
 
-<!-- PLACEHOLDER: [Screenshot 5] — Workspace name screen with a workspace name input field -->
+{/* PLACEHOLDER: [Screenshot 5] — Workspace name screen with a workspace name input field */}
 
 ![PipeOps Workspace Form](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-specify-workspace-name.png)
 

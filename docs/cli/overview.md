@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: CLI Overview
 description: "Introduction to the PipeOps CLI for managing authentication, projects, deployments, and servers from your terminal."
 ---
@@ -74,7 +73,7 @@ To get started with the PipeOps CLI:
 1. **[Install the CLI](/docs/cli/getting-started/installation)** - Quick installation on any platform
 2. **[Quick Start Guide](/docs/cli/getting-started/quick-start)** - Deploy your first project using the CLI
 3. **[Configuration](/docs/cli/getting-started/configuration)** - Configure the CLI for your environment
-4. **[Connect an AI assistant](/docs/integrations/pipeops-mcp)** - Use the hosted PipeOps MCP server
+4. **[Connect an AI assistant](/docs/Integrations/pipeops-mcp)** - Use the hosted PipeOps MCP server
 
 ## Next Steps
 

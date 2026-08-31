@@ -1,6 +1,4 @@
 ---
-slug: server-add-ons
-sidebar_position: 5
 title: Server Add-ons
 description: "Browse pre-installed and available server add-ons like 
 autoscaler, cert-manager, ingress-nginx, and Prometheus in PipeOps."
@@ -13,10 +11,10 @@ and any additional add-ons available to enable. Add-ons handle
 infrastructure concerns like autoscaling, TLS certificate management,
 traffic routing, and monitoring.
 
-:::note
+<Note>
 The Add-ons tab is only available on servers provisioned using the
 **Bring Your Own Cloud** path.
-:::
+</Note>
 
 ## Accessing Server Add-ons
 

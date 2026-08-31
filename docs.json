@@ -1,0 +1,259 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "PipeOps Docs",
+  "description": "Deploy and manage applications, servers, and Kubernetes infrastructure with PipeOps.",
+  "colors": {
+    "primary": "#825dff",
+    "light": "#825dff",
+    "dark": "#825dff"
+  },
+  "logo": {
+    "light": "/img/pipeops-dark.svg",
+    "dark": "/img/pipeops-light.svg",
+    "href": "https://pipeops.io"
+  },
+  "favicon": "/img/favicon.ico",
+  "appearance": {
+    "default": "dark",
+    "strict": false
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "background": {
+    "color": {
+      "light": "#ffffff",
+      "dark": "#18181a"
+    }
+  },
+  "navbar": {
+    "links": [
+      { "label": "PipeOps", "href": "https://pipeops.io" },
+      { "label": "GitHub", "href": "https://github.com/pipeops-dev" }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/pipeops-dev",
+      "linkedin": "https://www.linkedin.com/company/pipeops/",
+      "x": "https://twitter.com/pipeopshq",
+      "discord": "https://discord.gg/PQscGtfFD2"
+    },
+    "links": [
+      {
+        "header": "Community",
+        "items": [
+          { "label": "Slack", "href": "https://join.slack.com/t/pipeopscommunity/shared_invite/zt-23gmjrl0k-Pzm2cBgIMTsUu5Az73PYKg" },
+          { "label": "Blog", "href": "https://pipeops.io/blog" },
+          { "label": "Support", "href": "https://pipeops.io/contact" }
+        ]
+      }
+    ]
+  },
+  "contextual": {
+    "display": "header",
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity"
+    ]
+  },
+  "integrations": {
+    "ga4": {
+      "measurementId": "G-B5Q466KHSB"
+    },
+    "gtm": {
+      "tagId": "GTM-P44WNWW"
+    },
+    "posthog": {
+      "apiKey": "phc_8ha6EeFmXTbC1wySAf2Y1SAeuNn36FuKk6fV2y5Scj3",
+      "apiHost": "https://v.pipeops.info"
+    }
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Overview",
+        "icon": "layout-dashboard",
+        "pages": [
+          "docs/overview",
+          "docs/_introduction-to-pipeops",
+          "docs/about-pipeops",
+          "docs/usage"
+        ]
+      },
+      {
+        "group": "Getting Started",
+        "icon": "rocket",
+        "pages": [
+          "docs/getting-started/user-registration",
+          "docs/getting-started/choose-your-deployment-path/on-pipeops",
+          "docs/getting-started/choose-your-deployment-path/bring-your-own-server",
+          "docs/getting-started/choose-your-deployment-path/on-cloud-provider",
+          "docs/getting-started/_FAQ/general-faq",
+          "docs/getting-started/_FAQ/developer-faq",
+          "docs/getting-started/_FAQ/startup-faq"
+        ]
+      },
+      {
+        "group": "Projects",
+        "icon": "folder-kanban",
+        "pages": [
+          "docs/projects/project-overview",
+          "docs/projects/project-deployment",
+          "docs/projects/project-settings",
+          "docs/projects/project-actions",
+          "docs/projects/project-states",
+          "docs/projects/project-metrics",
+          "docs/projects/project-history",
+          "docs/projects/project-migration",
+          "docs/projects/project-pr-preview",
+          "docs/projects/gitops",
+          "docs/projects/logs-and-events",
+          "docs/projects/rollback",
+          "docs/projects/terminal",
+          "docs/projects/worker-and-jobs",
+          "docs/projects/_changing-default-name"
+        ]
+      },
+      {
+        "group": "Servers",
+        "icon": "server",
+        "pages": [
+          "docs/servers/server-overview",
+          "docs/servers/server-provisioning",
+          "docs/servers/server-dashboard",
+          "docs/servers/server-settings",
+          "docs/servers/server-nodes",
+          "docs/servers/server-environments",
+          "docs/servers/server-add-ons",
+          "docs/servers/server-metrics",
+          "docs/servers/server-events",
+          "docs/servers/server-update-history",
+          "docs/servers/server-pricing"
+        ]
+      },
+      {
+        "group": "Add-ons",
+        "icon": "puzzle",
+        "pages": [
+          "docs/add-ons/add-on-overview",
+          "docs/add-ons/add-on-deployment",
+          "docs/add-ons/add-on-settings",
+          "docs/add-ons/add-on-databse-studio",
+          "docs/add-ons/add-on-metrics",
+          "docs/add-ons/logs-and-events",
+          "docs/add-ons/terminal",
+          "docs/add-ons/_changing-default-name"
+        ]
+      },
+      {
+        "group": "Integrations",
+        "icon": "plug",
+        "pages": [
+          "docs/Integrations/aws-on-pipeops",
+          "docs/Integrations/azure-on-pipeops",
+          "docs/Integrations/do-on-pipeops",
+          "docs/Integrations/gcp-on-pipeops",
+          "docs/Integrations/huawei-on-pipeops",
+          "docs/Integrations/pipeops-mcp",
+          "docs/how-to-guides/tutorials/generate-azure-credentials",
+          "docs/how-to-guides/tutorials/generate-gcp-json-credentials",
+          "docs/how-to-guides/tutorials/generate-huawei-credentials"
+        ]
+      },
+      {
+        "group": "CLI",
+        "icon": "square-terminal",
+        "pages": [
+          "docs/cli/overview",
+          "docs/cli/getting-started/installation",
+          "docs/cli/getting-started/quick-start",
+          "docs/cli/getting-started/configuration",
+          "docs/cli/commands/overview",
+          "docs/cli/commands/authentication",
+          "docs/cli/commands/projects",
+          "docs/cli/commands/deployments",
+          "docs/cli/commands/servers",
+          "docs/cli/commands/agents",
+          "docs/cli/advanced/docker",
+          "docs/cli/advanced/cicd",
+          "docs/cli/reference/troubleshooting",
+          "docs/pipeops-cli"
+        ]
+      },
+      {
+        "group": "Kubernetes Agent",
+        "icon": "bot",
+        "pages": [
+          "docs/kubernetes-agent/agent-overview",
+          "docs/kubernetes-agent/installation",
+          "docs/kubernetes-agent/configuration",
+          "docs/kubernetes-agent/deployment-scenarios",
+          "docs/kubernetes-agent/management",
+          "docs/kubernetes-agent/monitoring",
+          "docs/kubernetes-agent/api-reference",
+          "docs/kubernetes-agent/troubleshooting"
+        ]
+      },
+      {
+        "group": "Collaboration",
+        "icon": "users",
+        "pages": [
+          "docs/Collaboration/workspaces",
+          "docs/Collaboration/teams"
+        ]
+      },
+      {
+        "group": "How-to Guides",
+        "icon": "book-open",
+        "pages": [
+          "docs/how-to-guides/templates-deployment/deploy-template-projects",
+          "docs/_general-account-settings",
+          "docs/managing-your-account"
+        ]
+      },
+      {
+        "group": "Reference",
+        "icon": "book-marked",
+        "pages": [
+          "docs/reference-manuals/api-docs",
+          "docs/reference-manuals/glossary",
+          "docs/pricing",
+          "docs/billing",
+          "docs/support-cs"
+        ]
+      },
+      {
+        "group": "Troubleshooting",
+        "icon": "life-buoy",
+        "pages": [
+          "docs/troubleshooting/bad-gateway",
+          "docs/troubleshooting/biils-after-cluster-delete",
+          "docs/troubleshooting/_issues-and-soln",
+          "docs/troubleshooting/_javascript-troubleshooting",
+          "docs/troubleshooting/_nextjs-troubleshooting",
+          "docs/troubleshooting/_no-buildpack",
+          "docs/troubleshooting/_tbs-faq"
+        ]
+      },
+      {
+        "group": "Changelog",
+        "icon": "history",
+        "pages": [
+          "docs/Changelogs/kubernetes-1-24",
+          "docs/Changelogs/pipeops-to-docu"
+        ]
+      }
+    ]
+  },
+  "redirects": [
+    { "source": "/docs/_Reference Manuals/api-docs", "destination": "/docs/reference-manuals/api-docs" },
+    { "source": "/docs/_Reference Manuals/glossary", "destination": "/docs/reference-manuals/glossary" },
+    { "source": "/docs/Integrations/_huawei-on-pipeops", "destination": "/docs/Integrations/huawei-on-pipeops" },
+    { "source": "/docs/how-to-guides/tutorials/_generate-huawei-credentials", "destination": "/docs/how-to-guides/tutorials/generate-huawei-credentials" }
+  ]
+}

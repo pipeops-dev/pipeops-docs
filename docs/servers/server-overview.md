@@ -1,6 +1,4 @@
 ---
-slug: server-overview
-sidebar_position: 2
 title: Server Overview
 description: "View server details in PipeOps across Nova, Bring Your 
 Own Cloud, and Bring Your Own Server provisioning methods."

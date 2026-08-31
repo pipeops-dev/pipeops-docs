@@ -1,6 +1,4 @@
 ---
-slug: /integrations/pipeops-mcp
-sidebar_position: 0
 title: Connect AI assistants with PipeOps MCP
 description: "Connect Codex, ChatGPT, Claude, Cursor, VS Code, Gemini CLI, Windsurf, and Zed to PipeOps through the hosted MCP server."
 ---
@@ -40,9 +38,10 @@ Create a dedicated service token for your AI client:
 4. Add `api:write` only if the client needs to deploy, restart, stop, create, update, or delete resources.
 5. Copy the token when it is shown. Store it securely because it should not be pasted into an AI conversation or committed to source control.
 
-:::tip Least privilege
+<Tip>
+**Least privilege**
 Start with `api:read`. Create a separate, short-lived token for write access instead of granting `api:full` to a general-purpose assistant.
-:::
+</Tip>
 
 ## Choose an authentication method
 

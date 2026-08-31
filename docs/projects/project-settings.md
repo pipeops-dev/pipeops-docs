@@ -1,6 +1,4 @@
 ---
-slug: project-settings
-sidebar_position: 7
 title: Project Settings
 description: "Manage project settings in PipeOps including general configuration, source control, build settings, networking, environment variables, resources, storage, and security policy."
 ---
@@ -17,9 +15,9 @@ The **Settings** tab is where you configure your project's behaviour and infrast
 
 Rename your project by updating the **Project Name** field and clicking **Save**.
 
-:::warning
+<Warning>
 The project name is used to generate your project's public PipeOps domain. Renaming your project will change its domain, which will break any existing links or integrations pointing to the old address.
-:::
+</Warning>
 
 ### Deployment Strategy
 
@@ -80,9 +78,9 @@ Two additional controls are available:
 
 Defines a **Release Command** that runs just before your project goes live on each deployment. Use this for tasks such as database migrations or cache warming.
 
-:::warning
+<Warning>
 Commands that fail or take longer than **10 minutes** will cause the deployment to fail. Test your command locally before configuring it here.
-:::
+</Warning>
 
 Click **Redeploy Project** after saving to apply the lifecycle command to a new deployment.
 
@@ -163,13 +161,13 @@ Instead of navigating to your database add-on, copying each credential, and addi
 4. Review the list of variables to be injected (e.g. `POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_HOST`, `POSTGRES_PORT`, `DATABASE_URL`). All are selected by default — uncheck any you don't need. You can also rename keys before injecting to avoid conflicts.
 5. Click **Inject Variables** to add them to your project.
 
-:::warning
+<Warning>
 Existing environment variables with the same key will be overwritten. Rename any conflicting keys before clicking **Inject Variables**.
-:::
+</Warning>
 
-:::tip
+<Tip>
 Don't have a database add-on yet? Browse available database add-ons on the [PipeOps Add-on Marketplace](https://pipeops.io/addons) and deploy one in minutes. [Learn more about Add-ons](/docs/add-ons/add-on-overview).
-:::
+</Tip>
 
 Click **Save** to apply any manually added or edited variables.
 
@@ -190,13 +188,13 @@ Select a **Preset** from the dropdown to apply a predefined resource configurati
 
 > Increasing replicas multiplies your project's total CPU and memory requirements proportionally.
 
-:::note
+<Note>
 The maximum number of replicas you can configure is determined by your PipeOps plan. Upgrade your plan if you need to exceed your current limit.
-:::
+</Note>
 
-:::warning
+<Warning>
 Auto Scale is not available when your project has persistent storage volumes attached. Remove any configured storage volumes first to enable it.
-:::
+</Warning>
 
 Click **Save** to apply changes.
 

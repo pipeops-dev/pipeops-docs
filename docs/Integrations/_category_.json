@@ -1,8 +1,0 @@
-{
-  "label": "Integrations",
-  "position": 5,
-  "link": {
-    "type": "generated-index",
-    "description": "Connect cloud providers, developer tools, and AI assistants to PipeOps."
-  }
-}

@@ -1,6 +1,4 @@
 ---
-slug: add-on-database-studio
-sidebar_position: 4
 title: Add-on Database Studio
 description: "Browse tables, run SQL queries, filter, and export data from your PipeOps add-on database directly in the dashboard using Database Studio."
 ---
@@ -18,9 +16,9 @@ By default, **Database Studio** is inactive. To activate it, go to your add-on a
 
 Once connected, a **Connected to database** confirmation appears in the bottom-right corner of the screen.
 
-:::note
+<Note>
 Enabling Database Studio establishes a live connection to your database. Disable it when not in use to avoid unnecessary open connections.
-:::
+</Note>
 
 ## Interface Overview
 
@@ -58,9 +56,9 @@ Use **Prettify** to auto-format your SQL for readability before running.
 
 Query results appear in the **Results** panel on the right. Each executed query or opened table opens as a **tab** at the top of the editor, making it easy to work across multiple queries or tables simultaneously.
 
-:::tip
+<Tip>
 You can run multiple queries in one execution by separating them with semicolons (`;`).
-:::
+</Tip>
 
 ## Filtering Results
 

@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: CI/CD Integration
 description: "Integrate the PipeOps CLI into CI/CD pipelines for monitoring infrastructure status and viewing deployment logs."
 ---
@@ -8,9 +7,9 @@ description: "Integrate the PipeOps CLI into CI/CD pipelines for monitoring infr
 
 Integrate the PipeOps CLI into your CI/CD pipelines for monitoring infrastructure and viewing deployment status.
 
-:::note
+<Note>
 The CLI currently focuses on **read operations** for monitoring. For deploying applications, use the [PipeOps Web UI](https://app.pipeops.io) or integrate with Git-based deployments. You can use the CLI to monitor project status and view logs during your CI/CD processes.
-:::
+</Note>
 
 ## General Principles
 

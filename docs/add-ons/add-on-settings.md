@@ -1,6 +1,4 @@
 ---
-slug: add-on-settings
-sidebar_position: 7
 title: Add-on Settings
 description: "Configure your PipeOps add-on: rename it, manage networking, set firewall rules, define environment variables, allocate resources, and configure persistent storage."
 ---
@@ -15,9 +13,9 @@ Rename your add-on by updating the **Project Name** field and clicking **Save**.
 
 ![General Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-general-settings.png)
 
-:::warning
+<Warning>
 The project name is used to generate your add-on's public PipeOps domain. Renaming your add-on will change its domain, which will break any existing links or integrations pointing to the old address.
-:::
+</Warning>
 
 ## Network
 
@@ -84,15 +82,15 @@ Variables are accessible at both runtime and build time. Each entry consists of 
 
 The **⋮** menu next to the Add button provides additional options:
 
-<!-- - **History** — View a log of previous changes made to your environment variables. -->
+{/* - **History** — View a log of previous changes made to your environment variables. */}
 
 - **Bulk Edit** — Edit multiple environment variables at once in a single text interface, useful when adding or updating several variables at a time.
 
 Click **Save** to apply any changes.
 
-:::tip
+<Tip>
 Use environment variables to pass secrets such as passwords, API keys, and connection strings rather than hardcoding them in your application.
-:::
+</Tip>
 
 ## Resources & Replications
 
@@ -114,13 +112,13 @@ Select a **Preset** from the dropdown to apply a predefined CPU and memory confi
 
 > Increasing replicas multiplies your add-on's total CPU and memory requirements proportionally.
 
-:::note
+<Note>
 The maximum number of replicas you can configure is determined by your PipeOps plan. If you need more replicas than your current plan allows, you will need to upgrade your plan first.
-:::
+</Note>
 
-:::warning
+<Warning>
 Auto Scale is not available when your add-on has persistent storage volumes attached. To enable it, remove any configured storage volumes first.
-:::
+</Warning>
 
 #### Auto Scale Configuration
 

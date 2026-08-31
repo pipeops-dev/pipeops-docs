@@ -1,6 +1,4 @@
 ---
-slug: project-actions
-sidebar_position: 9
 title: Project Actions
 description: "Use project action controls in PipeOps to restart, redeploy, force rebuild, rollback, migrate, pause, and delete your applications."
 ---
@@ -57,6 +55,6 @@ Permanently removes the project and all its associated resources from PipeOps. A
 
 ![Delete Project](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-delete-option.png)
 
-:::warning
+<Warning>
 This action is irreversible. Ensure you have backed up any necessary data before confirming deletion.
-:::
+</Warning>

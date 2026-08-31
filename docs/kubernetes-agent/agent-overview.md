@@ -1,6 +1,4 @@
 ---
-slug: agent-overview
-sidebar_position: 1
 title: Agent Overview
 description: "Overview of the PipeOps Kubernetes Agent, a lightweight in-cluster service for secure tunnel access, gateway proxy, and monitoring."
 ---
@@ -9,9 +7,10 @@ description: "Overview of the PipeOps Kubernetes Agent, a lightweight in-cluster
 
 The PipeOps Kubernetes Agent is a lightweight Kubernetes service that enables secure management and gateway proxy access for your Kubernetes clusters, supporting both private and public clusters with automatic detection and optimized routing.
 
-:::info Agent Documentation
+<Info>
+**Agent Documentation**
 For detailed technical documentation, architecture details, and API specifications, visit the official **[PipeOps Agent Documentation](https://agents.pipeops.io/)**.
-:::
+</Info>
 
 ## What is the PipeOps Kubernetes Agent?
 
@@ -118,9 +117,10 @@ The agent is designed to work across diverse environments:
 
 The PipeOps Gateway Proxy provides external access to applications in your Kubernetes clusters and is **enabled by default** with automatic routing optimization.
 
-:::note Default Configuration
+<Note>
+**Default Configuration**
 Gateway proxy is enabled by default (`enableIngressSync: true`) and automatically detects the best routing mode. While the agent provides secure admin access always, the gateway proxy feature specifically handles ingress route management and external application access.
-:::
+</Note>
 
 ### Key Features
 

@@ -1,6 +1,4 @@
 ---
-slug: server-environments
-sidebar_position: 10
 title: Server Environments
 description: "Create, manage, and delete isolated server environments 
 for development, staging, and production workloads in PipeOps."
@@ -14,10 +12,10 @@ configuration and environment variables. Variables set at the
 environment level are shared across all projects deployed within
 that environment.
 
-:::note
+<Note>
 The number of environments you can create on a server depends on
 your subscription plan. See [Pricing](/docs/pricing.md) for plan limits.
-:::
+</Note>
 
 ## Accessing Environments
 
@@ -62,10 +60,10 @@ By default, every server has two environments: **beta** and
 
 ## Delete an Environment
 
-:::warning
+<Warning>
 Deleting an environment is permanent. Ensure no active projects
 depend on the environment before proceeding.
-:::
+</Warning>
 
 1. Click the three-dot menu (⋮) next to the environment you want
    to remove.

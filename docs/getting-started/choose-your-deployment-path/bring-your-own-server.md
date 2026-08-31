@@ -1,6 +1,4 @@
 ---
-slug: bring-your-own-server
-sidebar_position: 3
 title: Bring Your Own Server
 description: "Connect an existing machine to PipeOps using the Bring Your Own Server (BYOS) feature and deploy projects to it without switching cloud providers."
 ---
@@ -22,11 +20,11 @@ On the **Choose Your Deployment Path** page, select **Bring Your Own Server**, t
 
 Enter a name for your server, then select a **Gateway Region** — this is the region PipeOps will use to route traffic to your machine. Each region displays its bandwidth cost so you can choose based on your location and budget.
 
-<!-- ![BYOS configuration page with server name field and Gateway Region dropdown showing regions and bandwidth costs](#) -->
+{/* ![BYOS configuration page with server name field and Gateway Region dropdown showing regions and bandwidth costs](#) */}
 
 Click **Generate Token**. PipeOps generates a registration token and a pre-filled installation command tied to your server name and selected region.
 
-<!-- ![BYOS configuration page after token generation, showing the installation command](#) -->
+{/* ![BYOS configuration page after token generation, showing the installation command](#) */}
 
 ### Step 3: Install and Connect
 
@@ -135,7 +133,7 @@ When the deployment succeeds, PipeOps confirms that your project is live.
 
 ![Project Deployed success modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byos-project-success-modal.png)
 
-Your project is now running on your BYOS server. To manage environments, configure custom domains, or set up CI/CD triggers, see the [Project Deployment guide](/docs/projects/project-deployment.md).
+Your project is now running on your BYOS server. To manage environments, configure custom domains, or set up CI/CD triggers, see the [Project Deployment guide](/docs/projects/project-deployment).
 
 ## Troubleshooting
 

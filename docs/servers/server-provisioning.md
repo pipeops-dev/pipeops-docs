@@ -1,6 +1,4 @@
 ---
-slug: server-provisioning
-sidebar_position: 1
 title: Server Provisioning
 description: "Create and provision a new server on PipeOps using 
 PipeOps-managed Nova hosting, your own cloud account, or your 
@@ -91,7 +89,7 @@ to link your account.
 ![AWS selected from the integrations list](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-aws-page.png)
 
 For detailed steps on connecting each provider, see
-[Integrations](/docs/category/integrations). Once your account is
+[Integrations](/docs/Integrations/aws-on-pipeops). Once your account is
 connected, click **Proceed** to continue.
 
 ### Step 2: Select Region and Security Standard
@@ -184,10 +182,10 @@ the full setup steps.
 
 ## Deleting a Server
 
-:::warning
+<Warning>
 Deleting a server is permanent and cannot be undone. All projects
 and add-ons on the server must be removed before deletion can proceed.
-:::
+</Warning>
 
 1. Delete all projects and add-ons associated with the server.
 2. In the left sidebar, click **Servers** and select the server

@@ -1,6 +1,4 @@
 ---
-slug: project-migration
-sidebar_position: 10
 title: Project Migration
 description: "Migrate projects between servers or promote them across environments in PipeOps."
 ---
@@ -31,9 +29,9 @@ Moves your entire project to a different server. Use this to change hosting infr
 
 ![Migrate Server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-server-migration-modal.png)
 
-:::tip
+<Tip>
 Only select servers marked as **Available**. Servers with a **Failed** or **Delete Failed** status are not suitable migration targets.
-:::
+</Tip>
 
 2. Select your target server and click **Start Migration**.
 
@@ -59,6 +57,6 @@ Moves your project to a different environment within the same server — for exa
 
 4. A **Project Summary** page will load showing the updated project name, environment, server, resource allocation, and project source. Click **Proceed** to complete the migration.
 
-:::note
+<Note>
 Promoting an environment triggers a new deployment of the same project under the destination environment. The original environment deployment remains unaffected.
-:::
+</Note>

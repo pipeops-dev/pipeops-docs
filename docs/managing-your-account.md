@@ -1,6 +1,4 @@
 ---
-sidebar_position: 9
-slug: Managing Your Account
 description: Manage your PipeOps account details, security settings, payment methods, notifications, and connected services.
 ---
 
@@ -19,11 +17,11 @@ The Profile page lets you manage your personal information, security settings, a
 - Connect or disconnect repository providers, including GitHub, GitLab, and Bitbucket, used for project deployments
 - Manage OAuth methods for third-party sign-in
 
-:::warning
+<Warning>
 
 The Danger Zone at the bottom of the Profile page contains the option to permanently close your account. This action removes all your data and projects and cannot be undone.
 
-:::
+</Warning>
 
 ## Teams
 

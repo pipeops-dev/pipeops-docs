@@ -1,6 +1,4 @@
 ---
-slug: server-pricing
-sidebar_position: 8
 title: Server Pricing
 description: "Understand estimated cloud cost breakdowns for servers 
 deployed through PipeOps including per-resource pricing details."
@@ -11,11 +9,11 @@ deployed through PipeOps including per-resource pricing details."
 The **Pricing** tab shows an estimated monthly cost breakdown for
 the resources provisioned on your server through PipeOps.
 
-:::note
+<Note>
 The Pricing tab is available on **Bring Your Own Cloud** servers
 only. Nova server costs are tracked separately in the
 [Usage](/docs/usage) section.
-:::
+</Note>
 
 ## Accessing Server Pricing
 
@@ -52,9 +50,9 @@ For example, an AWS-connected server may show:
 A GCP or Azure-connected server will display equivalent cost
 components for those providers.
 
-:::note
+<Note>
 All costs shown are **estimates** based on the resources currently
 provisioned. Actual charges are determined by your cloud provider
 and may differ based on usage, reserved pricing, or provider
 discounts.
-:::
+</Note>

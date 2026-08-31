@@ -1,6 +1,4 @@
 ---
-slug: api-reference
-sidebar_position: 8
 title: API Reference
 description: "Complete API reference for the PipeOps Kubernetes Agent HTTP endpoints including health checks, metrics, and management."
 ---
@@ -9,9 +7,10 @@ description: "Complete API reference for the PipeOps Kubernetes Agent HTTP endpo
 
 This document provides a complete reference for the PipeOps Kubernetes Agent's API endpoints, configuration API, and integration examples.
 
-:::info Complete API Documentation
+<Info>
+**Complete API Documentation**
 For the most up-to-date and comprehensive API documentation, including interactive examples and detailed specifications, visit the **[PipeOps Agent Documentation](https://agents.pipeops.io/)**.
-:::
+</Info>
 
 ## Agent HTTP API
 
