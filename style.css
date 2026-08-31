@@ -11,6 +11,18 @@
   --pipeops-muted: #a0a0a0;
 }
 
+/* Keep the light theme airy instead of carrying the dark pagination surfaces
+   into a white page. */
+:root:not(.dark) {
+  --pipeops-bg: #ffffff;
+  --pipeops-surface: #f7f7f8;
+  --pipeops-surface-hover: #eeeeF1;
+  --pipeops-border: #d9d9df;
+  --pipeops-border-soft: #e7e7eb;
+  --pipeops-text: #25252b;
+  --pipeops-muted: #707078;
+}
+
 /* Keep the topbar and the two navigation rails visually framed. */
 #navbar {
   border-bottom: 1px solid var(--pipeops-border-soft);
@@ -147,6 +159,10 @@ toc-item[data-active-deepest] {
   background: var(--pipeops-surface);
 }
 
+:root:not(.dark) #pagination {
+  box-shadow: 0 1px 2px rgba(24, 24, 26, 0.04);
+}
+
 #pagination [data-component-part="pagination-prev"],
 #pagination [data-component-part="pagination-next"] {
   min-height: 4rem;
@@ -183,6 +199,10 @@ toc-item[data-active-deepest] {
   border: 1px solid var(--pipeops-border-soft);
   border-radius: 0.75rem;
   background: var(--pipeops-bg);
+}
+
+:root:not(.dark) #pagination [data-component-part="pagination-next"] {
+  box-shadow: inset 0 0 0 1px rgba(24, 24, 26, 0.02);
 }
 
 #pagination [data-component-part="pagination-next"] [data-component-part="pagination-title"] {

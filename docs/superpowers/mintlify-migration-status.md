@@ -78,6 +78,7 @@
 | 2026-08-31 | Active navigation borders | completed | Added screenshot-matched accent rules to active sidebar links and active table-of-contents entries, removing the filled sidebar active pill. |
 | 2026-08-31 | Icon navigation and top-level accordions | completed | Added Lucide icons to every top-level navigation group and added an accessible, persistent accordion script with all groups open by default; active sections remain open when visited. |
 | 2026-08-31 | Client-navigation accordion fix | completed | Added button-level icon spacing and kept the sidebar observer active so Mintlify client navigation cannot remove the accordion controls. |
+| 2026-09-01 | Light-theme pagination refinement | completed | Added light-theme surface, border, text, and shadow tokens so the previous/current/next rail no longer renders with dark charcoal surfaces in light mode; verified with Playwright. |
 | 2026-08-28 | `npm run test:migration` | completed | 2 migration checker tests passed. |
 | 2026-08-28 | `npm run check:migration` | completed | Navigation, local link, and Docusaurus syntax checks passed. |
 | 2026-08-28 | `mint dev` | blocked | Ports 3000–3009 were occupied; no representative browser route inspection was possible. |
