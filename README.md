@@ -43,4 +43,4 @@ After connecting this repository in Mintlify:
 1. Configure the `docs.pipeops.io` custom domain and DNS records.
 2. Confirm the GA4, Google Tag Manager, and PostHog integrations in the Mintlify dashboard.
 3. If iframe embedding is still required, replace the retired Docusaurus iframe script with a Mintlify-supported custom integration.
-4. Decide whether Docker-based self-hosting remains necessary; the previous Docusaurus Dockerfile is no longer part of the active runtime.
+4. Read [`DEPLOYMENT.md`](DEPLOYMENT.md) for the recommended Mintlify-hosted deployment, native search setup, and the optional Docker/static-export path.

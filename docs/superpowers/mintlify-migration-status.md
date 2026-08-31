@@ -40,12 +40,13 @@
 | Legacy `/docs/...` URLs | completed | Existing path structure was preserved where possible; explicit redirects were added for renamed reference and Huawei pages. |
 | `docs/_Reference Manuals/` path with a space | completed | Renamed to `docs/reference-manuals/` and added redirects for both pages. |
 | API docs page `docs/reference-manuals/api-docs.md` | needs-setup | It is currently prose-based; convert to an OpenAPI-powered Mintlify reference only after an OpenAPI specification is available. |
-| Docker deployment | skipped | The Docusaurus Dockerfile was removed because Mintlify hosting is the target deployment. Reintroduce a separate self-hosting design only if required. |
+| Docker deployment | completed | Added `Dockerfile` and `.dockerignore` for a controlled static Mintlify export deployment; documented that Mintlify hosting remains the production path for native search. |
 | Mintlify CLI React hook warning | limitation | `mint validate` and `mint broken-links` emit an `Invalid hook call` warning from the CLI’s previewing dependency but still complete successfully under Node 24. Investigate on a future CLI upgrade. |
 | Exact CostGraph search placement | limitation | Search placement is controlled by Mintlify’s selected theme. The current pass preserves Mintlify’s native search and styles the surrounding shell; exact left-sidebar placement may require theme changes or a custom frontend. |
 | Theme switcher visibility | completed | Set `appearance.strict` to `false` so Mintlify’s native light/dark control is visible, then styled the documented theme-toggle hook. |
 | Node 20 local validation | blocked | Under Node 20.20.2, Mintlify validation reaches the build step but fails on the environment’s `uv_interface_addresses` system call. Node 24 validation completes. |
 | Mintlify preview `useState` crash | completed | Upgraded `mint` from `4.2.836` to `4.2.851` and regenerated dependencies with a clean `npm ci`; the previous mixed React preview runtime was replaced by the current Mintlify bundle and the crash no longer reproduces. |
+| Hosted search | needs-setup | Search is native to the connected Mintlify project and requires Mintlify dashboard/GitHub App setup; no repository search key is required. The Docker static export is not a replacement for Mintlify-hosted search. |
 
 ## Page-level migration notes
 
@@ -87,4 +88,4 @@
 - Configure `docs.pipeops.io` and DNS in Mintlify.
 - Configure supported analytics integrations and secrets.
 - Decide whether PostHog page-view parity is required; if yes, add a supported custom script/integration with privacy review.
-- Confirm whether Docker-based self-hosting remains a requirement.
+- If Docker is used, follow `DEPLOYMENT.md`; use Mintlify hosting for production native search and do not bake session tokens into images.
