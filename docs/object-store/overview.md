@@ -14,7 +14,7 @@ It is **not** a server or VM product. Storage lives in a workspace-scoped tenant
 |--|--|
 | **Console** | [console.pipeops.io](https://console.pipeops.io) → **Developer Tools** → **Object Store** |
 | **Management API** | `https://api.pipeops.io/api/v1/workspace/{workspace_uuid}/object-store` |
-| **S3 data plane** | Endpoint from status (typically `https://t3.storage.dev`), region `auto` |
+| **S3 data plane** | Endpoint from status (typically `https://objects.pipeops.run`), region `auto` |
 | **Public / CDN host** | `{bucket}.objects.pipeops.run` (white-label) when enabled |
 | **Auth (management)** | PipeOps JWT or workspace service account + optional `team_uuid` |
 | **Auth (S3 / SDKs)** | Access key ID + secret from **Create access key** |
@@ -35,7 +35,7 @@ PipeOps console / Management API
   Create buckets & access keys
         │
         ▼
-  AWS SDK / CLI  ──SigV4──►  S3 endpoint (t3.storage.dev)
+  AWS SDK / CLI  ──SigV4──►  S3 endpoint (objects.pipeops.run)
         │
         ▼
   Objects in your buckets
@@ -66,7 +66,7 @@ PipeOps console / Management API
 
 ## Pricing
 
-Object Store is a **workspace add-on** (Feature Preview / early access in console), not a Servers SKU. Published per-GB / egress rates are set by product/finance—confirm the current rate card before quoting customers. Usage is not billed as a server plan.
+**Pricing TBD.** Object Store is a workspace add-on (not a Servers SKU). Per-GB storage and egress rates will be published with the rate card—do not quote server plan pricing.
 
 ## Next steps
 

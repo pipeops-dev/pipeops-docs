@@ -12,9 +12,9 @@ Object Store speaks **S3**. There is no separate PipeOps object SDK—use AWS cl
 
 | | |
 |--|--|
-| **S3 endpoint** | From status / create-key response (typically `https://t3.storage.dev`) |
+| **S3 endpoint** | From status / create-key response (typically `https://objects.pipeops.run`) |
 | **Region** | Always `auto` |
-| **Addressing** | Virtual-hosted (`https://{bucket}.t3.storage.dev/...`) |
+| **Addressing** | Virtual-hosted (`https://{bucket}.objects.pipeops.run/...`) |
 | **Credentials** | Access key ID + secret from [Create access key](./api-reference.md#create-access-key) |
 | **Management API** | [API Reference](./api-reference.md) |
 
@@ -74,7 +74,7 @@ Save from the response:
 ```bash
 export AWS_ACCESS_KEY_ID=tid_...
 export AWS_SECRET_ACCESS_KEY=tsec_...
-export S3_ENDPOINT=https://t3.storage.dev   # or data.s3_endpoint from the response
+export S3_ENDPOINT=https://objects.pipeops.run   # or data.s3_endpoint from the response
 export BUCKET=demo-assets
 export AWS_REGION=auto
 ```
@@ -124,7 +124,7 @@ import {
 
 const client = new S3Client({
   region: 'auto',
-  endpoint: process.env.S3_ENDPOINT, // https://t3.storage.dev
+  endpoint: process.env.S3_ENDPOINT, // https://objects.pipeops.run
   forcePathStyle: false, // virtual-hosted (required)
   credentials: {
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
@@ -305,7 +305,7 @@ After upload, public objects (when the bucket allows) are typically available at
 https://{bucket}.objects.pipeops.run/{key}
 ```
 
-Custom domains can be attached per bucket via the [management API](./api-reference.md#custom-domain-per-bucket). The S3 API host (`t3.storage.dev`) remains for authenticated SDK traffic.
+Custom domains can be attached per bucket via the [management API](./api-reference.md#custom-domain-per-bucket). Use `https://objects.pipeops.run` as the S3 endpoint for authenticated SDK traffic (virtual-hosted: `https://{bucket}.objects.pipeops.run`).
 
 ---
 

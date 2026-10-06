@@ -63,11 +63,11 @@ curl -sS "${AUTH[@]}" "$API/workspace/$WS/object-store$QS" | jq .
 | Field | Description |
 |-------|-------------|
 | `enabled` | Feature + provider configured |
-| `backend` | `tigris` |
+| `backend` | Storage backend id |
 | `tenant_id` | Workspace UUID |
-| `s3_endpoint` | SigV4 S3 API host (e.g. `https://t3.storage.dev`) |
+| `s3_endpoint` | SigV4 S3 API host (e.g. `https://objects.pipeops.run`) |
 | `white_label_domain` | Public host apex (e.g. `objects.pipeops.run`) |
-| `tigris_configured` | Provider credentials present |
+| `tigris_configured` | Provider credentials present (internal) |
 
 ### Public URLs
 
@@ -159,13 +159,17 @@ curl -sS "${AUTH[@]}" -X POST "$API/workspace/$WS/object-store/keys$QS" \
 | `permissions` | no | `read`, `write`, and/or `admin`. Default `read`+`write` |
 | `buckets` | no | Omit or `[]` → all buckets (`*`). Otherwise only listed bucket names |
 
+:::note Admin vs scoped buckets
+Provider rule: **Admin** is only valid with all buckets (`*`). If you pass named `buckets`, PipeOps maps read+write (and explicit admin) to **Editor** on those buckets so create succeeds.
+:::
+
 **Response `data` (secret once)**
 
 ```json
 {
   "accessKeyId": "tid_...",
   "secretAccessKey": "tsec_...",
-  "s3_endpoint": "https://t3.storage.dev",
+  "s3_endpoint": "https://objects.pipeops.run",
   "region": "auto",
   "tenant_id": "<workspace_uuid>",
   "key": {
