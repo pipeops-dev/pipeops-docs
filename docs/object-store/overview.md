@@ -68,6 +68,11 @@ PipeOps console / Management API
 
 **Pricing TBD.** Object Store is a workspace add-on (not a Servers SKU). Per-GB storage and egress rates will be published with the rate card—do not quote server plan pricing.
 
+## Custom domains
+
+Map your hostname (for example `cdn.example.com`) to a bucket with a DNS CNAME
+and the management API. See [Custom domain](./api-reference.md#custom-domain).
+
 ## Next steps
 
 - [API Reference](./api-reference.md) — management endpoints, auth, request shapes  
