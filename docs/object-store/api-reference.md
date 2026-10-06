@@ -119,13 +119,83 @@ Soft-delete when enabled on the provider (restore window depends on config).
 
 Settings may include `publicDefault` and cache hints used for public object URLs.
 
-### Custom domain (per bucket)
+### Custom domain (per bucket) {#custom-domain}
+
+Attach your own hostname (for example `cdn.example.com`) to a **single bucket**.
+Custom domains are per-bucket, not workspace-wide.
 
 | Method | Path |
 |--------|------|
-| `GET` / `PUT` / `POST` / `DELETE` | `/buckets/{name}/custom-domain` |
+| `GET` | `/buckets/{name}/custom-domain` |
+| `PUT` / `POST` | `/buckets/{name}/custom-domain` |
+| `DELETE` | `/buckets/{name}/custom-domain` |
 
-Point a hostname (CNAME) at the provider target for that bucket, then register it here.
+You can also register from the workspace domains helper:
+
+`POST /workspace/{ws}/object-store/domains` with `{ "hostname": "cdn.example.com", "bucket": "my-bucket" }`
+
+#### Steps
+
+1. **Create a DNS CNAME** (DNS-only — do not use a TLS-terminating / orange-cloud proxy):
+
+   ```text
+   cdn.example.com  CNAME  →  <cname_target from the API>
+   ```
+
+   Prefer creating/registering the domain first if your DNS host allows a pending
+   target, then use the `cname_target` returned by PipeOps. Keep the CNAME in
+   place so TLS can issue and renew.
+
+2. **Register the hostname** on the bucket:
+
+```bash
+# Per-bucket route (console uses this)
+curl -sS "${AUTH[@]}" -X PUT \
+  "$API/workspace/$WS/object-store/buckets/my-bucket/custom-domain$QS" \
+  -d '{"hostname":"cdn.example.com"}' | jq .
+
+# Equivalent workspace helper (bucket required in body)
+curl -sS "${AUTH[@]}" -X POST \
+  "$API/workspace/$WS/object-store/domains$QS" \
+  -d '{"hostname":"cdn.example.com","bucket":"my-bucket"}' | jq .
+```
+
+**Body:** `{ "hostname": "<fqdn>" }` (alias key `domain` is also accepted).
+
+**Response `data` highlights**
+
+| Field | Description |
+|-------|-------------|
+| `hostname` | Your custom hostname |
+| `cname_target` | Value your CNAME must point to |
+| `dns_hint` | Human-readable DNS instructions |
+| `url` | `https://<hostname>` |
+| `status` | e.g. `pending` after create |
+
+3. **Check status**
+
+```bash
+curl -sS "${AUTH[@]}" \
+  "$API/workspace/$WS/object-store/buckets/my-bucket/custom-domain$QS" | jq .
+
+curl -sS "${AUTH[@]}" \
+  "$API/workspace/$WS/object-store/domains/cdn.example.com/status$QS" | jq .
+```
+
+4. **Remove**
+
+```bash
+curl -sS "${AUTH[@]}" -X DELETE \
+  "$API/workspace/$WS/object-store/buckets/my-bucket/custom-domain$QS" | jq .
+```
+
+:::tip Base URL
+Use `https://api.pipeops.io/api/v1/...` (include `/api/v1`).
+:::
+
+:::warning DNS-only
+If the CNAME is proxied through a TLS terminator (for example Cloudflare orange-cloud), certificate issuance/renewal for the custom domain can fail. Use DNS-only.
+:::
 
 ---
 
@@ -222,11 +292,11 @@ Useful for console/tools. Apps should prefer **direct S3** with access keys.
 | Method | Path |
 |--------|------|
 | `GET` | `/domains?bucket=` |
-| `POST` | `/domains` |
+| `POST` | `/domains` — requires `hostname` + `bucket` (see [Custom domain](#custom-domain)) |
 | `GET` | `/domains/{hostname}/status` |
 | `DELETE` | `/domains/{hostname}` |
 
-Prefer per-bucket **custom-domain** routes above for new integrations.
+Prefer per-bucket **custom-domain** routes for new integrations. Both paths call the same per-bucket registration under the hood.
 
 ---
 
