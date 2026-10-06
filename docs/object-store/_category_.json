@@ -1,0 +1,8 @@
+{
+  "label": "Object Store",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Managed S3-compatible object storage for PipeOps workspaces — buckets, access keys, CDN URLs, and AWS SDK samples."
+  }
+}
