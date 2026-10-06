@@ -62,18 +62,15 @@ curl -sS "${AUTH[@]}" "$API/workspace/$WS/object-store$QS" | jq .
 
 | Field | Description |
 |-------|-------------|
-| `enabled` | Feature + provider configured |
-| `backend` | Storage backend id |
+| `enabled` | Feature enabled for the workspace |
 | `tenant_id` | Workspace UUID |
-| `s3_endpoint` | SigV4 S3 API host (e.g. `https://objects.pipeops.run`) |
-| `white_label_domain` | Public host apex (e.g. `objects.pipeops.run`) |
-| `tigris_configured` | Provider credentials present (internal) |
+| `s3_endpoint` | S3 API host (`https://objects.pipeops.run`) |
 
 ### Public URLs
 
 `GET /workspace/{ws}/object-store/urls?bucket={name}`
 
-Returns CDN / white-label helpers for a bucket (when configured).
+Returns public object URL helpers for a bucket (when configured).
 
 ---
 
@@ -241,7 +238,7 @@ When a bucket has public defaults (or the object is public):
 GET https://api.pipeops.io/api/v1/public/object-store/t/{tenant_id}/objects/{key}?bucket={bucket}
 ```
 
-White-label browser URLs typically look like:
+Public browser URLs typically look like:
 
 ```text
 https://{bucket}.objects.pipeops.run/{key}

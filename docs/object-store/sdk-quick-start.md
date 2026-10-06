@@ -297,7 +297,7 @@ Do **not** append PipeOps `team_uuid` or Bearer tokens to signed S3 URLs—that 
 
 ---
 
-## 9. Public / CDN URLs
+## 9. Public object URLs
 
 After upload, public objects (when the bucket allows) are typically available at:
 
