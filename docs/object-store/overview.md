@@ -14,8 +14,8 @@ It is **not** a server or VM product. Storage lives in a workspace-scoped tenant
 |--|--|
 | **Console** | [console.pipeops.io](https://console.pipeops.io) → **Developer Tools** → **Object Store** |
 | **Management API** | `https://api.pipeops.io/api/v1/workspace/{workspace_uuid}/object-store` |
-| **S3 data plane** | Endpoint from status (typically `https://objects.pipeops.run`), region `auto` |
-| **Public / CDN host** | `{bucket}.objects.pipeops.run` (white-label) when enabled |
+| **S3 data plane** | `https://objects.pipeops.run` (region `auto`) |
+| **Public object host** | `https://{bucket}.objects.pipeops.run/{key}` |
 | **Auth (management)** | PipeOps JWT or workspace service account + optional `team_uuid` |
 | **Auth (S3 / SDKs)** | Access key ID + secret from **Create access key** |
 
@@ -26,7 +26,7 @@ It is **not** a server or VM product. Storage lives in a workspace-scoped tenant
 | **Workspace tenant** | One Object Store org per workspace UUID. All buckets belong to that org. |
 | **Bucket** | S3 bucket. Names are globally unique (`[a-z0-9-]`, 3–63 chars). |
 | **Access key** | SigV4 credentials for the S3 endpoint. Optional **bucket scope** (or all buckets `*`). |
-| **Public / CDN URL** | Browser-facing object URL (white-label or custom domain), separate from the S3 API host. |
+| **Public object URL** | Browser URL for public objects (`{bucket}.objects.pipeops.run`), or a custom domain you attach. |
 
 ```text
 PipeOps console / Management API
@@ -52,10 +52,10 @@ PipeOps console / Management API
 ## Access keys and scope
 
 - Keys are minted under the workspace org.
-- **Permissions:** `read`, `write`, or both (maps to Tigris ReadOnly / Editor / Admin).
+- **Permissions:** `read`, `write`, or both (and optional admin for org-wide keys).
 - **Bucket scope (optional):**
   - Omit / empty → key can access **all** buckets in the workspace (`*`).
-  - Pass bucket names → key is limited to those buckets.
+  - Pass bucket names → key is limited to those buckets (Editor at most; Admin is only for all buckets).
 - There is no separate IAM policy editor in the current product; scope is set when the key is created.
 
 ## Regions and residency
