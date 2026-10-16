@@ -13,7 +13,7 @@ The **Settings** tab is where you configure your add-on's behaviour and infrastr
 
 Rename your add-on by updating the **Project Name** field and clicking **Save**.
 
-![General Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-general-settings.png)
+![General Settings](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-deployment-general-settings.png)
 
 :::warning
 The project name is used to generate your add-on's public PipeOps domain. Renaming your add-on will change its domain, which will break any existing links or integrations pointing to the old address.
@@ -23,7 +23,7 @@ The project name is used to generate your add-on's public PipeOps domain. Renami
 
 Controls how your add-on is reachable — both from the public internet and from other services within your cluster.
 
-![Network Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-networking.png)
+![Network Settings](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-deployment-networking.png)
 
 ### Public Networking
 
@@ -51,7 +51,7 @@ All are described as port-agnostic — use whichever fits your internal routing 
 
 Defines which traffic is allowed to reach your add-on.
 
-![Firewall Rules](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-firewall-rules.png)
+![Firewall Rules](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-deployment-firewall-rules.png)
 
 ### Traffic Type
 
@@ -78,7 +78,7 @@ Click **Save** to apply changes, or **Discard Changes** to revert.
 
 Inject runtime configuration and secrets into your add-on's container environment.
 
-![Environment Variables](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-env-variables.png)
+![Environment Variables](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-deployment-env-variables.png)
 
 Variables are accessible at both runtime and build time. Each entry consists of a **key** (e.g. `POSTGRES_PASSWORD`) and a masked **value**. Click **+ Add** to create a new variable, or the red **✕** next to any entry to delete it.
 
@@ -98,7 +98,7 @@ Use environment variables to pass secrets such as passwords, API keys, and conne
 
 Controls the compute resources allocated to your add-on and how many instances run simultaneously.
 
-![Resources and Replications](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-resources.png)
+![Resources and Replications](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-deployment-resources.png)
 
 ### General Resources
 
@@ -139,7 +139,7 @@ Click **+ Add Autoscale Trigger** to define additional scaling conditions. Click
 
 Configures persistent volumes mounted into your add-on's container. This ensures data survives restarts and redeployments.
 
-![Storage Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-storage.png)
+![Storage Settings](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-deployment-storage.png)
 
 Each storage entry has three fields:
 

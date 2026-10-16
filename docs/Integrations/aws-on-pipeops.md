@@ -17,7 +17,7 @@ and deploy projects directly from your PipeOps dashboard.
 
 In the left sidebar, click **Integrations**.
 
-![Steps to navigate to the integrations page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/navigating-to-integrations-page.png)
+![Steps to navigate to the integrations page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/navigating-to-integrations-page.png)
 
 :::note
 You can also get here by clicking **+ New** in the top-right corner
@@ -29,7 +29,7 @@ choosing to connect a new cloud provider.
 
 From the list of cloud providers, find **Amazon Web Services** and click **Connect**.
 
-![AWS selected from the integrations list](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-aws-page.png)
+![AWS selected from the integrations list](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/connect-aws-page.png)
 
 ### Step 3: Enter Your AWS Account Details
 
@@ -41,7 +41,7 @@ After clicking Connect, a side drawer will appear. Enter the following:
   PipeOps. This is useful if you plan to connect more than one AWS
   account.
 
-![PipeOps AWS Connection screen](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-aws-modal.png)
+![PipeOps AWS Connection screen](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/connect-aws-modal.png)
 
 Click **Add**. PipeOps will process your details and activate the
 **Authorize IAM** button.
@@ -58,12 +58,12 @@ On the AWS CloudFormation page:
    may create IAM resources with customized names.
 3. Click **Create stack**.
 
-![AWS CloudFormation Create Stack page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/PipeOpsAWSCreateStacksPage.png)
+![AWS CloudFormation Create Stack page](https://pipeops-ops-fe-assets.objects.pipeops.run/PipeOpsAWSCreateStacksPage.png)
 
 AWS will begin creating the stack. You'll see a progress page while
 the process runs — this typically takes a minute or two.
 
-![AWS CloudFormation stack creation in progress](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/PipeOpsAWSCreateStackInProgress.png)
+![AWS CloudFormation stack creation in progress](https://pipeops-ops-fe-assets.objects.pipeops.run/PipeOpsAWSCreateStackInProgress.png)
 
 ### Step 5: Confirm the Connection
 
@@ -71,7 +71,7 @@ Switch back to your PipeOps tab. Once the stack creation completes,
 your AWS account will be automatically detected and marked as
 connected.
 
-![Connected AWS account in PipeOps](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connected-aws-integration.png)
+![Connected AWS account in PipeOps](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/connected-aws-integration.png)
 
 Your AWS account is now connected to PipeOps. You can proceed to
 provision a server on your connected AWS account — see

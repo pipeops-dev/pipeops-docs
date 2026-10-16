@@ -13,8 +13,8 @@ Database Studio is a built-in database management interface available on the **S
 
 By default, **Database Studio** is inactive. To activate it, go to your add-on and click the **Studio** tab. A connection to your database will be initiated automatically as soon as you click the tab. If the connection does not start automatically, manually click **Enable Database Studio** to establish the connection.
 
-![Add-on Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-db-overview-1.png)
-![Enable Database Studio](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-database-connection-screen.png)
+![Add-on Overview](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-deployment-db-overview-1.png)
+![Enable Database Studio](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-database-connection-screen.png)
 
 Once connected, a **Connected to database** confirmation appears in the bottom-right corner of the screen.
 
@@ -39,7 +39,7 @@ The left sidebar lists all available tables in the connected database. Use the *
 
 Simple mode provides a spreadsheet-like view of your data. Select any table from the left sidebar to load its contents in the main panel.
 
-![Simple Mode](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-database-simple-mode.png)
+![Simple Mode](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-database-simple-mode.png)
 
 - Click any cell to edit its value directly.
 - Changes are **staged** and not applied until you explicitly save.
@@ -50,7 +50,7 @@ Simple mode provides a spreadsheet-like view of your data. Select any table from
 
 Advanced mode provides a SQL query editor for running custom queries against your database.
 
-![Advanced Mode](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-database-advanced-mode.png)
+![Advanced Mode](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-database-advanced-mode.png)
 
 A default query (`SELECT * FROM <table> LIMIT 10;`) is pre-filled to get you started. Write your query in the editor and run it using the **Run** button or the `⌘ + Enter` (Mac) / `Ctrl + Enter` (Windows) keyboard shortcut.
 

@@ -12,8 +12,8 @@ The **Logs** and **Events** tabs give you visibility into your add-on's runtime 
 ## Logs
 
 Navigate to your add-on and click the **Logs** tab to view a real-time stream of output from your add-on's container.
-![Add-on Overview Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-overview-logs.png)
-![Add-on Logs](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-logs.png)
+![Add-on Overview Page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-deployment-overview-logs.png)
+![Add-on Logs](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-deployment-logs.png)
 
 ### Filtering and Search
 
@@ -35,7 +35,7 @@ Navigate to your add-on and click the **Logs** tab to view a real-time stream of
 
 Navigate to your add-on and click the **Events** tab to view a timestamped record of infrastructure-level activity, such as pod scheduling, volume attachment, image pulls, and container lifecycle changes.
 
-![Add-on Events](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-events.png)
+![Add-on Events](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-deployment-events.png)
 
 ### Filtering
 

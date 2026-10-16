@@ -22,7 +22,7 @@ only. Nova server costs are tracked separately in the
 From the **Servers** section, select a BYOC server and click the
 **Pricing** tab.
 
-![Server Pricing Breakdown](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-pricing.png)
+![Server Pricing Breakdown](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/server-creation/server-pricing.png)
 
 ## Pricing Information
 

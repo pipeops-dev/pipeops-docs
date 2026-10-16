@@ -23,7 +23,7 @@ The Add-ons tab is only available on servers provisioned using the
 From the **Servers** section, select a BYOC server and click the
 **Add-ons** tab.
 
-![Server Add-ons tab showing pre-installed and available add-ons](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-add-ons.png)
+![Server Add-ons tab showing pre-installed and available add-ons](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/server-creation/server-add-ons.png)
 
 ## Pre-installed Add-ons
 

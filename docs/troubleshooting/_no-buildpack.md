@@ -9,7 +9,7 @@ description: "Resolve the No Buildpack Detected error during application deploym
 
 Encountering the "No Buildpack Detected" error during application deployment can be a common issue. This error typically arises when using unsupported or misconfigured buildpacks within the PipeOps platform. This guide is designed to assist you in diagnosing and resolving the "No Buildpack Detected" error for your application deployment on PipeOps.
 
-![Guide Image](https://pub-30c11acc143348fcae20835653c5514d.r2.dev//20/no_buildpack_error_cb08cf38b1.png)
+![Guide Image](https://pipeops-ops-fe-assets.objects.pipeops.run//20/no_buildpack_error_cb08cf38b1.png)
 
 ## Step 1: Verify Project Structure
 

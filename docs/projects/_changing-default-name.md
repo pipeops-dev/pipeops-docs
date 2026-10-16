@@ -29,7 +29,7 @@ Follow these simple steps to set a custom PipeOps name for your project:
 4. **Rename Your Project**
 
    - Enter your desired name.
-     ![Custom domain renamed Screenshot](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/rename-project.png)
+     ![Custom domain renamed Screenshot](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/rename-project.png)
 
 5. **Save and Redeploy**
    - Save your changes and wait for the project to redeploy with the new name.
@@ -48,7 +48,7 @@ Follow these steps to set a custom web address:
 
 2. From the settings menu, select `Domains`.
 
-![Project Domain](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-settings-domain.png)
+![Project Domain](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-settings-domain.png)
 
 3. Enter your custom web address and click "Save".
 

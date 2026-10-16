@@ -24,7 +24,7 @@ Ensure the following are in place before starting:
 
 On the **Choose Your Deployment Path** page, select **Bring Your Own Cloud**, then click **Proceed**.
 
-![Choose Your Deployment Path page with Bring Your Own Cloud selected](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-1.png)
+![Choose Your Deployment Path page with Bring Your Own Cloud selected](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-1.png)
 
 ### Step 2: Choose a Cloud Provider
 
@@ -37,7 +37,7 @@ Select the cloud provider to connect. PipeOps supports:
 
 If no account has been connected for the selected provider, click **Connect**.
 
-![Cloud provider selection page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-2.png)
+![Cloud provider selection page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-2.png)
 
 ### Step 3: Connect Your Cloud Account
 
@@ -45,17 +45,17 @@ The connection fields vary by provider. For AWS, enter an optional account name 
 
 For setup instructions specific to your provider, see the [Integrations guide](/docs/category/integrations).
 
-![Connect AWS panel](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-3.png)
+![Connect AWS panel](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-3.png)
 
 Once connected, the account appears under your selected provider. Select it, then click **Proceed**.
 
-![Cloud provider page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-4.png)
+![Cloud provider page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-4.png)
 
 ### Step 4: Set Up Your Cloud Server
 
 Select the region where the server should be created, then choose a security specification. Click **Next: Configure Method** to continue.
 
-![Server setup page with region and security specification fields](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-5.png)
+![Server setup page with region and security specification fields](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-5.png)
 
 ### Step 5: Choose a Configuration Method
 
@@ -66,8 +66,8 @@ Choose how to configure server resources:
 
 Click **Next: Configure Resources** after making your selection.
 
-![Configuration method page with Custom Configuration selected](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-custom-config-7.png)
-![Configuration method page with Karpenter selected](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-karpentar-11.png)
+![Configuration method page with Custom Configuration selected](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-custom-config-7.png)
+![Configuration method page with Karpenter selected](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-karpentar-11.png)
 
 ### Step 6: Configure Resources
 
@@ -77,27 +77,27 @@ How resources are configured depends on the method selected in Step 5.
 
 Choose a resource profile for your workload. Preset environments — **Dev/Staging** and **Production** — offer curated instance options with estimated monthly costs. For more granular control, switch to **Expert Settings** to configure instance category, instance type, storage, node group limits, and default node architecture.
 
-![Custom configuration page with Dev/Staging resources and estimated cost](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-custom-config-8.png)
-![Custom configuration page with Production resources and estimated cost](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-custom-config-9.png)
-![Expert Settings page with instance, storage, node group, and architecture options](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-custom-config-10.png)
+![Custom configuration page with Dev/Staging resources and estimated cost](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-custom-config-8.png)
+![Custom configuration page with Production resources and estimated cost](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-custom-config-9.png)
+![Expert Settings page with instance, storage, node group, and architecture options](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-custom-config-10.png)
 
 **If you selected Karpenter:**
 
 Configure the available scaling options. Spot Instances can be enabled and the default node architecture can be selected.
 
-![Karpenter resources page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-karpentar-12.png)
+![Karpenter resources page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-karpentar-12.png)
 
 ### Step 7: Create the Server
 
 Click **Create Server**. PipeOps displays a progress indicator while provisioning the server in your cloud account.
 
-![Server creation progress modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-13.png)
+![Server creation progress modal](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-13.png)
 
 ### Step 8: View Your Server
 
 When setup completes, the new server appears on the **Servers** page showing its region, cloud provider, deployment count, last updated time, and status. It is now ready to receive deployments.
 
-![Servers page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-14.png)
+![Servers page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-14.png)
 
 ### Step 9: Connect a Git Provider and Select a Source
 
@@ -105,21 +105,21 @@ On the project deployment page, select **From Repository** or **From Templates**
 
 To deploy from a repository, select your Git provider. If the repository is not yet connected, click **Link New Repo** and follow the prompts.
 
-![Deploy from repository page with Git provider selection](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-git-provider.png)
+![Deploy from repository page with Git provider selection](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-select-git-provider.png)
 
 Then select or add the organization that owns the repository. If prompted, install the PipeOps Git app to grant access to your repositories.
 
-![Git organization selection and PipeOps Git app installation prompt](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-organization.png)
+![Git organization selection and PipeOps Git app installation prompt](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-select-organization.png)
 
 ### Step 10: Select a Repository and Branch
 
 Choose the repository to deploy,
 
-![Repository selection list with search field](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-repo.png)
+![Repository selection list with search field](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-select-repo.png)
 
 then select the branch PipeOps should build from. Click **Proceed**.
 
-![Branch selection page with a selected branch](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-branch.png)
+![Branch selection page with a selected branch](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-select-branch.png)
 
 ### Step 11: Review the Project Summary
 
@@ -133,7 +133,7 @@ Confirm the project configuration before proceeding:
 
 Click **Proceed** when the configuration is correct.
 
-![Project Summary page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-19.png)
+![Project Summary page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-19.png)
 
 ### Step 12: Configure Build Settings
 
@@ -145,18 +145,18 @@ PipeOps detects your framework and recommends build settings automatically. Revi
 
 Click **Deploy Project** to start the deployment.
 
-![Project Build Settings page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-20.png)
+![Project Build Settings page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-20.png)
 
 ### Step 13: Monitor the Deployment
 
 Track progress in the deployment pipeline. Build logs and app logs update in real time.
 
-![Deployment pipeline with live build logs](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-project-build-logs.png)
+![Deployment pipeline with live build logs](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-project-build-logs.png)
 
 ### Step 14: Deployment Complete
 
 When the deployment succeeds, PipeOps confirms that the project is live.
 
-![Project Deployed success modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byoc-21.png)
+![Project Deployed success modal](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byoc-21.png)
 
 The project is now running on your BYOC server. To manage environments, configure custom domains, or set up CI/CD triggers, see the [Project Overview page](/docs/projects/project-overview.md).

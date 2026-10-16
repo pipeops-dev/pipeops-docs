@@ -16,7 +16,7 @@ The Usage page gives you a complete picture of your PipeOps resource consumption
 3. Under **Subscription**, select **Usage**.
 4. Alternatively, click the **Usage** button directly from the workspace switcher in the top navigation bar.
 
-![Account menu open with the Usage option highlighted under Subscription](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-page/usage-1.png)
+![Account menu open with the Usage option highlighted under Subscription](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/usage-page/usage-1.png)
 
 The Usage page is organized into three tabs:
 
@@ -30,7 +30,7 @@ The Usage page is organized into three tabs:
 
 The **Active Subscription** tab gives you an overview of your current plan, how much of each resource you've used, and your wallet balance.
 
-![Active Subscription tab showing resource limits, available credit, and plan details](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-page/usage-2.png)
+![Active Subscription tab showing resource limits, available credit, and plan details](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/usage-page/usage-2.png)
 
 ### Resource Usage
 
@@ -60,7 +60,7 @@ The plan section shows your active plan name, billing interval, subscription per
 
 The **Nova Usage** tab shows a breakdown of resource consumption and projected costs for servers running on PipeOps Nova.
 
-![Nova Usage tab showing projected charges, resource cards, and project-level breakdown](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-page/usage-3.png)
+![Nova Usage tab showing projected charges, resource cards, and project-level breakdown](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/usage-page/usage-3.png)
 
 ### Filters
 
@@ -87,7 +87,7 @@ The project breakdown table lists every project that contributed to usage in the
 - Each resource's percentage share of the total cost
 - The project's total cost for the period
 
-![Expanded project row showing usage charts, cost percentage split, and project total](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-page/usage-4.png)
+![Expanded project row showing usage charts, cost percentage split, and project total](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/usage-page/usage-4.png)
 
 This breakdown helps you identify which projects are contributing most to your Nova costs and where to optimize.
 
@@ -95,7 +95,7 @@ This breakdown helps you identify which projects are contributing most to your N
 
 The **BYOS Bandwidth** tab tracks data transfer through your BYOS gateway and estimates the associated costs for the current month.
 
-![BYOS Bandwidth tab showing current month summary cards and per-cluster breakdown](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-page/usage-5.png)
+![BYOS Bandwidth tab showing current month summary cards and per-cluster breakdown](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/usage-page/usage-5.png)
 
 ### Current Month Summary
 
@@ -118,4 +118,4 @@ The **Bandwidth History (Last 6 Months)** chart shows your monthly transfer volu
 
 <!-- PLACEHOLDER: [Screenshot 6] —  -->
 
-![Bandwidth history chart showing monthly transfer volume and estimated cost by month](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/usage-page/usage-6.png)
+![Bandwidth history chart showing monthly transfer volume and estimated cost by month](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/usage-page/usage-6.png)

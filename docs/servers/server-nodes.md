@@ -18,7 +18,7 @@ across the cluster, and identify nodes that may need attention.
 From the **Servers** section, select a server and click the
 **Nodes** tab.
 
-![Server Nodes tab showing node list with resource metrics and status](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-nodes.png)
+![Server Nodes tab showing node list with resource metrics and status](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/server-creation/server-nodes.png)
 
 ## Node Information
 

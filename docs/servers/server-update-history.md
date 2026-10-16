@@ -19,7 +19,7 @@ through their logs.
 From the **Servers** section, select a server and click the
 **Update History** tab.
 
-![Server Update History tab showing the update log](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-update-history.png)
+![Server Update History tab showing the update log](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/server-creation/server-update-history.png)
 
 ## Update Log Fields
 

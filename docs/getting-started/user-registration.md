@@ -13,13 +13,13 @@ Welcome to PipeOps! This guide walks you through creating an account and complet
 
 Open your preferred web browser and go to the PipeOps homepage: [https://pipeops.io](https://pipeops.io).
 
-![PipeOps Homepage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/pipeops-landing-page-homepage.png)
+![PipeOps Homepage](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/pipeops-landing-page-homepage.png)
 
 ## Step 2: Visit the Registration Page
 
 Click **Sign In** in the top navigation. The Sign In page also handles new account creation.
 
-![PipeOps Sign Up Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/pipeops-sign-up-page.png)
+![PipeOps Sign Up Page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/pipeops-sign-up-page.png)
 
 ## Step 3: Sign Up Options
 
@@ -56,7 +56,7 @@ Your password must meet these requirements:
 - No sequential characters
 - No two consecutive identical characters
 
-![PipeOps Sign Up Form](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/pipeops-sign-up-form.png)
+![PipeOps Sign Up Form](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/pipeops-sign-up-form.png)
 
 ## Step 5: Verify Your Email Address
 
@@ -66,7 +66,7 @@ The OTP expires after 5 minutes. If you do not receive the code or it expires, c
 
 <!-- PLACEHOLDER: [Screenshot 4] — Verify OTP page with code fields and Proceed button -->
 
-![PipeOps OTP Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-otp-page.png)
+![PipeOps OTP Page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-otp-page.png)
 
 ## Step 6: Customize Your Workspace
 
@@ -76,7 +76,7 @@ First, enter a workspace name. This name helps you identify and organize your pr
 
 <!-- PLACEHOLDER: [Screenshot 5] — Workspace name screen with a workspace name input field -->
 
-![PipeOps Workspace Form](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-specify-workspace-name.png)
+![PipeOps Workspace Form](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-specify-workspace-name.png)
 
 Next, answer the onboarding questions:
 
@@ -84,19 +84,19 @@ Next, answer the onboarding questions:
 
    Choose the option that best matches your role, such as Founder/Co-Founder/C-Executive, Software Engineer/Developer, DevOps Engineer, or Others.
 
-![PipeOps Role selection question](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-role-page.png)
+![PipeOps Role selection question](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-role-page.png)
 
 2. **What type of project do you plan on deploying?**
 
    Select the project type that best describes what you want to deploy, such as a personal project, open source project, startup/business project, private project, or case study/portfolio project.
 
-![PipeOps Project type question](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-signup-project-type-question.png)
+![PipeOps Project type question](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-signup-project-type-question.png)
 
 3. **How did you discover PipeOps?**
 
    Choose how you found PipeOps, such as Google Search, the PipeOps website, LinkedIn, Twitter, a blog post, a referral, a team invite, or Others.
 
-![Discovery source question](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-signup-discovery-question.png)
+![Discovery source question](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-signup-discovery-question.png)
 
 ## Step 7: Complete Registration
 

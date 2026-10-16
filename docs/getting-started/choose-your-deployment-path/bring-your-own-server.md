@@ -16,7 +16,7 @@ Before you begin, make sure your machine meets the following requirements:
 
 On the **Choose Your Deployment Path** page, select **Bring Your Own Server**, then click **Proceed**.
 
-![Choose Your Deployment Path page with Bring Your Own Server selected](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byos-1.png)
+![Choose Your Deployment Path page with Bring Your Own Server selected](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byos-1.png)
 
 ### Step 2: Configure Server Details
 
@@ -54,7 +54,7 @@ pipeops agent install
 
 Open your **Ubuntu or WSL terminal** — not PowerShell — and run:
 
-![WSL terminal open and ready for commands](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/BOYS_Guide_images/opening-wsl-for-byos.png)
+![WSL terminal open and ready for commands](https://pipeops-ops-fe-assets.objects.pipeops.run/BOYS_Guide_images/opening-wsl-for-byos.png)
 
 ```bash
 export PIPEOPS_TOKEN="YOUR_GENERATED_TOKEN"
@@ -66,17 +66,17 @@ sudo PIPEOPS_TOKEN="$PIPEOPS_TOKEN" CLUSTER_NAME="$CLUSTER_NAME" bash -c "curl -
 
 After running the commands, your terminal displays the installation progress. PipeOps provisions a K3S environment on your machine automatically.
 
-![Terminal showing agent installation starting](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/BOYS_Guide_images/byos-setup-starting-successfully.png)
-![Terminal showing K3S being installed](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/BOYS_Guide_images/connecting-to-pipeops-dashboard.png)
-![Terminal showing installation complete](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/BOYS_Guide_images/byos-setup-complete.png)
+![Terminal showing agent installation starting](https://pipeops-ops-fe-assets.objects.pipeops.run/BOYS_Guide_images/byos-setup-starting-successfully.png)
+![Terminal showing K3S being installed](https://pipeops-ops-fe-assets.objects.pipeops.run/BOYS_Guide_images/connecting-to-pipeops-dashboard.png)
+![Terminal showing installation complete](https://pipeops-ops-fe-assets.objects.pipeops.run/BOYS_Guide_images/byos-setup-complete.png)
 
 ### Step 5: Confirm Registration
 
 Once the terminal shows a success message, return to the PipeOps dashboard. Your server will show a **Registered** status badge or a success modal. Click **Complete** to view your server details.
 
-![PipeOps dashboard showing the BYOS server with a Registered status badge](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/BOYS_Guide_images/byos-registered-successfully.png)
-![BYOS setup complete modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/BOYS_Guide_images/byos-setup-complete-modal.png)
-![BYOS Server List Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byos-server-list.png)
+![PipeOps dashboard showing the BYOS server with a Registered status badge](https://pipeops-ops-fe-assets.objects.pipeops.run/BOYS_Guide_images/byos-registered-successfully.png)
+![BYOS setup complete modal](https://pipeops-ops-fe-assets.objects.pipeops.run/BOYS_Guide_images/byos-setup-complete-modal.png)
+![BYOS Server List Page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byos-server-list.png)
 
 Your server is now connected and ready for deployments.
 
@@ -86,15 +86,15 @@ On the project deployment page, select **From Repository** or **From Templates**
 
 To deploy from a repository, select your Git provider. If your repository is not connected yet, click **Link New Repo** and follow the prompts. Then select or add the organization that owns the repository. If prompted, install the PipeOps Git app to grant access to your repositories.
 
-![Deploy from repository page with Git provider selection](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-git-provider.png)
-![Git organization selection and PipeOps Git app installation prompt](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-organization.png)
+![Deploy from repository page with Git provider selection](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-select-git-provider.png)
+![Git organization selection and PipeOps Git app installation prompt](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-select-organization.png)
 
 ### Step 7: Select a Repository and Branch
 
 Choose the repository you want to deploy, then select the branch PipeOps should build from. Click **Proceed**.
 
-![Repository selection list with search field](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-repo.png)
-![Branch selection page with a selected branch](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-branch.png)
+![Repository selection list with search field](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-select-repo.png)
+![Branch selection page with a selected branch](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-select-branch.png)
 
 ### Step 8: Review the Project Summary
 
@@ -108,8 +108,8 @@ Before deploying, confirm your project configuration:
 
 Click **Proceed** when everything looks correct.
 
-![Project Summary page showing the BYOS server as the target](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byos-project-summary.png)
-![Environment dropdown](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byos-project-env-dropdown.png)
+![Project Summary page showing the BYOS server as the target](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byos-project-summary.png)
+![Environment dropdown](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byos-project-env-dropdown.png)
 
 ### Step 9: Configure Build Settings
 
@@ -121,19 +121,19 @@ PipeOps detects your framework and recommends build settings automatically. Revi
 
 Click **Deploy Project** to start the deployment.
 
-![Project Build Settings page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byos-project-build-settings.png)
+![Project Build Settings page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byos-project-build-settings.png)
 
 ### Step 10: Monitor the Deployment
 
 Track progress in the deployment pipeline. Build logs and app logs update in real time so you can catch any issues as they happen.
 
-![Deployment pipeline with live build logs](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-project-build-logs.png)
+![Deployment pipeline with live build logs](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-project-build-logs.png)
 
 ### Step 11: Deployment Complete
 
 When the deployment succeeds, PipeOps confirms that your project is live.
 
-![Project Deployed success modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/byos-project-success-modal.png)
+![Project Deployed success modal](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/byos-project-success-modal.png)
 
 Your project is now running on your BYOS server. To manage environments, configure custom domains, or set up CI/CD triggers, see the [Project Deployment guide](/docs/projects/project-deployment.md).
 
