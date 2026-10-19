@@ -12,7 +12,7 @@ export default function LogoWrapper(props) {
           height={30}
           alt="pipeops logo"
           src={
-            "https://pipeops-ops-fe-assets.objects.pipeops.run//20/logo_Dark_673ab8cece.svg"
+            "https://pipeops-ops-fe-assets.objects.pipeops.run/20/logo_Dark_673ab8cece.svg"
           }
         />
       </a>

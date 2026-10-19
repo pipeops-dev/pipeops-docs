@@ -9,13 +9,13 @@ description: "Diagnose and resolve 502 Bad Gateway errors on PipeOps by verifyin
 
 The **502 Bad Gateway** error is a common HTTP status code indicating a communication issue between web servers. It arises when a server, often acting as a gateway or proxy, receives an invalid response from another server. This guide will walk you through diagnosing and resolving the 502 Bad Gateway error for your website or web application hosted on PipeOps.
 
-![Guide Image](https://pipeops-ops-fe-assets.objects.pipeops.run//20/21/bad_Gateway_002ce9cba5.png)
+![Guide Image](https://pipeops-ops-fe-assets.objects.pipeops.run/20/21/bad_Gateway_002ce9cba5.png)
 
 ## Step 1: Project Port
 
 Before we dive in, let's verify the port your project uses. If you're deploying your project using a Dockerfile on PipeOps, you can easily find your project's port by inspecting your Dockerfile.
 
-![Guide Image](https://pipeops-ops-fe-assets.objects.pipeops.run//20/21/docker_18f0da94ed.png)
+![Guide Image](https://pipeops-ops-fe-assets.objects.pipeops.run/20/21/docker_18f0da94ed.png)
 
 
 ## Step 2: Environment Variable (PORT and HOST)
@@ -28,19 +28,19 @@ With the networking port in sync, it's time to confirm that the `PORT` and `HOST
 4. If the `PORT` doesn't match your project's port, update it.
 5. Click the "Save" button to initiate a new deployment.
 
-![Guide Image](https://pipeops-ops-fe-assets.objects.pipeops.run//20/21/environment_d1b12a884c.png)
+![Guide Image](https://pipeops-ops-fe-assets.objects.pipeops.run/20/21/environment_d1b12a884c.png)
 
 ## Step 3: Final Verification
 
 After the new deployment, revisit your project to check if it's functioning correctly:
 
-![Guide Image](https://pipeops-ops-fe-assets.objects.pipeops.run//20/21/fixed_90358d368b.png)
+![Guide Image](https://pipeops-ops-fe-assets.objects.pipeops.run/20/21/fixed_90358d368b.png)
 
 ### Additional Tip: Checking Project Logs
 
 For further debugging assistance, you can review your project's logs tab to examine the `PORT` and `HOST` settings.
 
-![Guide Image](https://pipeops-ops-fe-assets.objects.pipeops.run//20/21/logs_14a0dd485b.png)
+![Guide Image](https://pipeops-ops-fe-assets.objects.pipeops.run/20/21/logs_14a0dd485b.png)
 
 **👍 Awesome!**
 

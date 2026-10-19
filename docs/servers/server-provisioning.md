@@ -78,7 +78,7 @@ following tabs:
 | **Environments** | Environments configured on this server.                 |
 | **Settings**     | Server configuration and management options.            |
 
-![Nova server overview page showing nodes, deployments, usage, and events](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/server-creation/server-create-nova-server-details..png)
+![Nova server overview page showing nodes, deployments, usage, and events](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/server-creation/server-create-nova-server-details.png)
 
 ## Provisioning with Bring Your Own Cloud (BYOC)
 
