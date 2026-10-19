@@ -13,7 +13,7 @@ The Terminal gives you direct shell access to your add-on's container without le
 
 The **Terminal** button is available in the top-right corner of any add-on page, regardless of which tab is active. Click it to open the terminal as an overlay panel.
 
-![Add-on Terminal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-overview-terminal.png)
+![Add-on Terminal](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-deployment-overview-terminal.png)
 
 Once open, you'll see a welcome message confirming which pod you're connected to:
 
@@ -24,7 +24,7 @@ Connecting to pod: snowy-pond-eternal-nova-production-0
 
 A green **Interactive Terminal** indicator in the bottom-right corner of the panel confirms the session is active.
 
-![Add-on Terminal Open](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-terminal.png)
+![Add-on Terminal Open](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-terminal.png)
 
 ## Selecting a Process
 

@@ -25,7 +25,7 @@ from the workspace switcher in the top navigation bar.
 2. A dropdown will appear listing all workspaces available to your account.
 3. Click any workspace in the list to switch to it.
 
-![Workspace switcher dropdown showing available workspaces](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/workspace-dropdown.png)
+![Workspace switcher dropdown showing available workspaces](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/workspace-dropdown.png)
 
 ## Creating a New Workspace
 
@@ -35,7 +35,7 @@ from the workspace switcher in the top navigation bar.
 3. A form will appear — enter a name for your new workspace.
 4. Complete the setup and select a subscription plan for the new workspace.
 
-![Create New Workspace form](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/workspace-creation-modal.png)
+![Create New Workspace form](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/workspace-creation-modal.png)
 
 Once created, your new workspace will appear in the workspace switcher
 and you can start adding projects, servers, and team members to it.

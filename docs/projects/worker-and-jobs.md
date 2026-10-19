@@ -13,7 +13,7 @@ The **Worker** and **Jobs** tabs let you run background processes and scheduled 
 
 Navigate to your project and click the **Worker** tab. If no workers exist yet, you'll see a **No workers are available yet** message.
 
-![Worker Tab](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-worker.png)
+![Worker Tab](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-worker.png)
 
 ### Creating a Worker
 
@@ -29,8 +29,8 @@ Navigate to your project and click the **Worker** tab. If no workers exist yet, 
 
 3. Click **Create** to deploy the worker.
 
-![Create Worker Modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-worker-modal.png)
-![Created Worker](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-deployed-worker.png)
+![Create Worker Modal](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-worker-modal.png)
+![Created Worker](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-deployed-worker.png)
 
 ### Managing Workers
 
@@ -48,7 +48,7 @@ Click the **Actions** button on any row to access the following options:
 
 Navigate to your project and click the **Jobs** tab. If no jobs exist yet, you'll see a **No jobs are available yet** message.
 
-![Jobs Tab](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-job.png)
+![Jobs Tab](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-job.png)
 
 ### Creating a Job
 
@@ -70,8 +70,8 @@ Navigate to your project and click the **Jobs** tab. If no jobs exist yet, you'l
 
 3. Click **Create** to deploy the job.
 
-![Create Job Modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-job-modal.png)
-![Created Job](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-deployed-job.png)
+![Create Job Modal](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-job-modal.png)
+![Created Job](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-deployed-job.png)
 
 ### Managing Jobs
 
