@@ -23,7 +23,7 @@ templates.
 From your PipeOps dashboard, click **+ New** in the top-right corner
 and select **Deploy Project** from the dropdown.
 
-![Deploy Project Navigation](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-1.png)
+![Deploy Project Navigation](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/deploy-project-1.png)
 
 ## Step 2: Choose a Project Type
 
@@ -44,7 +44,7 @@ At the bottom of the page, you can also select **Deploy an Add-on**
 to choose from PipeOps' curated collection of production-ready add-on
 templates.
 
-![Choose Project Type](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-2.png)
+![Choose Project Type](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/deploy-project-2.png)
 
 For this guide, select **Web** to proceed.
 
@@ -65,22 +65,22 @@ options. Choose the tab that matches your situation:
 
 2. If this is your first time connecting GitHub, click Install PipeOps Git to install the PipeOps GitHub app. This grants PipeOps access to your repositories so it can read your code, detect branches, and trigger deployments on push. You'll be redirected to GitHub to complete the installation and then returned to PipeOps automatically.
 
-   ![Select Git Provider](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-3.png)
+   ![Select Git Provider](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/deploy-project-3.png)
 
 3. Select your **Organisation** from the dropdown. If your organisation
    isn't listed, click **Add Organisation**.
 
-   ![Select Organisation](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-4.png)
+   ![Select Organisation](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/deploy-project-4.png)
 
 4. Search for and select the repository you want to deploy from the
    list of accessible repositories.
 
-   ![Select Repository](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-5.png)
+   ![Select Repository](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/deploy-project-5.png)
 
 5. Select the **Branch** you want to deploy from, then click
    **Proceed**.
 
-   ![Select Branch](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-6.png)
+   ![Select Branch](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/deploy-project-6.png)
 
 ### From Templates
 
@@ -88,14 +88,14 @@ Switch to the **From Templates** tab to browse PipeOps template
 projects. Click any template to use it as your project source and
 proceed directly to configuration.
 
-![Project Templates](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-templates.png)
+![Project Templates](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-templates.png)
 
 ## Step 4: Configure Project Summary
 
 After selecting your source, you'll land on the **Project Summary**
 page. Review and configure the following fields before proceeding.
 
-![Project Summary](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-7.png)
+![Project Summary](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/deploy-project-7.png)
 
 | Field                 | Description                                                                                    |
 | --------------------- | ---------------------------------------------------------------------------------------------- |
@@ -118,7 +118,7 @@ Click **Proceed** to continue.
 On the **Project Build Settings** page, configure how your project
 is built and run.
 
-![Build Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-8.png)
+![Build Settings](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/deploy-project-8.png)
 
 ### Build Method
 
@@ -158,7 +158,7 @@ top-right corner to start the deployment.
 After clicking **Deploy Project**, the **Deployment Pipeline** panel
 shows real-time progress across four sequential stages.
 
-![Deployment Pipeline](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-9.png)
+![Deployment Pipeline](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/deploy-project-9.png)
 
 | Stage      | Description                                                                                   |
 | ---------- | --------------------------------------------------------------------------------------------- |
@@ -179,7 +179,7 @@ before retrying.
 Once all stages complete successfully, a **Project Deployed!** modal
 confirms your deployment.
 
-![Successful Deployment](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-10.png)
+![Successful Deployment](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/deploy-project-10.png)
 
 Click **Got it** to go to your project dashboard.
 
@@ -188,7 +188,7 @@ Click **Got it** to go to your project dashboard.
 After dismissing the success modal, you'll land on the **Project
 Overview** page.
 
-![Project Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-live-url.png)
+![Project Overview](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/deploy-project-live-url.png)
 
 From here you can confirm your app is running, check resource usage,
 and see recent deployment activity. Click **Live Url** in the

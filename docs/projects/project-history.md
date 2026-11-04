@@ -13,7 +13,7 @@ The **History** tab gives you a full record of all deployments made to your proj
 
 Navigate to your project and click the **History** tab. The **Deployment History** table lists all past deployments in reverse chronological order, with pagination at the bottom for navigating older records.
 
-![Project History](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-history.png)
+![Project History](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-history.png)
 
 ## Deployment History Table
 

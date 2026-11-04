@@ -42,14 +42,14 @@ from the Git provider connection step.
 1. On the **Connect Your Git Provider** page, click
    **Deploy a template project**.
 
-![Connect Your Git Provider page with the Deploy a template project button](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/template-deployment-1.png)
+![Connect Your Git Provider page with the Deploy a template project button](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/template-deployment-1.png)
 
 2. In the **Deploy Template Project** modal, browse the available
    templates or use the search field to filter the list.
 3. Select the template you want to deploy.
 4. Click **Proceed**.
 
-![Deploy Template Project modal showing searchable template options](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/template-deployment-2.png)
+![Deploy Template Project modal showing searchable template options](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/template-deployment-2.png)
 
 ### Option 2: From the Dashboard
 
@@ -58,12 +58,12 @@ Use this path if you already have access to the PipeOps dashboard.
 1. Click **+ New** in the top-right corner of the dashboard.
 2. Select **Deploy Project** from the menu.
 
-![New menu showing the Deploy Project action](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/template-deployment-3.png)
+![New menu showing the Deploy Project action](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/template-deployment-3.png)
 
 3. On the **Deploy Project** page, choose **Web** as the project
    type.
 
-![Deploy Project page showing project type cards with Web selected](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/template-deployment-4.png)
+![Deploy Project page showing project type cards with Web selected](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/template-deployment-4.png)
 
 4. Select the **From Templates** tab.
 5. Browse the templates or use the search field to find a specific
@@ -71,7 +71,7 @@ Use this path if you already have access to the PipeOps dashboard.
 6. Select the template you want to deploy.
 7. Click **Proceed**.
 
-![From Templates tab showing the template list and Proceed button](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/template-deployment-5.png)
+![From Templates tab showing the template list and Proceed button](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/template-deployment-5.png)
 
 ## Configure the Project
 
@@ -89,7 +89,7 @@ deployment.
    correct.
 6. Click **Proceed**.
 
-![Project Summary page showing project name, environment, server, resources, and project source](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/template-deployment-6.png)
+![Project Summary page showing project name, environment, server, resources, and project source](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/template-deployment-6.png)
 
 :::tip
 For a first test deployment, the default resource values are usually
@@ -114,7 +114,7 @@ these settings before starting the deployment.
    URLs, API keys, or application secrets.
 6. Click **Deploy Project**.
 
-![Project Build Settings page showing build method, networking, and environment variables](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/template-deployment-7.png)
+![Project Build Settings page showing build method, networking, and environment variables](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/template-deployment-7.png)
 
 ## Monitor the Deployment
 
@@ -126,12 +126,12 @@ Wait for the pipeline to complete. If a stage fails, review the logs
 shown in the pipeline output and update the build settings or
 environment variables as needed.
 
-![Deployment Pipeline page showing commit, scan, and build logs](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/template-deployment-8.png)
+![Deployment Pipeline page showing commit, scan, and build logs](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/template-deployment-8.png)
 
 When the deployment is successful, PipeOps displays a
 **Project Deployed!** confirmation message.
 
-![Project Deployed confirmation modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/template-deployment-10.png)
+![Project Deployed confirmation modal](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/template-deployment-10.png)
 
 Click **Got it** to open the project page.
 
@@ -147,7 +147,7 @@ On the project overview page, confirm that the application is running.
 4. Use the project tabs to inspect deployment history, metrics, logs,
    events, workers, jobs, and settings.
 
-![Project overview page showing app status, recent activity, and Live Url button](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/template-deployment-11.png)
+![Project overview page showing app status, recent activity, and Live Url button](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/template-deployment-11.png)
 
 ## Next Steps
 

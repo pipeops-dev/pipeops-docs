@@ -20,7 +20,7 @@ dashboard.
 
 In the left sidebar, click **Integrations**.
 
-![Steps to navigate to the integrations page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/navigating-to-integrations-page.png)
+![Steps to navigate to the integrations page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/navigating-to-integrations-page.png)
 
 :::note
 You can also get here by clicking **+ New** in the top-right corner
@@ -32,7 +32,7 @@ choosing to connect a new cloud provider.
 
 Select **Digital Ocean** from the list, then click **Connect**.
 
-![DigitalOcean selected from the list of CSP's](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-do-page.png)
+![DigitalOcean selected from the list of CSP's](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/connect-do-page.png)
 
 A modal titled **Connect Digital Ocean Cloud** will appear.
 
@@ -42,7 +42,7 @@ In the modal, click **Authorize**. You will be redirected to
 DigitalOcean's OAuth authorization page, where you can review and
 approve the access PipeOps is requesting.
 
-![Connect Digital Ocean modal showing the Authorize button](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-do-modal.png)
+![Connect Digital Ocean modal showing the Authorize button](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/connect-do-modal.png)
 
 ### Step 4: Confirm the Connection
 
@@ -50,7 +50,7 @@ After approving access on DigitalOcean's page, you will be redirected
 back to PipeOps. Your DigitalOcean account will appear as a connected
 provider under the Digital Ocean section on the Integrations page.
 
-![Connected DigitalOcean account in PipeOps](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connected-do-integration.png)
+![Connected DigitalOcean account in PipeOps](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/connected-do-integration.png)
 
 Your DigitalOcean account is now connected to PipeOps. You can proceed
 to provision a server on your connected account — see

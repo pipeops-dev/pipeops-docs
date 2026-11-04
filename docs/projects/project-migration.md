@@ -15,11 +15,11 @@ PipeOps allows you to move a project to a different server or promote it to a di
 2. Click the **Actions** button in the top-right corner.
 3. Select **Migrate Project** from the dropdown.
 
-![Migrate Project Action](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-actions-dropdown.png)
+![Migrate Project Action](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-actions-dropdown.png)
 
 A modal will appear prompting you to choose a migration type.
 
-![Migration Options](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-migration-options-modal.png)
+![Migration Options](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-migration-options-modal.png)
 
 ---
 
@@ -29,7 +29,7 @@ Moves your entire project to a different server. Use this to change hosting infr
 
 1. Select **Migrate Server** from the migration options modal. A panel will open showing your **Current Server** and a **Migration Server** dropdown listing all available servers on your account. Each server entry shows its name, region, cloud provider, and current status.
 
-![Migrate Server](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-server-migration-modal.png)
+![Migrate Server](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-server-migration-modal.png)
 
 :::tip
 Only select servers marked as **Available**. Servers with a **Failed** or **Delete Failed** status are not suitable migration targets.
@@ -51,7 +51,7 @@ Moves your project to a different environment within the same server — for exa
 
 1. Select **Promote Environment** from the migration options modal. A panel will open showing the current server, your **Current Environment**, and a **Promotion Environment** dropdown to select the target.
 
-![Promote Environment](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-environment-migration-modal.png)
+![Promote Environment](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-environment-migration-modal.png)
 
 2. Select the destination environment from the **Promotion Environment** dropdown and click **Start Migration**.
 

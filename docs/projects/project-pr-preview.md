@@ -13,7 +13,7 @@ PR Previews lets PipeOps automatically spin up a temporary deployment for each p
 
 Navigate to your project and click the **PR Previews** tab. Use the toggle at the top of the page to enable the feature.
 
-![PR Previews](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-pr-preview.png)
+![PR Previews](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-pr-preview.png)
 
 Once enabled, a **PR Previews enabled** confirmation appears in the bottom-right corner and the **Preview Settings** panel becomes active.
 

@@ -11,11 +11,11 @@ Creating a GCP JSON credentials is required to connect your GCP Account to PipeO
 
 2. Create a new Project or open an existing one
 
-![GCP New Project](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/PipeOpsCreateGCPProject.png)
+![GCP New Project](https://pipeops-ops-fe-assets.objects.pipeops.run/PipeOpsCreateGCPProject.png)
 
 3. Open the embedded Google shell
 
-![GCP Embedded Shell](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/gcp_shell_1.webp)
+![GCP Embedded Shell](https://pipeops-ops-fe-assets.objects.pipeops.run/gcp_shell_1.webp)
 
 4. Run the following command in the Google Shell to create the service account and generate the json key
 
@@ -38,10 +38,10 @@ Creating a GCP JSON credentials is required to connect your GCP Account to PipeO
         ```
     So you can download it by clicking on the **Download** in the **Cloud Terminal Shell** window.
 
-    ![GCP JSON Credentials Download Step](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/gcp_shell_5.webp)
+    ![GCP JSON Credentials Download Step](https://pipeops-ops-fe-assets.objects.pipeops.run/gcp_shell_5.webp)
 
     And specify the name of the file /your/home/key.json and click on Download.
 
-    ![GCP JSON Credentials Download Path](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/GCPJSONCredentialsDownload.png)
+    ![GCP JSON Credentials Download Path](https://pipeops-ops-fe-assets.objects.pipeops.run/GCPJSONCredentialsDownload.png)
     
 Congratulations you have successfully created your GCP JSON credentials.

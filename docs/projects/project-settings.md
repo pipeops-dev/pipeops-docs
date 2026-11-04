@@ -11,7 +11,7 @@ The **Settings** tab is where you configure your project's behaviour and infrast
 
 ## General Settings
 
-![General Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-general-settings.png)
+![General Settings](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-general-settings.png)
 
 ### Project Name
 
@@ -37,7 +37,7 @@ When **Rolling Update** is selected, two additional parameters are available:
 
 ## Source Control
 
-![Source Control](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-source-control.png)
+![Source Control](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-source-control.png)
 
 ### CI/CD Settings
 
@@ -62,7 +62,7 @@ Click **Save** to apply changes.
 
 ## Build Settings
 
-![Build Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-build-settings.png)
+![Build Settings](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-build-settings.png)
 
 ### Framework & Build Method
 
@@ -90,7 +90,7 @@ Click **Redeploy Project** after saving to apply the lifecycle command to a new 
 
 Controls how your project is reachable from the internet and from within your cluster.
 
-![Networking](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-networking.png)
+![Networking](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-networking.png)
 
 ### Public Networking
 
@@ -118,7 +118,7 @@ All are port-agnostic — use whichever suits your internal routing needs.
 
 Defines which traffic is allowed to reach your project.
 
-![Firewall Rules](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-firewall-rules.png)
+![Firewall Rules](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-firewall-rules.png)
 
 ### Traffic Type
 
@@ -144,7 +144,7 @@ Click **Save** to apply changes or **Discard Changes** to revert.
 
 Inject runtime configuration and secrets into your project's container environment.
 
-![Environment Variables](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-environment-variables.png)
+![Environment Variables](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-environment-variables.png)
 
 Variables are accessible at both runtime and build time. Each entry has a **key** and a masked **value**. Click **+ Add** to create a new variable, or the red **✕** to delete one.
 
@@ -177,7 +177,7 @@ Click **Save** to apply any manually added or edited variables.
 
 Controls the compute resources allocated to your project and how many instances run simultaneously.
 
-![Resources and Replications](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-resources-and-replication.png)
+![Resources and Replications](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-resources-and-replication.png)
 
 ### General Resources
 
@@ -204,7 +204,7 @@ Click **Save** to apply changes.
 
 Configures persistent volumes mounted into your project's container, ensuring data survives restarts and redeployments.
 
-![Storage](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-storage-empty.png)
+![Storage](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-storage-empty.png)
 
 If no volumes are configured, the section shows a **Nothing's here** empty state. Click **+ New Storage** to add a volume. Each storage entry requires:
 
@@ -218,7 +218,7 @@ Click **Save** to apply changes.
 
 Runs automated security scans on every deployment and optionally blocks deployments that exceed defined vulnerability thresholds.
 
-![Security Policy](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/project-security-policy.png)
+![Security Policy](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/project-security-policy.png)
 
 ### Policy Gate
 

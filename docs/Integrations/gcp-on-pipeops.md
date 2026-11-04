@@ -19,7 +19,7 @@ can generate directly from within the connection flow.
 
 In the left sidebar, click **Integrations**.
 
-![Steps to navigate to the integrations page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/navigating-to-integrations-page.png)
+![Steps to navigate to the integrations page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/navigating-to-integrations-page.png)
 
 :::note
 You can also get here by clicking **+ New** in the top-right corner
@@ -31,7 +31,7 @@ choosing to connect a new cloud provider.
 
 From the list of cloud providers, find **Google Cloud Platform** and click **Connect**.
 
-![Integrations Page With GCP selected](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-gcp-page.png)
+![Integrations Page With GCP selected](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/connect-gcp-page.png)
 
 A side drawer labeled **Connect GCP** will open.
 
@@ -59,7 +59,7 @@ Click **Copy** in the drawer to copy the command to your clipboard.
    **Download**, enter the path `~/key.json`, and download the file
    to your machine.
 
-   ![Connect GCP drawer showing Generate GCP Credentials steps and curl command](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-gcp-modal-step-1.png)
+   ![Connect GCP drawer showing Generate GCP Credentials steps and curl command](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/connect-gcp-modal-step-1.png)
 
 Once you have your `key.json` file downloaded, click **Proceed** in
 the drawer to continue.
@@ -81,12 +81,12 @@ connect the account.
    `key.json` file you downloaded in the previous step.
 3. Click **Connect Account**.
 
-![Connect GCP drawer showing Upload Credentials JSON screen](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-gcp-modal-step-2.png)
+![Connect GCP drawer showing Upload Credentials JSON screen](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/connect-gcp-modal-step-2.png)
 
 If the credentials are valid, your GCP account will be connected and
 appear under Google Cloud Platform on the Integrations page.
 
-![Connected GCP Integration](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connected-gcp-integration.png)
+![Connected GCP Integration](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/connected-gcp-integration.png)
 
 Your GCP account is now connected to PipeOps. You can proceed to
 provision a server on your connected GCP account — see

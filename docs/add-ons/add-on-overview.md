@@ -11,7 +11,7 @@ After deploying an add-on, or when you select an existing one from the installed
 
 ## Non-Database Add-on Overview
 
-![Non-DB Addon Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-overview.png)
+![Non-DB Addon Overview](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-deployment-overview.png)
 
 The overview page for non-database add-ons contains the following sections:
 
@@ -28,7 +28,7 @@ The tab navigation along the top provides access to:
 
 ## Database Add-on Overview
 
-![DB Addon Overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/add-on-deployment/add-on-deployment-db-overview.png)
+![DB Addon Overview](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/add-on-deployment/add-on-deployment-db-overview.png)
 
 The overview page for database add-ons shows a status bar at the top with the following details:
 

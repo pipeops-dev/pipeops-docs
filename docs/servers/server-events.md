@@ -18,7 +18,7 @@ issues before diving into metrics or logs.
 From the **Servers** section, select a server and click the
 **Events** tab.
 
-![Server Events tab showing event entries with severity, time, and summary columns](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-events.png)
+![Server Events tab showing event entries with severity, time, and summary columns](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/server-creation/server-events.png)
 
 ## Filtering Events
 

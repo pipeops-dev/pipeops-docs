@@ -21,7 +21,7 @@ Ensure the following are in place before starting:
 
 On the **Choose Your Deployment Path** page, select **On PipeOps**, then click **Proceed**.
 
-![Deployment Path page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-deployment-path.png)
+![Deployment Path page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-deployment-path.png)
 
 ### Step 2: Customize Your Server
 
@@ -29,7 +29,7 @@ Select the cloud provider and region where PipeOps will provision your server. T
 
 Click **Proceed** once your provider and region are set.
 
-![Server customization page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-csp.png)
+![Server customization page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-select-csp.png)
 
 ### Step 3: Select a Plan
 
@@ -39,7 +39,7 @@ Each plan displays its included limits for reference.
 
 > **Note:** If you already have an active subscription, skip this step. Continue creating servers and deploying projects within the limits of your current plan.
 
-![Select a Plan modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-plan-modal.png)
+![Select a Plan modal](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-plan-modal.png)
 
 ### Step 4: Confirm and Subscribe
 
@@ -47,7 +47,7 @@ Review your plan details before completing the subscription. Any applicable free
 
 Select a payment method, then click **Proceed to Subscribe**.
 
-![Plan confirmation panel](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-plan-confirmation.png)
+![Plan confirmation panel](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-plan-confirmation.png)
 
 ### Step 5: Access Your Dashboard
 
@@ -62,15 +62,15 @@ PipeOps supports the following Git providers:
 - Bitbucket
 - Azure DevOps
 
-![Connect a Git provider or deploy a template project](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-connect-git-provider.png)
+![Connect a Git provider or deploy a template project](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-connect-git-provider.png)
 
 On the project deployment page, select **From Repository**, choose a Git provider,
 
-![Deploy from repository page with Git provider selection](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-git-provider.png)
+![Deploy from repository page with Git provider selection](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-select-git-provider.png)
 
 then select or add an organization. If prompted, install the PipeOps Git app to grant access to your repositories.
 
-![Git organization selection and PipeOps Git app installation prompt](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-organization.png)
+![Git organization selection and PipeOps Git app installation prompt](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-select-organization.png)
 
 Alternatively, select **From Templates** to deploy a pre-built starter project.
 
@@ -78,11 +78,11 @@ Alternatively, select **From Templates** to deploy a pre-built starter project.
 
 Choose the repository to deploy,
 
-![Repository selection list with search field](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-repo.png)
+![Repository selection list with search field](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-select-repo.png)
 
 then select the branch PipeOps should build from. Click **Proceed**.
 
-![Branch selection page with a selected branch](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-select-branch.png)
+![Branch selection page with a selected branch](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-select-branch.png)
 
 ### Step 8: Review the Project Summary
 
@@ -96,7 +96,7 @@ Confirm the project configuration before proceeding:
 
 Click **Proceed** when the configuration is correct.
 
-![Project Summary page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-project-summary-config.png)
+![Project Summary page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-project-summary-config.png)
 
 ### Step 9: Configure Build Settings
 
@@ -108,18 +108,18 @@ PipeOps detects your framework and recommends a build method automatically. Revi
 
 Click **Deploy Project** to start the deployment.
 
-![Project Build Settings page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-project-build-settings-config.png)
+![Project Build Settings page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-project-build-settings-config.png)
 
 ### Step 10: Monitor the Deployment
 
 Track progress in the deployment pipeline. Build logs and app logs update in real time.
 
-![Deployment pipeline with live build logs](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-project-build-logs.png)
+![Deployment pipeline with live build logs](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-project-build-logs.png)
 
 ### Step 11: Deployment Complete
 
 When the deployment succeeds, PipeOps confirms that the project is live.
 
-![Project Deployed success modal](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/onboarding/onboarding-project-successful-deployment-modal.png)
+![Project Deployed success modal](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/onboarding/onboarding-project-successful-deployment-modal.png)
 
 The project is now running on the newly created server. To manage environments, configure custom domains, or set up CI/CD triggers, see the [Project Deployment guide](/docs/category/projects).

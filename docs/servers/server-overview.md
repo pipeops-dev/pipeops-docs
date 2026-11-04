@@ -57,7 +57,7 @@ Nova servers are provisioned and managed by PipeOps. Their overview
 focuses on the resources PipeOps provisions and bills for on your
 behalf.
 
-![PipeOps Nova server overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-create-nova%20server-overview-page.png)
+![PipeOps Nova server overview](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/server-creation/server-create-nova%20server-overview-page.png)
 
 | Section                                 | What it shows                                                      |
 | --------------------------------------- | ------------------------------------------------------------------ |
@@ -75,7 +75,7 @@ overview reflects cloud-provider-specific infrastructure and may
 include additional sections depending on the provider and
 configuration method selected during provisioning.
 
-![Cloud provider server overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-created-custom-overview-details.png)
+![Cloud provider server overview](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/server-creation/server-created-custom-overview-details.png)
 
 | Section                                 | What it shows                                                                                                   |
 | --------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -89,7 +89,7 @@ configuration method selected during provisioning.
 BYOS servers are machines or VMs you connected to PipeOps. The
 overview reflects the connected machine's agent-reported state.
 
-![Bring Your Own Server overview](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-creation/server-byos-overview-page.png)
+![Bring Your Own Server overview](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/server-creation/server-byos-overview-page.png)
 
 | Section                                 | What it shows                                                                     |
 | --------------------------------------- | --------------------------------------------------------------------------------- |

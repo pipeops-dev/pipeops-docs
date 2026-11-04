@@ -19,7 +19,7 @@ export default function FooterLayout({ style, links, logo, copyright }) {
                   </p>
                 </div>
                 <img
-                  src="https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/soc2-logo-blue.svg"
+                  src="https://pipeops-ops-fe-assets.objects.pipeops.run/soc2-logo-blue.svg"
                   alt="stamp for SOC1"
                   width={64}
                   height={64}

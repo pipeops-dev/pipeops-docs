@@ -23,14 +23,14 @@ The Alert Notification settings enable you to set thresholds for resource usage 
 - Storage usage
 - CPU usage
 
-![Server Settings](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-settings-page.png)
+![Server Settings](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/server-settings-page.png)
 
 
 
 
 Each category has a toggle switch that is initially set to **"Off."** This means no alerts are configured by default. To activate alerts for any resource type, simply toggle the switch to the right. Once activated, additional fields will appear for setting thresholds and durations.
 
-![Server Settings Details](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/server-settings-page-details.png)
+![Server Settings Details](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/server-settings-page-details.png)
 
 
 ### Memory Usage

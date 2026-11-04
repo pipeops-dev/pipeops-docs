@@ -9,7 +9,7 @@ description: "View your project dashboard in PipeOps including application statu
 
 The **Overview** tab is the default landing page for any project in PipeOps. It gives you a quick snapshot of your application's current state, resource consumption, and recent deployment activity.
 
-![Project Overview Page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/project-deployment/deploy-project-11.png)
+![Project Overview Page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/project-deployment/deploy-project-11.png)
 
 ## App Status
 

@@ -18,7 +18,7 @@ Azure servers and deploy projects directly from your PipeOps dashboard.
 
 In the left sidebar, click **Integrations**.
 
-![Steps to navigate to the integrations page](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/navigating-to-integrations-page.png)
+![Steps to navigate to the integrations page](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/navigating-to-integrations-page.png)
 
 :::note
 You can also get here by clicking **+ New** in the top-right corner
@@ -30,7 +30,7 @@ choosing to connect a new cloud provider.
 
 Select **Azure** from the list, then click **Connect**.
 
-![Connect Azure Cloud modal showing setup instructions](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-azure-page.png)
+![Connect Azure Cloud modal showing setup instructions](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/connect-azure-page.png)
 
 A modal titled **Connect Azure Cloud** will appear.
 
@@ -53,7 +53,7 @@ For a step-by-step walkthrough of generating your Azure credentials,
 see [Generate Azure Credentials](/docs/how-to-guides/tutorials/generate-azure-credentials).
 :::
 
-![Connect Azure Cloud modal showing setup instructions](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-azure-modal-step-1.png)
+![Connect Azure Cloud modal showing setup instructions](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/connect-azure-modal-step-1.png)
 
 Click **Proceed** to continue to the credentials screen.
 
@@ -79,14 +79,14 @@ On the **Enter Access Credentials** screen, fill in the following fields.
 - **Subscription ID** — The ID of the Azure subscription to deploy
   resources under.
 
-  ![Connect Azure Cloud modal showing Enter Access Credentials form](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connect-azure-modal-step-2.png)
+  ![Connect Azure Cloud modal showing Enter Access Credentials form](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/connect-azure-modal-step-2.png)
 
 Once all fields are filled in, click **Connect Account**.
 
 If the credentials are valid, your Azure account will be connected
 and appear under Azure on the Integrations page.
 
-![Connected Azure account in PipeOps](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/connect-csp-integrations/connected-azure-integration.png)
+![Connected Azure account in PipeOps](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/connect-csp-integrations/connected-azure-integration.png)
 
 Your Azure account is now connected to PipeOps. You can proceed to
 provision a server on your connected account — see

@@ -18,7 +18,7 @@ To open the Teams page:
 1. Click the account menu in the top-right corner of your dashboard.
 2. Select **Teams**.
 
-![Account menu open with Teams option highlighted](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/teams-page/team-0.png)
+![Account menu open with Teams option highlighted](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/teams-page/team-0.png)
 
 You can also create a team directly from the dashboard by clicking
 **New** in the top-right corner and selecting **Create Team** under
@@ -30,13 +30,13 @@ The Teams page lists all teams in your workspace. If no teams exist
 yet, PipeOps shows an empty state with a **Create a new team** button.
 You can also click **New team** in the top-right corner at any time.
 
-![Teams page empty state with Create a new team and New team actions](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/teams-page/team-1.png)
+![Teams page empty state with Create a new team and New team actions](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/teams-page/team-1.png)
 
 Once teams have been created, each team appears as a card showing the
 team name, creation time, member avatars, member count, and a menu
 for additional actions.
 
-![Teams page showing a created team card with member count and actions menu](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/teams-page/team-6.png)
+![Teams page showing a created team card with member count and actions menu](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/teams-page/team-6.png)
 
 ## Create a Team
 
@@ -49,7 +49,7 @@ for additional actions.
 5. Invite team members if needed (see [Invite Team Members](#invite-team-members)).
 6. Click **Create Team**.
 
-![Create New Team page with team name, access level, resource assignment, and invite section](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/teams-page/team-2.png)
+![Create New Team page with team name, access level, resource assignment, and invite section](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/teams-page/team-2.png)
 
 ## Team Access Levels
 
@@ -63,7 +63,7 @@ Use **Assign Specific Resources** to select which **Servers**,
 **Projects**, and **AddOns** the team can access. Each resource type
 can be toggled individually before selecting specific items.
 
-![Assign Specific Resources section with Server, Project, and AddOns selectors](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/teams-page/team-3.png)
+![Assign Specific Resources section with Server, Project, and AddOns selectors](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/teams-page/team-3.png)
 
 ### Full Workspace Access
 
@@ -78,7 +78,7 @@ configure for the team. Available permission categories are:
 | **Team Management**    | Inviting and removing team members                |
 | **Integrations**       | Git providers, registries, and other integrations |
 
-![Full Workspace Access permissions with all permission categories visible](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/teams-page/team-4.png)
+![Full Workspace Access permissions with all permission categories visible](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/teams-page/team-4.png)
 
 ## Invite Team Members
 
@@ -95,7 +95,7 @@ To invite a member:
    or configure workspace permissions depending on your selection.
 5. Click **Add Invite**.
 
-![New Member drawer showing email, role, access level, and resource assignment fields](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/teams-page/team-5.png)
+![New Member drawer showing email, role, access level, and resource assignment fields](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/teams-page/team-5.png)
 
 :::note
 Invitations are sent after the team is fully created, not immediately
@@ -118,7 +118,7 @@ resources day-to-day. From here you can:
 - Click **Edit Team** to update the team name, access level, or
   assigned resources.
 
-![Team Overview tab showing member list, New Member button, and assigned resources](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/teams-page/team-7.png)
+![Team Overview tab showing member list, New Member button, and assigned resources](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/teams-page/team-7.png)
 
 ### Audit Trail
 
@@ -134,4 +134,4 @@ the audit table shows:
   invitation.
 - **Timestamp** — When the action took place.
 
-![Audit Trail tab with search field and audit action table](https://pub-950943fa1bc54978bed46ef104f9d81a.r2.dev/Documentation%20Images/teams-page/team-8.png)
+![Audit Trail tab with search field and audit action table](https://pipeops-ops-fe-assets.objects.pipeops.run/Documentation%20Images/teams-page/team-8.png)
